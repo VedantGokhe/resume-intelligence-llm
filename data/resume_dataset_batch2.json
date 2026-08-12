@@ -1,0 +1,1679 @@
+[
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Aarav Mehta\naarav.mehta.ai@gmail.com | +91 98765 21430 | Pune, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nMSc Artificial Intelligence and Machine Learning student with hands-on experience in RAG, NLP pipelines, and machine-learning services. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Artificial Intelligence and Machine Learning | Symbiosis Institute of Technology, Pune | 2024 – 2026\n- BTech Computer Engineering | Vishwakarma Institute of Technology | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- AI Engineering Intern | NexaCloud Technologies | May 2025 – Jul 2025\n  Built document ingestion and semantic retrieval pipelines for internal knowledge assistants. Implemented chunking, embeddings, metadata filtering, evaluation scripts, and FastAPI retrieval services.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- BookBot — RAG Powered Chatbot\n  • Developed a question-answering assistant over technical books with PDF extraction, recursive chunking, embeddings, vector retrieval, reranking, and source citations.\n  • Stack: Python, LangChain, FAISS, Hugging Face Transformers, FastAPI, Streamlit\n  • Repository: https://github.com/aaravmehta/bookbot\n- Customer Retention ML System\n  • Created an end-to-end churn workflow with feature preprocessing, model comparison, threshold tuning, and SHAP explainability.\n  • Stack: Python, Pandas, Scikit-learn, XGBoost, SHAP, Plotly\n  • Repository: https://github.com/aaravmehta/customer-retention\n\nSKILLS\nLanguages: Python, SQL, C++.\nFrameworks, platforms, and tools: Python, SQL, C++, FastAPI, PyTorch, Scikit-learn, Hugging Face Transformers, LangChain, FAISS, Pandas, NumPy, Docker, Git, PostgreSQL, MongoDB, AWS, NLP, RAG.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nAWS Certified Cloud Practitioner; DeepLearning.AI Generative AI with Large Language Models\n\nLINKS\nhttps://github.com/aaravmehta | https://www.linkedin.com/in/aaravmehta",
+    "output": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta.ai@gmail.com",
+      "phone": [
+        "+91 98765 21430"
+      ],
+      "location": "Pune, Maharashtra, India",
+      "summary": "MSc Artificial Intelligence and Machine Learning student with hands-on experience in RAG, NLP pipelines, and machine-learning services.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence and Machine Learning",
+          "institution": "Symbiosis Institute of Technology, Pune",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Computer Engineering",
+          "institution": "Vishwakarma Institute of Technology",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "AI Engineering Intern",
+          "company": "NexaCloud Technologies",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Built document ingestion and semantic retrieval pipelines for internal knowledge assistants. Implemented chunking, embeddings, metadata filtering, evaluation scripts, and FastAPI retrieval services."
+        }
+      ],
+      "projects": [
+        {
+          "name": "BookBot — RAG Powered Chatbot",
+          "description": "Developed a question-answering assistant over technical books with PDF extraction, recursive chunking, embeddings, vector retrieval, reranking, and source citations.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "FAISS",
+            "Hugging Face Transformers",
+            "FastAPI",
+            "Streamlit"
+          ],
+          "link": "https://github.com/aaravmehta/bookbot"
+        },
+        {
+          "name": "Customer Retention ML System",
+          "description": "Created an end-to-end churn workflow with feature preprocessing, model comparison, threshold tuning, and SHAP explainability.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "Plotly"
+          ],
+          "link": "https://github.com/aaravmehta/customer-retention"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "C++",
+        "FastAPI",
+        "PyTorch",
+        "Scikit-learn",
+        "Hugging Face Transformers",
+        "LangChain",
+        "FAISS",
+        "Pandas",
+        "NumPy",
+        "Docker",
+        "Git",
+        "PostgreSQL",
+        "MongoDB",
+        "AWS",
+        "NLP",
+        "RAG"
+      ],
+      "certifications": [
+        "AWS Certified Cloud Practitioner",
+        "DeepLearning.AI Generative AI with Large Language Models"
+      ],
+      "links": [
+        "https://github.com/aaravmehta",
+        "https://www.linkedin.com/in/aaravmehta"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Ishita Rao\nishita.rao.dev@outlook.com | +91 99887 44321 | Bengaluru, Karnataka, India\n\nOBJECTIVE / SUMMARY\nFull-stack software engineer focused on scalable web applications, TypeScript services, API design, and cloud-native development. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Information Science and Engineering | R.V. College of Engineering, Bengaluru | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Software Engineer | OrbitStack Labs | Jul 2024 – Present\n  Develop and maintain customer-facing SaaS features using React and Node.js. Designed REST APIs, improved PostgreSQL queries, introduced integration tests, and worked with product and design teams in Agile sprints.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- PulseBoard\n  • Built a collaborative project management application with role-based access, task assignment, comments, activity history, and real-time notifications.\n  • Stack: React, TypeScript, Node.js, Express, PostgreSQL, Socket.IO, Docker\n  • Repository: https://github.com/ishitarao/pulseboard\n- ExpenseFlow\n  • Created a personal finance platform that imports transaction CSVs, categorizes spending, exposes monthly summaries, and provides interactive charts with JWT authentication.\n  • Stack: Next.js, TypeScript, Prisma, PostgreSQL, Chart.js, JWT\n  • Repository: https://expenseflow-demo.vercel.app\n\nSKILLS\nLanguages: TypeScript, JavaScript, Python.\nFrameworks, platforms, and tools: TypeScript, JavaScript, Python, React, Next.js, Node.js, Express, HTML5, CSS3, Tailwind CSS, REST APIs, GraphQL, PostgreSQL, Redis, MongoDB, Docker, GitHub Actions, AWS.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nMeta Front-End Developer Professional Certificate\n\nLINKS\nhttps://github.com/ishitarao | https://www.linkedin.com/in/ishitarao",
+    "output": {
+      "name": "Ishita Rao",
+      "email": "ishita.rao.dev@outlook.com",
+      "phone": [
+        "+91 99887 44321"
+      ],
+      "location": "Bengaluru, Karnataka, India",
+      "summary": "Full-stack software engineer focused on scalable web applications, TypeScript services, API design, and cloud-native development.",
+      "education": [
+        {
+          "degree": "BTech Information Science and Engineering",
+          "institution": "R.V. College of Engineering, Bengaluru",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Engineer",
+          "company": "OrbitStack Labs",
+          "start_date": "Jul 2024",
+          "end_date": "Present",
+          "description": "Develop and maintain customer-facing SaaS features using React and Node.js. Designed REST APIs, improved PostgreSQL queries, introduced integration tests, and worked with product and design teams in Agile sprints."
+        }
+      ],
+      "projects": [
+        {
+          "name": "PulseBoard",
+          "description": "Built a collaborative project management application with role-based access, task assignment, comments, activity history, and real-time notifications.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Socket.IO",
+            "Docker"
+          ],
+          "link": "https://github.com/ishitarao/pulseboard"
+        },
+        {
+          "name": "ExpenseFlow",
+          "description": "Created a personal finance platform that imports transaction CSVs, categorizes spending, exposes monthly summaries, and provides interactive charts with JWT authentication.",
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Prisma",
+            "PostgreSQL",
+            "Chart.js",
+            "JWT"
+          ],
+          "link": "https://expenseflow-demo.vercel.app"
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "REST APIs",
+        "GraphQL",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "Docker",
+        "GitHub Actions",
+        "AWS"
+      ],
+      "certifications": [
+        "Meta Front-End Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/ishitarao",
+        "https://www.linkedin.com/in/ishitarao"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Rohan Kulkarni\nrohan.kulkarni.ds@gmail.com | +91 91234 77881 | Hyderabad, Telangana, India\n\nOBJECTIVE / SUMMARY\nData scientist experienced in supervised learning, experimentation, feature engineering, and business analytics. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Data Science | University of Hyderabad | 2023 – 2025\n- BSc Statistics | Fergusson College, Pune | 2020 – 2023\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Data Science Intern | FinSight Analytics | Jun 2024 – Aug 2024\n  Prepared customer-level datasets from transactional and CRM sources, engineered behavioral features, trained classification models, and automated recurring reports with Python and SQL.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- Credit Risk Modelling Framework\n  • Built a credit default prediction workflow covering data quality checks, missing-value treatment, target encoding, feature selection, calibration, and SHAP explanations.\n  • Stack: Python, Pandas, Scikit-learn, XGBoost, SHAP, SQL\n  • Repository: https://github.com/rohankulkarni/credit-risk\n- Retail Demand Forecasting\n  • Forecasted weekly SKU demand using sales, promotions, holidays, and price features; compared statistical and gradient-boosting models with rolling validation.\n  • Stack: Python, Pandas, LightGBM, Statsmodels, Matplotlib\n  • Repository: https://github.com/rohankulkarni/demand-forecasting\n\nSKILLS\nLanguages: Python, SQL, R.\nFrameworks, platforms, and tools: Python, SQL, R, Pandas, NumPy, Scikit-learn, XGBoost, LightGBM, SHAP, Statsmodels, Jupyter, Power BI, MySQL, PostgreSQL, Git.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nGoogle Advanced Data Analytics Professional Certificate; Microsoft Power BI Data Analyst\n\nLINKS\nhttps://github.com/rohankulkarni",
+    "output": {
+      "name": "Rohan Kulkarni",
+      "email": "rohan.kulkarni.ds@gmail.com",
+      "phone": [
+        "+91 91234 77881"
+      ],
+      "location": "Hyderabad, Telangana, India",
+      "summary": "Data scientist experienced in supervised learning, experimentation, feature engineering, and business analytics.",
+      "education": [
+        {
+          "degree": "MSc Data Science",
+          "institution": "University of Hyderabad",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BSc Statistics",
+          "institution": "Fergusson College, Pune",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Science Intern",
+          "company": "FinSight Analytics",
+          "start_date": "Jun 2024",
+          "end_date": "Aug 2024",
+          "description": "Prepared customer-level datasets from transactional and CRM sources, engineered behavioral features, trained classification models, and automated recurring reports with Python and SQL."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Credit Risk Modelling Framework",
+          "description": "Built a credit default prediction workflow covering data quality checks, missing-value treatment, target encoding, feature selection, calibration, and SHAP explanations.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "SQL"
+          ],
+          "link": "https://github.com/rohankulkarni/credit-risk"
+        },
+        {
+          "name": "Retail Demand Forecasting",
+          "description": "Forecasted weekly SKU demand using sales, promotions, holidays, and price features; compared statistical and gradient-boosting models with rolling validation.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "LightGBM",
+            "Statsmodels",
+            "Matplotlib"
+          ],
+          "link": "https://github.com/rohankulkarni/demand-forecasting"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "R",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "SHAP",
+        "Statsmodels",
+        "Jupyter",
+        "Power BI",
+        "MySQL",
+        "PostgreSQL",
+        "Git"
+      ],
+      "certifications": [
+        "Google Advanced Data Analytics Professional Certificate",
+        "Microsoft Power BI Data Analyst"
+      ],
+      "links": [
+        "https://github.com/rohankulkarni"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Nandini Shah\nnandini.shah@proton.me | Phone: not listed | Ahmedabad, Gujarat, India\n\nOBJECTIVE / SUMMARY\nDevOps and cloud engineering graduate specializing in infrastructure automation, container orchestration, observability, and CI/CD. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | Nirma University | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Cloud Engineering Intern | BlueGrid Technologies | Feb 2024 – May 2024\n  Supported AWS infrastructure, wrote Terraform modules, containerized services with Docker, improved GitHub Actions workflows, and added CloudWatch alerts and operational runbooks.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- KubeDeploy\n  • Designed Kubernetes deployment infrastructure for a multi-service application with Helm charts, probes, autoscaling, ingress, and automated deployment.\n  • Stack: Kubernetes, Docker, Helm, GitHub Actions, AWS EKS, Terraform\n  • Repository: https://github.com/nandinishah/kubedeploy\n- Observability Stack\n  • Built a local observability environment with metrics, logs, dashboards, and alert rules for CPU, memory, latency, and availability.\n  • Stack: Prometheus, Grafana, Loki, Docker Compose, Linux\n  • Repository: Not provided\n\nSKILLS\nLanguages: Python, Bash, Go.\nFrameworks, platforms, and tools: Python, Bash, Go, Linux, Docker, Kubernetes, Terraform, Helm, AWS, GitHub Actions, Prometheus, Grafana, Nginx, PostgreSQL.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nHashiCorp Certified: Terraform Associate; AWS Certified Solutions Architect – Associate\n\nLINKS\nhttps://github.com/nandinishah | https://www.linkedin.com/in/nandinishah",
+    "output": {
+      "name": "Nandini Shah",
+      "email": "nandini.shah@proton.me",
+      "phone": [],
+      "location": "Ahmedabad, Gujarat, India",
+      "summary": "DevOps and cloud engineering graduate specializing in infrastructure automation, container orchestration, observability, and CI/CD.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Nirma University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Cloud Engineering Intern",
+          "company": "BlueGrid Technologies",
+          "start_date": "Feb 2024",
+          "end_date": "May 2024",
+          "description": "Supported AWS infrastructure, wrote Terraform modules, containerized services with Docker, improved GitHub Actions workflows, and added CloudWatch alerts and operational runbooks."
+        }
+      ],
+      "projects": [
+        {
+          "name": "KubeDeploy",
+          "description": "Designed Kubernetes deployment infrastructure for a multi-service application with Helm charts, probes, autoscaling, ingress, and automated deployment.",
+          "technologies": [
+            "Kubernetes",
+            "Docker",
+            "Helm",
+            "GitHub Actions",
+            "AWS EKS",
+            "Terraform"
+          ],
+          "link": "https://github.com/nandinishah/kubedeploy"
+        },
+        {
+          "name": "Observability Stack",
+          "description": "Built a local observability environment with metrics, logs, dashboards, and alert rules for CPU, memory, latency, and availability.",
+          "technologies": [
+            "Prometheus",
+            "Grafana",
+            "Loki",
+            "Docker Compose",
+            "Linux"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "Bash",
+        "Go",
+        "Linux",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Helm",
+        "AWS",
+        "GitHub Actions",
+        "Prometheus",
+        "Grafana",
+        "Nginx",
+        "PostgreSQL"
+      ],
+      "certifications": [
+        "HashiCorp Certified: Terraform Associate",
+        "AWS Certified Solutions Architect – Associate"
+      ],
+      "links": [
+        "https://github.com/nandinishah",
+        "https://www.linkedin.com/in/nandinishah"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Kabir Sethi\nkabir.sethi@icloud.com | +91 98111 67220 | New Delhi, India\n\nOBJECTIVE / SUMMARY\nMachine learning engineer experienced in deep learning, computer vision, model optimization, and inference deployment. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MTech Artificial Intelligence | Indian Institute of Technology Delhi | 2024 – 2026\n- BTech Electronics and Communication Engineering | Delhi Technological University | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Machine Learning Intern | VisionForge AI | May 2025 – Jul 2025\n  Trained and evaluated vision models for industrial defect detection, built preprocessing pipelines, analyzed class imbalance, tracked experiments, and optimized inference with ONNX Runtime.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- DocVision — Intelligent Document Extraction\n  • Developed document processing that detects page regions, classifies document types, and extracts invoice fields by combining detection, OCR, and confidence-based validation.\n  • Stack: Python, PyTorch, OpenCV, YOLO, Tesseract, FastAPI, ONNX Runtime\n  • Repository: https://github.com/kabirsethi/docvision\n- Image Search with CLIP\n  • Implemented semantic image retrieval using CLIP embeddings and approximate nearest-neighbor search, exposed through a lightweight API.\n  • Stack: Python, PyTorch, CLIP, FAISS, FastAPI\n  • Repository: https://github.com/kabirsethi/clip-search\n\nSKILLS\nLanguages: Python, C++.\nFrameworks, platforms, and tools: Python, C++, PyTorch, TensorFlow, OpenCV, YOLO, Transformers, CLIP, ONNX Runtime, FastAPI, FAISS, Docker, CUDA, PostgreSQL.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nDeepLearning.AI Machine Learning Specialization\n\nLINKS\nhttps://github.com/kabirsethi | https://kabirsethi.dev",
+    "output": {
+      "name": "Kabir Sethi",
+      "email": "kabir.sethi@icloud.com",
+      "phone": [
+        "+91 98111 67220"
+      ],
+      "location": "New Delhi, India",
+      "summary": "Machine learning engineer experienced in deep learning, computer vision, model optimization, and inference deployment.",
+      "education": [
+        {
+          "degree": "MTech Artificial Intelligence",
+          "institution": "Indian Institute of Technology Delhi",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Electronics and Communication Engineering",
+          "institution": "Delhi Technological University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Intern",
+          "company": "VisionForge AI",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Trained and evaluated vision models for industrial defect detection, built preprocessing pipelines, analyzed class imbalance, tracked experiments, and optimized inference with ONNX Runtime."
+        }
+      ],
+      "projects": [
+        {
+          "name": "DocVision — Intelligent Document Extraction",
+          "description": "Developed document processing that detects page regions, classifies document types, and extracts invoice fields by combining detection, OCR, and confidence-based validation.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "YOLO",
+            "Tesseract",
+            "FastAPI",
+            "ONNX Runtime"
+          ],
+          "link": "https://github.com/kabirsethi/docvision"
+        },
+        {
+          "name": "Image Search with CLIP",
+          "description": "Implemented semantic image retrieval using CLIP embeddings and approximate nearest-neighbor search, exposed through a lightweight API.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "CLIP",
+            "FAISS",
+            "FastAPI"
+          ],
+          "link": "https://github.com/kabirsethi/clip-search"
+        }
+      ],
+      "skills": [
+        "Python",
+        "C++",
+        "PyTorch",
+        "TensorFlow",
+        "OpenCV",
+        "YOLO",
+        "Transformers",
+        "CLIP",
+        "ONNX Runtime",
+        "FastAPI",
+        "FAISS",
+        "Docker",
+        "CUDA",
+        "PostgreSQL"
+      ],
+      "certifications": [
+        "DeepLearning.AI Machine Learning Specialization"
+      ],
+      "links": [
+        "https://github.com/kabirsethi",
+        "https://kabirsethi.dev"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Meera Iyer\nEmail: not listed | +91 90031 22418 | Chennai, Tamil Nadu, India\n\nOBJECTIVE / SUMMARY\nMSc student specializing in NLP, information retrieval, and generative AI with an interest in evaluation-driven RAG systems. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Artificial Intelligence | IIT Madras | 2024 – 2026\n- BSc Computer Science | Loyola College, Chennai | 2021 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- NLP Research Intern | LexiCore Research | Jun 2025 – Aug 2025\n  Experimented with transformer-based text classification and retrieval models for legal documents. Created annotation guidelines, evaluated precision and recall, and implemented preprocessing utilities.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- Continuous-RAG Enterprise Retrieval\n  • Built a continuously updated retrieval pipeline with document versioning, metadata-aware chunking, embedding refresh jobs, hybrid retrieval, reranking, and citations.\n  • Stack: Python, LlamaIndex, Elasticsearch, Sentence Transformers, FastAPI, Docker\n  • Repository: https://github.com/meera-iyer/continuous-rag\n- Multilingual Support Assistant\n  • Created a multilingual support assistant for English, Hindi, and Tamil queries with language detection, retrieval routing, evaluation, and low-confidence fallbacks.\n  • Stack: Python, Transformers, LangChain, FAISS, FastAPI, Streamlit\n  • Repository: Not provided\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, NLP, Transformers, PyTorch, Hugging Face, LlamaIndex, LangChain, RAG, Elasticsearch, FAISS, FastAPI, Docker, PostgreSQL.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nHugging Face NLP Course\n\nLINKS\nhttps://github.com/meera-iyer",
+    "output": {
+      "name": "Meera Iyer",
+      "email": null,
+      "phone": [
+        "+91 90031 22418"
+      ],
+      "location": "Chennai, Tamil Nadu, India",
+      "summary": "MSc student specializing in NLP, information retrieval, and generative AI with an interest in evaluation-driven RAG systems.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence",
+          "institution": "IIT Madras",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "Loyola College, Chennai",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "NLP Research Intern",
+          "company": "LexiCore Research",
+          "start_date": "Jun 2025",
+          "end_date": "Aug 2025",
+          "description": "Experimented with transformer-based text classification and retrieval models for legal documents. Created annotation guidelines, evaluated precision and recall, and implemented preprocessing utilities."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Continuous-RAG Enterprise Retrieval",
+          "description": "Built a continuously updated retrieval pipeline with document versioning, metadata-aware chunking, embedding refresh jobs, hybrid retrieval, reranking, and citations.",
+          "technologies": [
+            "Python",
+            "LlamaIndex",
+            "Elasticsearch",
+            "Sentence Transformers",
+            "FastAPI",
+            "Docker"
+          ],
+          "link": "https://github.com/meera-iyer/continuous-rag"
+        },
+        {
+          "name": "Multilingual Support Assistant",
+          "description": "Created a multilingual support assistant for English, Hindi, and Tamil queries with language detection, retrieval routing, evaluation, and low-confidence fallbacks.",
+          "technologies": [
+            "Python",
+            "Transformers",
+            "LangChain",
+            "FAISS",
+            "FastAPI",
+            "Streamlit"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "NLP",
+        "Transformers",
+        "PyTorch",
+        "Hugging Face",
+        "LlamaIndex",
+        "LangChain",
+        "RAG",
+        "Elasticsearch",
+        "FAISS",
+        "FastAPI",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "certifications": [
+        "Hugging Face NLP Course"
+      ],
+      "links": [
+        "https://github.com/meera-iyer"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Arjun Menon\narjun.menon@fastmail.com | +91 94470 11829 | Kochi, Kerala, India\n\nOBJECTIVE / SUMMARY\nBackend engineer focused on distributed systems, event-driven architectures, API reliability, and data-intensive applications. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | National Institute of Technology Calicut | 2019 – 2023\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Backend Engineer | DataRelay Systems | Aug 2023 – Present\n  Develop backend services for high-volume data workflows. Designed Kafka consumers, implemented idempotent processing, optimized PostgreSQL queries, and introduced structured logging and service-level metrics.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- StreamPulse\n  • Built a real-time event pipeline that ingests Kafka events, validates schemas, enriches messages, and writes analytical records to PostgreSQL with retry and dead-letter handling.\n  • Stack: Python, Apache Kafka, FastAPI, PostgreSQL, Redis, Docker\n  • Repository: https://github.com/arjunmenon/streampulse\n- Distributed URL Shortener\n  • Designed a scalable URL shortening service with Redis caching, PostgreSQL persistence, rate limiting, and asynchronous analytics aggregation.\n  • Stack: Java, Spring Boot, Redis, PostgreSQL, Docker, Nginx\n  • Repository: https://github.com/arjunmenon/url-shortener\n\nSKILLS\nLanguages: Python, Java, SQL.\nFrameworks, platforms, and tools: Python, Java, SQL, FastAPI, Spring Boot, Apache Kafka, Redis, PostgreSQL, Docker, Kubernetes, AWS, Git, Linux, REST APIs.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nConfluent Fundamentals Accreditation\n\nLINKS\nhttps://github.com/arjunmenon | https://www.linkedin.com/in/arjunmenon",
+    "output": {
+      "name": "Arjun Menon",
+      "email": "arjun.menon@fastmail.com",
+      "phone": [
+        "+91 94470 11829"
+      ],
+      "location": "Kochi, Kerala, India",
+      "summary": "Backend engineer focused on distributed systems, event-driven architectures, API reliability, and data-intensive applications.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "National Institute of Technology Calicut",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Backend Engineer",
+          "company": "DataRelay Systems",
+          "start_date": "Aug 2023",
+          "end_date": "Present",
+          "description": "Develop backend services for high-volume data workflows. Designed Kafka consumers, implemented idempotent processing, optimized PostgreSQL queries, and introduced structured logging and service-level metrics."
+        }
+      ],
+      "projects": [
+        {
+          "name": "StreamPulse",
+          "description": "Built a real-time event pipeline that ingests Kafka events, validates schemas, enriches messages, and writes analytical records to PostgreSQL with retry and dead-letter handling.",
+          "technologies": [
+            "Python",
+            "Apache Kafka",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+          ],
+          "link": "https://github.com/arjunmenon/streampulse"
+        },
+        {
+          "name": "Distributed URL Shortener",
+          "description": "Designed a scalable URL shortening service with Redis caching, PostgreSQL persistence, rate limiting, and asynchronous analytics aggregation.",
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "Redis",
+            "PostgreSQL",
+            "Docker",
+            "Nginx"
+          ],
+          "link": "https://github.com/arjunmenon/url-shortener"
+        }
+      ],
+      "skills": [
+        "Python",
+        "Java",
+        "SQL",
+        "FastAPI",
+        "Spring Boot",
+        "Apache Kafka",
+        "Redis",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Git",
+        "Linux",
+        "REST APIs"
+      ],
+      "certifications": [
+        "Confluent Fundamentals Accreditation"
+      ],
+      "links": [
+        "https://github.com/arjunmenon",
+        "https://www.linkedin.com/in/arjunmenon"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sanya Kapoor\nsanya.kapoor.ds@gmail.com | +91 98700 55641 | Mumbai, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nData engineering graduate skilled in batch and streaming pipelines, distributed processing, cloud storage, orchestration, and analytics. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Data Engineering | NMIMS University, Mumbai | 2024 – 2026\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Data Engineering Intern | MarketLens | Jan 2026 – Jun 2026\n  Developed ETL workflows for marketing and transaction data using Python, Spark, and cloud object storage. Added data quality checks, partitioning strategies, and Airflow scheduling.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- StreamLake — Real-Time Stock Market Data Streaming\n  • Created an end-to-end pipeline publishing stock records to Kafka, landing raw data in S3, transforming with AWS Glue and Spark, storing curated Parquet, and enabling Athena analytics.\n  • Stack: Apache Kafka, Python, AWS S3, AWS Glue, Apache Spark, Amazon Athena, Parquet, EC2\n  • Repository: https://github.com/sanyakapoor/streamlake\n- Airflow Data Quality Platform\n  • Built scheduled ingestion workflows with retries, dependency management, schema checks, null-rate validation, and failure notifications.\n  • Stack: Apache Airflow, Python, PostgreSQL, Docker, Great Expectations\n  • Repository: https://github.com/sanyakapoor/airflow-quality\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, PySpark, Apache Spark, Apache Kafka, Airflow, AWS S3, AWS Glue, Amazon Athena, Hadoop, Parquet, Docker, PostgreSQL, MySQL, Git.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nAWS Certified Data Engineer – Associate\n\nLINKS\nhttps://github.com/sanyakapoor | https://www.linkedin.com/in/sanyakapoor",
+    "output": {
+      "name": "Sanya Kapoor",
+      "email": "sanya.kapoor.ds@gmail.com",
+      "phone": [
+        "+91 98700 55641"
+      ],
+      "location": "Mumbai, Maharashtra, India",
+      "summary": "Data engineering graduate skilled in batch and streaming pipelines, distributed processing, cloud storage, orchestration, and analytics.",
+      "education": [
+        {
+          "degree": "MSc Data Engineering",
+          "institution": "NMIMS University, Mumbai",
+          "start_date": "2024",
+          "end_date": "2026"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Engineering Intern",
+          "company": "MarketLens",
+          "start_date": "Jan 2026",
+          "end_date": "Jun 2026",
+          "description": "Developed ETL workflows for marketing and transaction data using Python, Spark, and cloud object storage. Added data quality checks, partitioning strategies, and Airflow scheduling."
+        }
+      ],
+      "projects": [
+        {
+          "name": "StreamLake — Real-Time Stock Market Data Streaming",
+          "description": "Created an end-to-end pipeline publishing stock records to Kafka, landing raw data in S3, transforming with AWS Glue and Spark, storing curated Parquet, and enabling Athena analytics.",
+          "technologies": [
+            "Apache Kafka",
+            "Python",
+            "AWS S3",
+            "AWS Glue",
+            "Apache Spark",
+            "Amazon Athena",
+            "Parquet",
+            "EC2"
+          ],
+          "link": "https://github.com/sanyakapoor/streamlake"
+        },
+        {
+          "name": "Airflow Data Quality Platform",
+          "description": "Built scheduled ingestion workflows with retries, dependency management, schema checks, null-rate validation, and failure notifications.",
+          "technologies": [
+            "Apache Airflow",
+            "Python",
+            "PostgreSQL",
+            "Docker",
+            "Great Expectations"
+          ],
+          "link": "https://github.com/sanyakapoor/airflow-quality"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Apache Spark",
+        "Apache Kafka",
+        "Airflow",
+        "AWS S3",
+        "AWS Glue",
+        "Amazon Athena",
+        "Hadoop",
+        "Parquet",
+        "Docker",
+        "PostgreSQL",
+        "MySQL",
+        "Git"
+      ],
+      "certifications": [
+        "AWS Certified Data Engineer – Associate"
+      ],
+      "links": [
+        "https://github.com/sanyakapoor",
+        "https://www.linkedin.com/in/sanyakapoor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Vikram Joshi\nvikram.joshi@protonmail.com | Phone: not listed | Jaipur, Rajasthan, India\n\nOBJECTIVE / SUMMARY\nFrontend-focused engineer building accessible responsive interfaces with React and TypeScript, with experience in design systems and testing. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Information Technology | Malaviya National Institute of Technology Jaipur | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Frontend Developer | Northstar Commerce | Jul 2024 – Present\n  Build storefront and internal operations interfaces. Developed reusable component patterns, improved Core Web Vitals, added Playwright regression tests, and collaborated with UX designers on accessibility.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- ShopSphere\n  • Built a responsive e-commerce frontend with filtering, search, cart persistence, checkout state management, accessible modals, automated browser tests, and API mocking.\n  • Stack: React, TypeScript, Vite, Redux Toolkit, Playwright, Tailwind CSS\n  • Repository: https://github.com/vikramjoshi/shopsphere\n- Design System Starter\n  • Created a reusable UI component library with typography, buttons, forms, tables, dialogs, documentation, versioned packages, and visual regression checks.\n  • Stack: React, TypeScript, Storybook, Vite, CSS, Chromatic\n  • Repository: https://github.com/vikramjoshi/design-system\n\nSKILLS\nLanguages: TypeScript, JavaScript.\nFrameworks, platforms, and tools: TypeScript, JavaScript, React, Redux Toolkit, Next.js, Vite, Tailwind CSS, Storybook, Playwright, Jest, GraphQL, REST APIs, Git, Figma.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nMeta Front-End Developer Professional Certificate\n\nLINKS\nhttps://github.com/vikramjoshi",
+    "output": {
+      "name": "Vikram Joshi",
+      "email": "vikram.joshi@protonmail.com",
+      "phone": [],
+      "location": "Jaipur, Rajasthan, India",
+      "summary": "Frontend-focused engineer building accessible responsive interfaces with React and TypeScript, with experience in design systems and testing.",
+      "education": [
+        {
+          "degree": "BTech Information Technology",
+          "institution": "Malaviya National Institute of Technology Jaipur",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "company": "Northstar Commerce",
+          "start_date": "Jul 2024",
+          "end_date": "Present",
+          "description": "Build storefront and internal operations interfaces. Developed reusable component patterns, improved Core Web Vitals, added Playwright regression tests, and collaborated with UX designers on accessibility."
+        }
+      ],
+      "projects": [
+        {
+          "name": "ShopSphere",
+          "description": "Built a responsive e-commerce frontend with filtering, search, cart persistence, checkout state management, accessible modals, automated browser tests, and API mocking.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Redux Toolkit",
+            "Playwright",
+            "Tailwind CSS"
+          ],
+          "link": "https://github.com/vikramjoshi/shopsphere"
+        },
+        {
+          "name": "Design System Starter",
+          "description": "Created a reusable UI component library with typography, buttons, forms, tables, dialogs, documentation, versioned packages, and visual regression checks.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Storybook",
+            "Vite",
+            "CSS",
+            "Chromatic"
+          ],
+          "link": "https://github.com/vikramjoshi/design-system"
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Redux Toolkit",
+        "Next.js",
+        "Vite",
+        "Tailwind CSS",
+        "Storybook",
+        "Playwright",
+        "Jest",
+        "GraphQL",
+        "REST APIs",
+        "Git",
+        "Figma"
+      ],
+      "certifications": [
+        "Meta Front-End Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/vikramjoshi"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Priya Nair\npriya.nair@outlook.com | +91 98950 34012 | Thiruvananthapuram, Kerala, India\n\nOBJECTIVE / SUMMARY\nCloud and platform engineering student with practical experience in Linux administration, containerization, infrastructure as code, and automated deployment. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MTech Computer Science | University of Kerala | 2024 – 2026\n- BTech Computer Science and Engineering | College of Engineering Trivandrum | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Platform Engineering Intern | SecureScale Networks | May 2025 – Jul 2025\n  Automated environment provisioning using Terraform and AWS, containerized services, improved CI checks, and created shell utilities for deployment diagnostics and log collection.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- CloudLaunch\n  • Implemented reusable infrastructure for a three-tier AWS web application including VPC networking, IAM, load balancing, autoscaling, managed databases, and remote state.\n  • Stack: Terraform, AWS, EC2, RDS, VPC, IAM, Application Load Balancer\n  • Repository: https://github.com/priyanair/cloudlaunch\n- Secure CI Pipeline\n  • Created GitHub Actions workflows with dependency scanning, secret detection, container image scanning, unit tests, and deployment gates.\n  • Stack: GitHub Actions, Docker, Trivy, Python, Bash\n  • Repository: Not provided\n\nSKILLS\nLanguages: Python, Bash.\nFrameworks, platforms, and tools: Python, Bash, Linux, AWS, Terraform, Docker, Kubernetes, GitHub Actions, Ansible, Nginx, PostgreSQL, CI/CD, Cloud Security.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nAWS Certified Solutions Architect – Associate; Linux Foundation Introduction to Linux\n\nLINKS\nhttps://github.com/priyanair | https://www.linkedin.com/in/priyanair",
+    "output": {
+      "name": "Priya Nair",
+      "email": "priya.nair@outlook.com",
+      "phone": [
+        "+91 98950 34012"
+      ],
+      "location": "Thiruvananthapuram, Kerala, India",
+      "summary": "Cloud and platform engineering student with practical experience in Linux administration, containerization, infrastructure as code, and automated deployment.",
+      "education": [
+        {
+          "degree": "MTech Computer Science",
+          "institution": "University of Kerala",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "College of Engineering Trivandrum",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineering Intern",
+          "company": "SecureScale Networks",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Automated environment provisioning using Terraform and AWS, containerized services, improved CI checks, and created shell utilities for deployment diagnostics and log collection."
+        }
+      ],
+      "projects": [
+        {
+          "name": "CloudLaunch",
+          "description": "Implemented reusable infrastructure for a three-tier AWS web application including VPC networking, IAM, load balancing, autoscaling, managed databases, and remote state.",
+          "technologies": [
+            "Terraform",
+            "AWS",
+            "EC2",
+            "RDS",
+            "VPC",
+            "IAM",
+            "Application Load Balancer"
+          ],
+          "link": "https://github.com/priyanair/cloudlaunch"
+        },
+        {
+          "name": "Secure CI Pipeline",
+          "description": "Created GitHub Actions workflows with dependency scanning, secret detection, container image scanning, unit tests, and deployment gates.",
+          "technologies": [
+            "GitHub Actions",
+            "Docker",
+            "Trivy",
+            "Python",
+            "Bash"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "Bash",
+        "Linux",
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "Ansible",
+        "Nginx",
+        "PostgreSQL",
+        "CI/CD",
+        "Cloud Security"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Associate",
+        "Linux Foundation Introduction to Linux"
+      ],
+      "links": [
+        "https://github.com/priyanair",
+        "https://www.linkedin.com/in/priyanair"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Dev Patel\ndev.patel.ai@gmail.com | +91 97654 18203 | Vadodara, Gujarat, India\n\nOBJECTIVE / SUMMARY\nAI engineer specializing in generative AI applications, evaluation pipelines, and model-serving APIs. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Artificial Intelligence and Data Science | DA-IICT, Gandhinagar | 2024 – 2026\n- BTech Information Technology | Nirma University | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Generative AI Intern | PromptWorks | Apr 2025 – Jul 2025\n  Built internal LLM applications for document summarization and question answering. Created evaluation datasets, prompt templates, retrieval experiments, API wrappers, and tracked hallucination and citation quality.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- PolicyPilot — RAG Assistant\n  • Developed a policy question-answering assistant with document ingestion, hybrid retrieval, reranking, source citations, and feedback capture.\n  • Stack: Python, LangChain, OpenAI API, Elasticsearch, FAISS, FastAPI, PostgreSQL\n  • Repository: https://github.com/devpatel/policypilot\n- LLM Evaluation Harness\n  • Built a reusable framework comparing language-model prompts and responses using exact match, semantic similarity, citation validation, latency measurement, and CSV reports.\n  • Stack: Python, Pandas, Pydantic, Transformers, Jupyter\n  • Repository: https://github.com/devpatel/llm-eval\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, PyTorch, Transformers, LangChain, RAG, Prompt Engineering, FastAPI, Pydantic, Elasticsearch, FAISS, PostgreSQL, Docker, Git.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nGoogle Cloud Generative AI Leader\n\nLINKS\nhttps://github.com/devpatel | https://www.linkedin.com/in/devpatel",
+    "output": {
+      "name": "Dev Patel",
+      "email": "dev.patel.ai@gmail.com",
+      "phone": [
+        "+91 97654 18203"
+      ],
+      "location": "Vadodara, Gujarat, India",
+      "summary": "AI engineer specializing in generative AI applications, evaluation pipelines, and model-serving APIs.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence and Data Science",
+          "institution": "DA-IICT, Gandhinagar",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Information Technology",
+          "institution": "Nirma University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Generative AI Intern",
+          "company": "PromptWorks",
+          "start_date": "Apr 2025",
+          "end_date": "Jul 2025",
+          "description": "Built internal LLM applications for document summarization and question answering. Created evaluation datasets, prompt templates, retrieval experiments, API wrappers, and tracked hallucination and citation quality."
+        }
+      ],
+      "projects": [
+        {
+          "name": "PolicyPilot — RAG Assistant",
+          "description": "Developed a policy question-answering assistant with document ingestion, hybrid retrieval, reranking, source citations, and feedback capture.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "OpenAI API",
+            "Elasticsearch",
+            "FAISS",
+            "FastAPI",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/devpatel/policypilot"
+        },
+        {
+          "name": "LLM Evaluation Harness",
+          "description": "Built a reusable framework comparing language-model prompts and responses using exact match, semantic similarity, citation validation, latency measurement, and CSV reports.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Pydantic",
+            "Transformers",
+            "Jupyter"
+          ],
+          "link": "https://github.com/devpatel/llm-eval"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "Transformers",
+        "LangChain",
+        "RAG",
+        "Prompt Engineering",
+        "FastAPI",
+        "Pydantic",
+        "Elasticsearch",
+        "FAISS",
+        "PostgreSQL",
+        "Docker",
+        "Git"
+      ],
+      "certifications": [
+        "Google Cloud Generative AI Leader"
+      ],
+      "links": [
+        "https://github.com/devpatel",
+        "https://www.linkedin.com/in/devpatel"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Ananya Bose\nananya.bose@fastmail.com | +91 98310 44217 | Kolkata, West Bengal, India\n\nOBJECTIVE / SUMMARY\nBusiness analytics and data science graduate combining statistical analysis, SQL, dashboarding, and machine learning. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Business Analytics | Indian Statistical Institute, Kolkata | 2023 – 2025\n- BCom Honours | St. Xavier's University, Kolkata | 2020 – 2023\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Business Analytics Intern | RetailOrbit | May 2024 – Jul 2024\n  Analyzed customer and transaction data to identify retention patterns and sales drivers. Built SQL datasets, automated Python reporting, and created Power BI dashboards for category managers.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- Customer Retention ML System\n  • Combined cohort analysis with churn prediction to identify at-risk segments and translate model outputs into targeted retention recommendations.\n  • Stack: Python, SQL, Pandas, Scikit-learn, XGBoost, Power BI\n  • Repository: https://github.com/ananyabose/customer-retention\n- Marketing Funnel Analytics\n  • Created a dashboard tracking acquisition, activation, conversion, and repeat purchase metrics with cohort views and SQL-based metric definitions.\n  • Stack: SQL, PostgreSQL, Power BI, DAX, Python\n  • Repository: https://github.com/ananyabose/funnel-analytics\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, Excel, Power BI, DAX, Pandas, NumPy, Scikit-learn, XGBoost, PostgreSQL, MySQL, Statistics, Data Visualization.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nMicrosoft Power BI Data Analyst Associate\n\nLINKS\nhttps://github.com/ananyabose | https://www.linkedin.com/in/ananyabose",
+    "output": {
+      "name": "Ananya Bose",
+      "email": "ananya.bose@fastmail.com",
+      "phone": [
+        "+91 98310 44217"
+      ],
+      "location": "Kolkata, West Bengal, India",
+      "summary": "Business analytics and data science graduate combining statistical analysis, SQL, dashboarding, and machine learning.",
+      "education": [
+        {
+          "degree": "MSc Business Analytics",
+          "institution": "Indian Statistical Institute, Kolkata",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BCom Honours",
+          "institution": "St. Xavier's University, Kolkata",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Business Analytics Intern",
+          "company": "RetailOrbit",
+          "start_date": "May 2024",
+          "end_date": "Jul 2024",
+          "description": "Analyzed customer and transaction data to identify retention patterns and sales drivers. Built SQL datasets, automated Python reporting, and created Power BI dashboards for category managers."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Customer Retention ML System",
+          "description": "Combined cohort analysis with churn prediction to identify at-risk segments and translate model outputs into targeted retention recommendations.",
+          "technologies": [
+            "Python",
+            "SQL",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "Power BI"
+          ],
+          "link": "https://github.com/ananyabose/customer-retention"
+        },
+        {
+          "name": "Marketing Funnel Analytics",
+          "description": "Created a dashboard tracking acquisition, activation, conversion, and repeat purchase metrics with cohort views and SQL-based metric definitions.",
+          "technologies": [
+            "SQL",
+            "PostgreSQL",
+            "Power BI",
+            "DAX",
+            "Python"
+          ],
+          "link": "https://github.com/ananyabose/funnel-analytics"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI",
+        "DAX",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "PostgreSQL",
+        "MySQL",
+        "Statistics",
+        "Data Visualization"
+      ],
+      "certifications": [
+        "Microsoft Power BI Data Analyst Associate"
+      ],
+      "links": [
+        "https://github.com/ananyabose",
+        "https://www.linkedin.com/in/ananyabose"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Rahul Verma\nrahul.verma@pm.me | +91 87001 34982 | Noida, Uttar Pradesh, India\n\nOBJECTIVE / SUMMARY\nJava backend developer experienced in Spring Boot, relational databases, microservices, messaging, and automated testing. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | Jaypee Institute of Information Technology | 2019 – 2023\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Software Engineer | FinServe Digital | Aug 2023 – Present\n  Develop microservices for payment and account workflows using Java and Spring Boot. Implemented idempotency controls, migrations, Kafka events, integration tests, and operational dashboards.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- LedgerCore\n  • Designed a transactional ledger service supporting double-entry accounting, idempotent posting, balance reconciliation, and audit history.\n  • Stack: Java, Spring Boot, PostgreSQL, Kafka, JUnit, Docker\n  • Repository: https://github.com/rahulverma/ledgercore\n- Service Health Gateway\n  • Built a gateway aggregating health signals from internal services with timeout handling, retries, structured tracing, and an operational dashboard.\n  • Stack: Java, Spring Boot, Redis, Prometheus, Grafana\n  • Repository: Not provided\n\nSKILLS\nLanguages: Java, SQL.\nFrameworks, platforms, and tools: Java, SQL, Spring Boot, Spring Security, Hibernate, REST APIs, Apache Kafka, PostgreSQL, Redis, Docker, Kubernetes, JUnit, Maven, Git.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nOracle Certified Professional: Java SE 17 Developer\n\nLINKS\nhttps://github.com/rahulverma | https://www.linkedin.com/in/rahulverma",
+    "output": {
+      "name": "Rahul Verma",
+      "email": "rahul.verma@pm.me",
+      "phone": [
+        "+91 87001 34982"
+      ],
+      "location": "Noida, Uttar Pradesh, India",
+      "summary": "Java backend developer experienced in Spring Boot, relational databases, microservices, messaging, and automated testing.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Jaypee Institute of Information Technology",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Engineer",
+          "company": "FinServe Digital",
+          "start_date": "Aug 2023",
+          "end_date": "Present",
+          "description": "Develop microservices for payment and account workflows using Java and Spring Boot. Implemented idempotency controls, migrations, Kafka events, integration tests, and operational dashboards."
+        }
+      ],
+      "projects": [
+        {
+          "name": "LedgerCore",
+          "description": "Designed a transactional ledger service supporting double-entry accounting, idempotent posting, balance reconciliation, and audit history.",
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "PostgreSQL",
+            "Kafka",
+            "JUnit",
+            "Docker"
+          ],
+          "link": "https://github.com/rahulverma/ledgercore"
+        },
+        {
+          "name": "Service Health Gateway",
+          "description": "Built a gateway aggregating health signals from internal services with timeout handling, retries, structured tracing, and an operational dashboard.",
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "Redis",
+            "Prometheus",
+            "Grafana"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring Boot",
+        "Spring Security",
+        "Hibernate",
+        "REST APIs",
+        "Apache Kafka",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Kubernetes",
+        "JUnit",
+        "Maven",
+        "Git"
+      ],
+      "certifications": [
+        "Oracle Certified Professional: Java SE 17 Developer"
+      ],
+      "links": [
+        "https://github.com/rahulverma",
+        "https://www.linkedin.com/in/rahulverma"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Zoya Khan\nzoya.khan@protonmail.com | +91 98198 77120 | Mumbai, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nComputer science graduate interested in cybersecurity engineering, security automation, application security, and network monitoring. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | VJTI, Mumbai | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Security Engineering Intern | ShieldOps | Jun 2024 – Aug 2024\n  Assisted with vulnerability triage, log analysis, and automation scripts. Built Python utilities for normalizing scanner findings and generating prioritized remediation reports.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- VulnLens\n  • Created a vulnerability aggregation tool that normalizes severity fields, deduplicates findings, applies configurable risk scoring, and exports remediation summaries.\n  • Stack: Python, FastAPI, Pandas, SQLite, Docker\n  • Repository: https://github.com/zoyakhan/vulnlens\n- Network Watcher\n  • Built a passive network monitoring dashboard for a controlled lab environment, parsing flow records and surfacing unusual port and connection patterns.\n  • Stack: Python, Scapy, Streamlit, Pandas, SQLite\n  • Repository: https://github.com/zoyakhan/network-watcher\n\nSKILLS\nLanguages: Python, Bash, SQL.\nFrameworks, platforms, and tools: Python, Bash, SQL, Linux, Networking, FastAPI, Pandas, Docker, Git, SQLite, Prometheus, Wireshark, Scapy, OWASP.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nCompTIA Security+; Google Cybersecurity Professional Certificate\n\nLINKS\nhttps://github.com/zoyakhan | https://www.linkedin.com/in/zoyakhan",
+    "output": {
+      "name": "Zoya Khan",
+      "email": "zoya.khan@protonmail.com",
+      "phone": [
+        "+91 98198 77120"
+      ],
+      "location": "Mumbai, Maharashtra, India",
+      "summary": "Computer science graduate interested in cybersecurity engineering, security automation, application security, and network monitoring.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "VJTI, Mumbai",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Security Engineering Intern",
+          "company": "ShieldOps",
+          "start_date": "Jun 2024",
+          "end_date": "Aug 2024",
+          "description": "Assisted with vulnerability triage, log analysis, and automation scripts. Built Python utilities for normalizing scanner findings and generating prioritized remediation reports."
+        }
+      ],
+      "projects": [
+        {
+          "name": "VulnLens",
+          "description": "Created a vulnerability aggregation tool that normalizes severity fields, deduplicates findings, applies configurable risk scoring, and exports remediation summaries.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "Pandas",
+            "SQLite",
+            "Docker"
+          ],
+          "link": "https://github.com/zoyakhan/vulnlens"
+        },
+        {
+          "name": "Network Watcher",
+          "description": "Built a passive network monitoring dashboard for a controlled lab environment, parsing flow records and surfacing unusual port and connection patterns.",
+          "technologies": [
+            "Python",
+            "Scapy",
+            "Streamlit",
+            "Pandas",
+            "SQLite"
+          ],
+          "link": "https://github.com/zoyakhan/network-watcher"
+        }
+      ],
+      "skills": [
+        "Python",
+        "Bash",
+        "SQL",
+        "Linux",
+        "Networking",
+        "FastAPI",
+        "Pandas",
+        "Docker",
+        "Git",
+        "SQLite",
+        "Prometheus",
+        "Wireshark",
+        "Scapy",
+        "OWASP"
+      ],
+      "certifications": [
+        "CompTIA Security+",
+        "Google Cybersecurity Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/zoyakhan",
+        "https://www.linkedin.com/in/zoyakhan"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Karthik Srinivasan\nkarthik.srinivasan@gmail.com | +91 98408 55176 | Coimbatore, Tamil Nadu, India\n\nOBJECTIVE / SUMMARY\nData analyst with strong SQL, Python, visualization, and business reporting skills. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Data Analytics | Amrita Vishwa Vidyapeetham | 2023 – 2025\n- BSc Mathematics | PSG College of Arts and Science | 2020 – 2023\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Data Analyst Intern | OpsMetric | Feb 2025 – May 2025\n  Created SQL models for operational reporting, automated weekly KPI extraction with Python, investigated metric anomalies, and delivered Power BI dashboards for support leadership.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- SupportPulse Analytics\n  • Analyzed support tickets by channel, category, SLA, resolution time, and customer segment. Built a star-schema reporting layer and interactive dashboard.\n  • Stack: SQL, PostgreSQL, Python, Pandas, Power BI, DAX\n  • Repository: https://github.com/karthiks/supportpulse\n- Sales Territory Insights\n  • Built territory performance analysis combining revenue, margin, target attainment, and customer concentration with parameterized SQL and executive dashboards.\n  • Stack: SQL, Power BI, Python, Excel\n  • Repository: Not provided\n\nSKILLS\nLanguages: SQL, Python.\nFrameworks, platforms, and tools: SQL, Python, Pandas, NumPy, Power BI, DAX, Excel, PostgreSQL, MySQL, Data Visualization, Statistics, Git.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nGoogle Data Analytics Professional Certificate\n\nLINKS\nhttps://github.com/karthiks",
+    "output": {
+      "name": "Karthik Srinivasan",
+      "email": "karthik.srinivasan@gmail.com",
+      "phone": [
+        "+91 98408 55176"
+      ],
+      "location": "Coimbatore, Tamil Nadu, India",
+      "summary": "Data analyst with strong SQL, Python, visualization, and business reporting skills.",
+      "education": [
+        {
+          "degree": "MSc Data Analytics",
+          "institution": "Amrita Vishwa Vidyapeetham",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BSc Mathematics",
+          "institution": "PSG College of Arts and Science",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Analyst Intern",
+          "company": "OpsMetric",
+          "start_date": "Feb 2025",
+          "end_date": "May 2025",
+          "description": "Created SQL models for operational reporting, automated weekly KPI extraction with Python, investigated metric anomalies, and delivered Power BI dashboards for support leadership."
+        }
+      ],
+      "projects": [
+        {
+          "name": "SupportPulse Analytics",
+          "description": "Analyzed support tickets by channel, category, SLA, resolution time, and customer segment. Built a star-schema reporting layer and interactive dashboard.",
+          "technologies": [
+            "SQL",
+            "PostgreSQL",
+            "Python",
+            "Pandas",
+            "Power BI",
+            "DAX"
+          ],
+          "link": "https://github.com/karthiks/supportpulse"
+        },
+        {
+          "name": "Sales Territory Insights",
+          "description": "Built territory performance analysis combining revenue, margin, target attainment, and customer concentration with parameterized SQL and executive dashboards.",
+          "technologies": [
+            "SQL",
+            "Power BI",
+            "Python",
+            "Excel"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "SQL",
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Power BI",
+        "DAX",
+        "Excel",
+        "PostgreSQL",
+        "MySQL",
+        "Data Visualization",
+        "Statistics",
+        "Git"
+      ],
+      "certifications": [
+        "Google Data Analytics Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/karthiks"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Elena D'Souza\nelena.dsouza@outlook.com | +91 99674 22091 | Goa, India\n\nOBJECTIVE / SUMMARY\nMobile application developer experienced in Flutter, Kotlin, Firebase, and REST APIs. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | Goa Engineering College | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Mobile Developer Intern | TravelNest Apps | Jan 2024 – Jun 2024\n  Developed Flutter screens for itinerary and booking workflows, integrated REST APIs, implemented local caching, fixed UI defects, and assisted with Play Store release preparation.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- TripMate\n  • Built a travel planning application with itinerary creation, expense splitting, offline persistence, map views, push notifications, Firebase authentication, and analytics events.\n  • Stack: Flutter, Dart, Firebase, Firestore, Google Maps SDK, REST APIs\n  • Repository: https://github.com/elenadsouza/tripmate\n- Campus Shuttle\n  • Created a campus shuttle tracking prototype with route display, estimated arrival updates, service alerts, low-connectivity support, and cached route data.\n  • Stack: Kotlin, Android SDK, Firebase, Room, Google Maps SDK\n  • Repository: https://github.com/elenadsouza/campus-shuttle\n\nSKILLS\nLanguages: Dart, Kotlin.\nFrameworks, platforms, and tools: Dart, Kotlin, Flutter, Android SDK, Firebase, Firestore, Room, REST APIs, Git, Figma, Google Maps SDK.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nGoogle Associate Android Developer\n\nLINKS\nhttps://github.com/elenadsouza | https://www.linkedin.com/in/elenadsouza",
+    "output": {
+      "name": "Elena D'Souza",
+      "email": "elena.dsouza@outlook.com",
+      "phone": [
+        "+91 99674 22091"
+      ],
+      "location": "Goa, India",
+      "summary": "Mobile application developer experienced in Flutter, Kotlin, Firebase, and REST APIs.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Goa Engineering College",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Mobile Developer Intern",
+          "company": "TravelNest Apps",
+          "start_date": "Jan 2024",
+          "end_date": "Jun 2024",
+          "description": "Developed Flutter screens for itinerary and booking workflows, integrated REST APIs, implemented local caching, fixed UI defects, and assisted with Play Store release preparation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "TripMate",
+          "description": "Built a travel planning application with itinerary creation, expense splitting, offline persistence, map views, push notifications, Firebase authentication, and analytics events.",
+          "technologies": [
+            "Flutter",
+            "Dart",
+            "Firebase",
+            "Firestore",
+            "Google Maps SDK",
+            "REST APIs"
+          ],
+          "link": "https://github.com/elenadsouza/tripmate"
+        },
+        {
+          "name": "Campus Shuttle",
+          "description": "Created a campus shuttle tracking prototype with route display, estimated arrival updates, service alerts, low-connectivity support, and cached route data.",
+          "technologies": [
+            "Kotlin",
+            "Android SDK",
+            "Firebase",
+            "Room",
+            "Google Maps SDK"
+          ],
+          "link": "https://github.com/elenadsouza/campus-shuttle"
+        }
+      ],
+      "skills": [
+        "Dart",
+        "Kotlin",
+        "Flutter",
+        "Android SDK",
+        "Firebase",
+        "Firestore",
+        "Room",
+        "REST APIs",
+        "Git",
+        "Figma",
+        "Google Maps SDK"
+      ],
+      "certifications": [
+        "Google Associate Android Developer"
+      ],
+      "links": [
+        "https://github.com/elenadsouza",
+        "https://www.linkedin.com/in/elenadsouza"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Aditya Chawla\naditya.chawla@fastmail.com | +91 98991 20345 | Gurugram, Haryana, India\n\nOBJECTIVE / SUMMARY\nMLOps-oriented engineer combining machine learning development with deployment automation, experiment tracking, containerization, and monitoring. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MTech Data Science | IIIT Delhi | 2024 – 2026\n- BTech Computer Science | Manav Rachna University | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- MLOps Intern | ModelGrid | May 2025 – Jul 2025\n  Helped productionize ML models through containerized inference services and CI pipelines. Added experiment tracking, model version metadata, basic drift checks, and deployment documentation.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- ModelOps Hub\n  • Built an experiment-to-deployment workflow integrating MLflow tracking, Dockerized inference, automated tests, model artifacts, and a FastAPI prediction endpoint.\n  • Stack: Python, MLflow, FastAPI, Docker, GitHub Actions, Scikit-learn, AWS S3\n  • Repository: https://github.com/adityachawla/modelops-hub\n- DriftMonitor\n  • Created monitoring that compares production feature distributions with a reference dataset and produces configurable drift reports on a schedule.\n  • Stack: Python, Pandas, Evidently, Airflow, PostgreSQL\n  • Repository: https://github.com/adityachawla/driftmonitor\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, Scikit-learn, MLflow, FastAPI, Docker, GitHub Actions, Airflow, AWS S3, Pandas, Evidently, PostgreSQL, Linux.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nAWS Certified Machine Learning – Specialty\n\nLINKS\nhttps://github.com/adityachawla | https://www.linkedin.com/in/adityachawla",
+    "output": {
+      "name": "Aditya Chawla",
+      "email": "aditya.chawla@fastmail.com",
+      "phone": [
+        "+91 98991 20345"
+      ],
+      "location": "Gurugram, Haryana, India",
+      "summary": "MLOps-oriented engineer combining machine learning development with deployment automation, experiment tracking, containerization, and monitoring.",
+      "education": [
+        {
+          "degree": "MTech Data Science",
+          "institution": "IIIT Delhi",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Computer Science",
+          "institution": "Manav Rachna University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "MLOps Intern",
+          "company": "ModelGrid",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Helped productionize ML models through containerized inference services and CI pipelines. Added experiment tracking, model version metadata, basic drift checks, and deployment documentation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "ModelOps Hub",
+          "description": "Built an experiment-to-deployment workflow integrating MLflow tracking, Dockerized inference, automated tests, model artifacts, and a FastAPI prediction endpoint.",
+          "technologies": [
+            "Python",
+            "MLflow",
+            "FastAPI",
+            "Docker",
+            "GitHub Actions",
+            "Scikit-learn",
+            "AWS S3"
+          ],
+          "link": "https://github.com/adityachawla/modelops-hub"
+        },
+        {
+          "name": "DriftMonitor",
+          "description": "Created monitoring that compares production feature distributions with a reference dataset and produces configurable drift reports on a schedule.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Evidently",
+            "Airflow",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/adityachawla/driftmonitor"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Scikit-learn",
+        "MLflow",
+        "FastAPI",
+        "Docker",
+        "GitHub Actions",
+        "Airflow",
+        "AWS S3",
+        "Pandas",
+        "Evidently",
+        "PostgreSQL",
+        "Linux"
+      ],
+      "certifications": [
+        "AWS Certified Machine Learning – Specialty"
+      ],
+      "links": [
+        "https://github.com/adityachawla",
+        "https://www.linkedin.com/in/adityachawla"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Neha Bhat\nneha.bhat@proton.me | +91 99862 11207 | Mysuru, Karnataka, India\n\nOBJECTIVE / SUMMARY\nSoftware engineering graduate interested in data-intensive backend systems, database optimization, and distributed processing. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | University of Mysore | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Backend Engineering Intern | QueryWorks | Jun 2024 – Aug 2024\n  Implemented API endpoints and database access layers for an analytics application. Investigated slow queries, added indexes, wrote automated tests, and improved API validation.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- QueryTrack\n  • Developed a database query observability service capturing query metadata, latency, and frequency. Added dashboards and threshold-based alerts for slow queries.\n  • Stack: Python, FastAPI, PostgreSQL, Redis, Prometheus, Grafana\n  • Repository: https://github.com/nehabhat/querytrack\n- MiniBatch Engine\n  • Implemented a simplified distributed batch-processing framework with worker registration, task queues, retry handling, and result aggregation.\n  • Stack: Java, Python, Redis, Docker, Linux\n  • Repository: https://github.com/nehabhat/minibatch\n\nSKILLS\nLanguages: Python, Java, SQL.\nFrameworks, platforms, and tools: Python, Java, SQL, FastAPI, PostgreSQL, Redis, Docker, Linux, Git, Prometheus, Grafana, Data Structures, Algorithms.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nOracle Database SQL Certified Associate\n\nLINKS\nhttps://github.com/nehabhat",
+    "output": {
+      "name": "Neha Bhat",
+      "email": "neha.bhat@proton.me",
+      "phone": [
+        "+91 99862 11207"
+      ],
+      "location": "Mysuru, Karnataka, India",
+      "summary": "Software engineering graduate interested in data-intensive backend systems, database optimization, and distributed processing.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "University of Mysore",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Backend Engineering Intern",
+          "company": "QueryWorks",
+          "start_date": "Jun 2024",
+          "end_date": "Aug 2024",
+          "description": "Implemented API endpoints and database access layers for an analytics application. Investigated slow queries, added indexes, wrote automated tests, and improved API validation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "QueryTrack",
+          "description": "Developed a database query observability service capturing query metadata, latency, and frequency. Added dashboards and threshold-based alerts for slow queries.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Prometheus",
+            "Grafana"
+          ],
+          "link": "https://github.com/nehabhat/querytrack"
+        },
+        {
+          "name": "MiniBatch Engine",
+          "description": "Implemented a simplified distributed batch-processing framework with worker registration, task queues, retry handling, and result aggregation.",
+          "technologies": [
+            "Java",
+            "Python",
+            "Redis",
+            "Docker",
+            "Linux"
+          ],
+          "link": "https://github.com/nehabhat/minibatch"
+        }
+      ],
+      "skills": [
+        "Python",
+        "Java",
+        "SQL",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Linux",
+        "Git",
+        "Prometheus",
+        "Grafana",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "certifications": [
+        "Oracle Database SQL Certified Associate"
+      ],
+      "links": [
+        "https://github.com/nehabhat"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sameer Gupta\nsameer.gupta@icloud.com | +91 98104 77215 | Delhi, India\n\nOBJECTIVE / SUMMARY\nAI and computer vision engineer experienced in multimodal learning, image retrieval, OCR, and model evaluation. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Artificial Intelligence | Jamia Millia Islamia | 2024 – 2026\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Computer Vision Intern | VisualMetric Labs | May 2025 – Jul 2025\n  Prepared image datasets, trained classification and detection models, analyzed false positives, and created inference scripts for internal demonstrations.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- VisualSearch\n  • Built an image search system using visual embeddings and nearest-neighbor retrieval with preprocessing, duplicate detection, similarity ranking, and a Streamlit interface.\n  • Stack: Python, PyTorch, OpenCV, FAISS, Streamlit, Docker\n  • Repository: https://github.com/sameergupta/visualsearch\n- OCR Receipt Analyzer\n  • Created a receipt understanding pipeline that extracts text, detects key-value fields, normalizes dates and amounts, and exports structured JSON with validation rules.\n  • Stack: Python, Tesseract, OpenCV, Pandas, FastAPI, Pydantic\n  • Repository: Not provided\n\nSKILLS\nLanguages: Python, C++.\nFrameworks, platforms, and tools: Python, C++, PyTorch, OpenCV, Tesseract, FAISS, Transformers, FastAPI, Pydantic, Pandas, Docker, Git, Computer Vision, OCR.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute: Fundamentals of Deep Learning\n\nLINKS\nhttps://github.com/sameergupta | https://www.linkedin.com/in/sameergupta",
+    "output": {
+      "name": "Sameer Gupta",
+      "email": "sameer.gupta@icloud.com",
+      "phone": [
+        "+91 98104 77215"
+      ],
+      "location": "Delhi, India",
+      "summary": "AI and computer vision engineer experienced in multimodal learning, image retrieval, OCR, and model evaluation.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence",
+          "institution": "Jamia Millia Islamia",
+          "start_date": "2024",
+          "end_date": "2026"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Computer Vision Intern",
+          "company": "VisualMetric Labs",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Prepared image datasets, trained classification and detection models, analyzed false positives, and created inference scripts for internal demonstrations."
+        }
+      ],
+      "projects": [
+        {
+          "name": "VisualSearch",
+          "description": "Built an image search system using visual embeddings and nearest-neighbor retrieval with preprocessing, duplicate detection, similarity ranking, and a Streamlit interface.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "FAISS",
+            "Streamlit",
+            "Docker"
+          ],
+          "link": "https://github.com/sameergupta/visualsearch"
+        },
+        {
+          "name": "OCR Receipt Analyzer",
+          "description": "Created a receipt understanding pipeline that extracts text, detects key-value fields, normalizes dates and amounts, and exports structured JSON with validation rules.",
+          "technologies": [
+            "Python",
+            "Tesseract",
+            "OpenCV",
+            "Pandas",
+            "FastAPI",
+            "Pydantic"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "C++",
+        "PyTorch",
+        "OpenCV",
+        "Tesseract",
+        "FAISS",
+        "Transformers",
+        "FastAPI",
+        "Pydantic",
+        "Pandas",
+        "Docker",
+        "Git",
+        "Computer Vision",
+        "OCR"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute: Fundamentals of Deep Learning"
+      ],
+      "links": [
+        "https://github.com/sameergupta",
+        "https://www.linkedin.com/in/sameergupta"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Tanvi Deshpande\ntanvi.deshpande@gmail.com | +91 97643 55108 | Nagpur, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nData engineering and analytics student with a mathematics background and strong interest in SQL, distributed processing, cloud data platforms, and workflow automation. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Data Science | Indian Institute of Information Technology Lucknow | 2024 – 2026\n- BSc Mathematics | Dharampeth M.P. Deo Memorial Science College, Nagpur | 2019 – 2022\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Teaching Associate | Academic Learning Center | Mar 2025 – Jul 2025\n  Guided students through quantitative and programming concepts, evaluated answer sheets, maintained academic documentation, and provided individualized learning support.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- MarketStream ETL\n  • Designed an end-to-end market data pipeline using Kafka and AWS, including raw and processed S3 zones, Glue Spark transformations, Parquet output, and Athena queries.\n  • Stack: Python, Apache Kafka, AWS EC2, Amazon S3, AWS Glue, Apache Spark, Amazon Athena, Parquet\n  • Repository: https://github.com/tanvideshpande/marketstream-etl\n- BookBot — RAG Powered Chatbot\n  • Built a retrieval-augmented chatbot over technical documents with PDF parsing, chunking, embeddings, vector search, and source-aware responses.\n  • Stack: Python, LangChain, FAISS, Hugging Face, Streamlit\n  • Repository: https://github.com/tanvideshpande/bookbot\n\nSKILLS\nLanguages: Python, SQL, C, Bash.\nFrameworks, platforms, and tools: Python, SQL, PySpark, C, Bash, Apache Spark, Apache Kafka, Hadoop, AWS, GCP, Airflow, Pandas, NumPy, MySQL, PostgreSQL, Parquet, JSON, Git, RAG, LangChain.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nBig Data Analysis with GCP — Udemy; Google Cloud Digital Leader\n\nLINKS\nhttps://github.com/tanvideshpande | https://www.linkedin.com/in/tanvideshpande",
+    "output": {
+      "name": "Tanvi Deshpande",
+      "email": "tanvi.deshpande@gmail.com",
+      "phone": [
+        "+91 97643 55108"
+      ],
+      "location": "Nagpur, Maharashtra, India",
+      "summary": "Data engineering and analytics student with a mathematics background and strong interest in SQL, distributed processing, cloud data platforms, and workflow automation.",
+      "education": [
+        {
+          "degree": "MSc Data Science",
+          "institution": "Indian Institute of Information Technology Lucknow",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BSc Mathematics",
+          "institution": "Dharampeth M.P. Deo Memorial Science College, Nagpur",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Teaching Associate",
+          "company": "Academic Learning Center",
+          "start_date": "Mar 2025",
+          "end_date": "Jul 2025",
+          "description": "Guided students through quantitative and programming concepts, evaluated answer sheets, maintained academic documentation, and provided individualized learning support."
+        }
+      ],
+      "projects": [
+        {
+          "name": "MarketStream ETL",
+          "description": "Designed an end-to-end market data pipeline using Kafka and AWS, including raw and processed S3 zones, Glue Spark transformations, Parquet output, and Athena queries.",
+          "technologies": [
+            "Python",
+            "Apache Kafka",
+            "AWS EC2",
+            "Amazon S3",
+            "AWS Glue",
+            "Apache Spark",
+            "Amazon Athena",
+            "Parquet"
+          ],
+          "link": "https://github.com/tanvideshpande/marketstream-etl"
+        },
+        {
+          "name": "BookBot — RAG Powered Chatbot",
+          "description": "Built a retrieval-augmented chatbot over technical documents with PDF parsing, chunking, embeddings, vector search, and source-aware responses.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "FAISS",
+            "Hugging Face",
+            "Streamlit"
+          ],
+          "link": "https://github.com/tanvideshpande/bookbot"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "C",
+        "Bash",
+        "Apache Spark",
+        "Apache Kafka",
+        "Hadoop",
+        "AWS",
+        "GCP",
+        "Airflow",
+        "Pandas",
+        "NumPy",
+        "MySQL",
+        "PostgreSQL",
+        "Parquet",
+        "JSON",
+        "Git",
+        "RAG",
+        "LangChain"
+      ],
+      "certifications": [
+        "Big Data Analysis with GCP — Udemy",
+        "Google Cloud Digital Leader"
+      ],
+      "links": [
+        "https://github.com/tanvideshpande",
+        "https://www.linkedin.com/in/tanvideshpande"
+      ]
+    }
+  }
+]

@@ -1,0 +1,330 @@
+================================================================================
+GPT DATASET GENERATION PROMPTS (BATCHES 1, 2, 3, 4, 5)
+================================================================================
+
+Use these prompts in ChatGPT to generate 5 downloadable JSON files (100 total):
+- `resume_dataset_batch1.json` (20 examples - AI/ML, Full-Stack, Data Science)
+- `resume_dataset_batch2.json` (20 examples - DevOps, Backend, Cloud, Frontend)
+- `resume_dataset_batch3.json` (20 examples - Cybersecurity, Mobile, CV, Quant, QA)
+- `resume_dataset_batch4.json` (20 examples - Product Managers, SRE, Researchers, Academics)
+- `resume_dataset_batch5.json` (20 examples - Edge cases: messy formats, missing fields, career changers)
+
+================================================================================
+BATCH 1 PROMPT (Outputs: resume_dataset_batch1.json)
+================================================================================
+
+You are a high-quality resume dataset generator for an AI training project.
+
+Generate 20 realistic, highly detailed, production-grade training examples for a domain-specific resume parsing model.
+
+Please format your response as a downloadable JSON file named `resume_dataset_batch1.json`.
+
+Focus Domains for Batch 1: AI/ML Engineering, NLP, Data Science, Full-Stack Web Development.
+
+OUTPUT FORMAT — Return ONLY a valid JSON array inside the file block. Each element must strictly follow this structure:
+{
+  "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+  "input": "<raw resume as plain text, highly detailed, 250-500 words, including Objective/Summary, Education, Projects, Experience, and Skills>",
+  "output": {
+    "name": "string or null",
+    "email": "string or null",
+    "phone": ["list of strings"],
+    "location": "string or null",
+    "summary": "string or null",
+    "education": [
+      {
+        "degree": "string or null",
+        "institution": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null"
+      }
+    ],
+    "experience": [
+      {
+        "title": "string or null",
+        "company": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null",
+        "description": "string or null"
+      }
+    ],
+    "projects": [
+      {
+        "name": "string or null",
+        "description": "string or null",
+        "technologies": ["list of strings"],
+        "link": "string or null"
+      }
+    ],
+    "skills": ["list of strings"],
+    "certifications": ["list of strings"],
+    "links": ["list of strings"]
+  }
+}
+
+DIVERSITY & DETAIL RULES:
+1. Make resumes REALISTIC and DETAILED like top college/engineer resumes (e.g. MSc AI & ML students, Data Scientists, Full-Stack Developers).
+2. Include explicit PROJECTS with multi-bullet descriptions and specific tech stacks (e.g. RAG Chatbots, Churn Prediction, Recommendation Engines).
+3. Include comprehensive Skills categorized across Languages, Frameworks, ML/AI tools, and Databases.
+4. If a field is absent in the input text, set it to null or []. NEVER invent data not in the input.
+
+Format the output strictly as a single downloadable code file named `resume_dataset_batch1.json`. No intro or outro text.
+
+
+================================================================================
+BATCH 2 PROMPT (Outputs: resume_dataset_batch2.json)
+================================================================================
+
+You are a high-quality resume dataset generator for an AI training project.
+
+Generate 20 MORE realistic, highly detailed, production-grade training examples for a domain-specific resume parsing model.
+
+Please format your response as a downloadable JSON file named `resume_dataset_batch2.json`.
+
+Focus Domains for Batch 2: DevOps Engineering, Cloud Architecture (AWS/Azure/GCP), High-Throughput Backend (Go/Rust/Java), Frontend Architecture (React/Next.js/TypeScript).
+
+OUTPUT FORMAT — Return ONLY a valid JSON array inside the file block. Each element must strictly follow this structure:
+{
+  "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+  "input": "<raw resume as plain text, highly detailed, 250-500 words, including Objective/Summary, Education, Projects, Experience, and Skills>",
+  "output": {
+    "name": "string or null",
+    "email": "string or null",
+    "phone": ["list of strings"],
+    "location": "string or null",
+    "summary": "string or null",
+    "education": [
+      {
+        "degree": "string or null",
+        "institution": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null"
+      }
+    ],
+    "experience": [
+      {
+        "title": "string or null",
+        "company": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null",
+        "description": "string or null"
+      }
+    ],
+    "projects": [
+      {
+        "name": "string or null",
+        "description": "string or null",
+        "technologies": ["list of strings"],
+        "link": "string or null"
+      }
+    ],
+    "skills": ["list of strings"],
+    "certifications": ["list of strings"],
+    "links": ["list of strings"]
+  }
+}
+
+DIVERSITY & DETAIL RULES:
+1. Generate unique candidates in DevOps, Infrastructure, Go/Rust microservices, and modern Web Design Systems.
+2. Include explicit PROJECTS (e.g. Multi-region Terraform automation, Kubernetes cluster auto-scaler, Micro-frontend design system).
+3. Vary edge cases: missing email, missing phone, multiple phone numbers, non-English names, foreign degree names.
+4. If a field is absent in the input text, set it to null or []. NEVER invent data not in the input.
+
+Format the output strictly as a single downloadable code file named `resume_dataset_batch2.json`. No intro or outro text.
+
+
+================================================================================
+BATCH 3 PROMPT (Outputs: resume_dataset_batch3.json)
+================================================================================
+
+You are a high-quality resume dataset generator for an AI training project.
+
+Generate 20 MORE realistic, highly detailed, production-grade training examples for a domain-specific resume parsing model.
+
+Please format your response as a downloadable JSON file named `resume_dataset_batch3.json`.
+
+Focus Domains for Batch 3: Cybersecurity / SOC Analysis, Mobile Development (iOS/Android/Flutter), Computer Vision / Robotics, Quantitative ML / FinTech, QA Automation.
+
+OUTPUT FORMAT — Return ONLY a valid JSON array inside the file block. Each element must strictly follow this structure:
+{
+  "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+  "input": "<raw resume as plain text, highly detailed, 250-500 words, including Objective/Summary, Education, Projects, Experience, and Skills>",
+  "output": {
+    "name": "string or null",
+    "email": "string or null",
+    "phone": ["list of strings"],
+    "location": "string or null",
+    "summary": "string or null",
+    "education": [
+      {
+        "degree": "string or null",
+        "institution": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null"
+      }
+    ],
+    "experience": [
+      {
+        "title": "string or null",
+        "company": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null",
+        "description": "string or null"
+      }
+    ],
+    "projects": [
+      {
+        "name": "string or null",
+        "description": "string or null",
+        "technologies": ["list of strings"],
+        "link": "string or null"
+      }
+    ],
+    "skills": ["list of strings"],
+    "certifications": ["list of strings"],
+    "links": ["list of strings"]
+  }
+}
+
+DIVERSITY & DETAIL RULES:
+1. Generate unique candidates in Cybersecurity, Mobile App Engineering, Computer Vision, Quantitative Finance, and Automated Testing.
+2. Include explicit PROJECTS (e.g. Zero-Trust Security Scanner, High-Frequency Trading Engine, Autonomous Drone Vision System).
+3. Include edge cases: fresh graduates with no work experience, self-taught developers with no formal CS degree, candidates with 3+ certifications.
+4. If a field is absent in the input text, set it to null or []. NEVER invent data not in the input.
+
+Format the output strictly as a single downloadable code file named `resume_dataset_batch3.json`. No intro or outro text.
+
+
+================================================================================
+BATCH 4 PROMPT (Outputs: resume_dataset_batch4.json)
+================================================================================
+
+You are a high-quality resume dataset generator for an AI training project.
+
+Generate 20 MORE realistic, highly detailed, production-grade training examples for a domain-specific resume parsing model.
+
+Please format your response as a downloadable JSON file named `resume_dataset_batch4.json`.
+
+Focus Domains for Batch 4: Technical Product Managers, Site Reliability Engineers (SRE), ML Researchers / PhD candidates, Academic researchers transitioning to industry, Platform/Infrastructure Engineers.
+
+OUTPUT FORMAT — Return ONLY a valid JSON array inside the file block. Each element must strictly follow this structure:
+{
+  "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+  "input": "<raw resume as plain text, highly detailed, 250-500 words, including Objective/Summary, Education, Projects, Experience, and Skills>",
+  "output": {
+    "name": "string or null",
+    "email": "string or null",
+    "phone": ["list of strings"],
+    "location": "string or null",
+    "summary": "string or null",
+    "education": [
+      {
+        "degree": "string or null",
+        "institution": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null"
+      }
+    ],
+    "experience": [
+      {
+        "title": "string or null",
+        "company": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null",
+        "description": "string or null"
+      }
+    ],
+    "projects": [
+      {
+        "name": "string or null",
+        "description": "string or null",
+        "technologies": ["list of strings"],
+        "link": "string or null"
+      }
+    ],
+    "skills": ["list of strings"],
+    "certifications": ["list of strings"],
+    "links": ["list of strings"]
+  }
+}
+
+DIVERSITY & DETAIL RULES:
+1. Include Technical Product Managers with roadmap, OKR, sprint planning, and data-driven background.
+2. Include SRE profiles with on-call runbooks, SLO/SLI tracking, chaos engineering, and Prometheus/Grafana.
+3. Include PhD candidates / ML Researchers with publications, research projects, conference papers, and academic institution links.
+4. Include Platform Engineers with Internal Developer Platforms (IDP), service mesh, eBPF, and observability tooling.
+5. Vary edge cases: candidates with 2 phone numbers, candidates with no certifications, candidates with 3+ degrees.
+6. If a field is absent in the input text, set it to null or []. NEVER invent data not in the input.
+
+Format the output strictly as a single downloadable code file named `resume_dataset_batch4.json`. No intro or outro text.
+
+
+================================================================================
+BATCH 5 PROMPT (Outputs: resume_dataset_batch5.json)
+================================================================================
+
+You are a high-quality resume dataset generator for an AI training project.
+
+Generate 20 MORE realistic, highly detailed, production-grade training examples for a domain-specific resume parsing model.
+
+Please format your response as a downloadable JSON file named `resume_dataset_batch5.json`.
+
+Focus for Batch 5: EDGE CASES and FORMAT DIVERSITY — messy real-world resume formats that a parser must handle robustly.
+
+OUTPUT FORMAT — Return ONLY a valid JSON array inside the file block. Each element must strictly follow this structure:
+{
+  "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+  "input": "<raw resume as plain text, highly detailed, 250-500 words, including Objective/Summary, Education, Projects, Experience, and Skills>",
+  "output": {
+    "name": "string or null",
+    "email": "string or null",
+    "phone": ["list of strings"],
+    "location": "string or null",
+    "summary": "string or null",
+    "education": [
+      {
+        "degree": "string or null",
+        "institution": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null"
+      }
+    ],
+    "experience": [
+      {
+        "title": "string or null",
+        "company": "string or null",
+        "start_date": "string or null",
+        "end_date": "string or null",
+        "description": "string or null"
+      }
+    ],
+    "projects": [
+      {
+        "name": "string or null",
+        "description": "string or null",
+        "technologies": ["list of strings"],
+        "link": "string or null"
+      }
+    ],
+    "skills": ["list of strings"],
+    "certifications": ["list of strings"],
+    "links": ["list of strings"]
+  }
+}
+
+EDGE CASE & FORMAT DIVERSITY RULES (each example must test a different edge case):
+1. Resume with NO phone number — email contact only.
+2. Resume with NO email — only phone and LinkedIn link.
+3. Resume with section headers in alternate language mix (e.g. "Shiksha" for Education, "Anubhav" for Experience but content in English).
+4. Resume using informal labels ("Things I Built" for Projects, "What I Know" for Skills, "Where I Studied" for Education).
+5. Resume with 3 phone numbers listed.
+6. Career changer (e.g. Mechanical Engineer moving to Data Science — has mechanical projects and a new ML bootcamp cert).
+7. Resume with ONLY education and projects, zero work experience (fresh graduate).
+8. Self-taught developer — no formal CS degree, only bootcamp certificate and project portfolio.
+9. Resume with inconsistent date formats mixed (e.g. Jan 2022, 2023-06, 05/2024 all in same resume).
+10. Resume with skills buried inside project descriptions and no dedicated Skills section — parser must infer skills from context.
+11-20. Mix of senior engineers (10+ years), international candidates (Korean, Nigerian, Brazilian names), and candidates with 3 certifications.
+
+If a field is absent in the input text, set it to null or []. NEVER invent data not in the input.
+
+Format the output strictly as a single downloadable code file named `resume_dataset_batch5.json`. No intro or outro text.

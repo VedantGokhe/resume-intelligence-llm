@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# training/config.yaml
+# All hyperparameters for QLoRA fine-tuning of Qwen3-1.7B.
+# No magic numbers in train.py — everything is read from here.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Model ─────────────────────────────────────────────────────────────────────
+model_name: "Qwen/Qwen3-1.7B"
+training_method: "QLoRA"          # Quantized LoRA (4-bit base + LoRA adapters)
+
+# ── Quantization ──────────────────────────────────────────────────────────────
+load_in_4bit: true                # 4-bit NF4 quantization via bitsandbytes
+bnb_4bit_compute_dtype: "float16" # Compute in fp16 on T4 (T4 lacks bf16)
+bnb_4bit_quant_type: "nf4"        # NF4 = best quality 4-bit for LLMs
+use_nested_quant: false
+
+# ── LoRA adapter ──────────────────────────────────────────────────────────────
+lora_rank: 16                     # r=16: good accuracy/cost balance for 1.7B
+lora_alpha: 32                    # alpha = 2 * rank (standard starting point)
+lora_dropout: 0.05                # small dropout prevents overfitting on ~42 examples
+lora_target_modules:              # all attention + MLP projections
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+lora_bias: "none"
+use_gradient_checkpointing: true  # saves VRAM at cost of ~20% speed
+
+# ── Sequence ──────────────────────────────────────────────────────────────────
+max_seq_length: 2048              # resume (~800t) + system prompt (~300t) + output (~300t)
+
+# ── Training loop ─────────────────────────────────────────────────────────────
+num_train_epochs: 3               # 3 full passes over ~42 training examples
+per_device_train_batch_size: 2    # safe for T4 16GB under QLoRA
+gradient_accumulation_steps: 8   # effective batch size = 2 * 8 = 16
+learning_rate: 2.0e-4             # standard for LoRA SFT; cosine will decay it
+lr_scheduler_type: "cosine"
+warmup_ratio: 0.1                 # 10% of steps for warmup
+weight_decay: 0.01
+max_grad_norm: 1.0
+
+# ── Optimizer ─────────────────────────────────────────────────────────────────
+optim: "adamw_8bit"               # 8-bit Adam saves ~4GB VRAM on T4
+fp16: true                        # T4 supports fp16 but NOT bf16
+bf16: false
+
+# ── Logging / saving ──────────────────────────────────────────────────────────
+logging_steps: 5
+evaluation_strategy: "epoch"
+save_strategy: "epoch"
+save_total_limit: 2               # keep only last 2 checkpoints
+load_best_model_at_end: true
+metric_for_best_model: "eval_loss"
+report_to: "none"                 # set to "wandb" if you want W&B logging
+
+# ── Output ────────────────────────────────────────────────────────────────────
+output_dir: "./adapter_v1"
+
+# ── Reproducibility ───────────────────────────────────────────────────────────
+seed: 42
+data_seed: 42
+
+# ── Dataset paths (relative to project root) ──────────────────────────────────
+train_file: "data/train.json"
+val_file: "data/val.json"
+test_file: "data/test.json"
+
+# ── Inference / generation (used during eval and inference) ───────────────────
+enable_thinking: false            # Qwen3 non-thinking mode: no CoT tokens
+temperature: 0.1                  # near-greedy for deterministic JSON extraction
+top_p: 0.9
+max_new_tokens: 1024              # enough for the full JSON output
+do_sample: true

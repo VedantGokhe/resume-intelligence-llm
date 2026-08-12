@@ -1,0 +1,1209 @@
+[
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Aarav Mehta\nEmail: aarav.mehta.dev@example.com\nPhone: +91 98765 43210\nLocation: Bengaluru, Karnataka, India\n\nOBJECTIVE / SUMMARY\nMSc Artificial Intelligence student focused on production machine learning, retrieval-augmented generation, and model evaluation. Experienced in building NLP systems, deploying APIs, and optimizing inference workflows.\n\nEDUCATION\n- MSc Artificial Intelligence and Machine Learning, University of Birmingham (2024 - 2026)\n- BTech Computer Science and Engineering, Vellore Institute of Technology (2020 - 2024)\n\nEXPERIENCE\n- Machine Learning Intern, Nexora AI Labs (Jun 2025 - Aug 2025)\n  Built a document question-answering service using sentence-transformer embeddings and FAISS; developed evaluation scripts for retrieval precision and answer faithfulness; containerized inference services with Docker and exposed FastAPI endpoints.\n\nPROJECTS\n- Enterprise RAG Assistant: Implemented a retrieval-augmented chatbot for internal policy documents. Added PDF parsing, chunk overlap, metadata filtering, hybrid retrieval, prompt templates, citation generation, and an evaluation harness covering retrieval recall and groundedness. Technologies: Python, LangChain, FAISS, Sentence Transformers, FastAPI, OpenAI API, Docker. Link: https://github.com/aaravmehta/enterprise-rag\n- Customer Churn Predictor: Trained and compared logistic regression, random forest, and XGBoost models for telecom churn. Performed feature engineering, class balancing, cross-validation, SHAP analysis, and threshold optimization for business-oriented recall. Technologies: Python, Pandas, Scikit-learn, XGBoost, SHAP, Jupyter. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, PyTorch, Scikit-learn, XGBoost, NLP, Transformers, LangChain, FAISS, FastAPI, Docker, Git, PostgreSQL, AWS, MLflow\n\nCERTIFICATIONS\nAWS Certified Machine Learning – Specialty; DeepLearning.AI Natural Language Processing Specialization\n\nLINKS\nhttps://github.com/aaravmehta; https://www.linkedin.com/in/aaravmehta\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Enterprise RAG Assistant and Customer Churn Predictor, where they applied Python, LangChain, FAISS, Sentence Transformers alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, PyTorch, Scikit-learn, XGBoost, NLP, Transformers. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta.dev@example.com",
+      "phone": [
+        "+91 98765 43210"
+      ],
+      "location": "Bengaluru, Karnataka, India",
+      "summary": "MSc Artificial Intelligence student focused on production machine learning, retrieval-augmented generation, and model evaluation. Experienced in building NLP systems, deploying APIs, and optimizing inference workflows.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence and Machine Learning",
+          "institution": "University of Birmingham",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Vellore Institute of Technology",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Intern",
+          "company": "Nexora AI Labs",
+          "start_date": "Jun 2025",
+          "end_date": "Aug 2025",
+          "description": "Built a document question-answering service using sentence-transformer embeddings and FAISS; developed evaluation scripts for retrieval precision and answer faithfulness; containerized inference services with Docker and exposed FastAPI endpoints."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Enterprise RAG Assistant",
+          "description": "Implemented a retrieval-augmented chatbot for internal policy documents. Added PDF parsing, chunk overlap, metadata filtering, hybrid retrieval, prompt templates, citation generation, and an evaluation harness covering retrieval recall and groundedness.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "FAISS",
+            "Sentence Transformers",
+            "FastAPI",
+            "OpenAI API",
+            "Docker"
+          ],
+          "link": "https://github.com/aaravmehta/enterprise-rag"
+        },
+        {
+          "name": "Customer Churn Predictor",
+          "description": "Trained and compared logistic regression, random forest, and XGBoost models for telecom churn. Performed feature engineering, class balancing, cross-validation, SHAP analysis, and threshold optimization for business-oriented recall.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "Jupyter"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "Scikit-learn",
+        "XGBoost",
+        "NLP",
+        "Transformers",
+        "LangChain",
+        "FAISS",
+        "FastAPI",
+        "Docker",
+        "Git",
+        "PostgreSQL",
+        "AWS",
+        "MLflow"
+      ],
+      "certifications": [
+        "AWS Certified Machine Learning – Specialty",
+        "DeepLearning.AI Natural Language Processing Specialization"
+      ],
+      "links": [
+        "https://github.com/aaravmehta",
+        "https://www.linkedin.com/in/aaravmehta"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "AMIT DESHPANDE\n+91 98123 45678 | Nagpur, Maharashtra\nSUMMARY\nML engineer with experience spanning NLP, model serving, and data pipelines. Interested in applied language-model systems.\nEDUCATION\nM.Tech Artificial Intelligence — VNIT Nagpur — 2021–2023\nB.E. Computer Engineering — YCCE Nagpur — 2017–2021\nEXPERIENCE\nMachine Learning Engineer — TextMind Labs — 2023-08 – Present\nBuilt NLP classification and retrieval services using Python, spaCy, and Transformers. Deployed models behind FastAPI endpoints, used PostgreSQL for metadata, and created batch inference workflows in Docker.\nPROJECTS\nResume Parser — rule-based and transformer-assisted resume parser. Implementation used Python, spaCy, Transformers, FastAPI, PostgreSQL, Docker, and regex. Code: https://github.com/amitd/resume-parser\nQuestion Answering Service — retrieval-augmented QA over PDFs using embeddings and a vector database. Used Python, LangChain, FAISS, and sentence-transformers.\nThere is deliberately no standalone skills section in this resume.\nCERTIFICATIONS\nNVIDIA Generative AI LLMs; Hugging Face NLP Course; AWS Certified Machine Learning – Specialty\nBLOG https://amitd.github.io\nADDITIONAL PROJECT CONTEXT\nThe portfolio work was completed as hands-on engineering practice and focused on extracting structured information, connecting model outputs to APIs, storing metadata, and experimenting with retrieval over documents. The resume intentionally does not provide a separate skills heading; technical capabilities are expressed inside the work and project narratives. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Amit Deshpande",
+      "email": null,
+      "phone": [
+        "+91 98123 45678"
+      ],
+      "location": "Nagpur, Maharashtra",
+      "summary": "ML engineer with experience spanning NLP, model serving, and data pipelines. Interested in applied language-model systems.",
+      "education": [
+        {
+          "degree": "M.Tech Artificial Intelligence",
+          "institution": "VNIT Nagpur",
+          "start_date": "2021",
+          "end_date": "2023"
+        },
+        {
+          "degree": "B.E. Computer Engineering",
+          "institution": "YCCE Nagpur",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Engineer",
+          "company": "TextMind Labs",
+          "start_date": "2023-08",
+          "end_date": "Present",
+          "description": "Built NLP classification and retrieval services using Python, spaCy, and Transformers. Deployed models behind FastAPI endpoints, used PostgreSQL for metadata, and created batch inference workflows in Docker."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Resume Parser",
+          "description": "Created a rule-based and transformer-assisted parser for extracting names, contact information, education, and skills from resumes. Implementation used Python, spaCy, Transformers, FastAPI, PostgreSQL, Docker, and regex.",
+          "technologies": [
+            "Python",
+            "spaCy",
+            "Transformers",
+            "FastAPI",
+            "PostgreSQL",
+            "Docker",
+            "regex"
+          ],
+          "link": "https://github.com/amitd/resume-parser"
+        },
+        {
+          "name": "Question Answering Service",
+          "description": "Implemented retrieval-augmented question answering over PDF documents using embeddings and a vector database. Used Python, LangChain, FAISS, and sentence-transformers.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "FAISS",
+            "sentence-transformers"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "spaCy",
+        "Transformers",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "regex",
+        "LangChain",
+        "FAISS",
+        "sentence-transformers"
+      ],
+      "certifications": [
+        "NVIDIA Generative AI LLMs",
+        "Hugging Face NLP Course",
+        "AWS Certified Machine Learning – Specialty"
+      ],
+      "links": [
+        "https://github.com/amitd/resume-parser",
+        "https://amitd.github.io"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Marcus Reed\nSENIOR SDET\nEmail: marcus.reed@outlook.com | Phone: +1 415 555 0164 | Location: San Francisco, California, USA\n\nSUMMARY\nSDET specializing in distributed systems testing, API automation, contract testing, and observability-driven quality engineering. Experienced in designing reusable test infrastructure and identifying gaps from production incidents.\n\nEDUCATION\nB.S. Computer Science, San Jose State University, 2017–2021.\n\nEXPERIENCE\nSenior SDET, DataMesh Inc., Jan 2024–Present. Leads automated quality strategy for distributed data services, builds API and contract-test suites, reviews production incidents for test gaps, and mentors engineers on reliable test design.\n\nQA Automation Engineer, CloudRoute, Jul 2021–Dec 2023. Automated REST and event-driven workflows, created integration tests for microservices, and maintained nightly regression pipelines.\n\nPROJECTS\nMicroservice Contract Test Harness — Created a contract-testing harness that validates producer-consumer API expectations across independently deployed services and publishes compatibility reports. Technologies: Java, JUnit, Pact, REST Assured, Kafka, Docker. GitHub: https://github.com/marcusreed/contract-harness\n\nSKILLS\nSDET, Java, JUnit, REST Assured, Pact, Kafka, Docker, Kubernetes, API Testing, Integration Testing, CI/CD, Observability.\n\nCERTIFICATIONS\nISTQB Advanced Test Automation Engineer; Certified Kubernetes Application Developer.\n\nLINKS\nGitHub: https://github.com/marcusreed\nLinkedIn: https://www.linkedin.com/in/marcusreed\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quality focus: emphasizes deterministic tests, useful failure diagnostics, maintainable fixtures, and clear defect reproduction steps. Comfortable validating UI, APIs, databases, and asynchronous workflows. Interested in shifting quality left through CI automation, reliable test data, regression prioritization, and collaboration with developers during root-cause analysis. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Marcus Reed",
+      "email": "marcus.reed@outlook.com",
+      "phone": [
+        "+1 415 555 0164"
+      ],
+      "location": "San Francisco, California, USA",
+      "summary": "SDET specializing in distributed systems testing, API automation, contract testing, and observability-driven quality engineering.",
+      "education": [
+        {
+          "degree": "B.S. Computer Science",
+          "institution": "San Jose State University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior SDET",
+          "company": "DataMesh Inc.",
+          "start_date": "Jan 2024",
+          "end_date": "Present",
+          "description": "Leads automated quality strategy for distributed data services, builds API and contract-test suites, reviews production incidents for test gaps, and mentors engineers on reliable test design."
+        },
+        {
+          "title": "QA Automation Engineer",
+          "company": "CloudRoute",
+          "start_date": "Jul 2021",
+          "end_date": "Dec 2023",
+          "description": "Automated REST and event-driven workflows, created integration tests for microservices, and maintained nightly regression pipelines."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Microservice Contract Test Harness",
+          "description": "Created a contract-testing harness that validates producer-consumer API expectations across independently deployed services and publishes compatibility reports.",
+          "technologies": [
+            "Java",
+            "JUnit",
+            "Pact",
+            "REST Assured",
+            "Kafka",
+            "Docker"
+          ],
+          "link": "https://github.com/marcusreed/contract-harness"
+        }
+      ],
+      "skills": [
+        "SDET",
+        "Java",
+        "JUnit",
+        "REST Assured",
+        "Pact",
+        "Kafka",
+        "Docker",
+        "Kubernetes",
+        "API Testing",
+        "Integration Testing",
+        "CI/CD",
+        "Observability"
+      ],
+      "certifications": [
+        "ISTQB Advanced Test Automation Engineer",
+        "Certified Kubernetes Application Developer"
+      ],
+      "links": [
+        "https://github.com/marcusreed",
+        "https://www.linkedin.com/in/marcusreed"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "LUCAS FERREIRA\nSenior Backend Engineer — São Paulo, Brazil\nEmail lucas.ferreira.backend@gmail.com | Mobile +55 11 97766-4401\nCAREER SUMMARY\nBackend engineer with 10+ years building high-throughput services and data platforms. Strong experience with Go, Java, Kafka, PostgreSQL, and AWS.\nACADEMICS\nFederal University of São Carlos — B.Sc. Computer Science — 2010 / 2014\nPROFESSIONAL HISTORY\nStaff Backend Engineer | MercadoFlux | 2020-01 / current\nLeads backend architecture for payment and settlement services. Designed event-driven workflows with Kafka, implemented idempotency controls, and improved database scalability with partitioning and read replicas.\nSenior Software Engineer | DataRoute | 2016-08 / 2019-12\nBuilt Java microservices and streaming pipelines for logistics customers and operated AWS workloads.\nSoftware Engineer | WebSigma | 2014-07 / 2016-07\nDeveloped REST APIs and internal tools.\nPROJECTS\nSettlement Replay Tool — replays Kafka settlement events into isolated PostgreSQL environments. Go, Kafka, PostgreSQL, Docker. Repository: https://github.com/lucasf/settlement-replay\nCORE SKILLS\nGo, Java, Kafka, PostgreSQL, AWS, Docker, Kubernetes, Redis, REST, Microservices, Distributed Systems\nCERTIFICATIONS\nAWS Certified Solutions Architect – Associate; Confluent Certified Developer for Apache Kafka; Oracle Certified Professional Java SE Programmer\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Lucas Ferreira",
+      "email": "lucas.ferreira.backend@gmail.com",
+      "phone": [
+        "+55 11 97766-4401"
+      ],
+      "location": "São Paulo, Brazil",
+      "summary": "Backend engineer with 10+ years building high-throughput services and data platforms. Strong experience with Go, Java, Kafka, PostgreSQL, and AWS.",
+      "education": [
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "Federal University of São Carlos",
+          "start_date": "2010",
+          "end_date": "2014"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Staff Backend Engineer",
+          "company": "MercadoFlux",
+          "start_date": "2020-01",
+          "end_date": "current",
+          "description": "Leads backend architecture for payment and settlement services. Designed event-driven workflows with Kafka, implemented idempotency controls, and improved database scalability with partitioning and read replicas."
+        },
+        {
+          "title": "Senior Software Engineer",
+          "company": "DataRoute",
+          "start_date": "2016-08",
+          "end_date": "2019-12",
+          "description": "Built Java microservices and streaming pipelines for logistics customers. Operated production workloads on AWS and collaborated on service-level monitoring."
+        },
+        {
+          "title": "Software Engineer",
+          "company": "WebSigma",
+          "start_date": "2014-07",
+          "end_date": "2016-07",
+          "description": "Developed REST APIs and internal tools."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Settlement Replay Tool",
+          "description": "Prototype that replays Kafka settlement events into isolated PostgreSQL environments for debugging.",
+          "technologies": [
+            "Go",
+            "Kafka",
+            "PostgreSQL",
+            "Docker"
+          ],
+          "link": "https://github.com/lucasf/settlement-replay"
+        }
+      ],
+      "skills": [
+        "Go",
+        "Java",
+        "Kafka",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "REST",
+        "Microservices",
+        "Distributed Systems"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Associate",
+        "Confluent Certified Developer for Apache Kafka",
+        "Oracle Certified Professional Java SE Programmer"
+      ],
+      "links": [
+        "https://github.com/lucasf/settlement-replay"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Laura Bennett\nQUANTITATIVE ANALYST\nEmail: laura.bennett@fastmail.com | Phone: +44 7700 900182 | Location: London, United Kingdom\n\nOBJECTIVE / SUMMARY\nQuantitative analyst specializing in portfolio analytics, factor modeling, and risk measurement for multi-asset strategies. Interested in systematic research, performance attribution, and reproducible investment analytics.\n\nEDUCATION\nM.Sc. Statistics and Data Science, University College London, 2022–2023.\nB.Sc. Economics, University of Bristol, 2019–2022.\n\nEXPERIENCE\nQuantitative Analyst, NorthBridge Asset Management, Oct 2023–Present. Builds factor-model research notebooks, validates portfolio risk metrics, automates daily performance reports, and supports portfolio managers with attribution analysis. Performs data checks before research outputs are distributed.\n\nPROJECTS\nFactorAlpha Research Platform — Created a reproducible research framework for testing momentum, value, and volatility factors with walk-forward validation, turnover estimates, and transaction-cost assumptions. Technologies: Python, Pandas, NumPy, scikit-learn, Jupyter, SQL. GitHub: https://github.com/laurabennett/factor-alpha\n\nSKILLS\nQuantitative Research, Python, Statistics, Econometrics, Factor Modeling, Portfolio Analytics, Risk Modeling, Pandas, NumPy, scikit-learn, SQL, Jupyter.\n\nCERTIFICATIONS\nCFA Institute Investment Foundations Certificate; Financial Risk Manager Part I.\n\nLINKS\nGitHub: https://github.com/laurabennett\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quantitative focus: emphasizes reproducible experiments, careful assumptions, leakage prevention, out-of-sample validation, and transparent reporting of risk. Comfortable working with numerical data, statistical diagnostics, and performance metrics. Interested in models and systems that remain interpretable under changing market conditions and realistic transaction constraints. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Laura Bennett",
+      "email": "laura.bennett@fastmail.com",
+      "phone": [
+        "+44 7700 900182"
+      ],
+      "location": "London, United Kingdom",
+      "summary": "Quantitative analyst specializing in portfolio analytics, factor modeling, and risk measurement for multi-asset strategies.",
+      "education": [
+        {
+          "degree": "M.Sc. Statistics and Data Science",
+          "institution": "University College London",
+          "start_date": "2022",
+          "end_date": "2023"
+        },
+        {
+          "degree": "B.Sc. Economics",
+          "institution": "University of Bristol",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Quantitative Analyst",
+          "company": "NorthBridge Asset Management",
+          "start_date": "Oct 2023",
+          "end_date": "Present",
+          "description": "Builds factor-model research notebooks, validates portfolio risk metrics, automates daily performance reports, and supports portfolio managers with attribution analysis."
+        }
+      ],
+      "projects": [
+        {
+          "name": "FactorAlpha Research Platform",
+          "description": "Created a reproducible research framework for testing momentum, value, and volatility factors with walk-forward validation, turnover estimates, and transaction-cost assumptions.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "scikit-learn",
+            "Jupyter",
+            "SQL"
+          ],
+          "link": "https://github.com/laurabennett/factor-alpha"
+        }
+      ],
+      "skills": [
+        "Quantitative Research",
+        "Python",
+        "Statistics",
+        "Econometrics",
+        "Factor Modeling",
+        "Portfolio Analytics",
+        "Risk Modeling",
+        "Pandas",
+        "NumPy",
+        "scikit-learn",
+        "SQL",
+        "Jupyter"
+      ],
+      "certifications": [
+        "CFA Institute Investment Foundations Certificate",
+        "Financial Risk Manager Part I"
+      ],
+      "links": [
+        "https://github.com/laurabennett"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "DANIEL PARK\nSeoul, South Korea | daniel.park.ml@gmail.com | +82-10-5555-2211\nPROFILE\nMachine learning researcher with 11+ years across industrial research, recommender systems, and large-scale NLP. Published applied research and led teams building production ranking models.\nEDUCATION\nPh.D. Computer Science, KAIST, 2011–2016\nM.S. Computer Science, Seoul National University, 2009–2011\nEXPERIENCE\nPrincipal Research Scientist — HanRiver AI — 2021-03 to Present\nLead recommendation, retrieval, and multilingual language-model research. Designed offline evaluation frameworks, production experimentation practices, and mentored researchers.\nSenior ML Scientist — SearchWorks — 2016-08 to 2021-02\nDeveloped learning-to-rank and neural retrieval systems for search and contributed to large-scale training infrastructure.\nPROJECTS\nMultilingual Retrieval Benchmark — Korean-English retrieval evaluation suite using PyTorch and Hugging Face Transformers. https://github.com/danielpark/ml-retrieval\nSKILLS\nPython, PyTorch, Transformers, TensorFlow, SQL, Kubernetes, Spark, Recommender Systems, NLP, Information Retrieval\nCERTIFICATIONS\nAWS Certified Machine Learning – Specialty; Google Professional Machine Learning Engineer; TensorFlow Developer Certificate\nLINKS\nhttps://www.linkedin.com/in/danielpark-ml\nhttps://scholar.google.com/citations?user=danielpark\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Daniel Park",
+      "email": "daniel.park.ml@gmail.com",
+      "phone": [
+        "+82-10-5555-2211"
+      ],
+      "location": "Seoul, South Korea",
+      "summary": "Machine learning researcher with 11+ years across industrial research, recommender systems, and large-scale NLP. Published applied research and led teams building production ranking models.",
+      "education": [
+        {
+          "degree": "Ph.D. Computer Science",
+          "institution": "KAIST",
+          "start_date": "2011",
+          "end_date": "2016"
+        },
+        {
+          "degree": "M.S. Computer Science",
+          "institution": "Seoul National University",
+          "start_date": "2009",
+          "end_date": "2011"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Principal Research Scientist",
+          "company": "HanRiver AI",
+          "start_date": "2021-03",
+          "end_date": "Present",
+          "description": "Lead a research group working on recommendation, retrieval, and multilingual language models. Designed offline evaluation frameworks and production experimentation practices. Mentored researchers and partnered with engineering teams on model deployment."
+        },
+        {
+          "title": "Senior ML Scientist",
+          "company": "SearchWorks",
+          "start_date": "2016-08",
+          "end_date": "2021-02",
+          "description": "Developed learning-to-rank and neural retrieval systems for search. Published papers at industry and academic venues and contributed to large-scale training infrastructure."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Multilingual Retrieval Benchmark",
+          "description": "Created an evaluation suite for Korean-English retrieval using PyTorch and Hugging Face Transformers.",
+          "technologies": [
+            "PyTorch",
+            "Hugging Face Transformers"
+          ],
+          "link": "https://github.com/danielpark/ml-retrieval"
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "TensorFlow",
+        "SQL",
+        "Kubernetes",
+        "Spark",
+        "Recommender Systems",
+        "NLP",
+        "Information Retrieval"
+      ],
+      "certifications": [
+        "AWS Certified Machine Learning – Specialty",
+        "Google Professional Machine Learning Engineer",
+        "TensorFlow Developer Certificate"
+      ],
+      "links": [
+        "https://github.com/danielpark/ml-retrieval",
+        "https://www.linkedin.com/in/danielpark-ml",
+        "https://scholar.google.com/citations?user=danielpark"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Meera Iyer\nEmail: not listed | +91 90031 22418 | Chennai, Tamil Nadu, India\n\nOBJECTIVE / SUMMARY\nMSc student specializing in NLP, information retrieval, and generative AI with an interest in evaluation-driven RAG systems. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Artificial Intelligence | IIT Madras | 2024 – 2026\n- BSc Computer Science | Loyola College, Chennai | 2021 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- NLP Research Intern | LexiCore Research | Jun 2025 – Aug 2025\n  Experimented with transformer-based text classification and retrieval models for legal documents. Created annotation guidelines, evaluated precision and recall, and implemented preprocessing utilities.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- Continuous-RAG Enterprise Retrieval\n  • Built a continuously updated retrieval pipeline with document versioning, metadata-aware chunking, embedding refresh jobs, hybrid retrieval, reranking, and citations.\n  • Stack: Python, LlamaIndex, Elasticsearch, Sentence Transformers, FastAPI, Docker\n  • Repository: https://github.com/meera-iyer/continuous-rag\n- Multilingual Support Assistant\n  • Created a multilingual support assistant for English, Hindi, and Tamil queries with language detection, retrieval routing, evaluation, and low-confidence fallbacks.\n  • Stack: Python, Transformers, LangChain, FAISS, FastAPI, Streamlit\n  • Repository: Not provided\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, NLP, Transformers, PyTorch, Hugging Face, LlamaIndex, LangChain, RAG, Elasticsearch, FAISS, FastAPI, Docker, PostgreSQL.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nHugging Face NLP Course\n\nLINKS\nhttps://github.com/meera-iyer",
+    "output": {
+      "name": "Meera Iyer",
+      "email": null,
+      "phone": [
+        "+91 90031 22418"
+      ],
+      "location": "Chennai, Tamil Nadu, India",
+      "summary": "MSc student specializing in NLP, information retrieval, and generative AI with an interest in evaluation-driven RAG systems.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence",
+          "institution": "IIT Madras",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "Loyola College, Chennai",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "NLP Research Intern",
+          "company": "LexiCore Research",
+          "start_date": "Jun 2025",
+          "end_date": "Aug 2025",
+          "description": "Experimented with transformer-based text classification and retrieval models for legal documents. Created annotation guidelines, evaluated precision and recall, and implemented preprocessing utilities."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Continuous-RAG Enterprise Retrieval",
+          "description": "Built a continuously updated retrieval pipeline with document versioning, metadata-aware chunking, embedding refresh jobs, hybrid retrieval, reranking, and citations.",
+          "technologies": [
+            "Python",
+            "LlamaIndex",
+            "Elasticsearch",
+            "Sentence Transformers",
+            "FastAPI",
+            "Docker"
+          ],
+          "link": "https://github.com/meera-iyer/continuous-rag"
+        },
+        {
+          "name": "Multilingual Support Assistant",
+          "description": "Created a multilingual support assistant for English, Hindi, and Tamil queries with language detection, retrieval routing, evaluation, and low-confidence fallbacks.",
+          "technologies": [
+            "Python",
+            "Transformers",
+            "LangChain",
+            "FAISS",
+            "FastAPI",
+            "Streamlit"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "NLP",
+        "Transformers",
+        "PyTorch",
+        "Hugging Face",
+        "LlamaIndex",
+        "LangChain",
+        "RAG",
+        "Elasticsearch",
+        "FAISS",
+        "FastAPI",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "certifications": [
+        "Hugging Face NLP Course"
+      ],
+      "links": [
+        "https://github.com/meera-iyer"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ETHAN CARTER\nInfrastructure Engineer | Seattle, Washington | ethan.carter@example.com | +1-206-555-0134\n\nSUMMARY\nInfrastructure engineer with 8 years of experience designing reliable cloud platforms and developer tooling. Strong background in Kubernetes, infrastructure as code, service mesh, Linux networking, and observability. Led platform migrations and standardized infrastructure across multiple product teams.\n\nEXPERIENCE\nStaff Infrastructure Engineer, CloudHarbor, Seattle | Jan 2022 - Present\nLeads a platform team supporting 120+ services. Designed a Kubernetes-based internal platform with cluster lifecycle automation, workload identity, policy enforcement, and service discovery. Migrated service networking to Cilium and used eBPF telemetry to investigate packet drops and latency. Established a platform SLO framework and Grafana dashboards covering control-plane health, deployment success, and developer experience. Introduced Crossplane for self-service cloud resources and Argo CD for GitOps.\n\nInfrastructure Engineer, BlueRocket, Seattle | May 2018 - Dec 2021\nManaged AWS and GCP environments, Terraform modules, Linux fleets, and CI/CD. Built automated disaster-recovery drills and standardized monitoring with Prometheus and Grafana.\n\nEDUCATION\nB.S. Computer Engineering, University of Washington | 2014 - 2018\n\nPROJECTS\nCloud Control Plane Lab: Built a local control plane demonstrating Crossplane compositions, Kubernetes operators, Cilium networking, and OpenTelemetry. Technologies: Kubernetes, Crossplane, Cilium, eBPF, Go, OpenTelemetry. Link: https://github.com/ethancarter/cloud-control-plane\n\nSKILLS\nKubernetes, Cilium, eBPF, Crossplane, Terraform, AWS, GCP, Argo CD, Helm, Go, Python, Linux, Prometheus, Grafana, OpenTelemetry, GitOps, networking, disaster recovery.\n\nCERTIFICATIONS\nCertified Kubernetes Administrator (CKA); HashiCorp Certified: Terraform Associate\n\nLINKS\nhttps://www.linkedin.com/in/ethan-carter\nhttps://github.com/ethancarter\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Kubernetes, Cilium, eBPF, Crossplane, Terraform, AWS, GCP, Argo CD. The candidate's featured project is Cloud Control Plane Lab, using Kubernetes, Crossplane, Cilium, eBPF, Go, OpenTelemetry. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Ethan Carter",
+      "email": "ethan.carter@example.com",
+      "phone": [
+        "+1-206-555-0134"
+      ],
+      "location": "Seattle, Washington",
+      "summary": "Infrastructure engineer with 8 years of experience designing reliable cloud platforms and developer tooling. Strong background in Kubernetes, infrastructure as code, service mesh, Linux networking, and observability. Led platform migrations and standardized infrastructure across multiple product teams.",
+      "education": [
+        {
+          "degree": "B.S. Computer Engineering",
+          "institution": "University of Washington",
+          "start_date": "2014",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Staff Infrastructure Engineer",
+          "company": "CloudHarbor",
+          "start_date": "Jan 2022",
+          "end_date": "Present",
+          "description": "Leads a platform team supporting 120+ services; designed Kubernetes platform automation, workload identity, policy enforcement, Cilium/eBPF networking, platform SLO dashboards, Crossplane self-service cloud resources, and Argo CD GitOps."
+        },
+        {
+          "title": "Infrastructure Engineer",
+          "company": "BlueRocket",
+          "start_date": "May 2018",
+          "end_date": "Dec 2021",
+          "description": "Managed AWS/GCP, Terraform, Linux fleets, and CI/CD; built automated disaster-recovery drills and standardized Prometheus/Grafana monitoring."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Cloud Control Plane Lab",
+          "description": "Local control plane demonstrating Crossplane compositions, Kubernetes operators, Cilium networking, and OpenTelemetry.",
+          "technologies": [
+            "Kubernetes",
+            "Crossplane",
+            "Cilium",
+            "eBPF",
+            "Go",
+            "OpenTelemetry"
+          ],
+          "link": "https://github.com/ethancarter/cloud-control-plane"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "Cilium",
+        "eBPF",
+        "Crossplane",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "Argo CD",
+        "Helm",
+        "Go",
+        "Python",
+        "Linux",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "GitOps",
+        "networking",
+        "disaster recovery"
+      ],
+      "certifications": [
+        "Certified Kubernetes Administrator (CKA)",
+        "HashiCorp Certified: Terraform Associate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/ethan-carter",
+        "https://github.com/ethancarter"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "VIKAS RAO\nContact: vikas.rao.engineer@gmail.com | 011-4567-8899 | +91 98100 22334 | +91 98710 77665\nNoida, Uttar Pradesh\nSUMMARY\nSite reliability engineer with 7 years of experience in distributed systems, production operations, and cloud infrastructure. Comfortable owning services from deployment through incident response.\nEDUCATION\nB.Tech, Electronics and Communication Engineering — Amity University — 2014–2018\nEXPERIENCE\nSenior SRE — CloudScale Networks — Mar 2022 – Present\nOwn reliability for customer-facing APIs running on AWS and Kubernetes. Built SLO dashboards, automated runbooks, and capacity alerts. Led post-incident reviews and reliability improvements.\nSRE — DataMesh Corp — Jul 2019 – Feb 2022\nSupported microservices, Kafka clusters, Redis, and PostgreSQL. Reduced noisy alerts through alert-policy redesign and improved deployment safety with canary releases.\nPROJECTS\nReliability Automation Toolkit — Python and Bash tools for health checks, log collection, and automated rollback. GitHub: https://github.com/vikasrao/sre-toolkit\nSKILLS\nPython, Bash, AWS, Kubernetes, Terraform, Kafka, Redis, PostgreSQL, Prometheus, Grafana, SLO, Incident Management\nCERTIFICATIONS\nCKA; AWS Certified DevOps Engineer – Professional\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Vikas Rao",
+      "email": "vikas.rao.engineer@gmail.com",
+      "phone": [
+        "011-4567-8899",
+        "+91 98100 22334",
+        "+91 98710 77665"
+      ],
+      "location": "Noida, Uttar Pradesh",
+      "summary": "Site reliability engineer with 7 years of experience in distributed systems, production operations, and cloud infrastructure. Comfortable owning services from deployment through incident response.",
+      "education": [
+        {
+          "degree": "B.Tech, Electronics and Communication Engineering",
+          "institution": "Amity University",
+          "start_date": "2014",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior SRE",
+          "company": "CloudScale Networks",
+          "start_date": "Mar 2022",
+          "end_date": "Present",
+          "description": "Own reliability for customer-facing APIs on AWS and Kubernetes. Built SLO dashboards, automated runbooks, and capacity alerts. Led post-incident reviews."
+        },
+        {
+          "title": "SRE",
+          "company": "DataMesh Corp",
+          "start_date": "Jul 2019",
+          "end_date": "Feb 2022",
+          "description": "Supported microservices, Kafka clusters, Redis, and PostgreSQL. Reduced noisy alerts through alert-policy redesign and improved deployment safety with canary releases."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Reliability Automation Toolkit",
+          "description": "Collection of Python and Bash tools for health checks, log collection, and automated rollback.",
+          "technologies": [
+            "Python",
+            "Bash"
+          ],
+          "link": "https://github.com/vikasrao/sre-toolkit"
+        }
+      ],
+      "skills": [
+        "Python",
+        "Bash",
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Kafka",
+        "Redis",
+        "PostgreSQL",
+        "Prometheus",
+        "Grafana",
+        "SLO",
+        "Incident Management"
+      ],
+      "certifications": [
+        "CKA",
+        "AWS Certified DevOps Engineer – Professional"
+      ],
+      "links": [
+        "https://github.com/vikasrao/sre-toolkit"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ISABELLE DUPONT\nTechnical Product Manager | Paris, France | isabelle.dupont@example.com | +33-6-55-44-2288\n\nSUMMARY\nTechnical Product Manager with 8 years of experience in developer platforms, identity, and cloud tooling. Former full-stack engineer with strong product analytics skills. Experienced in roadmap ownership, OKRs, cross-functional planning, sprint facilitation, API strategy, and enterprise stakeholder management.\n\nEXPERIENCE\nPrincipal Product Manager, SecureStack, Paris | Jan 2022 - Present\nOwns identity and access management roadmap for enterprise developers. Defines annual strategy and quarterly OKRs covering activation, API reliability, and time-to-first-integration. Runs product discovery with security and platform teams and translates findings into PRDs. Coordinates six-week planning cycles and two-week sprints. Introduced API usage telemetry and a self-service integration wizard that increased successful integrations by 27%.\n\nTechnical Product Manager, DevHub Europe, Paris | May 2018 - Dec 2021\nManaged developer portal, documentation, SDK, and CI integrations. Built roadmap scoring model from adoption, support volume, and engineering effort. Led quarterly business reviews and backlog prioritization.\n\nSoftware Engineer, WebCraft, Lyon | Sep 2016 - Apr 2018\nDeveloped React frontends and Node.js APIs.\n\nEDUCATION\nMSc Computer Science, Sorbonne University | 2014 - 2016\nBSc Computer Science, University of Lyon | 2011 - 2014\n\nPROJECTS\nDeveloper Onboarding Funnel: Built analytics pipeline measuring registration-to-first-deployment conversion. Technologies: SQL, Python, PostgreSQL, dbt, Metabase. Link: https://github.com/isabelle-dupont/onboarding-funnel\n\nSKILLS\nRoadmaps, OKRs, PRDs, Agile, Scrum, sprint planning, product analytics, SQL, Python, APIs, React, Node.js, PostgreSQL, dbt, Metabase, Jira.\n\nCERTIFICATIONS\nCertified Scrum Product Owner (CSPO); Product Analytics Certification\n\nLINKS\nhttps://www.linkedin.com/in/isabelle-dupont\nhttps://github.com/isabelle-dupont\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Roadmaps, OKRs, PRDs, Agile, Scrum, sprint planning, product analytics, SQL. The candidate's featured project is Developer Onboarding Funnel, using SQL, Python, PostgreSQL, dbt, Metabase. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Isabelle Dupont",
+      "email": "isabelle.dupont@example.com",
+      "phone": [
+        "+33-6-55-44-2288"
+      ],
+      "location": "Paris, France",
+      "summary": "Technical Product Manager with 8 years of experience in developer platforms, identity, and cloud tooling. Former full-stack engineer with strong product analytics skills. Experienced in roadmap ownership, OKRs, cross-functional planning, sprint facilitation, API strategy, and enterprise stakeholder management.",
+      "education": [
+        {
+          "degree": "MSc Computer Science",
+          "institution": "Sorbonne University",
+          "start_date": "2014",
+          "end_date": "2016"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "University of Lyon",
+          "start_date": "2011",
+          "end_date": "2014"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Principal Product Manager",
+          "company": "SecureStack",
+          "start_date": "Jan 2022",
+          "end_date": "Present",
+          "description": "Owns IAM roadmap, defines annual strategy and quarterly activation/API/time-to-integration OKRs, leads discovery and PRDs, coordinates planning and sprints, and launched telemetry plus a self-service wizard increasing successful integrations by 27%."
+        },
+        {
+          "title": "Technical Product Manager",
+          "company": "DevHub Europe",
+          "start_date": "May 2018",
+          "end_date": "Dec 2021",
+          "description": "Managed developer portal, docs, SDKs, and CI integrations; built roadmap scoring from adoption, support volume, and engineering effort and led business reviews."
+        },
+        {
+          "title": "Software Engineer",
+          "company": "WebCraft",
+          "start_date": "Sep 2016",
+          "end_date": "Apr 2018",
+          "description": "Developed React frontends and Node.js APIs."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Developer Onboarding Funnel",
+          "description": "Analytics pipeline measuring registration-to-first-deployment conversion.",
+          "technologies": [
+            "SQL",
+            "Python",
+            "PostgreSQL",
+            "dbt",
+            "Metabase"
+          ],
+          "link": "https://github.com/isabelle-dupont/onboarding-funnel"
+        }
+      ],
+      "skills": [
+        "Roadmaps",
+        "OKRs",
+        "PRDs",
+        "Agile",
+        "Scrum",
+        "sprint planning",
+        "product analytics",
+        "SQL",
+        "Python",
+        "APIs",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "dbt",
+        "Metabase",
+        "Jira"
+      ],
+      "certifications": [
+        "Certified Scrum Product Owner (CSPO)",
+        "Product Analytics Certification"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/isabelle-dupont",
+        "https://github.com/isabelle-dupont"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "JONATHAN REED\nTechnical Product Manager | Austin, Texas | jon.reed@example.com | +1-512-555-0139 | +1-512-555-0197\n\nSUMMARY\nTechnical Product Manager with 9 years across developer tools, APIs, and cloud cost management. Former backend engineer who moved into product leadership. Strong in roadmap strategy, OKRs, metrics, sprint planning, platform adoption, and executive communication.\n\nEXPERIENCE\nGroup Product Manager, CostPilot, Austin | Mar 2021 - Present\nOwns roadmap for cloud-finops products generating $18M ARR. Sets annual product strategy and quarterly OKRs, manages a team of three PMs, and coordinates engineering pods across billing, APIs, and reporting. Introduced usage-based pricing analytics that increased expansion revenue 14%. Uses SQL and Amplitude for funnel analysis and experimentation. Leads quarterly planning, sprint reviews, and roadmap tradeoff discussions.\n\nTechnical Product Manager, APIWorks, Dallas | Aug 2017 - Feb 2021\nManaged public API lifecycle, authentication, rate limiting, SDKs, and developer documentation. Partnered with engineering to define versioning policy and service-level targets. Created API adoption dashboards and reduced support tickets by 22%.\n\nSoftware Engineer, BrightStack, Dallas | Jun 2015 - Jul 2017\nBuilt Java and Python microservices and internal data APIs.\n\nEDUCATION\nB.S. Computer Science, University of Texas at Dallas | 2011 - 2015\nMBA, Product Management Certificate Program, UT Austin | 2019 - 2020\n\nPROJECTS\nAPI Health Scorecard: Built a lightweight product analytics service that scores API reliability, usage, and documentation quality. Technologies: Python, FastAPI, PostgreSQL, Amplitude. Link: https://github.com/jonreed/api-health-scorecard\n\nSKILLS\nProduct strategy, OKRs, roadmap planning, Agile, Scrum, sprint planning, SQL, Python, APIs, cloud platforms, Amplitude, Jira, analytics, pricing, stakeholder management.\n\nCERTIFICATIONS\nPragmatic Institute Product Management Certification\n\nLINKS\nhttps://www.linkedin.com/in/jon-reed\nhttps://github.com/jonreed",
+    "output": {
+      "name": "Jonathan Reed",
+      "email": "jon.reed@example.com",
+      "phone": [
+        "+1-512-555-0139",
+        "+1-512-555-0197"
+      ],
+      "location": "Austin, Texas",
+      "summary": "Technical Product Manager with 9 years across developer tools, APIs, and cloud cost management. Former backend engineer who moved into product leadership. Strong in roadmap strategy, OKRs, metrics, sprint planning, platform adoption, and executive communication.",
+      "education": [
+        {
+          "degree": "B.S. Computer Science",
+          "institution": "University of Texas at Dallas",
+          "start_date": "2011",
+          "end_date": "2015"
+        },
+        {
+          "degree": "MBA, Product Management Certificate Program",
+          "institution": "UT Austin",
+          "start_date": "2019",
+          "end_date": "2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Group Product Manager",
+          "company": "CostPilot",
+          "start_date": "Mar 2021",
+          "end_date": "Present",
+          "description": "Owned roadmap for cloud-finops products generating $18M ARR, set strategy and quarterly OKRs, managed three PMs, coordinated engineering pods, introduced usage-based pricing analytics that increased expansion revenue 14%, and led quarterly planning and sprint reviews."
+        },
+        {
+          "title": "Technical Product Manager",
+          "company": "APIWorks",
+          "start_date": "Aug 2017",
+          "end_date": "Feb 2021",
+          "description": "Managed public API lifecycle, authentication, rate limiting, SDKs, and documentation; defined versioning and service targets and reduced support tickets by 22%."
+        },
+        {
+          "title": "Software Engineer",
+          "company": "BrightStack",
+          "start_date": "Jun 2015",
+          "end_date": "Jul 2017",
+          "description": "Built Java and Python microservices and internal data APIs."
+        }
+      ],
+      "projects": [
+        {
+          "name": "API Health Scorecard",
+          "description": "Product analytics service scoring API reliability, usage, and documentation quality.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Amplitude"
+          ],
+          "link": "https://github.com/jonreed/api-health-scorecard"
+        }
+      ],
+      "skills": [
+        "Product strategy",
+        "OKRs",
+        "roadmap planning",
+        "Agile",
+        "Scrum",
+        "sprint planning",
+        "SQL",
+        "Python",
+        "APIs",
+        "cloud platforms",
+        "Amplitude",
+        "Jira",
+        "analytics",
+        "pricing",
+        "stakeholder management"
+      ],
+      "certifications": [
+        "Pragmatic Institute Product Management Certification"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/jon-reed",
+        "https://github.com/jonreed"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Priya Nair\npriya.nair@outlook.com | +91 98950 34012 | Thiruvananthapuram, Kerala, India\n\nOBJECTIVE / SUMMARY\nCloud and platform engineering student with practical experience in Linux administration, containerization, infrastructure as code, and automated deployment. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MTech Computer Science | University of Kerala | 2024 – 2026\n- BTech Computer Science and Engineering | College of Engineering Trivandrum | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Platform Engineering Intern | SecureScale Networks | May 2025 – Jul 2025\n  Automated environment provisioning using Terraform and AWS, containerized services, improved CI checks, and created shell utilities for deployment diagnostics and log collection.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- CloudLaunch\n  • Implemented reusable infrastructure for a three-tier AWS web application including VPC networking, IAM, load balancing, autoscaling, managed databases, and remote state.\n  • Stack: Terraform, AWS, EC2, RDS, VPC, IAM, Application Load Balancer\n  • Repository: https://github.com/priyanair/cloudlaunch\n- Secure CI Pipeline\n  • Created GitHub Actions workflows with dependency scanning, secret detection, container image scanning, unit tests, and deployment gates.\n  • Stack: GitHub Actions, Docker, Trivy, Python, Bash\n  • Repository: Not provided\n\nSKILLS\nLanguages: Python, Bash.\nFrameworks, platforms, and tools: Python, Bash, Linux, AWS, Terraform, Docker, Kubernetes, GitHub Actions, Ansible, Nginx, PostgreSQL, CI/CD, Cloud Security.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nAWS Certified Solutions Architect – Associate; Linux Foundation Introduction to Linux\n\nLINKS\nhttps://github.com/priyanair | https://www.linkedin.com/in/priyanair",
+    "output": {
+      "name": "Priya Nair",
+      "email": "priya.nair@outlook.com",
+      "phone": [
+        "+91 98950 34012"
+      ],
+      "location": "Thiruvananthapuram, Kerala, India",
+      "summary": "Cloud and platform engineering student with practical experience in Linux administration, containerization, infrastructure as code, and automated deployment.",
+      "education": [
+        {
+          "degree": "MTech Computer Science",
+          "institution": "University of Kerala",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "College of Engineering Trivandrum",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineering Intern",
+          "company": "SecureScale Networks",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Automated environment provisioning using Terraform and AWS, containerized services, improved CI checks, and created shell utilities for deployment diagnostics and log collection."
+        }
+      ],
+      "projects": [
+        {
+          "name": "CloudLaunch",
+          "description": "Implemented reusable infrastructure for a three-tier AWS web application including VPC networking, IAM, load balancing, autoscaling, managed databases, and remote state.",
+          "technologies": [
+            "Terraform",
+            "AWS",
+            "EC2",
+            "RDS",
+            "VPC",
+            "IAM",
+            "Application Load Balancer"
+          ],
+          "link": "https://github.com/priyanair/cloudlaunch"
+        },
+        {
+          "name": "Secure CI Pipeline",
+          "description": "Created GitHub Actions workflows with dependency scanning, secret detection, container image scanning, unit tests, and deployment gates.",
+          "technologies": [
+            "GitHub Actions",
+            "Docker",
+            "Trivy",
+            "Python",
+            "Bash"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "Bash",
+        "Linux",
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "Ansible",
+        "Nginx",
+        "PostgreSQL",
+        "CI/CD",
+        "Cloud Security"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Associate",
+        "Linux Foundation Introduction to Linux"
+      ],
+      "links": [
+        "https://github.com/priyanair",
+        "https://www.linkedin.com/in/priyanair"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sanya Kapoor\nsanya.kapoor.ds@gmail.com | +91 98700 55641 | Mumbai, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nData engineering graduate skilled in batch and streaming pipelines, distributed processing, cloud storage, orchestration, and analytics. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Data Engineering | NMIMS University, Mumbai | 2024 – 2026\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Data Engineering Intern | MarketLens | Jan 2026 – Jun 2026\n  Developed ETL workflows for marketing and transaction data using Python, Spark, and cloud object storage. Added data quality checks, partitioning strategies, and Airflow scheduling.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- StreamLake — Real-Time Stock Market Data Streaming\n  • Created an end-to-end pipeline publishing stock records to Kafka, landing raw data in S3, transforming with AWS Glue and Spark, storing curated Parquet, and enabling Athena analytics.\n  • Stack: Apache Kafka, Python, AWS S3, AWS Glue, Apache Spark, Amazon Athena, Parquet, EC2\n  • Repository: https://github.com/sanyakapoor/streamlake\n- Airflow Data Quality Platform\n  • Built scheduled ingestion workflows with retries, dependency management, schema checks, null-rate validation, and failure notifications.\n  • Stack: Apache Airflow, Python, PostgreSQL, Docker, Great Expectations\n  • Repository: https://github.com/sanyakapoor/airflow-quality\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, PySpark, Apache Spark, Apache Kafka, Airflow, AWS S3, AWS Glue, Amazon Athena, Hadoop, Parquet, Docker, PostgreSQL, MySQL, Git.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nAWS Certified Data Engineer – Associate\n\nLINKS\nhttps://github.com/sanyakapoor | https://www.linkedin.com/in/sanyakapoor",
+    "output": {
+      "name": "Sanya Kapoor",
+      "email": "sanya.kapoor.ds@gmail.com",
+      "phone": [
+        "+91 98700 55641"
+      ],
+      "location": "Mumbai, Maharashtra, India",
+      "summary": "Data engineering graduate skilled in batch and streaming pipelines, distributed processing, cloud storage, orchestration, and analytics.",
+      "education": [
+        {
+          "degree": "MSc Data Engineering",
+          "institution": "NMIMS University, Mumbai",
+          "start_date": "2024",
+          "end_date": "2026"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Engineering Intern",
+          "company": "MarketLens",
+          "start_date": "Jan 2026",
+          "end_date": "Jun 2026",
+          "description": "Developed ETL workflows for marketing and transaction data using Python, Spark, and cloud object storage. Added data quality checks, partitioning strategies, and Airflow scheduling."
+        }
+      ],
+      "projects": [
+        {
+          "name": "StreamLake — Real-Time Stock Market Data Streaming",
+          "description": "Created an end-to-end pipeline publishing stock records to Kafka, landing raw data in S3, transforming with AWS Glue and Spark, storing curated Parquet, and enabling Athena analytics.",
+          "technologies": [
+            "Apache Kafka",
+            "Python",
+            "AWS S3",
+            "AWS Glue",
+            "Apache Spark",
+            "Amazon Athena",
+            "Parquet",
+            "EC2"
+          ],
+          "link": "https://github.com/sanyakapoor/streamlake"
+        },
+        {
+          "name": "Airflow Data Quality Platform",
+          "description": "Built scheduled ingestion workflows with retries, dependency management, schema checks, null-rate validation, and failure notifications.",
+          "technologies": [
+            "Apache Airflow",
+            "Python",
+            "PostgreSQL",
+            "Docker",
+            "Great Expectations"
+          ],
+          "link": "https://github.com/sanyakapoor/airflow-quality"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Apache Spark",
+        "Apache Kafka",
+        "Airflow",
+        "AWS S3",
+        "AWS Glue",
+        "Amazon Athena",
+        "Hadoop",
+        "Parquet",
+        "Docker",
+        "PostgreSQL",
+        "MySQL",
+        "Git"
+      ],
+      "certifications": [
+        "AWS Certified Data Engineer – Associate"
+      ],
+      "links": [
+        "https://github.com/sanyakapoor",
+        "https://www.linkedin.com/in/sanyakapoor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "SANA KHAN\nData Engineer | Mumbai\nsana.khan.data@gmail.com | +91 98201 33445\nSUMMARY\nData engineer experienced in batch pipelines, warehouse modeling, and cloud data platforms.\nEDUCATION\nM.Sc Data Science — 2022–2024 — University of Mumbai\nB.Sc Mathematics — 2019–2022 — St. Xavier's College, Mumbai\nEMPLOYMENT\nData Engineer / CloudNine Analytics / Jan 2024 – Present\nBuilt ingestion pipelines with Python and Airflow. Worked with Spark jobs on AWS EMR and curated Parquet datasets in S3. Designed dimensional models for reporting.\nJunior Data Analyst / InsightGrid / 2023-06 – 2023-12\nCreated SQL reports and performed data validation for finance datasets.\nPROJECTS\nLakehouse Pipeline — ingests JSON events, validates schemas, transforms with PySpark, writes partitioned Parquet to S3. Python, PySpark, AWS S3, AWS Glue, Airflow, Parquet.\nSKILLS\nPython, SQL, PySpark, Apache Spark, Airflow, AWS, S3, Glue, EMR, PostgreSQL, Parquet, Git\nCERTIFICATIONS\nAWS Certified Data Engineer – Associate\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Sana Khan",
+      "email": "sana.khan.data@gmail.com",
+      "phone": [
+        "+91 98201 33445"
+      ],
+      "location": "Mumbai",
+      "summary": "Data engineer experienced in batch pipelines, warehouse modeling, and cloud data platforms.",
+      "education": [
+        {
+          "degree": "M.Sc Data Science",
+          "institution": "University of Mumbai",
+          "start_date": "2022",
+          "end_date": "2024"
+        },
+        {
+          "degree": "B.Sc Mathematics",
+          "institution": "St. Xavier's College, Mumbai",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Engineer",
+          "company": "CloudNine Analytics",
+          "start_date": "Jan 2024",
+          "end_date": "Present",
+          "description": "Built ingestion pipelines with Python and Airflow. Worked with Spark jobs on AWS EMR and curated Parquet datasets in S3. Designed dimensional models for reporting."
+        },
+        {
+          "title": "Junior Data Analyst",
+          "company": "InsightGrid",
+          "start_date": "2023-06",
+          "end_date": "2023-12",
+          "description": "Created SQL reports and performed data validation for finance datasets."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Lakehouse Pipeline",
+          "description": "End-to-end pipeline ingesting JSON events, validating schemas, transforming records with PySpark, and writing partitioned Parquet files to S3.",
+          "technologies": [
+            "Python",
+            "PySpark",
+            "AWS S3",
+            "AWS Glue",
+            "Airflow",
+            "Parquet"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Apache Spark",
+        "Airflow",
+        "AWS",
+        "S3",
+        "Glue",
+        "EMR",
+        "PostgreSQL",
+        "Parquet",
+        "Git"
+      ],
+      "certifications": [
+        "AWS Certified Data Engineer – Associate"
+      ],
+      "links": []
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "JORDAN LEE\nAustin, Texas | jordan.lee.engineer@gmail.com | +1 512 555 0147\nSUMMARY\nPlatform engineer with 6 years of experience in internal developer platforms, Kubernetes, and infrastructure automation. Enjoys reducing friction for software teams through reusable tooling.\nEDUCATION\nB.S. Software Engineering — University of Texas at Dallas — 2016–2020\nEXPERIENCE\nPlatform Engineer — DevFoundry — 2022-04 to Present\nBuilt internal service templates, Kubernetes operators, and CI/CD workflows. Maintained Terraform modules and standardized observability with OpenTelemetry and Grafana.\nDevOps Engineer — ScaleOps — 2020-07 to 2022-03\nAutomated AWS infrastructure and deployment pipelines. Supported Dockerized microservices and production incidents.\nPROJECTS\nGolden Path Starter Kit — CLI scaffolding service repositories with Dockerfiles, GitHub Actions, Terraform modules, and observability defaults. https://github.com/jordanlee/golden-path\nSKILLS\nGo, Python, Kubernetes, Docker, Terraform, GitHub Actions, AWS, OpenTelemetry, Grafana, Linux, Helm\nCERTIFICATIONS\nCertified Kubernetes Administrator; AWS Certified SysOps Administrator – Associate; HashiCorp Certified: Terraform Associate\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Jordan Lee",
+      "email": "jordan.lee.engineer@gmail.com",
+      "phone": [
+        "+1 512 555 0147"
+      ],
+      "location": "Austin, Texas",
+      "summary": "Platform engineer with 6 years of experience in internal developer platforms, Kubernetes, and infrastructure automation. Enjoys reducing friction for software teams through reusable tooling.",
+      "education": [
+        {
+          "degree": "B.S. Software Engineering",
+          "institution": "University of Texas at Dallas",
+          "start_date": "2016",
+          "end_date": "2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineer",
+          "company": "DevFoundry",
+          "start_date": "2022-04",
+          "end_date": "Present",
+          "description": "Built internal service templates, Kubernetes operators, and CI/CD workflows. Maintained Terraform modules and standardized observability with OpenTelemetry and Grafana."
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "ScaleOps",
+          "start_date": "2020-07",
+          "end_date": "2022-03",
+          "description": "Automated AWS infrastructure and deployment pipelines. Supported Dockerized microservices and production incidents."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Golden Path Starter Kit",
+          "description": "Created a CLI that scaffolds service repositories with Dockerfiles, GitHub Actions, Terraform modules, and default observability configuration.",
+          "technologies": [
+            "Go",
+            "Docker",
+            "GitHub Actions",
+            "Terraform",
+            "Observability"
+          ],
+          "link": "https://github.com/jordanlee/golden-path"
+        }
+      ],
+      "skills": [
+        "Go",
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitHub Actions",
+        "AWS",
+        "OpenTelemetry",
+        "Grafana",
+        "Linux",
+        "Helm"
+      ],
+      "certifications": [
+        "Certified Kubernetes Administrator",
+        "AWS Certified SysOps Administrator – Associate",
+        "HashiCorp Certified: Terraform Associate"
+      ],
+      "links": [
+        "https://github.com/jordanlee/golden-path"
+      ]
+    }
+  }
+]

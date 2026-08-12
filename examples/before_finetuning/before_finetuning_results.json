@@ -1,0 +1,545 @@
+[
+  {
+    "sample_id": 1,
+    "category": "Rich AI/ML Graduate",
+    "raw_resume_text": "ARJUN MEHRA\nBengaluru, Karnataka | arjun.mehra.ai@gmail.com | +91 98765 41230\nLinkedIn: linkedin.com/in/arjunmehra-ai | GitHub: github.com/arjunmehra\n\nOBJECTIVE\nMSc Artificial Intelligence and Machine Learning student at IIIT Hyderabad with hands-on experience building RAG pipelines, anti-spoiler chatbots, and churn prediction systems. Proficient in Machine Learning, Deep Learning, LangChain, and Sentence Transformers.\n\nEDUCATION\n- MSc Artificial Intelligence and Machine Learning | IIIT Hyderabad | 2024 – 2026 | CGPA: 8.4\n- BSc Computer Science | University of Delhi | 2021 – 2024 | CGPA: 8.8\n\nEXPERIENCE\nMachine Learning Intern | NeuralStack Technologies, Bengaluru | May 2025 – Jul 2025\n- Developed intent classification pipelines using Python, scikit-learn, and transformer embeddings.\n- Improved macro-F1 from 0.81 to 0.88 through class-weighting and error analysis.\n\nPROJECTS\n- BookBot — RAG Powered Chatbot\n  • Built a document QA assistant over technical books with PDF parsing, chunking, vector retrieval, and reranking.\n  • Technologies: Python, LangChain, FAISS, Sentence Transformers, FastAPI, Docker\n  • Link: github.com/arjunmehra/bookbot\n- Customer Retention ML System\n  • Trained classification models for churn prediction; integrated SHAP explainability.\n  • Technologies: Python, Pandas, scikit-learn, XGBoost, MLflow, SHAP\n  • Link: github.com/arjunmehra/churn-ml\n\nSKILLS\nPython, SQL, C++, PyTorch, TensorFlow, scikit-learn, Transformers, LangChain, RAG, Hugging Face, FAISS, MLflow, SHAP, PostgreSQL, AWS, Docker",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"ARJUN MEHRA\",\n  \"location\": \"Bengaluru, Karnataka\",\n  \"email\": \"arjun.mehra.ai@gmail.com\",\n  \"phone\": \"+91 98765 41230\",\n  \"linkedin\": \"linkedin.com/in/arjunmehra-ai\",\n  \"github\": \"github.com/arjunmehra\",\n  \"objective\": {\n    \"title\": \"MSc Artificial Intelligence and Machine Learning student\",\n    \"institution\": \"IIIT Hyderabad\",\n    \"degree\": \"MSc\",\n    \"year\": \"2024 – 2026\",\n    \"cgpa\": 8.4\n  },\n  \"education\": [\n    {\n      \"degree\": \"MSc Artificial Intelligence and Machine Learning\",\n      \"institution\": \"IIIT Hyderabad\",\n      \"year\": \"2024 – 2026\",\n      \"cgpa\": 8.4\n    },\n    {\n      \"degree\": \"BSc Computer Science\",\n      \"institution\": \"University of Delhi\",\n      \"year\": \"2021 – 2024\",\n      \"cgpa\": 8.8\n    }\n  ],\n  \"experience\": {\n    \"position\": \"Machine Learning Intern\",\n    \"company\": \"NeuralStack Technologies, Bengaluru\",\n    \"date\": \"May 2025 – Jul 2025\",\n    \"responsibilities\": [\n      \"Developed intent classification pipelines using Python, scikit-learn, and transformer embeddings.\",\n      \"Improved macro-F1 from 0.81 to 0.88 through class-weighting and error analysis.\"\n    ]\n  },\n  \"projects\": [\n    {\n      \"title\": \"BookBot — RAG Powered Chatbot\",\n      \"description\": \"Built a document QA assistant over technical books with PDF parsing, chunking, vector retrieval, and reranking.\",\n      \"technologies\": [\n        \"Python\",\n        \"LangChain\",\n        \"FAISS\",\n        \"Sentence Transformers\",\n        \"FastAPI\",\n        \"Docker\"\n      ],\n      \"link\": \"github.com/arjunmehra/bookbot\"\n    },\n    {\n      \"title\": \"Customer Retention ML System\",\n      \"description\": \"Trained classification models for churn prediction; integrated SHAP explainability.\",\n      \"technologies\": [\n        \"Python\",\n        \"Pandas\",\n        \"scikit-learn\",\n        \"XGBoost\",\n        \"MLflow\",\n        \"SHAP\"\n      ],\n      \"link\": \"github.com/arjunmehra/churn-ml\"\n    }\n  ],\n  \"skills\": [\n    \"Python\",\n    \"SQL\",\n    \"C++\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"Transformers\",\n    \"LangChain\",\n    \"RAG\",\n    \"Hugging Face\",\n    \"FAISS\",\n    \"MLflow\",\n    \"SHAP\",\n    \"PostgreSQL\",\n    \"AWS\",\n    \"Docker\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Arjun Mehra",
+      "email": "arjun.mehra.ai@gmail.com",
+      "phone": [
+        "+91 98765 41230"
+      ],
+      "location": "Bengaluru, Karnataka",
+      "summary": "MSc Artificial Intelligence and Machine Learning student at IIIT Hyderabad with hands-on experience building RAG pipelines, anti-spoiler chatbots, and churn prediction systems.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence and Machine Learning",
+          "institution": "IIIT Hyderabad",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "University of Delhi",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Intern",
+          "company": "NeuralStack Technologies",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Developed intent classification pipelines using Python, scikit-learn, and transformer embeddings. Improved macro-F1 from 0.81 to 0.88 through class-weighting and error analysis."
+        }
+      ],
+      "projects": [
+        {
+          "name": "BookBot — RAG Powered Chatbot",
+          "description": "Built a document QA assistant over technical books with PDF parsing, chunking, vector retrieval, and reranking.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "FAISS",
+            "Sentence Transformers",
+            "FastAPI",
+            "Docker"
+          ],
+          "link": "github.com/arjunmehra/bookbot"
+        },
+        {
+          "name": "Customer Retention ML System",
+          "description": "Trained classification models for churn prediction; integrated SHAP explainability.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "scikit-learn",
+            "XGBoost",
+            "MLflow",
+            "SHAP"
+          ],
+          "link": "github.com/arjunmehra/churn-ml"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "C++",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "Transformers",
+        "LangChain",
+        "RAG",
+        "Hugging Face",
+        "FAISS",
+        "MLflow",
+        "SHAP",
+        "PostgreSQL",
+        "AWS",
+        "Docker"
+      ],
+      "certifications": [],
+      "links": [
+        "linkedin.com/in/arjunmehra-ai",
+        "github.com/arjunmehra"
+      ]
+    }
+  },
+  {
+    "sample_id": 2,
+    "category": "Senior DevOps (2 Phones)",
+    "raw_resume_text": "RAHUL KRISHNAMURTHY\nrahulk@outlook.com | Mobile: +91-9123456789, +91-9000011111 | Pune, India\n\nSUMMARY\nSenior DevOps Engineer (8 yrs) specializing in Kubernetes, CI/CD, and IaC.\n\nCORE COMPETENCIES\nAWS | Azure | Kubernetes | Terraform | Jenkins | Ansible | Python | Bash | Helm | Prometheus\n\nPROFESSIONAL HISTORY\nLead DevOps Engineer — TechMahindra (Mar 2020 – Present)\n- Used Terraform to provision multi-region AWS infra. Led a team of 5 engineers.\nDevOps Engineer — HCL Technologies (Jun 2016 – Feb 2020)\n- Built Jenkins pipelines; reduced deployment time by 40% with Ansible automation.\n\nPROJECTS\n- Multi-Cloud K8s Orchestrator\n  • Automated cluster creation across AWS EKS and Azure AKS using Terraform.\n  • Tech: Terraform, AWS, Azure, Kubernetes, Helm\n  • Link: github.com/rahulk/k8s-infra\n\nEDUCATION\nB.Tech Information Technology | SRM University | 2012 – 2016",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"RAHUL KRISHNAMURTHY\",\n  \"email\": \"rahulk@outlook.com\",\n  \"phone\": [\"+91-9123456789\", \"+91-9000011111\"],\n  \"location\": \"Pune, India\",\n  \"summary\": \"Senior DevOps Engineer (8 yrs) specializing in Kubernetes, CI/CD, and IaC.\",\n  \"competencies\": [\n    \"AWS\",\n    \"Azure\",\n    \"Kubernetes\",\n    \"Terraform\",\n    \"Jenkins\",\n    \"Ansible\",\n    \"Python\",\n    \"Bash\",\n    \"Helm\",\n    \"Prometheus\"\n  ],\n  \"professional_history\": [\n    {\n      \"title\": \"Lead DevOps Engineer\",\n      \"company\": \"TechMahindra\",\n      \"date\": \"Mar 2020 – Present\"\n    },\n    {\n      \"title\": \"DevOps Engineer\",\n      \"company\": \"HCL Technologies\",\n      \"date\": \"Jun 2016 – Feb 2020\"\n    }\n  ],\n  \"projects\": [\n    {\n      \"title\": \"Multi-Cloud K8s Orchestrator\",\n      \"description\": \"Automated cluster creation across AWS EKS and Azure AKS using Terraform.\",\n      \"tech\": [\"Terraform\", \"AWS\", \"Azure\", \"Kubernetes\", \"Helm\"],\n      \"link\": \"github.com/rahulk/k8s-infra\"\n    }\n  ],\n  \"education\": {\n    \"degree\": \"B.Tech Information Technology\",\n    \"university\": \"SRM University\",\n    \"date\": \"2012 – 2016\"\n  }\n}",
+    "ground_truth": {
+      "name": "Rahul Krishnamurthy",
+      "email": "rahulk@outlook.com",
+      "phone": [
+        "+91-9123456789",
+        "+91-9000011111"
+      ],
+      "location": "Pune, India",
+      "summary": "Senior DevOps Engineer (8 yrs) specializing in Kubernetes, CI/CD, and IaC.",
+      "education": [
+        {
+          "degree": "B.Tech Information Technology",
+          "institution": "SRM University",
+          "start_date": "2012",
+          "end_date": "2016"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Lead DevOps Engineer",
+          "company": "TechMahindra",
+          "start_date": "Mar 2020",
+          "end_date": "Present",
+          "description": "Used Terraform to provision multi-region AWS infra. Led a team of 5 engineers."
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "HCL Technologies",
+          "start_date": "Jun 2016",
+          "end_date": "Feb 2020",
+          "description": "Built Jenkins pipelines; reduced deployment time by 40% with Ansible automation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Multi-Cloud K8s Orchestrator",
+          "description": "Automated cluster creation across AWS EKS and Azure AKS using Terraform.",
+          "technologies": [
+            "Terraform",
+            "AWS",
+            "Azure",
+            "Kubernetes",
+            "Helm"
+          ],
+          "link": "github.com/rahulk/k8s-infra"
+        }
+      ],
+      "skills": [
+        "AWS",
+        "Azure",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "Ansible",
+        "Python",
+        "Bash",
+        "Helm",
+        "Prometheus"
+      ],
+      "certifications": [],
+      "links": [
+        "github.com/rahulk/k8s-infra"
+      ]
+    }
+  },
+  {
+    "sample_id": 3,
+    "category": "Fresh Graduate (No Work Experience)",
+    "raw_resume_text": "Arjun Mehta\narjunmehta99@gmail.com | LinkedIn: linkedin.com/in/arjunmehta\n\nAbout Me\nFinal-year B.Sc. Data Science student passionate about machine learning.\n\nAcademic Background\nB.Sc. Data Science — Mumbai University (2021 – 2024)\n\nProjects\n- Movie Recommendation System\n  • Built a collaborative filtering engine using Python, Pandas, and Scikit-learn.\n- Sentiment Analysis on Twitter\n  • Classified tweets using NLTK and Matplotlib.\n\nTechnical Skills\nPython, Pandas, NumPy, Scikit-learn, SQL, Tableau",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"Arjun Mehta\",\n  \"email\": \"arjunmehta99@gmail.com\",\n  \"linkedin\": \"linkedin.com/in/arjunmehta\",\n  \"about_me\": \"Final-year B.Sc. Data Science student passionate about machine learning.\",\n  \"academic_background\": [\n    \"B.Sc. Data Science — Mumbai University (2021 – 2024)\"\n  ],\n  \"projects\": [\n    {\n      \"title\": \"Movie Recommendation System\",\n      \"description\": \"Built a collaborative filtering engine using Python, Pandas, and Scikit-learn.\"\n    },\n    {\n      \"title\": \"Sentiment Analysis on Twitter\",\n      \"description\": \"Classified tweets using NLTK and Matplotlib.\"\n    }\n  ],\n  \"technical_skills\": [\n    \"Python\",\n    \"Pandas\",\n    \"NumPy\",\n    \"Scikit-learn\",\n    \"SQL\",\n    \"Tableau\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Arjun Mehta",
+      "email": "arjunmehta99@gmail.com",
+      "phone": [],
+      "location": null,
+      "summary": "Final-year B.Sc. Data Science student passionate about machine learning.",
+      "education": [
+        {
+          "degree": "B.Sc. Data Science",
+          "institution": "Mumbai University",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [],
+      "projects": [
+        {
+          "name": "Movie Recommendation System",
+          "description": "Built a collaborative filtering engine using Python, Pandas, and Scikit-learn.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn"
+          ],
+          "link": null
+        },
+        {
+          "name": "Sentiment Analysis on Twitter",
+          "description": "Classified tweets using NLTK and Matplotlib.",
+          "technologies": [
+            "Python",
+            "NLTK",
+            "Matplotlib"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "SQL",
+        "Tableau"
+      ],
+      "certifications": [],
+      "links": [
+        "linkedin.com/in/arjunmehta"
+      ]
+    }
+  },
+  {
+    "sample_id": 4,
+    "category": "Career Changer (Mech to Data Science)",
+    "raw_resume_text": "Rohan Kulkarni\nrohan.kulkarni@gmail.com | +91 98220 11223 | Pune, India\n\nSUMMARY\nFormer Mechanical Design Engineer with 2 years domain experience, transitioned into Data Science through intensive training in Python, ML, and SQL.\n\nEDUCATION\n- B.E. Mechanical Engineering | COEP Pune | 2018 – 2022\n- Executive PG Diploma in Data Science | IIIT Bangalore | 2023 – 2024\n\nEXPERIENCE\nDesign Engineer | Tata Motors | Jul 2022 – Aug 2023\n- Designed automotive chassis components in CATIA V5. Analyzed failure modes.\n\nPROJECTS\n- Predictive Maintenance Engine\n  • Built XGBoost classification model to predict machine breakdown 48 hours prior.\n  • Tech: Python, XGBoost, Scikit-learn, Streamlit\n\nSKILLS\nPython, SQL, Pandas, NumPy, Scikit-learn, XGBoost, Tableau, CATIA V5",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"candidate_name\": \"Rohan Kulkarni\",\n  \"email\": \"rohan.kulkarni@gmail.com\",\n  \"phone\": \"+91 98220 11223\",\n  \"location\": \"Pune, India\",\n  \"summary\": \"Former Mechanical Design Engineer with 2 years domain experience, transitioned into Data Science through intensive training in Python, ML, and SQL.\",\n  \"education\": [\n    \"B.E. Mechanical Engineering | COEP Pune | 2018 – 2022\",\n    \"Executive PG Diploma in Data Science | IIIT Bangalore | 2023 – 2024\"\n  ],\n  \"experience\": [\n    {\n      \"position\": \"Design Engineer\",\n      \"company\": \"Tata Motors\",\n      \"date\": \"Jul 2022 – Aug 2023\",\n      \"description\": \"Designed automotive chassis components in CATIA V5. Analyzed failure modes.\"\n    }\n  ],\n  \"projects\": [\n    {\n      \"title\": \"Predictive Maintenance Engine\",\n      \"description\": \"Built XGBoost classification model to predict machine breakdown 48 hours prior.\",\n      \"technologies\": [\n        \"Python\",\n        \"XGBoost\",\n        \"Scikit-learn\",\n        \"Streamlit\"\n      ]\n    }\n  ],\n  \"skills\": [\n    \"Python\",\n    \"SQL\",\n    \"Pandas\",\n    \"NumPy\",\n    \"Scikit-learn\",\n    \"XGBoost\",\n    \"Tableau\",\n    \"CATIA V5\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Rohan Kulkarni",
+      "email": "rohan.kulkarni@gmail.com",
+      "phone": [
+        "+91 98220 11223"
+      ],
+      "location": "Pune, India",
+      "summary": "Former Mechanical Design Engineer with 2 years domain experience, transitioned into Data Science through intensive training in Python, ML, and SQL.",
+      "education": [
+        {
+          "degree": "B.E. Mechanical Engineering",
+          "institution": "COEP Pune",
+          "start_date": "2018",
+          "end_date": "2022"
+        },
+        {
+          "degree": "Executive PG Diploma in Data Science",
+          "institution": "IIIT Bangalore",
+          "start_date": "2023",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Design Engineer",
+          "company": "Tata Motors",
+          "start_date": "Jul 2022",
+          "end_date": "Aug 2023",
+          "description": "Designed automotive chassis components in CATIA V5. Analyzed failure modes."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Predictive Maintenance Engine",
+          "description": "Built XGBoost classification model to predict machine breakdown 48 hours prior.",
+          "technologies": [
+            "Python",
+            "XGBoost",
+            "Scikit-learn",
+            "Streamlit"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "Tableau",
+        "CATIA V5"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  },
+  {
+    "sample_id": 5,
+    "category": "Missing Email Edge Case",
+    "raw_resume_text": "Sneha Kulkarni\nPhone: +91-9765432109 | Location: Hyderabad, India\nLinkedIn: linkedin.com/in/snehakulkarni\n\nSUMMARY\nSelf-taught Full Stack Developer with 4 years experience in Web Apps.\n\nWORK EXPERIENCE\nFull Stack Web Developer | Paytm Insider | Aug 2020 – Present\n- Built event booking dashboard using Vue.js and Node.js.\n\nSKILLS\nJavaScript, Vue.js, Node.js, Express.js, MongoDB, PostgreSQL",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"Sneha Kulkarni\",\n  \"phone\": \"+91-9765432109\",\n  \"location\": \"Hyderabad, India\",\n  \"linkedin\": \"linkedin.com/in/snehakulkarni\",\n  \"summary\": \"Self-taught Full Stack Developer with 4 years experience in Web Apps.\",\n  \"work_experience\": [\n    {\n      \"title\": \"Full Stack Web Developer\",\n      \"company\": \"Paytm Insider\",\n      \"date\": \"Aug 2020 – Present\"\n    }\n  ],\n  \"skills\": [\n    \"JavaScript\",\n    \"Vue.js\",\n    \"Node.js\",\n    \"Express.js\",\n    \"MongoDB\",\n    \"PostgreSQL\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Sneha Kulkarni",
+      "email": null,
+      "phone": [
+        "+91-9765432109"
+      ],
+      "location": "Hyderabad, India",
+      "summary": "Self-taught Full Stack Developer with 4 years experience in Web Apps.",
+      "education": [],
+      "experience": [
+        {
+          "title": "Full Stack Web Developer",
+          "company": "Paytm Insider",
+          "start_date": "Aug 2020",
+          "end_date": "Present",
+          "description": "Built event booking dashboard using Vue.js and Node.js."
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "JavaScript",
+        "Vue.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "PostgreSQL"
+      ],
+      "certifications": [],
+      "links": [
+        "linkedin.com/in/snehakulkarni"
+      ]
+    }
+  },
+  {
+    "sample_id": 6,
+    "category": "Alternate Section Headers",
+    "raw_resume_text": "KARTIK VARMA\nkartik.v@analytics.co | +91 9112233445 | Chennai\n\nCAREER OVERVIEW\nBI Lead specializing in SQL data warehousing and executive dashboards.\n\nEMPLOYMENT HISTORY\nLead BI Analyst — Flipkart (Nov 2020 – Present)\n- Designed PowerBI dashboards for logistics tracking.\n\nSCHOLASTIC RECORD\nB.Tech Electrical Engineering — Anna University, Chennai (2013 – 2017)\n\nCORE STRENGTHS\nSQL, PostgreSQL, PowerBI, DAX, Python, ETL, Airflow",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"candidate_name\": \"KARTIK VARMA\",\n  \"email\": \"kartik.v@analytics.co\",\n  \"phone\": \"+91 9112233445\",\n  \"location\": \"Chennai\",\n  \"career_overview\": {\n    \"position\": \"BI Lead\",\n    \"specialization\": \"SQL data warehousing and executive dashboards\"\n  },\n  \"employment_history\": [\n    {\n      \"role\": \"Lead BI Analyst\",\n      \"company\": \"Flipkart\",\n      \"date\": \"Nov 2020 – Present\"\n    }\n  ],\n  \"education\": {\n    \"degree\": \"B.Tech Electrical Engineering\",\n    \"institution\": \"Anna University, Chennai\",\n    \"date\": \"2013 – 2017\"\n  },\n  \"core_strengths\": [\n    \"SQL\",\n    \"PostgreSQL\",\n    \"PowerBI\",\n    \"DAX\",\n    \"Python\",\n    \"ETL\",\n    \"Airflow\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Kartik Varma",
+      "email": "kartik.v@analytics.co",
+      "phone": [
+        "+91 9112233445"
+      ],
+      "location": "Chennai",
+      "summary": "BI Lead specializing in SQL data warehousing and executive dashboards.",
+      "education": [
+        {
+          "degree": "B.Tech Electrical Engineering",
+          "institution": "Anna University, Chennai",
+          "start_date": "2013",
+          "end_date": "2017"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Lead BI Analyst",
+          "company": "Flipkart",
+          "start_date": "Nov 2020",
+          "end_date": "Present",
+          "description": "Designed PowerBI dashboards for logistics tracking."
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "SQL",
+        "PostgreSQL",
+        "PowerBI",
+        "DAX",
+        "Python",
+        "ETL",
+        "Airflow"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  },
+  {
+    "sample_id": 7,
+    "category": "PhD Researcher (Multiple Degrees)",
+    "raw_resume_text": "Dr. Daniel Okafor\ndaniel.okafor@ai.org | +44 20 7946 0912 | London, UK\n\nSUMMARY\nAI Research Scientist specialized in Transformer architectures, NLP, and LLM alignment.\n\nEDUCATION\n- Ph.D. Computer Science | Imperial College London | 2020 – 2024\n- M.Sc. Artificial Intelligence | University of Edinburgh | 2018 – 2019\n- B.Sc. Computer Science | University of Lagos | 2013 – 2017\n\nEXPERIENCE\nSenior Research Scientist | DeepMind | 2024 – Present\n- Conducting research on post-training alignment and RLHF.\n\nSKILLS\nPython, PyTorch, Jax, Transformers, RLHF, C++, CUDA",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"Dr. Daniel Okafor\",\n  \"email\": \"daniel.okafor@ai.org\",\n  \"phone\": \"+44 20 7946 0912\",\n  \"location\": \"London, UK\",\n  \"summary\": \"AI Research Scientist specialized in Transformer architectures, NLP, and LLM alignment.\",\n  \"education\": [\n    \"Ph.D. Computer Science | Imperial College London | 2020 – 2024\",\n    \"M.Sc. Artificial Intelligence | University of Edinburgh | 2018 – 2019\",\n    \"B.Sc. Computer Science | University of Lagos | 2013 – 2017\"\n  ],\n  \"experience\": [\n    \"Senior Research Scientist | DeepMind | 2024 – Present\",\n    \"Research Scientist | DeepMind | 2021 – 2024\"\n  ],\n  \"skills\": [\n    \"Python\",\n    \"PyTorch\",\n    \"Jax\",\n    \"Transformers\",\n    \"RLHF\",\n    \"C++\",\n    \"CUDA\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Dr. Daniel Okafor",
+      "email": "daniel.okafor@ai.org",
+      "phone": [
+        "+44 20 7946 0912"
+      ],
+      "location": "London, UK",
+      "summary": "AI Research Scientist specialized in Transformer architectures, NLP, and LLM alignment.",
+      "education": [
+        {
+          "degree": "Ph.D. Computer Science",
+          "institution": "Imperial College London",
+          "start_date": "2020",
+          "end_date": "2024"
+        },
+        {
+          "degree": "M.Sc. Artificial Intelligence",
+          "institution": "University of Edinburgh",
+          "start_date": "2018",
+          "end_date": "2019"
+        },
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "University of Lagos",
+          "start_date": "2013",
+          "end_date": "2017"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior Research Scientist",
+          "company": "DeepMind",
+          "start_date": "2024",
+          "end_date": "Present",
+          "description": "Conducting research on post-training alignment and RLHF."
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Jax",
+        "Transformers",
+        "RLHF",
+        "C++",
+        "CUDA"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  },
+  {
+    "sample_id": 8,
+    "category": "Minimal Resume (Short Text)",
+    "raw_resume_text": "Vikram Singh\nvikram.singh@dev.io\n\nCloud Security Consultant at Wipro (2021 - 2024).\nEducation: B.Tech Cyber Security - Amity University (2017 - 2021)\nSkills: AWS Security, IAM, SIEM, Python, Wireshark",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"Vikram Singh\",\n  \"email\": \"vikram.singh@dev.io\",\n  \"company\": \"Wipro\",\n  \"position\": \"Cloud Security Consultant\",\n  \"employment\": [\n    {\n      \"company\": \"Wipro\",\n      \"position\": \"Cloud Security Consultant\",\n      \"date\": \"2021 - 2024\"\n    }\n  ],\n  \"education\": [\n    {\n      \"institution\": \"Amity University\",\n      \"degree\": \"B.Tech Cyber Security\",\n      \"date\": \"2017 - 2021\"\n    }\n  ],\n  \"skills\": [\n    \"AWS Security\",\n    \"IAM\",\n    \"SIEM\",\n    \"Python\",\n    \"Wireshark\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Vikram Singh",
+      "email": "vikram.singh@dev.io",
+      "phone": [],
+      "location": null,
+      "summary": null,
+      "education": [
+        {
+          "degree": "B.Tech Cyber Security",
+          "institution": "Amity University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Cloud Security Consultant",
+          "company": "Wipro",
+          "start_date": "2021",
+          "end_date": "2024",
+          "description": null
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "AWS Security",
+        "IAM",
+        "SIEM",
+        "Python",
+        "Wireshark"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  },
+  {
+    "sample_id": 9,
+    "category": "Skills Buried in Projects (No Skills Section)",
+    "raw_resume_text": "Priya Shah\npriya.shah@design.in | +91 99000 11223\n\nExperience:\nUX Designer at Swiggy (2022 - Present). Built Figma prototypes, ran usability testing, and authored CSS design tokens.\n\nEducation:\nB.Des from NID Ahmedabad (2018 - 2022)",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"Priya Shah\",\n  \"email\": \"priya.shah@design.in\",\n  \"phone\": \"+91 99000 11223\",\n  \"experience\": [\n    {\n      \"title\": \"UX Designer\",\n      \"company\": \"Swiggy\",\n      \"date\": \"2022 - Present\",\n      \"responsibilities\": [\n        \"Built Figma prototypes\",\n        \"Ran usability testing\",\n        \"Authored CSS design tokens\"\n      ]\n    }\n  ],\n  \"education\": [\n    {\n      \"degree\": \"B.Des\",\n      \"institution\": \"NID Ahmedabad\",\n      \"date\": \"2018 - 2022\"\n    }\n  ]\n}",
+    "ground_truth": {
+      "name": "Priya Shah",
+      "email": "priya.shah@design.in",
+      "phone": [
+        "+91 99000 11223"
+      ],
+      "location": null,
+      "summary": null,
+      "education": [
+        {
+          "degree": "B.Des",
+          "institution": "NID Ahmedabad",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "UX Designer",
+          "company": "Swiggy",
+          "start_date": "2022",
+          "end_date": "Present",
+          "description": "Built Figma prototypes, ran usability testing, and authored CSS design tokens."
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Figma",
+        "usability testing",
+        "CSS"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  },
+  {
+    "sample_id": 10,
+    "category": "Inconsistent Date Formats",
+    "raw_resume_text": "Amitav Ghosh\namitav.ghosh@kolkata.dev | +91 9830098300 | Kolkata\n\nEXPERIENCE\nStaff Engineer — TCS (01/2019 – Present)\nArchitected micro-frontends in React.\nSenior Developer — Cognizant (06/2014 – 12/2018)\nBuilt Java services.\n\nACADEMICS\nB.Tech CSE - Jadavpur University (2010-2014)\n\nSKILLS\nReact, Java, Oracle DB",
+    "base_model_output_raw": "<think>\n</think>\n\n{\n  \"name\": \"Amitav Ghosh\",\n  \"email\": \"amitav.ghosh@kolkata.dev\",\n  \"phone\": \"+91 9830098300\",\n  \"experience\": [\n    {\n      \"title\": \"Staff Engineer\",\n      \"company\": \"TCS\",\n      \"duration\": \"01/2019 – Present\",\n      \"responsibilities\": [\n        \"Architected micro-frontends in React\"\n      ]\n    },\n    {\n      \"title\": \"Senior Developer\",\n      \"company\": \"Cognizant\",\n      \"duration\": \"06/2014 – 12/2018\",\n      \"responsibilities\": [\n        \"Built Java services\"\n      ]\n    }\n  ],\n  \"education\": [\n    {\n      \"degree\": \"B.Tech CSE\",\n      \"institution\": \"Jadavpur University\",\n      \"duration\": \"2010-2014\"\n    }\n  ],\n  \"skills\": [\n    \"React\",\n    \"Java\",\n    \"Oracle DB\"\n  ]\n}",
+    "ground_truth": {
+      "name": "Amitav Ghosh",
+      "email": "amitav.ghosh@kolkata.dev",
+      "phone": [
+        "+91 9830098300"
+      ],
+      "location": "Kolkata",
+      "summary": null,
+      "education": [
+        {
+          "degree": "B.Tech CSE",
+          "institution": "Jadavpur University",
+          "start_date": "2010",
+          "end_date": "2014"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Staff Engineer",
+          "company": "TCS",
+          "start_date": "01/2019",
+          "end_date": "Present",
+          "description": "Architected micro-frontends in React."
+        },
+        {
+          "title": "Senior Developer",
+          "company": "Cognizant",
+          "start_date": "06/2014",
+          "end_date": "12/2018",
+          "description": "Built Java services."
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "React",
+        "Java",
+        "Oracle DB"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  }
+]

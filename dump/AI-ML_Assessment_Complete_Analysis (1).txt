@@ -1,0 +1,1307 @@
+AI-ML ASSESSMENT — COMPLETE ANALYSIS & EXECUTION GUIDE
+==============================================================
+
+Assessment Title:
+Build a Domain-Specific Resume Intelligence LLM Prototype
+
+SOURCE:
+AI-ML Assessment.pdf provided by the user.
+
+IMPORTANT:
+This document captures the detailed explanation of the assessment and what each part requires. It is based primarily on the assessment document, with explanatory interpretation added to make the requirements easy to understand.
+
+--------------------------------------------------------------
+1. WHAT IS THIS ASSESSMENT ABOUT?
+--------------------------------------------------------------
+
+The assessment asks you to build a small AI system that performs RESUME INTELLIGENCE / RESUME PARSING.
+
+In simple words:
+
+INPUT:
+A resume, usually represented as text.
+
+OUTPUT:
+Structured information, typically JSON.
+
+Example input:
+
+John Doe
+MSc Computer Science
+ABC University
+Python, Java, SQL
+
+Example output:
+
+{
+  "name": "John Doe",
+  "education": [
+    {
+      "degree": "MSc Computer Science",
+      "institution": "ABC University"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Java",
+    "SQL"
+  ]
+}
+
+However, the assessment is NOT merely asking you to create an API that calls an existing OpenAI/Gemini model.
+
+Its stated objective is to demonstrate that you understand how to BUILD/ADAPT a DOMAIN-SPECIFIC LLM rather than simply consuming hosted APIs.
+
+The assessment therefore covers the complete lifecycle:
+
+1. Choose an appropriate open-source model.
+2. Create a domain-specific instruction-tuning dataset.
+3. Fine-tune/adapt the model or design the complete training pipeline.
+4. Build a rigorous evaluation methodology.
+5. Build a small usable inference script/API.
+6. Package everything into a clean GitHub repository.
+
+The assessment has five parts:
+
+Part 1 — Research & Model Selection: 20 marks
+Part 2 — Dataset Creation: 25 marks
+Part 3 — Fine-Tuning / Adaptation: 25 marks
+Part 4 — Evaluation Framework: 20 marks
+Part 5 — Engineering: 10 marks
+
+TOTAL = 100 marks
+
+The biggest areas are DATASET + TRAINING = 50 marks.
+
+--------------------------------------------------------------
+2. THE OVERALL PROJECT PIPELINE
+--------------------------------------------------------------
+
+Think of the final system as:
+
+RESUME
+   |
+   v
+OPEN-SOURCE LLM
+   |
+   | Fine-tuned/adapted for resume parsing
+   v
+STRUCTURED JSON
+   |
+   v
+EVALUATION
+   |
+   v
+INFERENCE SCRIPT / API
+
+The five assessment parts map to:
+
+Part 1 -> Why this model?
+Part 2 -> What data will teach it?
+Part 3 -> How will you train/adapt it?
+Part 4 -> How will you know it works?
+Part 5 -> Can someone actually run it?
+
+This is essentially a mini LLM engineering project.
+
+--------------------------------------------------------------
+3. PART 1 — RESEARCH & MODEL SELECTION — 20 MARKS
+--------------------------------------------------------------
+
+The assessment says to imagine that you have been asked to replace GPT-4 Mini for a Resume Intelligence platform.
+
+You must select an open-source model.
+
+Examples mentioned in the assessment include:
+
+- Llama
+- Qwen
+- Mistral
+- Gemma
+- Phi
+
+You must prepare a 2–4 page document explaining your decision.
+
+The assessment explicitly says that technical reasoning matters more than selecting one universally "correct" model.
+
+You need to cover:
+
+A. WHICH MODEL?
+
+Choose one exact open-source model.
+
+Do not simply say "Qwen" or "Llama".
+Name the exact model/checkpoint.
+
+B. WHY THIS MODEL?
+
+Explain why the selected model fits resume parsing.
+
+Resume parsing requires:
+
+- Understanding semi-structured text
+- Extracting entities
+- Following instructions
+- Producing consistent JSON
+- Handling missing fields
+- Handling noisy resume formats
+- Running at reasonable cost
+
+Your reasoning should connect model capabilities to these requirements.
+
+C. PARAMETER SIZE
+
+Explain how large the model is.
+
+Examples of parameter scales:
+
+- 0.5B
+- 1B
+- 1.5B
+- 3B
+- etc.
+
+Bigger is not automatically better.
+
+A smaller model can be easier and cheaper to fine-tune and deploy.
+
+The assessment specifically suggests small models around 0.5B–3B for the preferred fine-tuning route.
+
+D. HARDWARE REQUIREMENTS
+
+Discuss hardware required for:
+
+1. Inference
+2. Fine-tuning/training
+
+These are different.
+
+For example:
+
+Inference:
+- CPU or smaller GPU depending on model/quantization
+
+Training:
+- GPU with sufficient VRAM
+
+You should explain the expected compute requirements rather than simply saying "GPU required."
+
+E. CONTEXT WINDOW
+
+Explain how much input text the model can process.
+
+This matters because resumes can be long.
+
+You should consider whether the model's context window is sufficient for realistic resumes.
+
+F. LICENSE
+
+Research and explain the model's license.
+
+Discuss whether the model can be used for the intended application and mention any important restrictions.
+
+G. PROS & CONS
+
+Do not write shallow points such as "fast" or "good."
+
+Discuss meaningful engineering trade-offs such as:
+
+- Model size
+- Speed
+- Memory requirements
+- Fine-tuning difficulty
+- Instruction following
+- Structured JSON generation
+- Accuracy
+- Deployment complexity
+
+H. WHY NOT ANOTHER POPULAR MODEL?
+
+This is important.
+
+You should compare your selected model against at least one alternative.
+
+Example:
+
+Model A:
+- Larger
+- More capable
+- More expensive
+
+Model B:
+- Smaller
+- Lower compute requirements
+- Easier fine-tuning
+
+Then explain why Model B is more appropriate for THIS use case.
+
+The final decision should be based on factors such as:
+
+- Task requirements
+- Compute budget
+- Latency
+- Context requirements
+- Fine-tuning feasibility
+- Expected quality
+
+DELIVERABLE FOR PART 1:
+
+A 2–4 page research document, for example:
+
+research/
+    model_selection.md
+
+or
+
+model_selection.pdf
+
+--------------------------------------------------------------
+4. PART 2 — DATASET CREATION — 25 MARKS
+--------------------------------------------------------------
+
+This is one of the most important parts.
+
+The assessment requires a MINIMUM OF 50 HIGH-QUALITY examples.
+
+The target task is RESUME PARSING.
+
+Each example should have this structure:
+
+{
+  "instruction": "...",
+  "input": "...",
+  "output": {
+    ...
+  }
+}
+
+Conceptually:
+
+INSTRUCTION
++
+RAW RESUME TEXT
+=
+EXPECTED STRUCTURED OUTPUT
+
+Example:
+
+Instruction:
+"Extract the candidate information from the resume and return it using the required JSON schema."
+
+Input:
+"John Doe
+Email: john@gmail.com
+B.Tech Computer Science
+ABC University
+Python, Java, SQL"
+
+Output:
+
+{
+  "name": "John Doe",
+  "email": "john@gmail.com",
+  "education": [
+    {
+      "degree": "B.Tech Computer Science",
+      "institution": "ABC University"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Java",
+    "SQL"
+  ]
+}
+
+IMPORTANT:
+The assessment does not prescribe one exact output schema, so you need to design a sensible structured resume schema.
+
+--------------------------------------------------------------
+5. WHAT MAKES THE DATASET "HIGH QUALITY"?
+--------------------------------------------------------------
+
+The assessment explicitly says that dataset QUALITY is more important than quantity.
+
+Do not create 50 examples where only the candidate name changes.
+
+The dataset should cover:
+
+A. DIVERSE RESUME FORMATS
+
+Examples:
+
+- Traditional text resume
+- Two-column resume converted to text
+- Resume with tables
+- Bullet-point resume
+- Different section ordering
+- Different wording for sections
+
+B. MISSING FIELDS
+
+Examples:
+
+- No phone number
+- No email
+- No education
+- No experience
+- No certifications
+
+The model should NOT invent missing information.
+
+For example:
+
+{
+  "phone": null
+}
+
+is preferable to hallucinating a phone number.
+
+C. VARYING LAYOUTS
+
+Different resumes may use:
+
+- EDUCATION
+- Academic Background
+- Education & Qualifications
+
+or:
+
+- EXPERIENCE
+- Professional Experience
+- Employment History
+
+The model should understand the semantic meaning despite wording differences.
+
+D. EDGE CASES
+
+Useful edge cases include:
+
+- Missing email
+- Multiple phone numbers
+- Multiple degrees
+- No professional experience
+- Internship-only candidate
+- Multiple simultaneous roles
+- Skills embedded inside project descriptions
+- Unusual job titles
+- Certifications
+- Foreign/alternative date formats
+- Inconsistent dates
+- Empty sections
+- Duplicate information
+- Skills appearing in different sections
+
+--------------------------------------------------------------
+6. SCALING THE DATASET TO THOUSANDS OF EXAMPLES
+--------------------------------------------------------------
+
+After producing the minimum 50 examples, the assessment asks for a short explanation of how you would scale the dataset to thousands.
+
+You do NOT necessarily need to actually create thousands of examples.
+
+A strong scaling pipeline could be:
+
+50 manually curated examples
+        |
+        v
+Define schema
+        |
+        v
+Create synthetic templates
+        |
+        v
+Generate controlled variations
+        |
+        v
+Human review
+        |
+        v
+Deduplication
+        |
+        v
+Automatic quality validation
+        |
+        v
+Train / validation / test split
+        |
+        v
+Thousands of examples
+
+Possible sources/strategies:
+
+- Synthetic resume generation
+- Anonymized real resumes
+- Manual annotation
+- Template-based generation
+- LLM-assisted generation with human validation
+- Automatic schema validation
+- Deduplication
+- Edge-case generation
+- Quality-control filtering
+
+--------------------------------------------------------------
+7. PART 3 — FINE-TUNING / ADAPTATION — 25 MARKS
+--------------------------------------------------------------
+
+The assessment gives TWO options.
+
+OPTION A — PREFERRED
+
+Fine-tune a small open-source model, approximately 0.5B–3B parameters, using LoRA or QLoRA on a subset of the dataset.
+
+This is the preferred option.
+
+You must include:
+
+1. Training configuration
+2. Hyperparameters
+3. Training script
+4. Sample outputs before fine-tuning
+5. Sample outputs after fine-tuning
+6. Discussion of observed improvements
+
+--------------------------------------------------------------
+8. WHAT IS LoRA?
+--------------------------------------------------------------
+
+Normal fine-tuning tries to update a very large number of model parameters.
+
+Conceptually:
+
+Original large model
+       |
+       v
+Update many weights
+       |
+       v
+High compute/memory cost
+
+LoRA takes a more efficient approach.
+
+Conceptually:
+
+Original model
+       |
+       +--> Keep original weights mostly frozen
+       |
+       +--> Train small additional adapter matrices
+
+This greatly reduces the number of trainable parameters.
+
+The assessment specifically suggests LoRA/QLoRA because these approaches make small-model adaptation more practical.
+
+--------------------------------------------------------------
+9. WHAT IS QLoRA?
+--------------------------------------------------------------
+
+QLoRA combines:
+
+Quantization
++
+LoRA
+
+The base model can be loaded using lower-precision/quantized weights, while LoRA adapters are trained.
+
+Conceptually:
+
+Normal fine-tuning
+-> high memory requirement
+
+LoRA
+-> fewer trainable parameters
+
+QLoRA
+-> quantized base model + LoRA adapters
+-> lower memory requirement
+
+--------------------------------------------------------------
+10. WHAT TO INCLUDE IN OPTION A
+--------------------------------------------------------------
+
+A. TRAINING CONFIGURATION
+
+Document things such as:
+
+- Model name
+- Training method
+- Dataset
+- Train/validation split
+- Epochs
+- Batch size
+- Maximum sequence length
+- Precision/quantization
+- Output directory
+
+B. HYPERPARAMETERS
+
+Examples:
+
+- Learning rate
+- Batch size
+- Epochs
+- Gradient accumulation
+- LoRA rank
+- LoRA alpha
+- LoRA dropout
+- Maximum sequence length
+- Optimizer
+
+Do not merely list numbers.
+Explain why they were selected.
+
+C. TRAINING SCRIPT
+
+Provide actual code such as:
+
+training/
+    train.py
+
+The training script should conceptually:
+
+1. Load model
+2. Load tokenizer
+3. Load dataset
+4. Prepare LoRA/QLoRA
+5. Train
+6. Save adapter/model
+
+D. BEFORE VS AFTER OUTPUT
+
+This is extremely important.
+
+You should run the same/similar examples through the base model before training and then through the fine-tuned model.
+
+Example:
+
+BEFORE:
+
+{
+  "name": "John",
+  "skills": "Python SQL maybe AWS"
+}
+
+AFTER:
+
+{
+  "name": "John Doe",
+  "skills": [
+    "Python",
+    "SQL",
+    "AWS"
+  ],
+  "experience": [...]
+}
+
+Then explain what actually improved.
+
+IMPORTANT:
+Only claim improvements that you really observe or measure.
+Do not fabricate accuracy improvements.
+
+--------------------------------------------------------------
+11. OPTION B — IF YOU DO NOT HAVE GPU ACCESS
+--------------------------------------------------------------
+
+The assessment explicitly allows a second option.
+
+Instead of actually training, design a COMPLETE fine-tuning pipeline.
+
+You must include:
+
+- Model choice
+- Dataset preparation
+- Training strategy
+- Hardware requirements
+- Evaluation plan
+- Estimated costs
+- Potential risks
+- Risk mitigation
+
+So:
+
+Option A:
+Actually perform fine-tuning.
+
+Option B:
+Design the complete training pipeline without necessarily executing it.
+
+Option A is preferable if GPU access is available because it gives you:
+
+- Real experiment
+- Real outputs
+- Real before/after comparison
+- Real measured results
+- Stronger evidence during evaluation/interview
+
+--------------------------------------------------------------
+12. PART 4 — EVALUATION FRAMEWORK — 20 MARKS
+--------------------------------------------------------------
+
+This section asks:
+
+"How will you PROVE that your resume model works?"
+
+You should not simply train a model and say:
+
+"It works."
+
+You need a systematic evaluation methodology.
+
+The assessment explicitly asks for:
+
+- Metrics
+- Parsing accuracy
+- Hallucination detection
+- JSON correctness
+- Comparison of model versions
+- Regression testing after retraining
+- Optional evaluation automation
+
+--------------------------------------------------------------
+13. WHAT METRICS SHOULD YOU USE?
+--------------------------------------------------------------
+
+Possible metrics include:
+
+A. FIELD-LEVEL ACCURACY
+
+Check whether fields are correct:
+
+- Name
+- Email
+- Phone
+- Education
+- Skills
+- Experience
+- Certifications
+
+B. PRECISION / RECALL / F1
+
+Especially useful for extracted entities.
+
+Example:
+
+Ground truth skills:
+
+Python
+SQL
+Spark
+Kafka
+
+Prediction:
+
+Python
+SQL
+Kafka
+Java
+
+Then:
+
+True positives:
+- Python
+- SQL
+- Kafka
+
+False positive:
+- Java
+
+False negative:
+- Spark
+
+This can be used to calculate precision, recall and F1.
+
+--------------------------------------------------------------
+14. HOW TO MEASURE PARSING ACCURACY
+--------------------------------------------------------------
+
+Compare:
+
+GROUND TRUTH
+versus
+MODEL PREDICTION
+
+Field by field.
+
+Possible comparison:
+
+- Name -> exact match
+- Email -> exact match
+- Phone -> exact match
+- Skills -> set precision/recall/F1
+- Education -> structured comparison
+- Experience -> structured comparison
+- Certifications -> structured comparison
+
+This is stronger than subjective manual inspection.
+
+--------------------------------------------------------------
+15. HOW TO DETECT HALLUCINATIONS
+--------------------------------------------------------------
+
+A hallucination occurs when the model generates information not supported by the resume.
+
+Example resume:
+
+Python, SQL
+
+Model output:
+
+Python, SQL, TensorFlow, AWS, Docker
+
+If TensorFlow/AWS/Docker were not supported by the resume, they are unsupported extractions/hallucinations.
+
+You can measure an:
+
+Unsupported-field rate
+or
+Hallucination rate
+
+The evaluation should check whether extracted information is supported by the source resume.
+
+--------------------------------------------------------------
+16. HOW TO VALIDATE JSON CORRECTNESS
+--------------------------------------------------------------
+
+The assessment explicitly asks for JSON validation.
+
+A model may output:
+
+"Here is your result:
+
+{
+  "name": "John"
+}"
+
+or produce malformed JSON such as:
+
+{
+  "name": "John",
+
+In your system, validate the generated output.
+
+For example, conceptually:
+
+json.loads(output)
+
+Then classify:
+
+- Valid JSON
+- Invalid JSON
+
+A useful metric:
+
+JSON validity rate
+
+Example:
+
+48 valid outputs / 50 total
+= 96% JSON validity
+
+--------------------------------------------------------------
+17. HOW TO COMPARE TWO MODEL VERSIONS
+--------------------------------------------------------------
+
+Suppose:
+
+Model v1
+versus
+Model v2
+
+Run both on the SAME evaluation set.
+
+Example:
+
+Metric                v1       v2
+-----------------------------------
+JSON validity         90%      98%
+Field F1              82%      89%
+Hallucination rate     8%       3%
+
+This lets you make an objective comparison.
+
+Do NOT compare two models on different test sets.
+
+--------------------------------------------------------------
+18. REGRESSION TESTING
+--------------------------------------------------------------
+
+Regression testing means checking that improvements in one area did not break something that previously worked.
+
+Example:
+
+Old model correctly handles:
+
+Resume with no phone number
+
+After retraining:
+
+New model starts inventing phone numbers.
+
+That is a regression.
+
+Maintain a fixed test suite:
+
+regression_tests/
+    test_001.json
+    test_002.json
+    test_003.json
+    ...
+
+Every time you retrain:
+
+New model
+   |
+   v
+Run fixed regression tests
+   |
+   v
+Compare results
+   |
+   v
+Detect regressions
+
+This is an important real-world ML engineering practice.
+
+--------------------------------------------------------------
+19. BONUS — AUTOMATE THE EVALUATION
+--------------------------------------------------------------
+
+The assessment says there is a bonus for automating any part of the evaluation.
+
+A strong implementation could have:
+
+evaluation/
+    evaluate.py
+
+It can:
+
+1. Load test dataset
+2. Run model
+3. Validate JSON
+4. Compare predictions with ground truth
+5. Calculate:
+   - Field accuracy
+   - Precision
+   - Recall
+   - F1
+   - Hallucination rate
+   - JSON validity
+6. Generate an evaluation report
+
+This makes the project look much more like a real ML system.
+
+--------------------------------------------------------------
+20. PART 5 — ENGINEERING — 10 MARKS
+--------------------------------------------------------------
+
+The assessment asks you to create a small inference script or API.
+
+The implementation can be minimal.
+
+The key requirement is to demonstrate how the selected model is actually used.
+
+Conceptually:
+
+resume.txt
+   |
+   v
+model
+   |
+   v
+structured JSON
+
+Example command:
+
+python infer.py --input resume.txt
+
+Output:
+
+{
+  "name": "...",
+  "skills": [...],
+  "education": [...]
+}
+
+Alternatively, create an API.
+
+Example concept:
+
+POST /parse-resume
+
+Input:
+
+{
+  "resume_text": "..."
+}
+
+Output:
+
+{
+  "name": "...",
+  "skills": [...],
+  "education": [...]
+}
+
+--------------------------------------------------------------
+21. CLEAN PROJECT STRUCTURE
+--------------------------------------------------------------
+
+The assessment explicitly requests a clean project structure.
+
+A strong example:
+
+resume-intelligence-llm/
+|
+├── data/
+│   ├── resume_dataset.json
+│   ├── train.json
+│   ├── validation.json
+│   └── test.json
+|
+├── research/
+│   └── model_selection.md
+|
+├── training/
+│   ├── train.py
+│   └── config.yaml
+|
+├── evaluation/
+│   ├── evaluate.py
+│   ├── metrics.py
+│   └── regression_tests.py
+|
+├── inference/
+│   ├── infer.py
+│   └── api.py
+|
+├── examples/
+│   ├── before_finetuning/
+│   └── after_finetuning/
+|
+├── tests/
+|
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+This is an example structure, not a mandatory exact structure.
+
+--------------------------------------------------------------
+22. CONFIGURATION MANAGEMENT
+--------------------------------------------------------------
+
+Avoid hard-coding all configuration values throughout the code.
+
+Instead of putting everything directly into Python, use a configuration file such as:
+
+config.yaml
+
+Possible fields:
+
+model_name:
+learning_rate:
+epochs:
+max_length:
+batch_size:
+output_dir:
+
+The code reads the configuration.
+
+This improves maintainability and reproducibility.
+
+--------------------------------------------------------------
+23. ERROR HANDLING
+--------------------------------------------------------------
+
+The application should handle failures gracefully.
+
+Examples:
+
+If resume file does not exist:
+
+Error: Resume file not found.
+
+If model cannot load:
+
+Error: Model failed to load.
+
+If model produces invalid JSON:
+
+Error: Generated output is not valid JSON.
+
+The purpose is to demonstrate basic software engineering discipline.
+
+--------------------------------------------------------------
+24. README
+--------------------------------------------------------------
+
+The README should explain:
+
+- Project overview
+- Objective
+- Architecture
+- Model choice
+- Dataset format
+- Installation
+- Training
+- Evaluation
+- Inference
+- API usage
+- Example input
+- Example output
+- Limitations
+- Future improvements
+
+Someone cloning the GitHub repository should understand how to use the project without asking you.
+
+--------------------------------------------------------------
+25. REQUIRED DELIVERABLES
+--------------------------------------------------------------
+
+The assessment explicitly lists:
+
+1. GitHub repository
+2. Research document (PDF/Markdown)
+3. Dataset
+4. Training code OR pipeline design
+5. Evaluation plan
+6. README
+
+Everything should ideally be organized inside one GitHub repository.
+
+--------------------------------------------------------------
+26. WHAT THE EVALUATOR IS REALLY TESTING
+--------------------------------------------------------------
+
+The assessment is effectively testing five capabilities:
+
+1. LLM understanding
+   Can you explain why a model is suitable?
+
+2. Data engineering for LLMs
+   Can you create a high-quality instruction dataset?
+
+3. Fine-tuning knowledge
+   Do you understand LoRA/QLoRA and training?
+
+4. Evaluation thinking
+   Can you prove that the model works and improves?
+
+5. Software engineering
+   Can you turn the model into a usable script/API?
+
+So this is NOT simply:
+
+"Can you use an LLM?"
+
+It is closer to:
+
+"Can you design and build a small domain-specific LLM system?"
+
+--------------------------------------------------------------
+27. HOW THE 100 MARKS SHOULD AFFECT YOUR EFFORT
+--------------------------------------------------------------
+
+Marks:
+
+Dataset Creation          25
+Fine-Tuning/Training      25
+Research                  20
+Evaluation                20
+Engineering               10
+
+Therefore:
+
+Dataset + Training = 50 marks
+Research + Evaluation = 40 marks
+Engineering = 10 marks
+
+Do NOT spend most of your time making a fancy frontend/API.
+
+Priority should be:
+
+1. Dataset quality
+2. Fine-tuning experiment
+3. Evaluation methodology
+4. Model research
+5. Clean but minimal API/inference layer
+
+This follows the assessment rubric.
+
+--------------------------------------------------------------
+28. RECOMMENDED FINAL PROJECT ARCHITECTURE
+--------------------------------------------------------------
+
+Resume Intelligence LLM
+
+                 RESUME
+                    |
+                    v
+             OPEN-SOURCE LLM
+                    |
+                    | Fine-tuned/adapted
+                    v
+             RESUME PARSER
+                    |
+                    v
+             STRUCTURED JSON
+                    |
+                    v
+              EVALUATION
+                    |
+                    v
+              INFERENCE API
+
+Supporting components:
+
+Research
+Dataset
+Training
+Evaluation
+Inference
+Documentation
+
+--------------------------------------------------------------
+29. RECOMMENDED GITHUB STRUCTURE
+--------------------------------------------------------------
+
+resume-intelligence-llm/
+|
+├── data/
+│   ├── resume_dataset.json
+│   ├── train.json
+│   ├── validation.json
+│   └── test.json
+|
+├── research/
+│   └── model-selection.pdf
+|
+├── training/
+│   ├── train.py
+│   ├── config.yaml
+│   └── README.md
+|
+├── evaluation/
+│   ├── evaluate.py
+│   ├── metrics.py
+│   ├── regression_test.py
+│   └── results/
+|
+├── inference/
+│   ├── infer.py
+│   └── api.py
+|
+├── examples/
+│   ├── before_finetuning/
+│   └── after_finetuning/
+|
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+--------------------------------------------------------------
+30. RECOMMENDED EXECUTION ORDER
+--------------------------------------------------------------
+
+Do NOT start by randomly coding the API.
+
+Use this order:
+
+STEP 1
+Choose the exact model and overall architecture.
+
+STEP 2
+Define the output JSON schema.
+
+STEP 3
+Design the 50 high-quality examples.
+
+STEP 4
+Create train / validation / test splits.
+
+STEP 5
+Run the BASELINE model before fine-tuning.
+
+STEP 6
+Fine-tune using LoRA/QLoRA if possible.
+
+STEP 7
+Run the SAME evaluation set after fine-tuning.
+
+STEP 8
+Measure improvement objectively.
+
+STEP 9
+Build the inference script/API.
+
+STEP 10
+Package everything into GitHub + README + research document.
+
+This order is important because:
+
+Part 1 influences Part 3.
+Part 2 directly influences Part 3.
+Part 2 also determines how Part 4 can evaluate the model.
+
+--------------------------------------------------------------
+31. VERY IMPORTANT: TECHNICAL REASONING MATTERS
+--------------------------------------------------------------
+
+The assessment explicitly states that it evaluates technical reasoning rather than one "correct" model.
+
+Weak reasoning:
+
+"I chose Qwen because Qwen is a good model."
+
+Strong reasoning:
+
+"I selected a small instruction-tuned model because the task is structured information extraction rather than open-ended generation. The smaller parameter count reduces training and inference requirements, while instruction-following capability makes it suitable for transforming resume text into a fixed JSON schema. I considered a larger alternative, but the additional compute cost was not justified for this domain-specific task."
+
+The evaluator wants to see the reasoning behind decisions.
+
+--------------------------------------------------------------
+32. ONE-SENTENCE SUMMARY
+--------------------------------------------------------------
+
+You need to build a small resume-parsing LLM system and demonstrate:
+
+"I know which model to choose,
+I know how to create its training data,
+I know how to fine-tune it,
+I know how to measure whether it improved,
+and I know how to expose it as a usable application."
+
+--------------------------------------------------------------
+33. FINAL MENTAL MODEL
+--------------------------------------------------------------
+
+Think of the entire assessment as:
+
+MODEL
+  ↓
+DATA
+  ↓
+TRAIN
+  ↓
+EVALUATE
+  ↓
+DEPLOY
+
+Or:
+
+WHY THIS MODEL?
+       ↓
+WHAT DATA?
+       ↓
+HOW TO TRAIN?
+       ↓
+HOW TO PROVE IT WORKS?
+       ↓
+HOW TO USE IT?
+
+If you can clearly answer all five questions, you understand the assessment.
+
+--------------------------------------------------------------
+END OF DOCUMENT
+--------------------------------------------------------------

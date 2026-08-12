@@ -1,0 +1,11 @@
+{
+  "total_samples": 10,
+  "json_validity_rate": 100.0,
+  "schema_validity_rate": 100.0,
+  "name_exact_match_acc": 100.0,
+  "email_exact_match_acc": 100.0,
+  "skills_precision": 73.33,
+  "skills_recall": 76.67,
+  "skills_f1": 74.44,
+  "avg_hallucination_rate": 3.75
+}

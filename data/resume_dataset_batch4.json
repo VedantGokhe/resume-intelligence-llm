@@ -1,0 +1,1649 @@
+[
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "AARAV MENON\nTechnical Product Manager | Bengaluru, Karnataka | aarav.menon@example.com | +91-98765-12001\n\nOBJECTIVE / SUMMARY\nTechnical Product Manager with 7 years of experience building developer-facing SaaS, data platforms, and observability products. Combines a software engineering foundation with product discovery, roadmap ownership, OKR planning, sprint execution, and quantitative experimentation. Experienced in translating reliability, platform, and analytics problems into measurable product outcomes.\n\nEXPERIENCE\nTechnical Product Manager, CloudMetric Systems, Bengaluru | Apr 2022 - Present\nOwns roadmap for an internal observability platform used by 180+ engineering teams. Defined quarterly OKRs around alert quality, incident MTTR, and platform adoption. Runs customer discovery, writes PRDs and acceptance criteria, prioritizes using RICE, and coordinates two-week Scrum sprints. Partnered with engineering to launch anomaly detection dashboards that reduced noisy alerts by 31%. Built product analytics in SQL and Looker and uses cohort analysis to evaluate feature adoption. Facilitates sprint planning, backlog refinement, demos, and retrospectives.\n\nAssociate Product Manager, DataForge Technologies, Hyderabad | Jul 2019 - Mar 2022\nManaged workflow automation and data-quality features for enterprise customers. Created release plans, competitive analyses, KPI dashboards, and executive updates. Worked with engineering, design, sales, and support to resolve customer escalations and improve activation.\n\nEDUCATION\nB.Tech. Computer Science, NIT Warangal | 2015 - 2019\n\nPROJECTS\nDeveloper Experience Analytics: Built a prototype dashboard combining GitHub, Jira, and CI data to measure lead time and deployment friction. Technologies: Python, SQL, PostgreSQL, dbt, Metabase. Link: https://github.com/aarav-menon/devex-analytics\n\nSKILLS\nProduct strategy, roadmap planning, OKRs, PRDs, RICE prioritization, Agile, Scrum, SQL, Python, PostgreSQL, Looker, Metabase, Jira, GitHub, experimentation, stakeholder management.\n\nCERTIFICATIONS\nCertified Scrum Product Owner (CSPO)\n\nLINKS\nhttps://www.linkedin.com/in/aarav-menon\nhttps://github.com/aarav-menon",
+    "output": {
+      "name": "Aarav Menon",
+      "email": "aarav.menon@example.com",
+      "phone": [
+        "+91-98765-12001"
+      ],
+      "location": "Bengaluru, Karnataka",
+      "summary": "Technical Product Manager with 7 years of experience building developer-facing SaaS, data platforms, and observability products. Combines a software engineering foundation with product discovery, roadmap ownership, OKR planning, sprint execution, and quantitative experimentation. Experienced in translating reliability, platform, and analytics problems into measurable product outcomes.",
+      "education": [
+        {
+          "degree": "B.Tech. Computer Science",
+          "institution": "NIT Warangal",
+          "start_date": "2015",
+          "end_date": "2019"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Technical Product Manager",
+          "company": "CloudMetric Systems",
+          "start_date": "Apr 2022",
+          "end_date": "Present",
+          "description": "Owned roadmap for an internal observability platform used by 180+ engineering teams; defined quarterly OKRs, ran discovery, wrote PRDs, prioritized with RICE, coordinated two-week Scrum sprints, and launched anomaly-detection dashboards that reduced noisy alerts by 31%."
+        },
+        {
+          "title": "Associate Product Manager",
+          "company": "DataForge Technologies",
+          "start_date": "Jul 2019",
+          "end_date": "Mar 2022",
+          "description": "Managed workflow automation and data-quality features, created release plans and KPI dashboards, and partnered with engineering, design, sales, and support on customer outcomes."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Developer Experience Analytics",
+          "description": "Prototype dashboard combining GitHub, Jira, and CI data to measure lead time and deployment friction.",
+          "technologies": [
+            "Python",
+            "SQL",
+            "PostgreSQL",
+            "dbt",
+            "Metabase"
+          ],
+          "link": "https://github.com/aarav-menon/devex-analytics"
+        }
+      ],
+      "skills": [
+        "Product strategy",
+        "roadmap planning",
+        "OKRs",
+        "PRDs",
+        "RICE prioritization",
+        "Agile",
+        "Scrum",
+        "SQL",
+        "Python",
+        "PostgreSQL",
+        "Looker",
+        "Metabase",
+        "Jira",
+        "GitHub",
+        "experimentation",
+        "stakeholder management"
+      ],
+      "certifications": [
+        "Certified Scrum Product Owner (CSPO)"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/aarav-menon",
+        "https://github.com/aarav-menon"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "PRIYA SHAH\nSenior Site Reliability Engineer | Pune, Maharashtra | priya.shah@example.com | +91-98220-44017\n\nSUMMARY\nSite Reliability Engineer with 6 years of experience operating distributed systems and Kubernetes platforms. Strong in SLO/SLI design, incident response, on-call runbooks, capacity planning, observability, and chaos engineering. Reduced production MTTR through automated remediation and standardized incident practices.\n\nEXPERIENCE\nSenior SRE, FinServe Cloud, Pune | Jan 2023 - Present\nOwns reliability for payment APIs serving 4 million daily requests. Defined availability, latency, and error-budget SLOs with service teams. Maintains Prometheus metrics, Grafana dashboards, Alertmanager policies, and OpenTelemetry traces. Built on-call runbooks covering database failover, Kubernetes node pressure, queue backlogs, and certificate expiry. Led quarterly game days using LitmusChaos to validate recovery procedures. Automated rollback and pod remediation with Argo Rollouts and Kubernetes operators. Reduced P1 MTTR from 52 to 29 minutes.\n\nSRE, StreamCart, Mumbai | Jun 2020 - Dec 2022\nSupported Kafka, PostgreSQL, Redis, and Kubernetes workloads. Participated in a 24x7 on-call rotation, wrote incident postmortems, tuned alerts, and introduced service-level dashboards. Built Terraform modules for repeatable infrastructure and implemented centralized logging with Loki.\n\nEDUCATION\nB.E. Information Technology, Pune University | 2016 - 2020\n\nPROJECTS\nKubernetes Reliability Lab: Created failure-injection scenarios for CPU saturation, pod termination, network latency, and dependency outages. Technologies: Kubernetes, LitmusChaos, Prometheus, Grafana, Terraform. Link: https://github.com/priyashah/k8s-reliability-lab\n\nSKILLS\nKubernetes, Docker, AWS, Terraform, Helm, Prometheus, Grafana, Alertmanager, OpenTelemetry, Loki, Kafka, PostgreSQL, Redis, Python, Go, Bash, Argo Rollouts, LitmusChaos, incident management, SLO/SLI, capacity planning.\n\nCERTIFICATIONS\nAWS Certified DevOps Engineer – Professional; Certified Kubernetes Administrator (CKA)\n\nLINKS\nhttps://www.linkedin.com/in/priya-shah\nhttps://github.com/priyashah",
+    "output": {
+      "name": "Priya Shah",
+      "email": "priya.shah@example.com",
+      "phone": [
+        "+91-98220-44017"
+      ],
+      "location": "Pune, Maharashtra",
+      "summary": "Site Reliability Engineer with 6 years of experience operating distributed systems and Kubernetes platforms. Strong in SLO/SLI design, incident response, on-call runbooks, capacity planning, observability, and chaos engineering. Reduced production MTTR through automated remediation and standardized incident practices.",
+      "education": [
+        {
+          "degree": "B.E. Information Technology",
+          "institution": "Pune University",
+          "start_date": "2016",
+          "end_date": "2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior SRE",
+          "company": "FinServe Cloud",
+          "start_date": "Jan 2023",
+          "end_date": "Present",
+          "description": "Owned reliability for payment APIs serving 4 million daily requests; defined SLOs and error budgets, maintained Prometheus/Grafana/OpenTelemetry, built on-call runbooks, led LitmusChaos game days, and reduced P1 MTTR from 52 to 29 minutes."
+        },
+        {
+          "title": "SRE",
+          "company": "StreamCart",
+          "start_date": "Jun 2020",
+          "end_date": "Dec 2022",
+          "description": "Supported Kafka, PostgreSQL, Redis, and Kubernetes in a 24x7 rotation; wrote postmortems, tuned alerts, created Terraform modules, and implemented centralized Loki logging."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Kubernetes Reliability Lab",
+          "description": "Failure-injection lab covering CPU saturation, pod termination, network latency, and dependency outages.",
+          "technologies": [
+            "Kubernetes",
+            "LitmusChaos",
+            "Prometheus",
+            "Grafana",
+            "Terraform"
+          ],
+          "link": "https://github.com/priyashah/k8s-reliability-lab"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "Terraform",
+        "Helm",
+        "Prometheus",
+        "Grafana",
+        "Alertmanager",
+        "OpenTelemetry",
+        "Loki",
+        "Kafka",
+        "PostgreSQL",
+        "Redis",
+        "Python",
+        "Go",
+        "Bash",
+        "Argo Rollouts",
+        "LitmusChaos",
+        "incident management",
+        "SLO/SLI",
+        "capacity planning"
+      ],
+      "certifications": [
+        "AWS Certified DevOps Engineer – Professional",
+        "Certified Kubernetes Administrator (CKA)"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/priya-shah",
+        "https://github.com/priyashah"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "DR. DANIEL OKAFOR\nML Researcher / PhD Candidate | Toronto, Ontario | daniel.okafor@example.com | +1-416-555-0188\n\nSUMMARY\nPhD candidate in Computer Science specializing in efficient deep learning, multimodal representation learning, and trustworthy machine learning. Research combines theoretical analysis with production-oriented experimentation. Published peer-reviewed work at NeurIPS and ACL and developed open-source research software used by multiple university labs.\n\nEDUCATION\nPhD, Computer Science, University of Toronto | Sep 2022 - Present\nMSc, Artificial Intelligence, University of Edinburgh | Sep 2020 - Aug 2021\nBSc, Computer Science, University of Lagos | Sep 2016 - Jun 2020\n\nRESEARCH EXPERIENCE\nResearch Assistant, University of Toronto | Sep 2022 - Present\nDeveloping parameter-efficient multimodal transformers for document understanding. Designed contrastive objectives and low-rank adaptation methods that improved accuracy on low-resource benchmarks while reducing trainable parameters. Mentors undergraduate researchers and manages reproducible experiment pipelines on university GPU clusters.\n\nResearch Intern, VectorAI Research | May 2024 - Aug 2024\nStudied retrieval-augmented generation for scientific question answering. Built evaluation sets, compared dense and hybrid retrieval, and analyzed hallucination failure modes.\n\nPUBLICATIONS\n“Efficient Cross-Modal Adaptation for Document Intelligence,” NeurIPS 2025.\n“Evidence-Aware Retrieval for Scientific QA,” ACL Findings 2024.\n“Robust Representation Learning Under Label Scarcity,” ECML PKDD Workshop 2023.\n\nPROJECTS\nOpenDocBench: Benchmark suite for multimodal document models. Technologies: Python, PyTorch, Hugging Face Transformers, FAISS. Link: https://github.com/daniel-okafor/opendocbench\n\nSKILLS\nPython, PyTorch, JAX, Hugging Face Transformers, FAISS, CUDA, distributed training, multimodal learning, NLP, computer vision, experiment design, statistical analysis, LaTeX, Git.\n\nCERTIFICATIONS\nNone listed.\n\nLINKS\nhttps://www.linkedin.com/in/daniel-okafor\nhttps://scholar.google.com/citations?user=danielokafor\nhttps://github.com/daniel-okafor\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Python, PyTorch, JAX, Hugging Face Transformers, FAISS, CUDA, distributed training, multimodal learning. The candidate's featured project is OpenDocBench, using Python, PyTorch, Hugging Face Transformers, FAISS. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Dr. Daniel Okafor",
+      "email": "daniel.okafor@example.com",
+      "phone": [
+        "+1-416-555-0188"
+      ],
+      "location": "Toronto, Ontario",
+      "summary": "PhD candidate in Computer Science specializing in efficient deep learning, multimodal representation learning, and trustworthy machine learning. Research combines theoretical analysis with production-oriented experimentation. Published peer-reviewed work at NeurIPS and ACL and developed open-source research software used by multiple university labs.",
+      "education": [
+        {
+          "degree": "PhD, Computer Science",
+          "institution": "University of Toronto",
+          "start_date": "Sep 2022",
+          "end_date": "Present"
+        },
+        {
+          "degree": "MSc, Artificial Intelligence",
+          "institution": "University of Edinburgh",
+          "start_date": "Sep 2020",
+          "end_date": "Aug 2021"
+        },
+        {
+          "degree": "BSc, Computer Science",
+          "institution": "University of Lagos",
+          "start_date": "Sep 2016",
+          "end_date": "Jun 2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Assistant",
+          "company": "University of Toronto",
+          "start_date": "Sep 2022",
+          "end_date": "Present",
+          "description": "Developing parameter-efficient multimodal transformers for document understanding, designing contrastive objectives and low-rank adaptation methods, mentoring undergraduate researchers, and managing reproducible GPU-cluster experiments."
+        },
+        {
+          "title": "Research Intern",
+          "company": "VectorAI Research",
+          "start_date": "May 2024",
+          "end_date": "Aug 2024",
+          "description": "Studied retrieval-augmented generation for scientific question answering, built evaluation sets, compared dense and hybrid retrieval, and analyzed hallucination failure modes."
+        }
+      ],
+      "projects": [
+        {
+          "name": "OpenDocBench",
+          "description": "Benchmark suite for multimodal document models.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Hugging Face Transformers",
+            "FAISS"
+          ],
+          "link": "https://github.com/daniel-okafor/opendocbench"
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "JAX",
+        "Hugging Face Transformers",
+        "FAISS",
+        "CUDA",
+        "distributed training",
+        "multimodal learning",
+        "NLP",
+        "computer vision",
+        "experiment design",
+        "statistical analysis",
+        "LaTeX",
+        "Git"
+      ],
+      "certifications": [],
+      "links": [
+        "https://www.linkedin.com/in/daniel-okafor",
+        "https://scholar.google.com/citations?user=danielokafor",
+        "https://github.com/daniel-okafor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "MEERA IYER\nPlatform Engineer | Chennai, Tamil Nadu | meera.iyer@example.com | +91-94440-77881\n\nOBJECTIVE\nPlatform Engineer focused on building secure Internal Developer Platforms that reduce cognitive load for application teams. Experienced with Kubernetes, service mesh, eBPF-based networking, GitOps, and observability. Interested in scalable platform primitives and paved-road developer workflows.\n\nEXPERIENCE\nPlatform Engineer, NebulaWorks, Chennai | Feb 2023 - Present\nDesigned an Internal Developer Platform serving 70+ microservices. Built Backstage templates for standardized service creation, GitHub Actions workflows, and Argo CD deployment patterns. Introduced Istio for traffic management, mTLS, and progressive delivery. Used Cilium and eBPF observability to troubleshoot network policy and service-to-service latency. Built platform dashboards using Prometheus, Grafana, and OpenTelemetry. Created golden paths for Node.js, Java, and Python services and reduced average service bootstrap time from two days to 35 minutes.\n\nCloud Infrastructure Engineer, AppOrbit, Bengaluru | Jul 2020 - Jan 2023\nMaintained AWS EKS clusters and Terraform modules. Automated cluster upgrades, secret rotation, and cost reporting. Implemented centralized logging with Fluent Bit and OpenSearch. Partnered with security teams on IAM and Kubernetes policy enforcement.\n\nEDUCATION\nB.Tech. Computer Engineering, Anna University | 2016 - 2020\n\nPROJECTS\neBPF Service Map: Built a lab that visualizes Kubernetes service dependencies without application instrumentation. Technologies: Cilium, eBPF, Kubernetes, Hubble, Prometheus, Grafana. Link: https://github.com/meera-iyer/ebpf-service-map\n\nSKILLS\nKubernetes, AWS EKS, Terraform, Helm, Argo CD, GitHub Actions, Backstage, Istio, Cilium, eBPF, Hubble, Prometheus, Grafana, OpenTelemetry, Fluent Bit, OpenSearch, Python, Go, Bash, IAM, GitOps.\n\nCERTIFICATIONS\nCertified Kubernetes Administrator (CKA); HashiCorp Certified: Terraform Associate\n\nLINKS\nhttps://www.linkedin.com/in/meera-iyer\nhttps://github.com/meera-iyer\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Kubernetes, AWS EKS, Terraform, Helm, Argo CD, GitHub Actions, Backstage, Istio. The candidate's featured project is eBPF Service Map, using Cilium, eBPF, Kubernetes, Hubble, Prometheus, Grafana. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Meera Iyer",
+      "email": "meera.iyer@example.com",
+      "phone": [
+        "+91-94440-77881"
+      ],
+      "location": "Chennai, Tamil Nadu",
+      "summary": "Platform Engineer focused on building secure Internal Developer Platforms that reduce cognitive load for application teams. Experienced with Kubernetes, service mesh, eBPF-based networking, GitOps, and observability. Interested in scalable platform primitives and paved-road developer workflows.",
+      "education": [
+        {
+          "degree": "B.Tech. Computer Engineering",
+          "institution": "Anna University",
+          "start_date": "2016",
+          "end_date": "2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineer",
+          "company": "NebulaWorks",
+          "start_date": "Feb 2023",
+          "end_date": "Present",
+          "description": "Designed an Internal Developer Platform for 70+ microservices using Backstage, GitHub Actions, Argo CD, Istio, Cilium/eBPF, Prometheus, Grafana, and OpenTelemetry; created golden paths that reduced service bootstrap time from two days to 35 minutes."
+        },
+        {
+          "title": "Cloud Infrastructure Engineer",
+          "company": "AppOrbit",
+          "start_date": "Jul 2020",
+          "end_date": "Jan 2023",
+          "description": "Maintained AWS EKS and Terraform infrastructure, automated upgrades and secret rotation, implemented Fluent Bit/OpenSearch logging, and partnered with security on IAM and Kubernetes policy enforcement."
+        }
+      ],
+      "projects": [
+        {
+          "name": "eBPF Service Map",
+          "description": "Kubernetes lab visualizing service dependencies without application instrumentation.",
+          "technologies": [
+            "Cilium",
+            "eBPF",
+            "Kubernetes",
+            "Hubble",
+            "Prometheus",
+            "Grafana"
+          ],
+          "link": "https://github.com/meera-iyer/ebpf-service-map"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "AWS EKS",
+        "Terraform",
+        "Helm",
+        "Argo CD",
+        "GitHub Actions",
+        "Backstage",
+        "Istio",
+        "Cilium",
+        "eBPF",
+        "Hubble",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "Fluent Bit",
+        "OpenSearch",
+        "Python",
+        "Go",
+        "Bash",
+        "IAM",
+        "GitOps"
+      ],
+      "certifications": [
+        "Certified Kubernetes Administrator (CKA)",
+        "HashiCorp Certified: Terraform Associate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/meera-iyer",
+        "https://github.com/meera-iyer"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "JONATHAN REED\nTechnical Product Manager | Austin, Texas | jon.reed@example.com | +1-512-555-0139 | +1-512-555-0197\n\nSUMMARY\nTechnical Product Manager with 9 years across developer tools, APIs, and cloud cost management. Former backend engineer who moved into product leadership. Strong in roadmap strategy, OKRs, metrics, sprint planning, platform adoption, and executive communication.\n\nEXPERIENCE\nGroup Product Manager, CostPilot, Austin | Mar 2021 - Present\nOwns roadmap for cloud-finops products generating $18M ARR. Sets annual product strategy and quarterly OKRs, manages a team of three PMs, and coordinates engineering pods across billing, APIs, and reporting. Introduced usage-based pricing analytics that increased expansion revenue 14%. Uses SQL and Amplitude for funnel analysis and experimentation. Leads quarterly planning, sprint reviews, and roadmap tradeoff discussions.\n\nTechnical Product Manager, APIWorks, Dallas | Aug 2017 - Feb 2021\nManaged public API lifecycle, authentication, rate limiting, SDKs, and developer documentation. Partnered with engineering to define versioning policy and service-level targets. Created API adoption dashboards and reduced support tickets by 22%.\n\nSoftware Engineer, BrightStack, Dallas | Jun 2015 - Jul 2017\nBuilt Java and Python microservices and internal data APIs.\n\nEDUCATION\nB.S. Computer Science, University of Texas at Dallas | 2011 - 2015\nMBA, Product Management Certificate Program, UT Austin | 2019 - 2020\n\nPROJECTS\nAPI Health Scorecard: Built a lightweight product analytics service that scores API reliability, usage, and documentation quality. Technologies: Python, FastAPI, PostgreSQL, Amplitude. Link: https://github.com/jonreed/api-health-scorecard\n\nSKILLS\nProduct strategy, OKRs, roadmap planning, Agile, Scrum, sprint planning, SQL, Python, APIs, cloud platforms, Amplitude, Jira, analytics, pricing, stakeholder management.\n\nCERTIFICATIONS\nPragmatic Institute Product Management Certification\n\nLINKS\nhttps://www.linkedin.com/in/jon-reed\nhttps://github.com/jonreed",
+    "output": {
+      "name": "Jonathan Reed",
+      "email": "jon.reed@example.com",
+      "phone": [
+        "+1-512-555-0139",
+        "+1-512-555-0197"
+      ],
+      "location": "Austin, Texas",
+      "summary": "Technical Product Manager with 9 years across developer tools, APIs, and cloud cost management. Former backend engineer who moved into product leadership. Strong in roadmap strategy, OKRs, metrics, sprint planning, platform adoption, and executive communication.",
+      "education": [
+        {
+          "degree": "B.S. Computer Science",
+          "institution": "University of Texas at Dallas",
+          "start_date": "2011",
+          "end_date": "2015"
+        },
+        {
+          "degree": "MBA, Product Management Certificate Program",
+          "institution": "UT Austin",
+          "start_date": "2019",
+          "end_date": "2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Group Product Manager",
+          "company": "CostPilot",
+          "start_date": "Mar 2021",
+          "end_date": "Present",
+          "description": "Owned roadmap for cloud-finops products generating $18M ARR, set strategy and quarterly OKRs, managed three PMs, coordinated engineering pods, introduced usage-based pricing analytics that increased expansion revenue 14%, and led quarterly planning and sprint reviews."
+        },
+        {
+          "title": "Technical Product Manager",
+          "company": "APIWorks",
+          "start_date": "Aug 2017",
+          "end_date": "Feb 2021",
+          "description": "Managed public API lifecycle, authentication, rate limiting, SDKs, and documentation; defined versioning and service targets and reduced support tickets by 22%."
+        },
+        {
+          "title": "Software Engineer",
+          "company": "BrightStack",
+          "start_date": "Jun 2015",
+          "end_date": "Jul 2017",
+          "description": "Built Java and Python microservices and internal data APIs."
+        }
+      ],
+      "projects": [
+        {
+          "name": "API Health Scorecard",
+          "description": "Product analytics service scoring API reliability, usage, and documentation quality.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Amplitude"
+          ],
+          "link": "https://github.com/jonreed/api-health-scorecard"
+        }
+      ],
+      "skills": [
+        "Product strategy",
+        "OKRs",
+        "roadmap planning",
+        "Agile",
+        "Scrum",
+        "sprint planning",
+        "SQL",
+        "Python",
+        "APIs",
+        "cloud platforms",
+        "Amplitude",
+        "Jira",
+        "analytics",
+        "pricing",
+        "stakeholder management"
+      ],
+      "certifications": [
+        "Pragmatic Institute Product Management Certification"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/jon-reed",
+        "https://github.com/jonreed"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "LINA PARK\nML Researcher | Seoul, South Korea | lina.park@example.com | +82-10-5555-1842\n\nSUMMARY\nMachine learning researcher with a PhD in Electrical Engineering focused on reinforcement learning, offline RL, and sequential decision making. Experience publishing research, designing controlled experiments, reviewing literature, and transferring academic algorithms into robust software prototypes.\n\nEDUCATION\nPhD, Electrical Engineering, KAIST | Mar 2020 - Feb 2025\nM.S., Electrical Engineering, KAIST | Mar 2018 - Feb 2020\nB.S., Computer Engineering, Yonsei University | Mar 2014 - Feb 2018\n\nRESEARCH EXPERIENCE\nResearch Scientist, KAIST AI Lab | Mar 2025 - Present\nStudies offline reinforcement learning for industrial scheduling. Developed conservative policy-learning methods and evaluation protocols for datasets with distribution shift. Supervises two graduate researchers and collaborates with manufacturing partners.\n\nDoctoral Researcher, KAIST | Mar 2020 - Feb 2025\nPublished three papers on uncertainty-aware value estimation and offline policy evaluation. Built simulation environments and reproducible experiment pipelines. Presented work at NeurIPS workshops and ICML-related academic venues.\n\nPUBLICATIONS\n“Uncertainty-Aware Offline Value Estimation,” Journal of Machine Learning Research, 2025.\n“Conservative Policy Evaluation Under Distribution Shift,” NeurIPS Workshop, 2024.\n“Risk-Sensitive Scheduling with Offline Reinforcement Learning,” ICML Workshop, 2023.\n\nPROJECTS\nOfflineRL Toolkit: Research library for benchmarking offline RL algorithms. Technologies: Python, PyTorch, JAX, Gymnasium, Hydra. Link: https://github.com/linapark/offlinerl-toolkit\n\nSKILLS\nPython, PyTorch, JAX, reinforcement learning, offline RL, probabilistic modeling, Bayesian methods, experiment design, statistics, CUDA, Git, Linux, LaTeX.\n\nCERTIFICATIONS\nNone listed.\n\nLINKS\nhttps://scholar.google.com/citations?user=linapark\nhttps://github.com/linapark\nhttps://www.linkedin.com/in/lina-park\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Python, PyTorch, JAX, reinforcement learning, offline RL, probabilistic modeling, Bayesian methods, experiment design. The candidate's featured project is OfflineRL Toolkit, using Python, PyTorch, JAX, Gymnasium, Hydra. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Lina Park",
+      "email": "lina.park@example.com",
+      "phone": [
+        "+82-10-5555-1842"
+      ],
+      "location": "Seoul, South Korea",
+      "summary": "Machine learning researcher with a PhD in Electrical Engineering focused on reinforcement learning, offline RL, and sequential decision making. Experience publishing research, designing controlled experiments, reviewing literature, and transferring academic algorithms into robust software prototypes.",
+      "education": [
+        {
+          "degree": "PhD, Electrical Engineering",
+          "institution": "KAIST",
+          "start_date": "Mar 2020",
+          "end_date": "Feb 2025"
+        },
+        {
+          "degree": "M.S., Electrical Engineering",
+          "institution": "KAIST",
+          "start_date": "Mar 2018",
+          "end_date": "Feb 2020"
+        },
+        {
+          "degree": "B.S., Computer Engineering",
+          "institution": "Yonsei University",
+          "start_date": "Mar 2014",
+          "end_date": "Feb 2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Scientist",
+          "company": "KAIST AI Lab",
+          "start_date": "Mar 2025",
+          "end_date": "Present",
+          "description": "Studies offline reinforcement learning for industrial scheduling, developed conservative policy-learning methods and evaluation protocols for distribution shift, and supervises two graduate researchers."
+        },
+        {
+          "title": "Doctoral Researcher",
+          "company": "KAIST",
+          "start_date": "Mar 2020",
+          "end_date": "Feb 2025",
+          "description": "Published three papers on uncertainty-aware value estimation and offline policy evaluation, built simulation environments and reproducible pipelines, and presented work at NeurIPS and ICML-related venues."
+        }
+      ],
+      "projects": [
+        {
+          "name": "OfflineRL Toolkit",
+          "description": "Research library for benchmarking offline reinforcement learning algorithms.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "JAX",
+            "Gymnasium",
+            "Hydra"
+          ],
+          "link": "https://github.com/linapark/offlinerl-toolkit"
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "JAX",
+        "reinforcement learning",
+        "offline RL",
+        "probabilistic modeling",
+        "Bayesian methods",
+        "experiment design",
+        "statistics",
+        "CUDA",
+        "Git",
+        "Linux",
+        "LaTeX"
+      ],
+      "certifications": [],
+      "links": [
+        "https://scholar.google.com/citations?user=linapark",
+        "https://github.com/linapark",
+        "https://www.linkedin.com/in/lina-park"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ELENA MARTINEZ\nAcademic Researcher transitioning to Industry | Madrid, Spain | elena.martinez@example.com | +34-600-555-291\n\nSUMMARY\nComputational biology researcher transitioning into machine learning engineering and data science. Seven years of academic research in genomics, with experience managing multi-institution datasets, developing statistical models, mentoring students, and presenting results to technical and non-technical audiences. Seeking an industry role where research rigor and reproducible analytics can support product development.\n\nEDUCATION\nPhD, Computational Biology, University of Barcelona | 2017 - 2022\nMSc, Bioinformatics, Autonomous University of Madrid | 2015 - 2017\nBSc, Biotechnology, University of Valencia | 2012 - 2015\n\nEXPERIENCE\nResearch Fellow, Barcelona Biomedical Institute | Jan 2023 - Jun 2026\nLed projects analyzing single-cell RNA sequencing datasets from 40,000+ cells. Built Python and R pipelines for quality control, dimensionality reduction, clustering, and differential expression. Coordinated data standards across three collaborating laboratories. Supervised four graduate students and maintained reproducible workflows using Git and containers.\n\nPostdoctoral Researcher, University of Barcelona | Sep 2022 - Dec 2022\nDeveloped statistical models for gene-expression variability and prepared manuscripts and grant reports.\n\nPROJECTS\nGenomics Data Quality Platform: Created a workflow for validating metadata, detecting sample anomalies, and producing automated QC reports. Technologies: Python, R, pandas, scikit-learn, Docker, PostgreSQL. Link: https://github.com/elena-martinez/genomics-qc\n\nSKILLS\nPython, R, SQL, pandas, NumPy, scikit-learn, statistics, machine learning, bioinformatics, single-cell analysis, Docker, Git, PostgreSQL, Linux, data visualization, technical writing.\n\nCERTIFICATIONS\nGoogle Advanced Data Analytics Professional Certificate\n\nLINKS\nhttps://www.linkedin.com/in/elena-martinez\nhttps://github.com/elena-martinez\nhttps://scholar.google.com/citations?user=elenamartinez\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Python, R, SQL, pandas, NumPy, scikit-learn, statistics, machine learning. The candidate's featured project is Genomics Data Quality Platform, using Python, R, pandas, scikit-learn, Docker, PostgreSQL. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Elena Martinez",
+      "email": "elena.martinez@example.com",
+      "phone": [
+        "+34-600-555-291"
+      ],
+      "location": "Madrid, Spain",
+      "summary": "Computational biology researcher transitioning into machine learning engineering and data science. Seven years of academic research in genomics, with experience managing multi-institution datasets, developing statistical models, mentoring students, and presenting results to technical and non-technical audiences. Seeking an industry role where research rigor and reproducible analytics can support product development.",
+      "education": [
+        {
+          "degree": "PhD, Computational Biology",
+          "institution": "University of Barcelona",
+          "start_date": "2017",
+          "end_date": "2022"
+        },
+        {
+          "degree": "MSc, Bioinformatics",
+          "institution": "Autonomous University of Madrid",
+          "start_date": "2015",
+          "end_date": "2017"
+        },
+        {
+          "degree": "BSc, Biotechnology",
+          "institution": "University of Valencia",
+          "start_date": "2012",
+          "end_date": "2015"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Fellow",
+          "company": "Barcelona Biomedical Institute",
+          "start_date": "Jan 2023",
+          "end_date": "Jun 2026",
+          "description": "Led single-cell RNA sequencing projects covering 40,000+ cells, built Python/R QC and analysis pipelines, coordinated standards across three laboratories, supervised four graduate students, and maintained reproducible Git/container workflows."
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "company": "University of Barcelona",
+          "start_date": "Sep 2022",
+          "end_date": "Dec 2022",
+          "description": "Developed statistical models for gene-expression variability and prepared manuscripts and grant reports."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Genomics Data Quality Platform",
+          "description": "Workflow for validating metadata, detecting sample anomalies, and producing automated QC reports.",
+          "technologies": [
+            "Python",
+            "R",
+            "pandas",
+            "scikit-learn",
+            "Docker",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/elena-martinez/genomics-qc"
+        }
+      ],
+      "skills": [
+        "Python",
+        "R",
+        "SQL",
+        "pandas",
+        "NumPy",
+        "scikit-learn",
+        "statistics",
+        "machine learning",
+        "bioinformatics",
+        "single-cell analysis",
+        "Docker",
+        "Git",
+        "PostgreSQL",
+        "Linux",
+        "data visualization",
+        "technical writing"
+      ],
+      "certifications": [
+        "Google Advanced Data Analytics Professional Certificate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/elena-martinez",
+        "https://github.com/elena-martinez",
+        "https://scholar.google.com/citations?user=elenamartinez"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "MARCUS LI\nSenior SRE | London, UK | marcus.li@example.com | +44-7700-900231\n\nSUMMARY\nSenior SRE with a background in distributed systems and cloud infrastructure. Experienced in reliability engineering for high-volume APIs, observability, incident command, capacity modeling, and production readiness reviews. Comfortable writing automation in Go and Python and operating Kubernetes at scale.\n\nEXPERIENCE\nSenior Site Reliability Engineer, Northstar Payments, London | May 2021 - Present\nLeads reliability for transaction services processing approximately 15,000 requests per second. Defines SLIs for latency, availability, saturation, and dependency health. Maintains SLO dashboards in Grafana backed by Prometheus and Mimir. Established error-budget review meetings and production readiness checklists. Created incident commander and communications runbooks and trained 30 engineers in on-call procedures. Implemented load-shedding and automated failover, improving peak-hour availability from 99.91% to 99.98%.\n\nCloud Engineer, DataHarbor, London | Aug 2018 - Apr 2021\nManaged AWS infrastructure, Terraform modules, EKS clusters, and centralized logging. Built deployment pipelines with GitHub Actions and Argo CD. Participated in on-call rotations and conducted capacity tests before major releases.\n\nEDUCATION\nMEng, Computer Science, Imperial College London | 2014 - 2018\n\nPROJECTS\nFailure Budget Simulator: Built a Python simulator that models service failure rates, traffic growth, and error-budget consumption for capacity planning. Technologies: Python, NumPy, pandas, Prometheus. Link: https://github.com/marcusli/failure-budget-simulator\n\nSKILLS\nGo, Python, Bash, Kubernetes, AWS, EKS, Terraform, Helm, Prometheus, Grafana, Mimir, OpenTelemetry, Argo CD, GitHub Actions, incident command, SLO/SLI, error budgets, capacity planning, distributed systems.\n\nCERTIFICATIONS\nAWS Certified Solutions Architect – Professional; Google Professional Cloud DevOps Engineer\n\nLINKS\nhttps://www.linkedin.com/in/marcus-li\nhttps://github.com/marcusli\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Go, Python, Bash, Kubernetes, AWS, EKS, Terraform, Helm. The candidate's featured project is Failure Budget Simulator, using Python, NumPy, pandas, Prometheus. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Marcus Li",
+      "email": "marcus.li@example.com",
+      "phone": [
+        "+44-7700-900231"
+      ],
+      "location": "London, UK",
+      "summary": "Senior SRE with a background in distributed systems and cloud infrastructure. Experienced in reliability engineering for high-volume APIs, observability, incident command, capacity modeling, and production readiness reviews. Comfortable writing automation in Go and Python and operating Kubernetes at scale.",
+      "education": [
+        {
+          "degree": "MEng, Computer Science",
+          "institution": "Imperial College London",
+          "start_date": "2014",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior Site Reliability Engineer",
+          "company": "Northstar Payments",
+          "start_date": "May 2021",
+          "end_date": "Present",
+          "description": "Leads reliability for transaction services at approximately 15,000 requests per second; defines SLIs, maintains Prometheus/Mimir/Grafana SLO dashboards, established error-budget reviews and production readiness checks, trained engineers in on-call procedures, and improved peak-hour availability from 99.91% to 99.98%."
+        },
+        {
+          "title": "Cloud Engineer",
+          "company": "DataHarbor",
+          "start_date": "Aug 2018",
+          "end_date": "Apr 2021",
+          "description": "Managed AWS infrastructure, Terraform, EKS, logging, GitHub Actions, and Argo CD; participated in on-call rotations and capacity testing."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Failure Budget Simulator",
+          "description": "Python simulator modeling service failure rates, traffic growth, and error-budget consumption for capacity planning.",
+          "technologies": [
+            "Python",
+            "NumPy",
+            "pandas",
+            "Prometheus"
+          ],
+          "link": "https://github.com/marcusli/failure-budget-simulator"
+        }
+      ],
+      "skills": [
+        "Go",
+        "Python",
+        "Bash",
+        "Kubernetes",
+        "AWS",
+        "EKS",
+        "Terraform",
+        "Helm",
+        "Prometheus",
+        "Grafana",
+        "Mimir",
+        "OpenTelemetry",
+        "Argo CD",
+        "GitHub Actions",
+        "incident command",
+        "SLO/SLI",
+        "error budgets",
+        "capacity planning",
+        "distributed systems"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Professional",
+        "Google Professional Cloud DevOps Engineer"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/marcus-li",
+        "https://github.com/marcusli"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "SOFIA ALVAREZ\nPlatform / Infrastructure Engineer | Mexico City, Mexico | sofia.alvarez@example.com | +52-55-5555-4108\n\nSUMMARY\nInfrastructure engineer with 5 years of experience building cloud platforms, deployment automation, and developer self-service systems. Specializes in Kubernetes, Terraform, GitOps, service mesh, and observability. Enjoys designing reusable platform components that make secure deployment workflows easier for application engineers.\n\nEXPERIENCE\nPlatform Engineer, QuantaCloud, Mexico City | Jan 2023 - Present\nBuilt a multi-tenant developer platform on AWS EKS. Created Terraform modules for networking, IAM, databases, and Kubernetes add-ons. Introduced Backstage software templates and Argo CD application sets to enable self-service provisioning. Implemented Istio ingress, mTLS, retries, and traffic policies. Added eBPF-based network visibility with Cilium Hubble and correlated traces using OpenTelemetry. Reduced manual infrastructure tickets by 45%.\n\nDevOps Engineer, MercadoNova, Mexico City | Jun 2021 - Dec 2022\nMaintained CI/CD pipelines, container registries, Kubernetes workloads, and secrets management. Standardized Helm charts and introduced policy checks using OPA Gatekeeper. Built Grafana dashboards and centralized logs with Loki.\n\nEDUCATION\nB.Sc. Software Engineering, Tecnológico de Monterrey | 2017 - 2021\n\nPROJECTS\nPlatform Starter Kit: Open-source templates for bootstrapping Kubernetes services with CI/CD, observability, and policy defaults. Technologies: Backstage, Kubernetes, Helm, Argo CD, Terraform, Cilium, OpenTelemetry. Link: https://github.com/sofia-alvarez/platform-starter\n\nSKILLS\nAWS, Kubernetes, EKS, Terraform, Helm, Argo CD, Backstage, Istio, Cilium, eBPF, Hubble, OpenTelemetry, Prometheus, Grafana, Loki, OPA Gatekeeper, Python, Go, Bash, GitHub Actions.\n\nCERTIFICATIONS\nAWS Certified DevOps Engineer – Professional\n\nLINKS\nhttps://www.linkedin.com/in/sofia-alvarez\nhttps://github.com/sofia-alvarez\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include AWS, Kubernetes, EKS, Terraform, Helm, Argo CD, Backstage, Istio. The candidate's featured project is Platform Starter Kit, using Backstage, Kubernetes, Helm, Argo CD, Terraform, Cilium, OpenTelemetry. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez@example.com",
+      "phone": [
+        "+52-55-5555-4108"
+      ],
+      "location": "Mexico City, Mexico",
+      "summary": "Infrastructure engineer with 5 years of experience building cloud platforms, deployment automation, and developer self-service systems. Specializes in Kubernetes, Terraform, GitOps, service mesh, and observability. Enjoys designing reusable platform components that make secure deployment workflows easier for application engineers.",
+      "education": [
+        {
+          "degree": "B.Sc. Software Engineering",
+          "institution": "Tecnológico de Monterrey",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineer",
+          "company": "QuantaCloud",
+          "start_date": "Jan 2023",
+          "end_date": "Present",
+          "description": "Built a multi-tenant AWS EKS developer platform with Terraform, Backstage, Argo CD, Istio, Cilium Hubble, and OpenTelemetry; reduced manual infrastructure tickets by 45%."
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "MercadoNova",
+          "start_date": "Jun 2021",
+          "end_date": "Dec 2022",
+          "description": "Maintained CI/CD, Kubernetes, registries, and secrets; standardized Helm charts, introduced OPA Gatekeeper policy checks, and built Grafana/Loki observability."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Platform Starter Kit",
+          "description": "Open-source templates for bootstrapping Kubernetes services with CI/CD, observability, and policy defaults.",
+          "technologies": [
+            "Backstage",
+            "Kubernetes",
+            "Helm",
+            "Argo CD",
+            "Terraform",
+            "Cilium",
+            "OpenTelemetry"
+          ],
+          "link": "https://github.com/sofia-alvarez/platform-starter"
+        }
+      ],
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "EKS",
+        "Terraform",
+        "Helm",
+        "Argo CD",
+        "Backstage",
+        "Istio",
+        "Cilium",
+        "eBPF",
+        "Hubble",
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "OPA Gatekeeper",
+        "Python",
+        "Go",
+        "Bash",
+        "GitHub Actions"
+      ],
+      "certifications": [
+        "AWS Certified DevOps Engineer – Professional"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/sofia-alvarez",
+        "https://github.com/sofia-alvarez"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "NOAH WILLIAMS\nTechnical Product Manager | New York, NY | noah.williams@example.com | +1-917-555-0264\n\nSUMMARY\nTechnical Product Manager with 5 years of experience in data products and ML-enabled enterprise software. Strong in customer discovery, product analytics, roadmap prioritization, OKR definition, sprint planning, and technical communication. Uses SQL and experimentation to connect product decisions with measurable business outcomes.\n\nEXPERIENCE\nTechnical Product Manager, InsightGrid, New York | Feb 2023 - Present\nOwns roadmap for an enterprise analytics workspace used by 50,000 monthly users. Defines quarterly OKRs for activation, retention, and analyst productivity. Partners with data science teams on recommendation features and evaluates releases using A/B tests. Runs backlog refinement, sprint planning, demos, and retrospectives with three engineering squads. Built a product metrics layer in SQL and dbt that reduced weekly reporting effort by 70%.\n\nProduct Analyst, MetricLoop, Boston | Jul 2021 - Jan 2023\nBuilt customer segmentation and funnel dashboards. Conducted pricing analysis and feature discovery interviews. Translated findings into PRDs and prioritization proposals.\n\nEDUCATION\nB.S. Information Systems, Northeastern University | 2017 - 2021\n\nPROJECTS\nExperimentation Hub: Internal prototype for defining experiments, tracking variants, and generating statistical summaries. Technologies: Python, SQL, dbt, PostgreSQL, Streamlit. Link: https://github.com/noah-williams/experimentation-hub\n\nSKILLS\nProduct management, roadmap strategy, OKRs, Scrum, sprint planning, SQL, Python, dbt, PostgreSQL, A/B testing, Amplitude, Jira, product analytics, customer discovery, PRDs.\n\nCERTIFICATIONS\nProduct School Product Management Certificate\n\nLINKS\nhttps://www.linkedin.com/in/noah-williams\nhttps://github.com/noah-williams\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Product management, roadmap strategy, OKRs, Scrum, sprint planning, SQL, Python, dbt. The candidate's featured project is Experimentation Hub, using Python, SQL, dbt, PostgreSQL, Streamlit. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Noah Williams",
+      "email": "noah.williams@example.com",
+      "phone": [
+        "+1-917-555-0264"
+      ],
+      "location": "New York, NY",
+      "summary": "Technical Product Manager with 5 years of experience in data products and ML-enabled enterprise software. Strong in customer discovery, product analytics, roadmap prioritization, OKR definition, sprint planning, and technical communication. Uses SQL and experimentation to connect product decisions with measurable business outcomes.",
+      "education": [
+        {
+          "degree": "B.S. Information Systems",
+          "institution": "Northeastern University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Technical Product Manager",
+          "company": "InsightGrid",
+          "start_date": "Feb 2023",
+          "end_date": "Present",
+          "description": "Owns analytics workspace roadmap, defines quarterly activation/retention/productivity OKRs, partners with data science, evaluates releases with A/B tests, runs Scrum ceremonies for three squads, and built a SQL/dbt product metrics layer reducing reporting effort by 70%."
+        },
+        {
+          "title": "Product Analyst",
+          "company": "MetricLoop",
+          "start_date": "Jul 2021",
+          "end_date": "Jan 2023",
+          "description": "Built segmentation and funnel dashboards, conducted pricing analysis and discovery interviews, and translated findings into PRDs and prioritization proposals."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Experimentation Hub",
+          "description": "Prototype for defining experiments, tracking variants, and generating statistical summaries.",
+          "technologies": [
+            "Python",
+            "SQL",
+            "dbt",
+            "PostgreSQL",
+            "Streamlit"
+          ],
+          "link": "https://github.com/noah-williams/experimentation-hub"
+        }
+      ],
+      "skills": [
+        "Product management",
+        "roadmap strategy",
+        "OKRs",
+        "Scrum",
+        "sprint planning",
+        "SQL",
+        "Python",
+        "dbt",
+        "PostgreSQL",
+        "A/B testing",
+        "Amplitude",
+        "Jira",
+        "product analytics",
+        "customer discovery",
+        "PRDs"
+      ],
+      "certifications": [
+        "Product School Product Management Certificate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/noah-williams",
+        "https://github.com/noah-williams"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "FATIMA RAHMAN\nPhD Candidate, Machine Learning | Dhaka, Bangladesh | fatima.rahman@example.com | +880-1711-555-604\n\nSUMMARY\nPhD candidate researching natural language processing, multilingual learning, and low-resource language technologies. Experienced in corpus construction, transformer fine-tuning, evaluation design, and academic writing. Interested in applied research roles where rigorous NLP research can become deployable language technology.\n\nEDUCATION\nPhD, Computer Science, University of Dhaka | Jan 2023 - Present\nMSc, Computer Science, Bangladesh University of Engineering and Technology | Jan 2020 - Dec 2021\nBSc, Computer Science and Engineering, University of Dhaka | Jan 2016 - Dec 2019\n\nRESEARCH EXPERIENCE\nResearch Assistant, NLP Research Group, University of Dhaka | Jan 2023 - Present\nDevelops Bengali-English code-switching datasets and multilingual transformer models. Designed annotation guidelines for 18,000 conversational utterances and evaluated XLM-R and mT5 baselines. Built reproducible training pipelines with experiment tracking and performed error analysis across demographic and linguistic categories.\n\nResearch Intern, LanguageAI Lab | Jun 2022 - Dec 2022\nWorked on retrieval-augmented question answering for Bengali educational content. Built a document retrieval benchmark and compared BM25 with dense retrieval.\n\nPUBLICATIONS\n“Benchmarking Bengali-English Code-Switching for Conversational NLP,” LREC-COLING 2024.\n“Dense Retrieval for Bengali Educational QA,” ACL Student Research Workshop 2023.\n\nPROJECTS\nBanglaQA: Open benchmark for Bengali question answering. Technologies: Python, PyTorch, Transformers, FAISS, Datasets. Link: https://github.com/fatima-rahman/banglaqa\n\nSKILLS\nPython, PyTorch, Hugging Face Transformers, XLM-R, mT5, NLP, information retrieval, RAG, FAISS, dataset curation, annotation, evaluation, Linux, Git, LaTeX.\n\nCERTIFICATIONS\nNone listed.\n\nLINKS\nhttps://scholar.google.com/citations?user=fatimarahman\nhttps://github.com/fatima-rahman\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Python, PyTorch, Hugging Face Transformers, XLM-R, mT5, NLP, information retrieval, RAG. The candidate's featured project is BanglaQA, using Python, PyTorch, Hugging Face Transformers, FAISS, Datasets. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Fatima Rahman",
+      "email": "fatima.rahman@example.com",
+      "phone": [
+        "+880-1711-555-604"
+      ],
+      "location": "Dhaka, Bangladesh",
+      "summary": "PhD candidate researching natural language processing, multilingual learning, and low-resource language technologies. Experienced in corpus construction, transformer fine-tuning, evaluation design, and academic writing. Interested in applied research roles where rigorous NLP research can become deployable language technology.",
+      "education": [
+        {
+          "degree": "PhD, Computer Science",
+          "institution": "University of Dhaka",
+          "start_date": "Jan 2023",
+          "end_date": "Present"
+        },
+        {
+          "degree": "MSc, Computer Science",
+          "institution": "Bangladesh University of Engineering and Technology",
+          "start_date": "Jan 2020",
+          "end_date": "Dec 2021"
+        },
+        {
+          "degree": "BSc, Computer Science and Engineering",
+          "institution": "University of Dhaka",
+          "start_date": "Jan 2016",
+          "end_date": "Dec 2019"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Assistant",
+          "company": "NLP Research Group, University of Dhaka",
+          "start_date": "Jan 2023",
+          "end_date": "Present",
+          "description": "Develops Bengali-English code-switching datasets and multilingual transformer models; designed annotation guidelines for 18,000 utterances, evaluated XLM-R and mT5, built reproducible pipelines, and performed demographic and linguistic error analysis."
+        },
+        {
+          "title": "Research Intern",
+          "company": "LanguageAI Lab",
+          "start_date": "Jun 2022",
+          "end_date": "Dec 2022",
+          "description": "Worked on retrieval-augmented QA for Bengali educational content, building retrieval benchmarks and comparing BM25 with dense retrieval."
+        }
+      ],
+      "projects": [
+        {
+          "name": "BanglaQA",
+          "description": "Open benchmark for Bengali question answering.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Hugging Face Transformers",
+            "FAISS",
+            "Datasets"
+          ],
+          "link": "https://github.com/fatima-rahman/banglaqa"
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Hugging Face Transformers",
+        "XLM-R",
+        "mT5",
+        "NLP",
+        "information retrieval",
+        "RAG",
+        "FAISS",
+        "dataset curation",
+        "annotation",
+        "evaluation",
+        "Linux",
+        "Git",
+        "LaTeX"
+      ],
+      "certifications": [],
+      "links": [
+        "https://scholar.google.com/citations?user=fatimarahman",
+        "https://github.com/fatima-rahman"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ETHAN CARTER\nInfrastructure Engineer | Seattle, Washington | ethan.carter@example.com | +1-206-555-0134\n\nSUMMARY\nInfrastructure engineer with 8 years of experience designing reliable cloud platforms and developer tooling. Strong background in Kubernetes, infrastructure as code, service mesh, Linux networking, and observability. Led platform migrations and standardized infrastructure across multiple product teams.\n\nEXPERIENCE\nStaff Infrastructure Engineer, CloudHarbor, Seattle | Jan 2022 - Present\nLeads a platform team supporting 120+ services. Designed a Kubernetes-based internal platform with cluster lifecycle automation, workload identity, policy enforcement, and service discovery. Migrated service networking to Cilium and used eBPF telemetry to investigate packet drops and latency. Established a platform SLO framework and Grafana dashboards covering control-plane health, deployment success, and developer experience. Introduced Crossplane for self-service cloud resources and Argo CD for GitOps.\n\nInfrastructure Engineer, BlueRocket, Seattle | May 2018 - Dec 2021\nManaged AWS and GCP environments, Terraform modules, Linux fleets, and CI/CD. Built automated disaster-recovery drills and standardized monitoring with Prometheus and Grafana.\n\nEDUCATION\nB.S. Computer Engineering, University of Washington | 2014 - 2018\n\nPROJECTS\nCloud Control Plane Lab: Built a local control plane demonstrating Crossplane compositions, Kubernetes operators, Cilium networking, and OpenTelemetry. Technologies: Kubernetes, Crossplane, Cilium, eBPF, Go, OpenTelemetry. Link: https://github.com/ethancarter/cloud-control-plane\n\nSKILLS\nKubernetes, Cilium, eBPF, Crossplane, Terraform, AWS, GCP, Argo CD, Helm, Go, Python, Linux, Prometheus, Grafana, OpenTelemetry, GitOps, networking, disaster recovery.\n\nCERTIFICATIONS\nCertified Kubernetes Administrator (CKA); HashiCorp Certified: Terraform Associate\n\nLINKS\nhttps://www.linkedin.com/in/ethan-carter\nhttps://github.com/ethancarter\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Kubernetes, Cilium, eBPF, Crossplane, Terraform, AWS, GCP, Argo CD. The candidate's featured project is Cloud Control Plane Lab, using Kubernetes, Crossplane, Cilium, eBPF, Go, OpenTelemetry. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Ethan Carter",
+      "email": "ethan.carter@example.com",
+      "phone": [
+        "+1-206-555-0134"
+      ],
+      "location": "Seattle, Washington",
+      "summary": "Infrastructure engineer with 8 years of experience designing reliable cloud platforms and developer tooling. Strong background in Kubernetes, infrastructure as code, service mesh, Linux networking, and observability. Led platform migrations and standardized infrastructure across multiple product teams.",
+      "education": [
+        {
+          "degree": "B.S. Computer Engineering",
+          "institution": "University of Washington",
+          "start_date": "2014",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Staff Infrastructure Engineer",
+          "company": "CloudHarbor",
+          "start_date": "Jan 2022",
+          "end_date": "Present",
+          "description": "Leads a platform team supporting 120+ services; designed Kubernetes platform automation, workload identity, policy enforcement, Cilium/eBPF networking, platform SLO dashboards, Crossplane self-service cloud resources, and Argo CD GitOps."
+        },
+        {
+          "title": "Infrastructure Engineer",
+          "company": "BlueRocket",
+          "start_date": "May 2018",
+          "end_date": "Dec 2021",
+          "description": "Managed AWS/GCP, Terraform, Linux fleets, and CI/CD; built automated disaster-recovery drills and standardized Prometheus/Grafana monitoring."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Cloud Control Plane Lab",
+          "description": "Local control plane demonstrating Crossplane compositions, Kubernetes operators, Cilium networking, and OpenTelemetry.",
+          "technologies": [
+            "Kubernetes",
+            "Crossplane",
+            "Cilium",
+            "eBPF",
+            "Go",
+            "OpenTelemetry"
+          ],
+          "link": "https://github.com/ethancarter/cloud-control-plane"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "Cilium",
+        "eBPF",
+        "Crossplane",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "Argo CD",
+        "Helm",
+        "Go",
+        "Python",
+        "Linux",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "GitOps",
+        "networking",
+        "disaster recovery"
+      ],
+      "certifications": [
+        "Certified Kubernetes Administrator (CKA)",
+        "HashiCorp Certified: Terraform Associate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/ethan-carter",
+        "https://github.com/ethancarter"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "NIKHIL RAO\nTechnical Product Manager | Gurugram, Haryana | nikhil.rao@example.com | +91-98100-33172\n\nSUMMARY\nTechnical Product Manager with an engineering background and 6 years of experience in B2B fintech products. Skilled in product discovery, roadmap management, OKRs, Agile delivery, data analysis, and API-based product design. Known for using operational metrics and customer evidence to prioritize engineering work.\n\nEXPERIENCE\nSenior Technical Product Manager, LedgerLane, Gurugram | Aug 2022 - Present\nOwns payments reconciliation and risk-operations roadmap. Defines quarterly OKRs for automation rate, reconciliation accuracy, and processing time. Runs weekly backlog reviews and two-week sprint planning with four engineering squads. Partnered with data engineering to create a SQL-based KPI warehouse and reduced manual reconciliation work by 38%. Led launch of webhook APIs and developer documentation.\n\nProduct Manager, PaySphere, Noida | Jul 2020 - Jul 2022\nManaged merchant onboarding, API integrations, and reporting products. Conducted customer interviews, wrote PRDs, coordinated release planning, and tracked adoption through Mixpanel.\n\nSoftware Engineer, FinEdge, Noida | Jul 2018 - Jun 2020\nBuilt Java Spring Boot services and PostgreSQL-backed APIs.\n\nEDUCATION\nB.Tech. Information Technology, Delhi Technological University | 2014 - 2018\n\nPROJECTS\nReconciliation Insights: Analytics prototype for identifying delayed settlements and operational bottlenecks. Technologies: SQL, Python, PostgreSQL, Metabase. Link: https://github.com/nikhilrao/reconciliation-insights\n\nSKILLS\nProduct strategy, OKRs, roadmap management, Agile, Scrum, sprint planning, PRDs, SQL, Python, REST APIs, PostgreSQL, Mixpanel, Jira, stakeholder management.\n\nCERTIFICATIONS\nCertified Scrum Product Owner (CSPO)\n\nLINKS\nhttps://www.linkedin.com/in/nikhil-rao\nhttps://github.com/nikhilrao\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Product strategy, OKRs, roadmap management, Agile, Scrum, sprint planning, PRDs, SQL. The candidate's featured project is Reconciliation Insights, using SQL, Python, PostgreSQL, Metabase. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Nikhil Rao",
+      "email": "nikhil.rao@example.com",
+      "phone": [
+        "+91-98100-33172"
+      ],
+      "location": "Gurugram, Haryana",
+      "summary": "Technical Product Manager with an engineering background and 6 years of experience in B2B fintech products. Skilled in product discovery, roadmap management, OKRs, Agile delivery, data analysis, and API-based product design. Known for using operational metrics and customer evidence to prioritize engineering work.",
+      "education": [
+        {
+          "degree": "B.Tech. Information Technology",
+          "institution": "Delhi Technological University",
+          "start_date": "2014",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior Technical Product Manager",
+          "company": "LedgerLane",
+          "start_date": "Aug 2022",
+          "end_date": "Present",
+          "description": "Owns payments reconciliation and risk-operations roadmap, defines quarterly automation/accuracy/time OKRs, runs backlog and sprint planning with four squads, built a SQL KPI warehouse reducing manual reconciliation by 38%, and launched webhook APIs."
+        },
+        {
+          "title": "Product Manager",
+          "company": "PaySphere",
+          "start_date": "Jul 2020",
+          "end_date": "Jul 2022",
+          "description": "Managed merchant onboarding, API integrations, and reporting; conducted interviews, wrote PRDs, coordinated releases, and tracked adoption in Mixpanel."
+        },
+        {
+          "title": "Software Engineer",
+          "company": "FinEdge",
+          "start_date": "Jul 2018",
+          "end_date": "Jun 2020",
+          "description": "Built Java Spring Boot services and PostgreSQL-backed APIs."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Reconciliation Insights",
+          "description": "Analytics prototype for identifying delayed settlements and operational bottlenecks.",
+          "technologies": [
+            "SQL",
+            "Python",
+            "PostgreSQL",
+            "Metabase"
+          ],
+          "link": "https://github.com/nikhilrao/reconciliation-insights"
+        }
+      ],
+      "skills": [
+        "Product strategy",
+        "OKRs",
+        "roadmap management",
+        "Agile",
+        "Scrum",
+        "sprint planning",
+        "PRDs",
+        "SQL",
+        "Python",
+        "REST APIs",
+        "PostgreSQL",
+        "Mixpanel",
+        "Jira",
+        "stakeholder management"
+      ],
+      "certifications": [
+        "Certified Scrum Product Owner (CSPO)"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/nikhil-rao",
+        "https://github.com/nikhilrao"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "GRACE THOMPSON\nSite Reliability Engineer | Dublin, Ireland | grace.thompson@example.com | +353-85-555-2401\n\nSUMMARY\nSRE with 4 years of experience supporting SaaS applications and cloud-native infrastructure. Specializes in observability, incident response, SLO/SLI measurement, Kubernetes operations, and proactive reliability testing. Experienced in building practical runbooks and reducing alert fatigue.\n\nEXPERIENCE\nSite Reliability Engineer, AtlasWorks, Dublin | Mar 2023 - Present\nSupports customer-facing APIs and background processing services on AWS EKS. Defined SLIs for request latency, availability, queue age, and saturation. Built Prometheus recording rules and Grafana dashboards for service teams. Created on-call runbooks for database connection exhaustion, Kafka lag, DNS failures, and failed deployments. Introduced weekly error-budget reviews and a lightweight chaos program using Chaos Mesh. Reduced non-actionable alerts by 42%.\n\nJunior SRE, BlueDesk, Cork | Sep 2021 - Feb 2023\nParticipated in on-call rotation, monitored Kubernetes workloads, investigated incidents, and maintained Terraform infrastructure. Automated log collection and health checks with Python.\n\nEDUCATION\nBSc Computer Science, University College Cork | 2017 - 2021\n\nPROJECTS\nChaos Drillbook: Collection of reproducible Kubernetes failure scenarios with documented hypotheses and recovery steps. Technologies: Kubernetes, Chaos Mesh, Prometheus, Grafana, Terraform. Link: https://github.com/grace-thompson/chaos-drillbook\n\nSKILLS\nAWS, EKS, Kubernetes, Terraform, Prometheus, Grafana, Alertmanager, Chaos Mesh, Python, Bash, Kafka, PostgreSQL, SLO/SLI, error budgets, incident response, runbooks, monitoring.\n\nCERTIFICATIONS\nAWS Certified SysOps Administrator – Associate\n\nLINKS\nhttps://www.linkedin.com/in/grace-thompson\nhttps://github.com/grace-thompson\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include AWS, EKS, Kubernetes, Terraform, Prometheus, Grafana, Alertmanager, Chaos Mesh. The candidate's featured project is Chaos Drillbook, using Kubernetes, Chaos Mesh, Prometheus, Grafana, Terraform. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Grace Thompson",
+      "email": "grace.thompson@example.com",
+      "phone": [
+        "+353-85-555-2401"
+      ],
+      "location": "Dublin, Ireland",
+      "summary": "SRE with 4 years of experience supporting SaaS applications and cloud-native infrastructure. Specializes in observability, incident response, SLO/SLI measurement, Kubernetes operations, and proactive reliability testing. Experienced in building practical runbooks and reducing alert fatigue.",
+      "education": [
+        {
+          "degree": "BSc Computer Science",
+          "institution": "University College Cork",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Site Reliability Engineer",
+          "company": "AtlasWorks",
+          "start_date": "Mar 2023",
+          "end_date": "Present",
+          "description": "Supports AWS EKS services; defined SLIs, built Prometheus/Grafana dashboards and recording rules, created runbooks for database, Kafka, DNS, and deployment failures, introduced error-budget reviews and Chaos Mesh drills, and reduced non-actionable alerts by 42%."
+        },
+        {
+          "title": "Junior SRE",
+          "company": "BlueDesk",
+          "start_date": "Sep 2021",
+          "end_date": "Feb 2023",
+          "description": "Participated in on-call rotation, monitored Kubernetes, investigated incidents, maintained Terraform, and automated log collection and health checks with Python."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Chaos Drillbook",
+          "description": "Reproducible Kubernetes failure scenarios with documented hypotheses and recovery steps.",
+          "technologies": [
+            "Kubernetes",
+            "Chaos Mesh",
+            "Prometheus",
+            "Grafana",
+            "Terraform"
+          ],
+          "link": "https://github.com/grace-thompson/chaos-drillbook"
+        }
+      ],
+      "skills": [
+        "AWS",
+        "EKS",
+        "Kubernetes",
+        "Terraform",
+        "Prometheus",
+        "Grafana",
+        "Alertmanager",
+        "Chaos Mesh",
+        "Python",
+        "Bash",
+        "Kafka",
+        "PostgreSQL",
+        "SLO/SLI",
+        "error budgets",
+        "incident response",
+        "runbooks",
+        "monitoring"
+      ],
+      "certifications": [
+        "AWS Certified SysOps Administrator – Associate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/grace-thompson",
+        "https://github.com/grace-thompson"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "PROF. RAVI SINGH\nAcademic Researcher transitioning to Industry | Singapore | ravi.singh@example.com | +65-8123-4490\n\nSUMMARY\nResearch scientist with a background in computer vision and robotics transitioning to industry. More than eight years of academic work in 3D perception, SLAM, and autonomous navigation. Experienced in leading research projects, publishing papers, supervising students, and converting algorithms into reproducible C++ and Python systems.\n\nEDUCATION\nPhD, Robotics, National University of Singapore | 2014 - 2018\nM.Tech., Electrical Engineering, IIT Kanpur | 2012 - 2014\nB.Tech., Electronics Engineering, IIT (BHU) Varanasi | 2008 - 2012\n\nEXPERIENCE\nResearch Scientist, NUS Robotics Lab | Jan 2020 - Jul 2026\nLed research on visual-inertial odometry and 3D mapping for mobile robots. Designed evaluation protocols across indoor and outdoor datasets, maintained ROS-based experiments, supervised five students, and coordinated industry-sponsored research. Published 12 peer-reviewed papers and delivered demonstrations to partner companies.\n\nPostdoctoral Research Fellow, Nanyang Technological University | Aug 2018 - Dec 2019\nDeveloped neural feature extractors for visual localization and implemented optimized inference pipelines.\n\nPUBLICATIONS\n“Robust Visual-Inertial Mapping in Dynamic Environments,” IEEE RA-L, 2025.\n“Learning Features for Long-Term Visual Localization,” ICRA, 2022.\n“Semantic Mapping for Indoor Mobile Robots,” IROS, 2020.\n\nPROJECTS\nRoboMap: ROS2 toolkit for benchmarking SLAM systems. Technologies: C++, Python, ROS2, OpenCV, CUDA, Docker. Link: https://github.com/ravisingh/robomap\n\nSKILLS\nC++, Python, ROS2, OpenCV, CUDA, PyTorch, SLAM, visual odometry, 3D perception, sensor fusion, Linux, Docker, Git, technical writing.\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute Certificate – Fundamentals of Accelerated Computing\n\nLINKS\nhttps://www.linkedin.com/in/ravi-singh\nhttps://scholar.google.com/citations?user=ravisingh\nhttps://github.com/ravisingh\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include C++, Python, ROS2, OpenCV, CUDA, PyTorch, SLAM, visual odometry. The candidate's featured project is RoboMap, using C++, Python, ROS2, OpenCV, CUDA, Docker. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Prof. Ravi Singh",
+      "email": "ravi.singh@example.com",
+      "phone": [
+        "+65-8123-4490"
+      ],
+      "location": "Singapore",
+      "summary": "Research scientist with a background in computer vision and robotics transitioning to industry. More than eight years of academic work in 3D perception, SLAM, and autonomous navigation. Experienced in leading research projects, publishing papers, supervising students, and converting algorithms into reproducible C++ and Python systems.",
+      "education": [
+        {
+          "degree": "PhD, Robotics",
+          "institution": "National University of Singapore",
+          "start_date": "2014",
+          "end_date": "2018"
+        },
+        {
+          "degree": "M.Tech., Electrical Engineering",
+          "institution": "IIT Kanpur",
+          "start_date": "2012",
+          "end_date": "2014"
+        },
+        {
+          "degree": "B.Tech., Electronics Engineering",
+          "institution": "IIT (BHU) Varanasi",
+          "start_date": "2008",
+          "end_date": "2012"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Scientist",
+          "company": "NUS Robotics Lab",
+          "start_date": "Jan 2020",
+          "end_date": "Jul 2026",
+          "description": "Led visual-inertial odometry and 3D mapping research, designed evaluation protocols, maintained ROS experiments, supervised five students, coordinated industry-sponsored work, and published 12 peer-reviewed papers."
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "company": "Nanyang Technological University",
+          "start_date": "Aug 2018",
+          "end_date": "Dec 2019",
+          "description": "Developed neural feature extractors for visual localization and optimized inference pipelines."
+        }
+      ],
+      "projects": [
+        {
+          "name": "RoboMap",
+          "description": "ROS2 toolkit for benchmarking SLAM systems.",
+          "technologies": [
+            "C++",
+            "Python",
+            "ROS2",
+            "OpenCV",
+            "CUDA",
+            "Docker"
+          ],
+          "link": "https://github.com/ravisingh/robomap"
+        }
+      ],
+      "skills": [
+        "C++",
+        "Python",
+        "ROS2",
+        "OpenCV",
+        "CUDA",
+        "PyTorch",
+        "SLAM",
+        "visual odometry",
+        "3D perception",
+        "sensor fusion",
+        "Linux",
+        "Docker",
+        "Git",
+        "technical writing"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute Certificate – Fundamentals of Accelerated Computing"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/ravi-singh",
+        "https://scholar.google.com/citations?user=ravisingh",
+        "https://github.com/ravisingh"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "CHLOE NGUYEN\nPlatform Engineer | Vancouver, Canada | chloe.nguyen@example.com | +1-604-555-0172\n\nSUMMARY\nPlatform engineer with 4 years of experience creating Kubernetes-based internal platforms for product teams. Focused on developer experience, service mesh, policy automation, eBPF networking, and unified observability. Experienced in writing Go controllers and reusable infrastructure modules.\n\nEXPERIENCE\nPlatform Engineer, MapleScale, Vancouver | May 2023 - Present\nBuilt an Internal Developer Platform for 45 application teams. Developed Backstage templates, Argo CD workflows, and Terraform modules for standardized services. Introduced Istio for service-to-service security and traffic shaping. Deployed Cilium for network policy and Hubble for eBPF-based visibility. Standardized OpenTelemetry instrumentation and built Grafana dashboards for platform health. Created a self-service database provisioning workflow using Crossplane.\n\nDevOps Engineer, NorthPeak Software, Vancouver | Jul 2021 - Apr 2023\nMaintained AWS EKS clusters, GitHub Actions, Helm charts, and secrets. Automated image scanning and admission controls and migrated legacy logs to Loki.\n\nEDUCATION\nB.Sc. Computer Science, Simon Fraser University | 2017 - 2021\n\nPROJECTS\nDeveloper Platform Demo: Local platform showing service templates, GitOps deployment, service mesh, and eBPF network telemetry. Technologies: Backstage, Kubernetes, Argo CD, Istio, Cilium, Hubble. Link: https://github.com/chloe-nguyen/dev-platform-demo\n\nSKILLS\nKubernetes, AWS EKS, Terraform, Crossplane, Backstage, Argo CD, Istio, Cilium, eBPF, Hubble, OpenTelemetry, Prometheus, Grafana, Loki, Go, Python, Helm, GitHub Actions.\n\nCERTIFICATIONS\nCertified Kubernetes Administrator (CKA)\n\nLINKS\nhttps://www.linkedin.com/in/chloe-nguyen\nhttps://github.com/chloe-nguyen\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Kubernetes, AWS EKS, Terraform, Crossplane, Backstage, Argo CD, Istio, Cilium. The candidate's featured project is Developer Platform Demo, using Backstage, Kubernetes, Argo CD, Istio, Cilium, Hubble. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Chloe Nguyen",
+      "email": "chloe.nguyen@example.com",
+      "phone": [
+        "+1-604-555-0172"
+      ],
+      "location": "Vancouver, Canada",
+      "summary": "Platform engineer with 4 years of experience creating Kubernetes-based internal platforms for product teams. Focused on developer experience, service mesh, policy automation, eBPF networking, and unified observability. Experienced in writing Go controllers and reusable infrastructure modules.",
+      "education": [
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "Simon Fraser University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineer",
+          "company": "MapleScale",
+          "start_date": "May 2023",
+          "end_date": "Present",
+          "description": "Built an Internal Developer Platform for 45 application teams using Backstage, Argo CD, Terraform, Istio, Cilium/Hubble, OpenTelemetry, Grafana, and Crossplane for self-service infrastructure."
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "NorthPeak Software",
+          "start_date": "Jul 2021",
+          "end_date": "Apr 2023",
+          "description": "Maintained AWS EKS, GitHub Actions, Helm, and secrets; automated image scanning and admission controls and migrated logs to Loki."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Developer Platform Demo",
+          "description": "Local platform demonstrating service templates, GitOps deployment, service mesh, and eBPF network telemetry.",
+          "technologies": [
+            "Backstage",
+            "Kubernetes",
+            "Argo CD",
+            "Istio",
+            "Cilium",
+            "Hubble"
+          ],
+          "link": "https://github.com/chloe-nguyen/dev-platform-demo"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "AWS EKS",
+        "Terraform",
+        "Crossplane",
+        "Backstage",
+        "Argo CD",
+        "Istio",
+        "Cilium",
+        "eBPF",
+        "Hubble",
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Go",
+        "Python",
+        "Helm",
+        "GitHub Actions"
+      ],
+      "certifications": [
+        "Certified Kubernetes Administrator (CKA)"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/chloe-nguyen",
+        "https://github.com/chloe-nguyen"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "HARUTO TANAKA\nML Researcher / PhD Candidate | Tokyo, Japan | haruto.tanaka@example.com | +81-90-5555-7321\n\nSUMMARY\nPhD candidate in Computer Science researching generative models, model compression, and efficient inference. Strong publication record in peer-reviewed machine learning venues and experience implementing large-scale experiments on GPU clusters. Interested in applied research and ML systems roles.\n\nEDUCATION\nPhD, Computer Science, University of Tokyo | Apr 2022 - Present\nMEng, Computer Science, University of Tokyo | Apr 2020 - Mar 2022\nBEng, Information Engineering, Kyoto University | Apr 2016 - Mar 2020\n\nRESEARCH EXPERIENCE\nPhD Researcher, University of Tokyo | Apr 2022 - Present\nResearches quantization-aware training and speculative decoding for transformer language models. Built distributed evaluation infrastructure across multiple GPU nodes, analyzed latency/quality tradeoffs, and released reproducible experiment configurations.\n\nResearch Intern, Sakura AI Research | Jun 2024 - Sep 2024\nDeveloped a pruning method for vision transformers and evaluated it on image classification benchmarks.\n\nPUBLICATIONS\n“Adaptive Quantization for Efficient Transformer Inference,” ICLR 2026.\n“Speculative Decoding with Lightweight Draft Models,” NeurIPS 2025.\n“Structured Pruning for Vision Transformers,” ECCV Workshop 2024.\n\nPROJECTS\nFastLM Bench: Benchmarking toolkit for latency and accuracy of compressed language models. Technologies: Python, PyTorch, CUDA, Triton, Ray. Link: https://github.com/haruto-tanaka/fastlm-bench\n\nSKILLS\nPython, PyTorch, CUDA, Triton, Ray, transformers, quantization, pruning, distributed systems, experiment design, Linux, Git, LaTeX.\n\nCERTIFICATIONS\nNone listed.\n\nLINKS\nhttps://scholar.google.com/citations?user=harutotanaka\nhttps://github.com/haruto-tanaka\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Python, PyTorch, CUDA, Triton, Ray, transformers, quantization, pruning. The candidate's featured project is FastLM Bench, using Python, PyTorch, CUDA, Triton, Ray. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Haruto Tanaka",
+      "email": "haruto.tanaka@example.com",
+      "phone": [
+        "+81-90-5555-7321"
+      ],
+      "location": "Tokyo, Japan",
+      "summary": "PhD candidate in Computer Science researching generative models, model compression, and efficient inference. Strong publication record in peer-reviewed machine learning venues and experience implementing large-scale experiments on GPU clusters. Interested in applied research and ML systems roles.",
+      "education": [
+        {
+          "degree": "PhD, Computer Science",
+          "institution": "University of Tokyo",
+          "start_date": "Apr 2022",
+          "end_date": "Present"
+        },
+        {
+          "degree": "MEng, Computer Science",
+          "institution": "University of Tokyo",
+          "start_date": "Apr 2020",
+          "end_date": "Mar 2022"
+        },
+        {
+          "degree": "BEng, Information Engineering",
+          "institution": "Kyoto University",
+          "start_date": "Apr 2016",
+          "end_date": "Mar 2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "PhD Researcher",
+          "company": "University of Tokyo",
+          "start_date": "Apr 2022",
+          "end_date": "Present",
+          "description": "Researches quantization-aware training and speculative decoding for transformer language models; built distributed GPU evaluation infrastructure and analyzed latency/quality tradeoffs."
+        },
+        {
+          "title": "Research Intern",
+          "company": "Sakura AI Research",
+          "start_date": "Jun 2024",
+          "end_date": "Sep 2024",
+          "description": "Developed pruning methods for vision transformers and evaluated them on image classification benchmarks."
+        }
+      ],
+      "projects": [
+        {
+          "name": "FastLM Bench",
+          "description": "Benchmarking toolkit for latency and accuracy of compressed language models.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "CUDA",
+            "Triton",
+            "Ray"
+          ],
+          "link": "https://github.com/haruto-tanaka/fastlm-bench"
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "CUDA",
+        "Triton",
+        "Ray",
+        "transformers",
+        "quantization",
+        "pruning",
+        "distributed systems",
+        "experiment design",
+        "Linux",
+        "Git",
+        "LaTeX"
+      ],
+      "certifications": [],
+      "links": [
+        "https://scholar.google.com/citations?user=harutotanaka",
+        "https://github.com/haruto-tanaka"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ISABELLE DUPONT\nTechnical Product Manager | Paris, France | isabelle.dupont@example.com | +33-6-55-44-2288\n\nSUMMARY\nTechnical Product Manager with 8 years of experience in developer platforms, identity, and cloud tooling. Former full-stack engineer with strong product analytics skills. Experienced in roadmap ownership, OKRs, cross-functional planning, sprint facilitation, API strategy, and enterprise stakeholder management.\n\nEXPERIENCE\nPrincipal Product Manager, SecureStack, Paris | Jan 2022 - Present\nOwns identity and access management roadmap for enterprise developers. Defines annual strategy and quarterly OKRs covering activation, API reliability, and time-to-first-integration. Runs product discovery with security and platform teams and translates findings into PRDs. Coordinates six-week planning cycles and two-week sprints. Introduced API usage telemetry and a self-service integration wizard that increased successful integrations by 27%.\n\nTechnical Product Manager, DevHub Europe, Paris | May 2018 - Dec 2021\nManaged developer portal, documentation, SDK, and CI integrations. Built roadmap scoring model from adoption, support volume, and engineering effort. Led quarterly business reviews and backlog prioritization.\n\nSoftware Engineer, WebCraft, Lyon | Sep 2016 - Apr 2018\nDeveloped React frontends and Node.js APIs.\n\nEDUCATION\nMSc Computer Science, Sorbonne University | 2014 - 2016\nBSc Computer Science, University of Lyon | 2011 - 2014\n\nPROJECTS\nDeveloper Onboarding Funnel: Built analytics pipeline measuring registration-to-first-deployment conversion. Technologies: SQL, Python, PostgreSQL, dbt, Metabase. Link: https://github.com/isabelle-dupont/onboarding-funnel\n\nSKILLS\nRoadmaps, OKRs, PRDs, Agile, Scrum, sprint planning, product analytics, SQL, Python, APIs, React, Node.js, PostgreSQL, dbt, Metabase, Jira.\n\nCERTIFICATIONS\nCertified Scrum Product Owner (CSPO); Product Analytics Certification\n\nLINKS\nhttps://www.linkedin.com/in/isabelle-dupont\nhttps://github.com/isabelle-dupont\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Roadmaps, OKRs, PRDs, Agile, Scrum, sprint planning, product analytics, SQL. The candidate's featured project is Developer Onboarding Funnel, using SQL, Python, PostgreSQL, dbt, Metabase. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Isabelle Dupont",
+      "email": "isabelle.dupont@example.com",
+      "phone": [
+        "+33-6-55-44-2288"
+      ],
+      "location": "Paris, France",
+      "summary": "Technical Product Manager with 8 years of experience in developer platforms, identity, and cloud tooling. Former full-stack engineer with strong product analytics skills. Experienced in roadmap ownership, OKRs, cross-functional planning, sprint facilitation, API strategy, and enterprise stakeholder management.",
+      "education": [
+        {
+          "degree": "MSc Computer Science",
+          "institution": "Sorbonne University",
+          "start_date": "2014",
+          "end_date": "2016"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "University of Lyon",
+          "start_date": "2011",
+          "end_date": "2014"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Principal Product Manager",
+          "company": "SecureStack",
+          "start_date": "Jan 2022",
+          "end_date": "Present",
+          "description": "Owns IAM roadmap, defines annual strategy and quarterly activation/API/time-to-integration OKRs, leads discovery and PRDs, coordinates planning and sprints, and launched telemetry plus a self-service wizard increasing successful integrations by 27%."
+        },
+        {
+          "title": "Technical Product Manager",
+          "company": "DevHub Europe",
+          "start_date": "May 2018",
+          "end_date": "Dec 2021",
+          "description": "Managed developer portal, docs, SDKs, and CI integrations; built roadmap scoring from adoption, support volume, and engineering effort and led business reviews."
+        },
+        {
+          "title": "Software Engineer",
+          "company": "WebCraft",
+          "start_date": "Sep 2016",
+          "end_date": "Apr 2018",
+          "description": "Developed React frontends and Node.js APIs."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Developer Onboarding Funnel",
+          "description": "Analytics pipeline measuring registration-to-first-deployment conversion.",
+          "technologies": [
+            "SQL",
+            "Python",
+            "PostgreSQL",
+            "dbt",
+            "Metabase"
+          ],
+          "link": "https://github.com/isabelle-dupont/onboarding-funnel"
+        }
+      ],
+      "skills": [
+        "Roadmaps",
+        "OKRs",
+        "PRDs",
+        "Agile",
+        "Scrum",
+        "sprint planning",
+        "product analytics",
+        "SQL",
+        "Python",
+        "APIs",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "dbt",
+        "Metabase",
+        "Jira"
+      ],
+      "certifications": [
+        "Certified Scrum Product Owner (CSPO)",
+        "Product Analytics Certification"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/isabelle-dupont",
+        "https://github.com/isabelle-dupont"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "SAMUEL BROWN\nSite Reliability Engineer | Denver, Colorado | samuel.brown@example.com | +1-303-555-0175\n\nSUMMARY\nSRE with 7 years of experience across cloud infrastructure, distributed databases, and high-availability services. Specializes in SLO programs, observability, on-call operations, chaos testing, and automated incident remediation. Comfortable partnering with developers to improve reliability before production.\n\nEXPERIENCE\nStaff SRE, DataVista, Denver | Feb 2021 - Present\nLeads reliability for analytics APIs and streaming services. Designed SLOs around availability, p95 latency, freshness, and Kafka consumer lag. Maintains Prometheus, Grafana, Tempo, and Alertmanager. Built runbooks and automated remediation for failed deployments, overloaded consumers, and degraded database replicas. Runs quarterly chaos exercises using Gremlin and coordinates post-incident reviews. Introduced reliability scorecards for 20 critical services and reduced repeat incidents by 35%.\n\nSRE, CloudLedger, Denver | Jun 2018 - Jan 2021\nOperated Kubernetes, PostgreSQL, Redis, and Kafka on AWS. Created Terraform modules and participated in primary on-call rotations. Built synthetic monitoring and load tests.\n\nEDUCATION\nB.S. Computer Science, Colorado State University | 2014 - 2018\n\nPROJECTS\nSLO Starter Kit: Templates for defining SLIs, error budgets, alert policies, and incident runbooks. Technologies: Prometheus, Grafana, Terraform, Kubernetes, Python. Link: https://github.com/sambrown/slo-starter-kit\n\nSKILLS\nKubernetes, AWS, Terraform, Prometheus, Grafana, Tempo, Alertmanager, Kafka, PostgreSQL, Redis, Python, Go, Bash, Gremlin, SLO/SLI, error budgets, chaos engineering, incident response, synthetic monitoring.\n\nCERTIFICATIONS\nGoogle Professional Cloud DevOps Engineer\n\nLINKS\nhttps://www.linkedin.com/in/samuel-brown\nhttps://github.com/sambrown\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Kubernetes, AWS, Terraform, Prometheus, Grafana, Tempo, Alertmanager, Kafka. The candidate's featured project is SLO Starter Kit, using Prometheus, Grafana, Terraform, Kubernetes, Python. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Samuel Brown",
+      "email": "samuel.brown@example.com",
+      "phone": [
+        "+1-303-555-0175"
+      ],
+      "location": "Denver, Colorado",
+      "summary": "SRE with 7 years of experience across cloud infrastructure, distributed databases, and high-availability services. Specializes in SLO programs, observability, on-call operations, chaos testing, and automated incident remediation. Comfortable partnering with developers to improve reliability before production.",
+      "education": [
+        {
+          "degree": "B.S. Computer Science",
+          "institution": "Colorado State University",
+          "start_date": "2014",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Staff SRE",
+          "company": "DataVista",
+          "start_date": "Feb 2021",
+          "end_date": "Present",
+          "description": "Leads reliability for analytics APIs and streaming services; designed SLOs for availability, latency, freshness, and Kafka lag; maintains Prometheus/Grafana/Tempo/Alertmanager; built remediation and runbooks; runs Gremlin chaos exercises; introduced scorecards for 20 critical services and reduced repeat incidents by 35%."
+        },
+        {
+          "title": "SRE",
+          "company": "CloudLedger",
+          "start_date": "Jun 2018",
+          "end_date": "Jan 2021",
+          "description": "Operated Kubernetes, PostgreSQL, Redis, and Kafka on AWS; created Terraform modules, participated in primary on-call rotations, and built synthetic monitoring and load tests."
+        }
+      ],
+      "projects": [
+        {
+          "name": "SLO Starter Kit",
+          "description": "Templates for defining SLIs, error budgets, alert policies, and incident runbooks.",
+          "technologies": [
+            "Prometheus",
+            "Grafana",
+            "Terraform",
+            "Kubernetes",
+            "Python"
+          ],
+          "link": "https://github.com/sambrown/slo-starter-kit"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "AWS",
+        "Terraform",
+        "Prometheus",
+        "Grafana",
+        "Tempo",
+        "Alertmanager",
+        "Kafka",
+        "PostgreSQL",
+        "Redis",
+        "Python",
+        "Go",
+        "Bash",
+        "Gremlin",
+        "SLO/SLI",
+        "error budgets",
+        "chaos engineering",
+        "incident response",
+        "synthetic monitoring"
+      ],
+      "certifications": [
+        "Google Professional Cloud DevOps Engineer"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/samuel-brown",
+        "https://github.com/sambrown"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "MAYA PATEL\nML Researcher | Cambridge, Massachusetts | maya.patel@example.com | +1-617-555-0216\n\nSUMMARY\nMachine learning researcher specializing in causal inference, representation learning, and robust evaluation. PhD candidate with experience in academic and industrial research, peer-reviewed publications, open-source code, and collaborative experimental design.\n\nEDUCATION\nPhD, Statistics and Data Science, MIT | Sep 2021 - Present\nMSc, Statistics, University of Warwick | Sep 2019 - Aug 2020\nBSc, Mathematics, University of Delhi | Jul 2016 - May 2019\n\nRESEARCH EXPERIENCE\nPhD Researcher, MIT Data Systems Lab | Sep 2021 - Present\nDeveloping causal representation learning methods for recommendation systems. Designed synthetic and real-world benchmarks, implemented estimators in PyTorch, and evaluated sensitivity to confounding. Co-authored papers and presented findings at NeurIPS and AISTATS.\n\nResearch Intern, Horizon Research, Boston | May 2023 - Aug 2023\nStudied offline policy evaluation for recommender systems and built counterfactual evaluation pipelines.\n\nPUBLICATIONS\n“Causal Representations for Robust Recommendation,” AISTATS 2026.\n“Counterfactual Evaluation with Hidden Confounding,” NeurIPS Workshop 2025.\n“Stable Representation Learning for Domain Shift,” ICML Workshop 2024.\n\nPROJECTS\nCausalBench: Benchmark suite for causal ML evaluation. Technologies: Python, PyTorch, NumPy, scikit-learn, Hydra. Link: https://github.com/mayapatel/causalbench\n\nSKILLS\nPython, PyTorch, NumPy, scikit-learn, causal inference, representation learning, Bayesian statistics, experiment design, SQL, Git, Linux, LaTeX.\n\nCERTIFICATIONS\nNone listed.\n\nLINKS\nhttps://www.linkedin.com/in/maya-patel\nhttps://scholar.google.com/citations?user=mayapatel\nhttps://github.com/mayapatel\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Python, PyTorch, NumPy, scikit-learn, causal inference, representation learning, Bayesian statistics, experiment design. The candidate's featured project is CausalBench, using Python, PyTorch, NumPy, scikit-learn, Hydra. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Maya Patel",
+      "email": "maya.patel@example.com",
+      "phone": [
+        "+1-617-555-0216"
+      ],
+      "location": "Cambridge, Massachusetts",
+      "summary": "Machine learning researcher specializing in causal inference, representation learning, and robust evaluation. PhD candidate with experience in academic and industrial research, peer-reviewed publications, open-source code, and collaborative experimental design.",
+      "education": [
+        {
+          "degree": "PhD, Statistics and Data Science",
+          "institution": "MIT",
+          "start_date": "Sep 2021",
+          "end_date": "Present"
+        },
+        {
+          "degree": "MSc, Statistics",
+          "institution": "University of Warwick",
+          "start_date": "Sep 2019",
+          "end_date": "Aug 2020"
+        },
+        {
+          "degree": "BSc, Mathematics",
+          "institution": "University of Delhi",
+          "start_date": "Jul 2016",
+          "end_date": "May 2019"
+        }
+      ],
+      "experience": [
+        {
+          "title": "PhD Researcher",
+          "company": "MIT Data Systems Lab",
+          "start_date": "Sep 2021",
+          "end_date": "Present",
+          "description": "Developing causal representation learning for recommendation systems; designed benchmarks, implemented PyTorch estimators, evaluated confounding sensitivity, co-authored papers, and presented at NeurIPS and AISTATS."
+        },
+        {
+          "title": "Research Intern",
+          "company": "Horizon Research",
+          "start_date": "May 2023",
+          "end_date": "Aug 2023",
+          "description": "Studied offline policy evaluation for recommender systems and built counterfactual evaluation pipelines."
+        }
+      ],
+      "projects": [
+        {
+          "name": "CausalBench",
+          "description": "Benchmark suite for causal machine learning evaluation.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "NumPy",
+            "scikit-learn",
+            "Hydra"
+          ],
+          "link": "https://github.com/mayapatel/causalbench"
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "NumPy",
+        "scikit-learn",
+        "causal inference",
+        "representation learning",
+        "Bayesian statistics",
+        "experiment design",
+        "SQL",
+        "Git",
+        "Linux",
+        "LaTeX"
+      ],
+      "certifications": [],
+      "links": [
+        "https://www.linkedin.com/in/maya-patel",
+        "https://scholar.google.com/citations?user=mayapatel",
+        "https://github.com/mayapatel"
+      ]
+    }
+  }
+]

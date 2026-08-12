@@ -1,0 +1,1207 @@
+[
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Rohan Iyer\nEmail: rohan.iyer@example.com\nPhone: +91 91234 56789\nLocation: Pune, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nData engineer experienced in batch and streaming pipelines, warehouse modeling, and cloud data platforms. Strong Python and SQL skills with hands-on Kafka, Spark, Airflow, and AWS experience.\n\nEDUCATION\n- MTech Data Engineering, Indian Institute of Technology Hyderabad (2024 - 2026)\n- BE Computer Engineering, Savitribai Phule Pune University (2020 - 2024)\n\nEXPERIENCE\n- Data Engineering Intern, FinScale Analytics (May 2025 - Aug 2025)\n  Developed PySpark transformations for transaction data, created Airflow DAGs for hourly ingestion, and optimized Snowflake queries through partition-aware models and incremental loads. Added data-quality checks for null rates, duplicate keys, and schema drift.\n\nPROJECTS\n- StreamLake Market Pipeline: Built an end-to-end stock market streaming pipeline that publishes events to Kafka, lands raw data in Amazon S3, transforms records with AWS Glue, stores Parquet datasets, and exposes analytical queries through Athena. Technologies: Python, Kafka, AWS EC2, Amazon S3, AWS Glue, Amazon Athena, PySpark, Parquet. Link: https://github.com/rohaniyer/streamlake\n- Airflow Retail ETL: Designed a scheduled ETL workflow that ingests CSV files, validates schemas, standardizes dimensions, computes daily sales aggregates, and loads curated tables into PostgreSQL with retry and failure-alert handling. Technologies: Apache Airflow, Python, PostgreSQL, Pandas, Docker. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, PySpark, Apache Spark, Kafka, Airflow, AWS, S3, Glue, Athena, Snowflake, PostgreSQL, Docker, Git, Parquet, Avro\n\nCERTIFICATIONS\nAstronomer Certification for Apache Airflow Fundamentals; AWS Certified Cloud Practitioner\n\nLINKS\nhttps://github.com/rohaniyer; https://www.linkedin.com/in/rohaniyer\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes StreamLake Market Pipeline and Airflow Retail ETL, where they applied Python, Kafka, AWS EC2, Amazon S3 alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, PySpark, Apache Spark, Kafka, Airflow, AWS. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Rohan Iyer",
+      "email": "rohan.iyer@example.com",
+      "phone": [
+        "+91 91234 56789"
+      ],
+      "location": "Pune, Maharashtra, India",
+      "summary": "Data engineer experienced in batch and streaming pipelines, warehouse modeling, and cloud data platforms. Strong Python and SQL skills with hands-on Kafka, Spark, Airflow, and AWS experience.",
+      "education": [
+        {
+          "degree": "MTech Data Engineering",
+          "institution": "Indian Institute of Technology Hyderabad",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BE Computer Engineering",
+          "institution": "Savitribai Phule Pune University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Engineering Intern",
+          "company": "FinScale Analytics",
+          "start_date": "May 2025",
+          "end_date": "Aug 2025",
+          "description": "Developed PySpark transformations for transaction data, created Airflow DAGs for hourly ingestion, and optimized Snowflake queries through partition-aware models and incremental loads. Added data-quality checks for null rates, duplicate keys, and schema drift."
+        }
+      ],
+      "projects": [
+        {
+          "name": "StreamLake Market Pipeline",
+          "description": "Built an end-to-end stock market streaming pipeline that publishes events to Kafka, lands raw data in Amazon S3, transforms records with AWS Glue, stores Parquet datasets, and exposes analytical queries through Athena.",
+          "technologies": [
+            "Python",
+            "Kafka",
+            "AWS EC2",
+            "Amazon S3",
+            "AWS Glue",
+            "Amazon Athena",
+            "PySpark",
+            "Parquet"
+          ],
+          "link": "https://github.com/rohaniyer/streamlake"
+        },
+        {
+          "name": "Airflow Retail ETL",
+          "description": "Designed a scheduled ETL workflow that ingests CSV files, validates schemas, standardizes dimensions, computes daily sales aggregates, and loads curated tables into PostgreSQL with retry and failure-alert handling.",
+          "technologies": [
+            "Apache Airflow",
+            "Python",
+            "PostgreSQL",
+            "Pandas",
+            "Docker"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Apache Spark",
+        "Kafka",
+        "Airflow",
+        "AWS",
+        "S3",
+        "Glue",
+        "Athena",
+        "Snowflake",
+        "PostgreSQL",
+        "Docker",
+        "Git",
+        "Parquet",
+        "Avro"
+      ],
+      "certifications": [
+        "Astronomer Certification for Apache Airflow Fundamentals",
+        "AWS Certified Cloud Practitioner"
+      ],
+      "links": [
+        "https://github.com/rohaniyer",
+        "https://www.linkedin.com/in/rohaniyer"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sameer Khan\nQUANTITATIVE ML / FINTECH ENGINEER\nEmail: sameer.khan@protonmail.com | Phone: +91 70061 44892 | Location: Hyderabad, Telangana, India\n\nSUMMARY\nML engineer applying probabilistic modeling and machine learning to credit risk, fraud detection, and financial decision systems. Interested in interpretable models, monitoring, and production-ready risk pipelines.\n\nEDUCATION\nM.Tech Artificial Intelligence, IIIT Hyderabad, 2024–2026.\nB.Tech Computer Science, NIT Warangal, 2020–2024.\n\nEXPERIENCE\nMachine Learning Intern - Risk, Credence FinTech, May 2025–Aug 2025. Developed baseline credit-risk models, investigated feature drift, prepared model monitoring reports, and compared calibration across logistic regression and gradient-boosting approaches. Documented assumptions and model limitations for review.\n\nPROJECTS\nExplainable Credit Risk Model — Built a credit-risk modeling pipeline with feature engineering, probability calibration, SHAP-based explanations, and threshold analysis for imbalanced outcomes. Technologies: Python, scikit-learn, XGBoost, SHAP, Pandas, MLflow. GitHub: https://github.com/sameerkhan/credit-risk\n\nSKILLS\nMachine Learning, Quantitative ML, Credit Risk, Python, scikit-learn, XGBoost, SHAP, Statistics, Feature Engineering, Model Calibration, MLflow, SQL.\n\nCERTIFICATIONS\nGoogle Advanced Data Analytics Professional Certificate; Microsoft Certified: Azure Data Scientist Associate.\n\nLINKS\nGitHub: https://github.com/sameerkhan\nLinkedIn: https://www.linkedin.com/in/sameerkhan\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quantitative focus: emphasizes reproducible experiments, careful assumptions, leakage prevention, out-of-sample validation, and transparent reporting of risk. Comfortable working with numerical data, statistical diagnostics, and performance metrics. Interested in models and systems that remain interpretable under changing market conditions and realistic transaction constraints. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Sameer Khan",
+      "email": "sameer.khan@protonmail.com",
+      "phone": [
+        "+91 70061 44892"
+      ],
+      "location": "Hyderabad, Telangana, India",
+      "summary": "ML engineer applying probabilistic modeling and machine learning to credit risk, fraud detection, and financial decision systems.",
+      "education": [
+        {
+          "degree": "M.Tech Artificial Intelligence",
+          "institution": "IIIT Hyderabad",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "B.Tech Computer Science",
+          "institution": "NIT Warangal",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Intern - Risk",
+          "company": "Credence FinTech",
+          "start_date": "May 2025",
+          "end_date": "Aug 2025",
+          "description": "Developed baseline credit-risk models, investigated feature drift, prepared model monitoring reports, and compared calibration across logistic regression and gradient-boosting approaches."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Explainable Credit Risk Model",
+          "description": "Built a credit-risk modeling pipeline with feature engineering, probability calibration, SHAP-based explanations, and threshold analysis for imbalanced outcomes.",
+          "technologies": [
+            "Python",
+            "scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "Pandas",
+            "MLflow"
+          ],
+          "link": "https://github.com/sameerkhan/credit-risk"
+        }
+      ],
+      "skills": [
+        "Machine Learning",
+        "Quantitative ML",
+        "Credit Risk",
+        "Python",
+        "scikit-learn",
+        "XGBoost",
+        "SHAP",
+        "Statistics",
+        "Feature Engineering",
+        "Model Calibration",
+        "MLflow",
+        "SQL"
+      ],
+      "certifications": [
+        "Google Advanced Data Analytics Professional Certificate",
+        "Microsoft Certified: Azure Data Scientist Associate"
+      ],
+      "links": [
+        "https://github.com/sameerkhan",
+        "https://www.linkedin.com/in/sameerkhan"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "CHLOE NGUYEN\nPlatform Engineer | Vancouver, Canada | chloe.nguyen@example.com | +1-604-555-0172\n\nSUMMARY\nPlatform engineer with 4 years of experience creating Kubernetes-based internal platforms for product teams. Focused on developer experience, service mesh, policy automation, eBPF networking, and unified observability. Experienced in writing Go controllers and reusable infrastructure modules.\n\nEXPERIENCE\nPlatform Engineer, MapleScale, Vancouver | May 2023 - Present\nBuilt an Internal Developer Platform for 45 application teams. Developed Backstage templates, Argo CD workflows, and Terraform modules for standardized services. Introduced Istio for service-to-service security and traffic shaping. Deployed Cilium for network policy and Hubble for eBPF-based visibility. Standardized OpenTelemetry instrumentation and built Grafana dashboards for platform health. Created a self-service database provisioning workflow using Crossplane.\n\nDevOps Engineer, NorthPeak Software, Vancouver | Jul 2021 - Apr 2023\nMaintained AWS EKS clusters, GitHub Actions, Helm charts, and secrets. Automated image scanning and admission controls and migrated legacy logs to Loki.\n\nEDUCATION\nB.Sc. Computer Science, Simon Fraser University | 2017 - 2021\n\nPROJECTS\nDeveloper Platform Demo: Local platform showing service templates, GitOps deployment, service mesh, and eBPF network telemetry. Technologies: Backstage, Kubernetes, Argo CD, Istio, Cilium, Hubble. Link: https://github.com/chloe-nguyen/dev-platform-demo\n\nSKILLS\nKubernetes, AWS EKS, Terraform, Crossplane, Backstage, Argo CD, Istio, Cilium, eBPF, Hubble, OpenTelemetry, Prometheus, Grafana, Loki, Go, Python, Helm, GitHub Actions.\n\nCERTIFICATIONS\nCertified Kubernetes Administrator (CKA)\n\nLINKS\nhttps://www.linkedin.com/in/chloe-nguyen\nhttps://github.com/chloe-nguyen\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Kubernetes, AWS EKS, Terraform, Crossplane, Backstage, Argo CD, Istio, Cilium. The candidate's featured project is Developer Platform Demo, using Backstage, Kubernetes, Argo CD, Istio, Cilium, Hubble. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Chloe Nguyen",
+      "email": "chloe.nguyen@example.com",
+      "phone": [
+        "+1-604-555-0172"
+      ],
+      "location": "Vancouver, Canada",
+      "summary": "Platform engineer with 4 years of experience creating Kubernetes-based internal platforms for product teams. Focused on developer experience, service mesh, policy automation, eBPF networking, and unified observability. Experienced in writing Go controllers and reusable infrastructure modules.",
+      "education": [
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "Simon Fraser University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineer",
+          "company": "MapleScale",
+          "start_date": "May 2023",
+          "end_date": "Present",
+          "description": "Built an Internal Developer Platform for 45 application teams using Backstage, Argo CD, Terraform, Istio, Cilium/Hubble, OpenTelemetry, Grafana, and Crossplane for self-service infrastructure."
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "NorthPeak Software",
+          "start_date": "Jul 2021",
+          "end_date": "Apr 2023",
+          "description": "Maintained AWS EKS, GitHub Actions, Helm, and secrets; automated image scanning and admission controls and migrated logs to Loki."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Developer Platform Demo",
+          "description": "Local platform demonstrating service templates, GitOps deployment, service mesh, and eBPF network telemetry.",
+          "technologies": [
+            "Backstage",
+            "Kubernetes",
+            "Argo CD",
+            "Istio",
+            "Cilium",
+            "Hubble"
+          ],
+          "link": "https://github.com/chloe-nguyen/dev-platform-demo"
+        }
+      ],
+      "skills": [
+        "Kubernetes",
+        "AWS EKS",
+        "Terraform",
+        "Crossplane",
+        "Backstage",
+        "Argo CD",
+        "Istio",
+        "Cilium",
+        "eBPF",
+        "Hubble",
+        "OpenTelemetry",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Go",
+        "Python",
+        "Helm",
+        "GitHub Actions"
+      ],
+      "certifications": [
+        "Certified Kubernetes Administrator (CKA)"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/chloe-nguyen",
+        "https://github.com/chloe-nguyen"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Emily Johnson\nEmail: emily.johnson@example.com\nPhone: +1 415 555 0182\nLocation: San Francisco, California, USA\n\nOBJECTIVE / SUMMARY\nSoftware engineer and applied data scientist building data-rich web products. Combines Python analytics with modern TypeScript front ends and production API development.\n\nEDUCATION\n- MS Computer Science, University of California, Davis (2022 - 2024)\n- BS Computer Science, University of California, Santa Cruz (2018 - 2022)\n\nEXPERIENCE\n- Software Engineer, MetricCloud (Jul 2024 - Jun 2026)\n  Developed analytics APIs and React interfaces for customer usage reporting. Designed PostgreSQL schemas, optimized aggregation queries, implemented background jobs, and added automated tests for critical workflows.\n\nPROJECTS\n- Experiment Analytics Portal: Built a web application for analyzing product experiments, including experiment metadata, cohort selection, metric calculations, confidence intervals, and downloadable result tables. Added role-based access and audit events. Technologies: TypeScript, React, Next.js, Python, FastAPI, PostgreSQL, Redis. Link: https://github.com/emilyjohnson/experiment-portal\n- Demand Forecast API: Created an API that accepts historical sales data and returns forecast intervals and evaluation metrics. Implemented validation, model versioning, asynchronous jobs, and structured request logging. Technologies: Python, FastAPI, Pandas, Scikit-learn, Celery, Docker. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, TypeScript, JavaScript, React, Next.js, FastAPI, PostgreSQL, Redis, Pandas, Scikit-learn, Docker, AWS, GitHub Actions, REST APIs\n\nCERTIFICATIONS\nAWS Certified Solutions Architect – Associate\n\nLINKS\nhttps://github.com/emilyjohnson; https://www.linkedin.com/in/emilyjohnson\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Experiment Analytics Portal and Demand Forecast API, where they applied TypeScript, React, Next.js, Python alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, TypeScript, JavaScript, React, Next.js, FastAPI, PostgreSQL. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Emily Johnson",
+      "email": "emily.johnson@example.com",
+      "phone": [
+        "+1 415 555 0182"
+      ],
+      "location": "San Francisco, California, USA",
+      "summary": "Software engineer and applied data scientist building data-rich web products. Combines Python analytics with modern TypeScript front ends and production API development.",
+      "education": [
+        {
+          "degree": "MS Computer Science",
+          "institution": "University of California, Davis",
+          "start_date": "2022",
+          "end_date": "2024"
+        },
+        {
+          "degree": "BS Computer Science",
+          "institution": "University of California, Santa Cruz",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Engineer",
+          "company": "MetricCloud",
+          "start_date": "Jul 2024",
+          "end_date": "Jun 2026",
+          "description": "Developed analytics APIs and React interfaces for customer usage reporting. Designed PostgreSQL schemas, optimized aggregation queries, implemented background jobs, and added automated tests for critical workflows."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Experiment Analytics Portal",
+          "description": "Built a web application for analyzing product experiments, including experiment metadata, cohort selection, metric calculations, confidence intervals, and downloadable result tables. Added role-based access and audit events.",
+          "technologies": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis"
+          ],
+          "link": "https://github.com/emilyjohnson/experiment-portal"
+        },
+        {
+          "name": "Demand Forecast API",
+          "description": "Created an API that accepts historical sales data and returns forecast intervals and evaluation metrics. Implemented validation, model versioning, asynchronous jobs, and structured request logging.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "Pandas",
+            "Scikit-learn",
+            "Celery",
+            "Docker"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Pandas",
+        "Scikit-learn",
+        "Docker",
+        "AWS",
+        "GitHub Actions",
+        "REST APIs"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Associate"
+      ],
+      "links": [
+        "https://github.com/emilyjohnson",
+        "https://www.linkedin.com/in/emilyjohnson"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "NOAH WILLIAMS\nTechnical Product Manager | New York, NY | noah.williams@example.com | +1-917-555-0264\n\nSUMMARY\nTechnical Product Manager with 5 years of experience in data products and ML-enabled enterprise software. Strong in customer discovery, product analytics, roadmap prioritization, OKR definition, sprint planning, and technical communication. Uses SQL and experimentation to connect product decisions with measurable business outcomes.\n\nEXPERIENCE\nTechnical Product Manager, InsightGrid, New York | Feb 2023 - Present\nOwns roadmap for an enterprise analytics workspace used by 50,000 monthly users. Defines quarterly OKRs for activation, retention, and analyst productivity. Partners with data science teams on recommendation features and evaluates releases using A/B tests. Runs backlog refinement, sprint planning, demos, and retrospectives with three engineering squads. Built a product metrics layer in SQL and dbt that reduced weekly reporting effort by 70%.\n\nProduct Analyst, MetricLoop, Boston | Jul 2021 - Jan 2023\nBuilt customer segmentation and funnel dashboards. Conducted pricing analysis and feature discovery interviews. Translated findings into PRDs and prioritization proposals.\n\nEDUCATION\nB.S. Information Systems, Northeastern University | 2017 - 2021\n\nPROJECTS\nExperimentation Hub: Internal prototype for defining experiments, tracking variants, and generating statistical summaries. Technologies: Python, SQL, dbt, PostgreSQL, Streamlit. Link: https://github.com/noah-williams/experimentation-hub\n\nSKILLS\nProduct management, roadmap strategy, OKRs, Scrum, sprint planning, SQL, Python, dbt, PostgreSQL, A/B testing, Amplitude, Jira, product analytics, customer discovery, PRDs.\n\nCERTIFICATIONS\nProduct School Product Management Certificate\n\nLINKS\nhttps://www.linkedin.com/in/noah-williams\nhttps://github.com/noah-williams\n\nADDITIONAL TECHNICAL CONTEXT\nCore capabilities include Product management, roadmap strategy, OKRs, Scrum, sprint planning, SQL, Python, dbt. The candidate's featured project is Experimentation Hub, using Python, SQL, dbt, PostgreSQL, Streamlit. The resume emphasizes measurable engineering or research outcomes, cross-functional collaboration, reproducibility, documentation, and disciplined technical delivery. Selected work is represented through the listed professional and project links.",
+    "output": {
+      "name": "Noah Williams",
+      "email": "noah.williams@example.com",
+      "phone": [
+        "+1-917-555-0264"
+      ],
+      "location": "New York, NY",
+      "summary": "Technical Product Manager with 5 years of experience in data products and ML-enabled enterprise software. Strong in customer discovery, product analytics, roadmap prioritization, OKR definition, sprint planning, and technical communication. Uses SQL and experimentation to connect product decisions with measurable business outcomes.",
+      "education": [
+        {
+          "degree": "B.S. Information Systems",
+          "institution": "Northeastern University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Technical Product Manager",
+          "company": "InsightGrid",
+          "start_date": "Feb 2023",
+          "end_date": "Present",
+          "description": "Owns analytics workspace roadmap, defines quarterly activation/retention/productivity OKRs, partners with data science, evaluates releases with A/B tests, runs Scrum ceremonies for three squads, and built a SQL/dbt product metrics layer reducing reporting effort by 70%."
+        },
+        {
+          "title": "Product Analyst",
+          "company": "MetricLoop",
+          "start_date": "Jul 2021",
+          "end_date": "Jan 2023",
+          "description": "Built segmentation and funnel dashboards, conducted pricing analysis and discovery interviews, and translated findings into PRDs and prioritization proposals."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Experimentation Hub",
+          "description": "Prototype for defining experiments, tracking variants, and generating statistical summaries.",
+          "technologies": [
+            "Python",
+            "SQL",
+            "dbt",
+            "PostgreSQL",
+            "Streamlit"
+          ],
+          "link": "https://github.com/noah-williams/experimentation-hub"
+        }
+      ],
+      "skills": [
+        "Product management",
+        "roadmap strategy",
+        "OKRs",
+        "Scrum",
+        "sprint planning",
+        "SQL",
+        "Python",
+        "dbt",
+        "PostgreSQL",
+        "A/B testing",
+        "Amplitude",
+        "Jira",
+        "product analytics",
+        "customer discovery",
+        "PRDs"
+      ],
+      "certifications": [
+        "Product School Product Management Certificate"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/noah-williams",
+        "https://github.com/noah-williams"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "NEHA IYER\nFresh Graduate | Bengaluru\nSUMMARY\nRecent computer science graduate seeking an entry-level software engineering role. Academic work emphasizes algorithms, databases, and web applications. No professional employment to date.\nEDUCATION\nB.Tech in Computer Science and Engineering — R.V. College of Engineering, Bengaluru — 2022–2026\nCGPA 8.6/10\nPROJECTS\nCampus Queue Manager — web application for student-service queues, including ticket creation, priority handling, status tracking, REST APIs, and responsive frontend. Java, Spring Boot, MySQL, React.\nLibrary Recommendation Portal — content-similarity recommendation system over book metadata with search and filtering. Python, Pandas, scikit-learn.\nMini Compiler Front End — lexical analysis and recursive-descent parsing for a language subset using C++.\nSKILLS\nJava, C++, Python, SQL, Spring Boot, React, MySQL, Git, Data Structures, Algorithms\nCERTIFICATIONS\nNone listed\nEMAIL neha.iyer.cs@gmail.com\nPHONE +91 99876 55120\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Neha Iyer",
+      "email": "neha.iyer.cs@gmail.com",
+      "phone": [
+        "+91 99876 55120"
+      ],
+      "location": "Bengaluru",
+      "summary": "Recent computer science graduate seeking an entry-level software engineering role. Academic work emphasizes algorithms, databases, and web applications. No professional employment to date.",
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science and Engineering",
+          "institution": "R.V. College of Engineering, Bengaluru",
+          "start_date": "2022",
+          "end_date": "2026"
+        }
+      ],
+      "experience": [],
+      "projects": [
+        {
+          "name": "Campus Queue Manager",
+          "description": "Built a web application for student-service queues with ticket creation, priority handling, status tracking, REST APIs, and a responsive frontend.",
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "React"
+          ],
+          "link": null
+        },
+        {
+          "name": "Library Recommendation Portal",
+          "description": "Created a recommendation portal using content similarity over book metadata, with search and filtering.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "scikit-learn"
+          ],
+          "link": null
+        },
+        {
+          "name": "Mini Compiler Front End",
+          "description": "Implemented lexical analysis and recursive-descent parsing for a subset of a programming language.",
+          "technologies": [
+            "C++"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Java",
+        "C++",
+        "Python",
+        "SQL",
+        "Spring Boot",
+        "React",
+        "MySQL",
+        "Git",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "certifications": [],
+      "links": []
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Niamh O'Connor\nEmail: niamh.oconnor@example.ie\nPhone: +353 85 123 4567\nLocation: Dublin, Ireland\n\nOBJECTIVE / SUMMARY\nData platform engineer with experience in streaming analytics and cloud warehouses. Enjoys building observable pipelines, optimizing SQL workloads, and improving data reliability.\n\nEDUCATION\n- MSc Data Analytics, Trinity College Dublin (2022 - 2023)\n- BSc Computer Science, University College Dublin (2019 - 2022)\n\nEXPERIENCE\n- Data Platform Engineer, StreamWorks (Jan 2024 - Jun 2026)\n  Designed Kafka-based ingestion services and Spark Structured Streaming jobs for event data. Implemented schema validation, dead-letter handling, monitoring dashboards, and warehouse loading patterns for downstream analysts.\n\nPROJECTS\n- Real-Time Fraud Event Pipeline: Built a streaming pipeline that consumes transaction events, enriches records with reference data, applies rule-based risk flags, and writes both raw and curated outputs for near-real-time analysis. Technologies: Kafka, Spark Structured Streaming, Python, PostgreSQL, AWS S3, Grafana. Link: https://github.com/niamhoconnor/fraud-stream\n- Warehouse Cost Optimizer: Analyzed slow analytical queries and redesigned fact-table partitioning, clustering, and incremental transformation models. Documented before-and-after runtime and scan-volume measurements. Technologies: SQL, Snowflake, dbt, Python, Git. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, Kafka, Spark, Spark Structured Streaming, AWS, S3, Snowflake, dbt, Airflow, PostgreSQL, Grafana, Docker, Git\n\nCERTIFICATIONS\nConfluent Fundamentals Accreditation; dbt Fundamentals\n\nLINKS\nhttps://github.com/niamhoconnor\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Real-Time Fraud Event Pipeline and Warehouse Cost Optimizer, where they applied Kafka, Spark Structured Streaming, Python, PostgreSQL alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, Kafka, Spark, Spark Structured Streaming, AWS, S3. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Niamh O'Connor",
+      "email": "niamh.oconnor@example.ie",
+      "phone": [
+        "+353 85 123 4567"
+      ],
+      "location": "Dublin, Ireland",
+      "summary": "Data platform engineer with experience in streaming analytics and cloud warehouses. Enjoys building observable pipelines, optimizing SQL workloads, and improving data reliability.",
+      "education": [
+        {
+          "degree": "MSc Data Analytics",
+          "institution": "Trinity College Dublin",
+          "start_date": "2022",
+          "end_date": "2023"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "University College Dublin",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Platform Engineer",
+          "company": "StreamWorks",
+          "start_date": "Jan 2024",
+          "end_date": "Jun 2026",
+          "description": "Designed Kafka-based ingestion services and Spark Structured Streaming jobs for event data. Implemented schema validation, dead-letter handling, monitoring dashboards, and warehouse loading patterns for downstream analysts."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Real-Time Fraud Event Pipeline",
+          "description": "Built a streaming pipeline that consumes transaction events, enriches records with reference data, applies rule-based risk flags, and writes both raw and curated outputs for near-real-time analysis.",
+          "technologies": [
+            "Kafka",
+            "Spark Structured Streaming",
+            "Python",
+            "PostgreSQL",
+            "AWS S3",
+            "Grafana"
+          ],
+          "link": "https://github.com/niamhoconnor/fraud-stream"
+        },
+        {
+          "name": "Warehouse Cost Optimizer",
+          "description": "Analyzed slow analytical queries and redesigned fact-table partitioning, clustering, and incremental transformation models. Documented before-and-after runtime and scan-volume measurements.",
+          "technologies": [
+            "SQL",
+            "Snowflake",
+            "dbt",
+            "Python",
+            "Git"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Kafka",
+        "Spark",
+        "Spark Structured Streaming",
+        "AWS",
+        "S3",
+        "Snowflake",
+        "dbt",
+        "Airflow",
+        "PostgreSQL",
+        "Grafana",
+        "Docker",
+        "Git"
+      ],
+      "certifications": [
+        "Confluent Fundamentals Accreditation",
+        "dbt Fundamentals"
+      ],
+      "links": [
+        "https://github.com/niamhoconnor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sana Rahman\nEmail: sana.rahman@example.com\nPhone: +880 1712 345678\nLocation: Dhaka, Bangladesh\n\nOBJECTIVE / SUMMARY\nFull-stack developer with a focus on performant React applications and Python backend services. Experienced in authentication, payments, relational modeling, testing, and deployment automation.\n\nEDUCATION\n- BSc Computer Science and Engineering, Bangladesh University of Engineering and Technology (2019 - 2023)\n\nEXPERIENCE\n- Software Developer, PayWave Systems (Jul 2023 - Jun 2026)\n  Built merchant dashboards, payment reconciliation APIs, and administrative workflows. Implemented PostgreSQL transactions, webhook idempotency, background processing, and automated integration tests. Participated in code reviews and production incident analysis.\n\nPROJECTS\n- Merchant Operations Portal: Developed a responsive portal for merchant onboarding, transaction search, refund workflows, settlement summaries, and role-based permissions. Added server-side filtering and audit logging for operational traceability. Technologies: React, TypeScript, Python, FastAPI, PostgreSQL, Redis, Docker. Link: https://github.com/sanarahman/merchant-portal\n- Course Marketplace: Built a marketplace supporting course discovery, instructor profiles, enrollment, checkout, reviews, and transactional email notifications. Implemented REST APIs and protected routes with access tokens. Technologies: Next.js, TypeScript, Node.js, Express, PostgreSQL, Prisma, Stripe. Link: Not provided\n\nSKILLS\nLanguages and core technologies: TypeScript, JavaScript, Python, React, Next.js, Node.js, Express, FastAPI, PostgreSQL, Redis, Prisma, Docker, REST, Git, Jest, Cypress, AWS\n\nCERTIFICATIONS\nMeta Back-End Developer Professional Certificate\n\nLINKS\nhttps://github.com/sanarahman\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Merchant Operations Portal and Course Marketplace, where they applied React, TypeScript, Python, FastAPI alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include TypeScript, JavaScript, Python, React, Next.js, Node.js, Express. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Sana Rahman",
+      "email": "sana.rahman@example.com",
+      "phone": [
+        "+880 1712 345678"
+      ],
+      "location": "Dhaka, Bangladesh",
+      "summary": "Full-stack developer with a focus on performant React applications and Python backend services. Experienced in authentication, payments, relational modeling, testing, and deployment automation.",
+      "education": [
+        {
+          "degree": "BSc Computer Science and Engineering",
+          "institution": "Bangladesh University of Engineering and Technology",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Developer",
+          "company": "PayWave Systems",
+          "start_date": "Jul 2023",
+          "end_date": "Jun 2026",
+          "description": "Built merchant dashboards, payment reconciliation APIs, and administrative workflows. Implemented PostgreSQL transactions, webhook idempotency, background processing, and automated integration tests. Participated in code reviews and production incident analysis."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Merchant Operations Portal",
+          "description": "Developed a responsive portal for merchant onboarding, transaction search, refund workflows, settlement summaries, and role-based permissions. Added server-side filtering and audit logging for operational traceability.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+          ],
+          "link": "https://github.com/sanarahman/merchant-portal"
+        },
+        {
+          "name": "Course Marketplace",
+          "description": "Built a marketplace supporting course discovery, instructor profiles, enrollment, checkout, reviews, and transactional email notifications. Implemented REST APIs and protected routes with access tokens.",
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Prisma",
+            "Stripe"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Prisma",
+        "Docker",
+        "REST",
+        "Git",
+        "Jest",
+        "Cypress",
+        "AWS"
+      ],
+      "certifications": [
+        "Meta Back-End Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/sanarahman"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Vikram Joshi\nvikram.joshi@protonmail.com | Phone: not listed | Jaipur, Rajasthan, India\n\nOBJECTIVE / SUMMARY\nFrontend-focused engineer building accessible responsive interfaces with React and TypeScript, with experience in design systems and testing. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Information Technology | Malaviya National Institute of Technology Jaipur | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Frontend Developer | Northstar Commerce | Jul 2024 – Present\n  Build storefront and internal operations interfaces. Developed reusable component patterns, improved Core Web Vitals, added Playwright regression tests, and collaborated with UX designers on accessibility.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- ShopSphere\n  • Built a responsive e-commerce frontend with filtering, search, cart persistence, checkout state management, accessible modals, automated browser tests, and API mocking.\n  • Stack: React, TypeScript, Vite, Redux Toolkit, Playwright, Tailwind CSS\n  • Repository: https://github.com/vikramjoshi/shopsphere\n- Design System Starter\n  • Created a reusable UI component library with typography, buttons, forms, tables, dialogs, documentation, versioned packages, and visual regression checks.\n  • Stack: React, TypeScript, Storybook, Vite, CSS, Chromatic\n  • Repository: https://github.com/vikramjoshi/design-system\n\nSKILLS\nLanguages: TypeScript, JavaScript.\nFrameworks, platforms, and tools: TypeScript, JavaScript, React, Redux Toolkit, Next.js, Vite, Tailwind CSS, Storybook, Playwright, Jest, GraphQL, REST APIs, Git, Figma.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nMeta Front-End Developer Professional Certificate\n\nLINKS\nhttps://github.com/vikramjoshi",
+    "output": {
+      "name": "Vikram Joshi",
+      "email": "vikram.joshi@protonmail.com",
+      "phone": [],
+      "location": "Jaipur, Rajasthan, India",
+      "summary": "Frontend-focused engineer building accessible responsive interfaces with React and TypeScript, with experience in design systems and testing.",
+      "education": [
+        {
+          "degree": "BTech Information Technology",
+          "institution": "Malaviya National Institute of Technology Jaipur",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "company": "Northstar Commerce",
+          "start_date": "Jul 2024",
+          "end_date": "Present",
+          "description": "Build storefront and internal operations interfaces. Developed reusable component patterns, improved Core Web Vitals, added Playwright regression tests, and collaborated with UX designers on accessibility."
+        }
+      ],
+      "projects": [
+        {
+          "name": "ShopSphere",
+          "description": "Built a responsive e-commerce frontend with filtering, search, cart persistence, checkout state management, accessible modals, automated browser tests, and API mocking.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Redux Toolkit",
+            "Playwright",
+            "Tailwind CSS"
+          ],
+          "link": "https://github.com/vikramjoshi/shopsphere"
+        },
+        {
+          "name": "Design System Starter",
+          "description": "Created a reusable UI component library with typography, buttons, forms, tables, dialogs, documentation, versioned packages, and visual regression checks.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Storybook",
+            "Vite",
+            "CSS",
+            "Chromatic"
+          ],
+          "link": "https://github.com/vikramjoshi/design-system"
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Redux Toolkit",
+        "Next.js",
+        "Vite",
+        "Tailwind CSS",
+        "Storybook",
+        "Playwright",
+        "Jest",
+        "GraphQL",
+        "REST APIs",
+        "Git",
+        "Figma"
+      ],
+      "certifications": [
+        "Meta Front-End Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/vikramjoshi"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Ananya Bose\nananya.bose@fastmail.com | +91 98310 44217 | Kolkata, West Bengal, India\n\nOBJECTIVE / SUMMARY\nBusiness analytics and data science graduate combining statistical analysis, SQL, dashboarding, and machine learning. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- MSc Business Analytics | Indian Statistical Institute, Kolkata | 2023 – 2025\n- BCom Honours | St. Xavier's University, Kolkata | 2020 – 2023\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Business Analytics Intern | RetailOrbit | May 2024 – Jul 2024\n  Analyzed customer and transaction data to identify retention patterns and sales drivers. Built SQL datasets, automated Python reporting, and created Power BI dashboards for category managers.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- Customer Retention ML System\n  • Combined cohort analysis with churn prediction to identify at-risk segments and translate model outputs into targeted retention recommendations.\n  • Stack: Python, SQL, Pandas, Scikit-learn, XGBoost, Power BI\n  • Repository: https://github.com/ananyabose/customer-retention\n- Marketing Funnel Analytics\n  • Created a dashboard tracking acquisition, activation, conversion, and repeat purchase metrics with cohort views and SQL-based metric definitions.\n  • Stack: SQL, PostgreSQL, Power BI, DAX, Python\n  • Repository: https://github.com/ananyabose/funnel-analytics\n\nSKILLS\nLanguages: Python, SQL.\nFrameworks, platforms, and tools: Python, SQL, Excel, Power BI, DAX, Pandas, NumPy, Scikit-learn, XGBoost, PostgreSQL, MySQL, Statistics, Data Visualization.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nMicrosoft Power BI Data Analyst Associate\n\nLINKS\nhttps://github.com/ananyabose | https://www.linkedin.com/in/ananyabose",
+    "output": {
+      "name": "Ananya Bose",
+      "email": "ananya.bose@fastmail.com",
+      "phone": [
+        "+91 98310 44217"
+      ],
+      "location": "Kolkata, West Bengal, India",
+      "summary": "Business analytics and data science graduate combining statistical analysis, SQL, dashboarding, and machine learning.",
+      "education": [
+        {
+          "degree": "MSc Business Analytics",
+          "institution": "Indian Statistical Institute, Kolkata",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BCom Honours",
+          "institution": "St. Xavier's University, Kolkata",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Business Analytics Intern",
+          "company": "RetailOrbit",
+          "start_date": "May 2024",
+          "end_date": "Jul 2024",
+          "description": "Analyzed customer and transaction data to identify retention patterns and sales drivers. Built SQL datasets, automated Python reporting, and created Power BI dashboards for category managers."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Customer Retention ML System",
+          "description": "Combined cohort analysis with churn prediction to identify at-risk segments and translate model outputs into targeted retention recommendations.",
+          "technologies": [
+            "Python",
+            "SQL",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "Power BI"
+          ],
+          "link": "https://github.com/ananyabose/customer-retention"
+        },
+        {
+          "name": "Marketing Funnel Analytics",
+          "description": "Created a dashboard tracking acquisition, activation, conversion, and repeat purchase metrics with cohort views and SQL-based metric definitions.",
+          "technologies": [
+            "SQL",
+            "PostgreSQL",
+            "Power BI",
+            "DAX",
+            "Python"
+          ],
+          "link": "https://github.com/ananyabose/funnel-analytics"
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI",
+        "DAX",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "PostgreSQL",
+        "MySQL",
+        "Statistics",
+        "Data Visualization"
+      ],
+      "certifications": [
+        "Microsoft Power BI Data Analyst Associate"
+      ],
+      "links": [
+        "https://github.com/ananyabose",
+        "https://www.linkedin.com/in/ananyabose"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Elena D'Souza\nelena.dsouza@outlook.com | +91 99674 22091 | Goa, India\n\nOBJECTIVE / SUMMARY\nMobile application developer experienced in Flutter, Kotlin, Firebase, and REST APIs. Seeking opportunities to apply engineering fundamentals, analytical thinking, and practical project experience to reliable production systems. Comfortable collaborating across technical requirements, implementation, testing, documentation, and delivery.\n\nEDUCATION\n- BTech Computer Science and Engineering | Goa Engineering College | 2020 – 2024\nRelevant preparation includes programming, databases, software engineering fundamentals, data analysis, and project-based technical work.\n\nEXPERIENCE\n- Mobile Developer Intern | TravelNest Apps | Jan 2024 – Jun 2024\n  Developed Flutter screens for itinerary and booking workflows, integrated REST APIs, implemented local caching, fixed UI defects, and assisted with Play Store release preparation.\n  • Worked with existing engineering processes, documented implementation decisions, and communicated progress to teammates.\n  • Investigated issues methodically, tested changes before delivery, and maintained reusable code and documentation.\n\nPROJECTS\n- TripMate\n  • Built a travel planning application with itinerary creation, expense splitting, offline persistence, map views, push notifications, Firebase authentication, and analytics events.\n  • Stack: Flutter, Dart, Firebase, Firestore, Google Maps SDK, REST APIs\n  • Repository: https://github.com/elenadsouza/tripmate\n- Campus Shuttle\n  • Created a campus shuttle tracking prototype with route display, estimated arrival updates, service alerts, low-connectivity support, and cached route data.\n  • Stack: Kotlin, Android SDK, Firebase, Room, Google Maps SDK\n  • Repository: https://github.com/elenadsouza/campus-shuttle\n\nSKILLS\nLanguages: Dart, Kotlin.\nFrameworks, platforms, and tools: Dart, Kotlin, Flutter, Android SDK, Firebase, Firestore, Room, REST APIs, Git, Figma, Google Maps SDK.\nAdditional strengths include debugging, version control, documentation, testing, data handling, and translating requirements into working prototypes.\n\nCERTIFICATIONS\nGoogle Associate Android Developer\n\nLINKS\nhttps://github.com/elenadsouza | https://www.linkedin.com/in/elenadsouza",
+    "output": {
+      "name": "Elena D'Souza",
+      "email": "elena.dsouza@outlook.com",
+      "phone": [
+        "+91 99674 22091"
+      ],
+      "location": "Goa, India",
+      "summary": "Mobile application developer experienced in Flutter, Kotlin, Firebase, and REST APIs.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Goa Engineering College",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Mobile Developer Intern",
+          "company": "TravelNest Apps",
+          "start_date": "Jan 2024",
+          "end_date": "Jun 2024",
+          "description": "Developed Flutter screens for itinerary and booking workflows, integrated REST APIs, implemented local caching, fixed UI defects, and assisted with Play Store release preparation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "TripMate",
+          "description": "Built a travel planning application with itinerary creation, expense splitting, offline persistence, map views, push notifications, Firebase authentication, and analytics events.",
+          "technologies": [
+            "Flutter",
+            "Dart",
+            "Firebase",
+            "Firestore",
+            "Google Maps SDK",
+            "REST APIs"
+          ],
+          "link": "https://github.com/elenadsouza/tripmate"
+        },
+        {
+          "name": "Campus Shuttle",
+          "description": "Created a campus shuttle tracking prototype with route display, estimated arrival updates, service alerts, low-connectivity support, and cached route data.",
+          "technologies": [
+            "Kotlin",
+            "Android SDK",
+            "Firebase",
+            "Room",
+            "Google Maps SDK"
+          ],
+          "link": "https://github.com/elenadsouza/campus-shuttle"
+        }
+      ],
+      "skills": [
+        "Dart",
+        "Kotlin",
+        "Flutter",
+        "Android SDK",
+        "Firebase",
+        "Firestore",
+        "Room",
+        "REST APIs",
+        "Git",
+        "Figma",
+        "Google Maps SDK"
+      ],
+      "certifications": [
+        "Google Associate Android Developer"
+      ],
+      "links": [
+        "https://github.com/elenadsouza",
+        "https://www.linkedin.com/in/elenadsouza"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ELENA PETROVA\nToronto, Canada | elena.petrova.research@gmail.com | +1 416 555 0182\nSUMMARY\nAcademic researcher transitioning into industry, with a Ph.D. in computational biology and five years of research experience. Experienced in Python-based scientific computing, statistical modeling, reproducible workflows, and large biological datasets.\nEDUCATION\nPh.D. Computational Biology — University of Toronto — 2018–2023\nM.Sc. Bioinformatics — McGill University — 2016–2018\nEXPERIENCE\nResearch Scientist — Toronto Genomics Institute — Sep 2023 – Present\nDeveloped reproducible analysis workflows for sequencing studies, statistical models, and collaborative analyses. Supervised two graduate researchers.\nGraduate Researcher — University of Toronto — 2018 – Aug 2023\nDesigned computational experiments, analyzed large genomic datasets, and co-authored publications.\nPROJECTS\nVariant Prioritization Pipeline — Python workflow for filtering and ranking variants in annotated VCF files. Python, pandas, NumPy, scikit-learn, Snakemake. https://github.com/elenap/variant-pipeline\nSKILLS\nPython, R, pandas, NumPy, scikit-learn, SQL, Snakemake, Linux, Git, Statistics, Bioinformatics\nCERTIFICATIONS\nAWS Certified Cloud Practitioner; Google Advanced Data Analytics Certificate; Coursera Machine Learning Specialization\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Elena Petrova",
+      "email": "elena.petrova.research@gmail.com",
+      "phone": [
+        "+1 416 555 0182"
+      ],
+      "location": "Toronto, Canada",
+      "summary": "Academic researcher transitioning into industry, with a Ph.D. in computational biology and five years of research experience. Experienced in Python-based scientific computing, statistical modeling, reproducible workflows, and large biological datasets.",
+      "education": [
+        {
+          "degree": "Ph.D. Computational Biology",
+          "institution": "University of Toronto",
+          "start_date": "2018",
+          "end_date": "2023"
+        },
+        {
+          "degree": "M.Sc. Bioinformatics",
+          "institution": "McGill University",
+          "start_date": "2016",
+          "end_date": "2018"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Scientist",
+          "company": "Toronto Genomics Institute",
+          "start_date": "Sep 2023",
+          "end_date": "Present",
+          "description": "Developed reproducible analysis workflows for sequencing studies, built statistical models, and collaborated with experimental scientists. Supervised two graduate researchers."
+        },
+        {
+          "title": "Graduate Researcher",
+          "company": "University of Toronto",
+          "start_date": "2018",
+          "end_date": "Aug 2023",
+          "description": "Designed computational experiments, analyzed large genomic datasets, and co-authored peer-reviewed publications."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Variant Prioritization Pipeline",
+          "description": "Built a Python workflow for filtering and ranking genetic variants using annotated VCF files.",
+          "technologies": [
+            "Python",
+            "pandas",
+            "NumPy",
+            "scikit-learn",
+            "Snakemake"
+          ],
+          "link": "https://github.com/elenap/variant-pipeline"
+        }
+      ],
+      "skills": [
+        "Python",
+        "R",
+        "pandas",
+        "NumPy",
+        "scikit-learn",
+        "SQL",
+        "Snakemake",
+        "Linux",
+        "Git",
+        "Statistics",
+        "Bioinformatics"
+      ],
+      "certifications": [
+        "AWS Certified Cloud Practitioner",
+        "Google Advanced Data Analytics Certificate",
+        "Coursera Machine Learning Specialization"
+      ],
+      "links": [
+        "https://github.com/elenap/variant-pipeline"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Mei-Ling Chen\nEmail: meiling.chen@example.com\nPhone: Not provided\nLocation: Taipei, Taiwan\n\nOBJECTIVE / SUMMARY\nNLP engineer with a background in computational linguistics and applied machine learning. Focused on multilingual text classification, information extraction, evaluation datasets, and efficient transformer fine-tuning.\n\nEDUCATION\n- MSc Computational Linguistics, National Taiwan University (2022 - 2024)\n- BA Linguistics, National Chengchi University (2018 - 2022)\n\nEXPERIENCE\n- NLP Research Assistant, Language Intelligence Lab (Sep 2022 - Jun 2024)\n  Prepared multilingual annotation guidelines, trained transformer classifiers, audited label consistency, and implemented evaluation pipelines for Chinese-English information extraction. Investigated error patterns across entity types and document genres.\n\nPROJECTS\n- Multilingual Entity Extraction: Fine-tuned multilingual BERT for named-entity recognition across Chinese and English news articles. Built BIO-tagged datasets, performed stratified evaluation, analyzed span-level F1, and introduced rule-based post-processing for organization aliases. Technologies: Python, PyTorch, Hugging Face Transformers, spaCy, Pandas, Weights & Biases. Link: https://github.com/meilingchen/multilingual-ner\n- Semantic Search for Legal Text: Created a semantic retrieval service for legal clauses using dense embeddings and approximate nearest-neighbor indexing. Added query normalization, metadata filters, benchmark sets, and human relevance judgments. Technologies: Python, Sentence Transformers, FAISS, FastAPI, Elasticsearch. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, PyTorch, Transformers, Hugging Face, spaCy, NLTK, NLP, Information Extraction, Text Classification, FAISS, Elasticsearch, SQL, Git\n\nCERTIFICATIONS\nHugging Face NLP Course\n\nLINKS\nhttps://github.com/meilingchen\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Multilingual Entity Extraction and Semantic Search for Legal Text, where they applied Python, PyTorch, Hugging Face Transformers, spaCy alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, PyTorch, Transformers, Hugging Face, spaCy, NLTK, NLP. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Mei-Ling Chen",
+      "email": "meiling.chen@example.com",
+      "phone": [],
+      "location": "Taipei, Taiwan",
+      "summary": "NLP engineer with a background in computational linguistics and applied machine learning. Focused on multilingual text classification, information extraction, evaluation datasets, and efficient transformer fine-tuning.",
+      "education": [
+        {
+          "degree": "MSc Computational Linguistics",
+          "institution": "National Taiwan University",
+          "start_date": "2022",
+          "end_date": "2024"
+        },
+        {
+          "degree": "BA Linguistics",
+          "institution": "National Chengchi University",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "NLP Research Assistant",
+          "company": "Language Intelligence Lab",
+          "start_date": "Sep 2022",
+          "end_date": "Jun 2024",
+          "description": "Prepared multilingual annotation guidelines, trained transformer classifiers, audited label consistency, and implemented evaluation pipelines for Chinese-English information extraction. Investigated error patterns across entity types and document genres."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Multilingual Entity Extraction",
+          "description": "Fine-tuned multilingual BERT for named-entity recognition across Chinese and English news articles. Built BIO-tagged datasets, performed stratified evaluation, analyzed span-level F1, and introduced rule-based post-processing for organization aliases.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Hugging Face Transformers",
+            "spaCy",
+            "Pandas",
+            "Weights & Biases"
+          ],
+          "link": "https://github.com/meilingchen/multilingual-ner"
+        },
+        {
+          "name": "Semantic Search for Legal Text",
+          "description": "Created a semantic retrieval service for legal clauses using dense embeddings and approximate nearest-neighbor indexing. Added query normalization, metadata filters, benchmark sets, and human relevance judgments.",
+          "technologies": [
+            "Python",
+            "Sentence Transformers",
+            "FAISS",
+            "FastAPI",
+            "Elasticsearch"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "Hugging Face",
+        "spaCy",
+        "NLTK",
+        "NLP",
+        "Information Extraction",
+        "Text Classification",
+        "FAISS",
+        "Elasticsearch",
+        "SQL",
+        "Git"
+      ],
+      "certifications": [
+        "Hugging Face NLP Course"
+      ],
+      "links": [
+        "https://github.com/meilingchen"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Yuki Tanaka\nEmail: yuki.tanaka@example.jp\nPhone: +81 90-1234-5678\nLocation: Tokyo, Japan\n\nOBJECTIVE / SUMMARY\nComputer vision and robotics engineer focused on perception, sensor processing, and autonomous navigation. Experienced with ROS2, OpenCV, deep learning, and simulation-based testing.\n\nEDUCATION\n- MEng Robotics, University of Tokyo (2023 - 2025)\n- BEng Mechanical Engineering, Keio University (2019 - 2023)\n\nEXPERIENCE\n- Robotics Software Intern, Aster Robotics (Jun 2024 - Sep 2024)\n  Implemented ROS2 perception nodes, camera calibration utilities, and object-detection evaluation tools. Tested navigation behavior in simulation and on a mobile robot platform, documenting failure modes across lighting and obstacle conditions.\n\nPROJECTS\n- Indoor Robot Perception Stack: Integrated RGB-D camera streams with object detection and point-cloud processing. Published detections as ROS2 messages, filtered noisy depth measurements, and generated obstacle regions for downstream navigation. Technologies: C++, Python, ROS2, OpenCV, PyTorch, Open3D, Docker. Link: https://github.com/yukitanaka/robot-perception\n- Visual SLAM Evaluation: Built a benchmark harness for comparing visual odometry trajectories across simulated environments. Added trajectory alignment, error metrics, frame-drop simulation, and automated report generation. Technologies: Python, OpenCV, ROS2, NumPy, Matplotlib, Gazebo. Link: Not provided\n\nSKILLS\nLanguages and core technologies: C++, Python, ROS2, OpenCV, PyTorch, Open3D, Computer Vision, SLAM, Linux, Docker, Git, Gazebo, NumPy\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute – Fundamentals of Accelerated Computing\n\nLINKS\nhttps://github.com/yukitanaka\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Indoor Robot Perception Stack and Visual SLAM Evaluation, where they applied C++, Python, ROS2, OpenCV alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include C++, Python, ROS2, OpenCV, PyTorch, Open3D, Computer Vision. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Yuki Tanaka",
+      "email": "yuki.tanaka@example.jp",
+      "phone": [
+        "+81 90-1234-5678"
+      ],
+      "location": "Tokyo, Japan",
+      "summary": "Computer vision and robotics engineer focused on perception, sensor processing, and autonomous navigation. Experienced with ROS2, OpenCV, deep learning, and simulation-based testing.",
+      "education": [
+        {
+          "degree": "MEng Robotics",
+          "institution": "University of Tokyo",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BEng Mechanical Engineering",
+          "institution": "Keio University",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Robotics Software Intern",
+          "company": "Aster Robotics",
+          "start_date": "Jun 2024",
+          "end_date": "Sep 2024",
+          "description": "Implemented ROS2 perception nodes, camera calibration utilities, and object-detection evaluation tools. Tested navigation behavior in simulation and on a mobile robot platform, documenting failure modes across lighting and obstacle conditions."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Indoor Robot Perception Stack",
+          "description": "Integrated RGB-D camera streams with object detection and point-cloud processing. Published detections as ROS2 messages, filtered noisy depth measurements, and generated obstacle regions for downstream navigation.",
+          "technologies": [
+            "C++",
+            "Python",
+            "ROS2",
+            "OpenCV",
+            "PyTorch",
+            "Open3D",
+            "Docker"
+          ],
+          "link": "https://github.com/yukitanaka/robot-perception"
+        },
+        {
+          "name": "Visual SLAM Evaluation",
+          "description": "Built a benchmark harness for comparing visual odometry trajectories across simulated environments. Added trajectory alignment, error metrics, frame-drop simulation, and automated report generation.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "ROS2",
+            "NumPy",
+            "Matplotlib",
+            "Gazebo"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "C++",
+        "Python",
+        "ROS2",
+        "OpenCV",
+        "PyTorch",
+        "Open3D",
+        "Computer Vision",
+        "SLAM",
+        "Linux",
+        "Docker",
+        "Git",
+        "Gazebo",
+        "NumPy"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute – Fundamentals of Accelerated Computing"
+      ],
+      "links": [
+        "https://github.com/yukitanaka"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "ARJUN SINGH\n+91 98765 43210 | +91 91234 56789 | +91 99887 66554\nLinkedIn: https://www.linkedin.com/in/arjunsingh-cloud\nPune, Maharashtra\nPROFILE\nCloud and platform engineer with 5 years of experience supporting containerized workloads, CI/CD systems, and Linux infrastructure. Strong focus on Kubernetes operations, observability, infrastructure automation, and incident response.\nEDUCATION\nB.E. Information Technology — Savitribai Phule Pune University — 2016–2020\nEXPERIENCE\nPlatform Engineer, BlueOrbit Systems — 2022-02 to Present\nManage Kubernetes clusters across development and production environments. Created Helm deployment standards, GitHub Actions workflows, and Terraform modules for AWS resources. Implemented Prometheus/Grafana monitoring and participated in on-call rotations.\nDevOps Engineer, NexaStack Pvt. Ltd. — 07/2020 to 01/2022\nMaintained Linux servers, Docker workloads, Jenkins pipelines, and AWS EC2 infrastructure. Wrote Bash and Python utilities for operational checks and log collection.\nPROJECTS\nInternal Developer Platform — Kubernetes service template provisioning namespaces, ingress, secrets, and monitoring defaults. Source: https://github.com/arjunsingh/platform-template\nSKILLS\nAWS, Kubernetes, Docker, Terraform, Helm, Linux, Bash, Python, GitHub Actions, Jenkins, Prometheus, Grafana, Git\nCERTIFICATIONS\nAWS Certified Solutions Architect – Associate; Certified Kubernetes Administrator (CKA)\nADDITIONAL CONTEXT\nSelected work involved collaborating with cross-functional stakeholders, documenting technical decisions, reviewing implementation details, and improving repeatable workflows. The candidate emphasized practical delivery, clear communication, maintainable solutions, and measurable improvements. The resume also reflects hands-on use of the tools named in the relevant experience and project descriptions, with attention to testing, troubleshooting, documentation, and production or portfolio quality where applicable. The candidate also describes an approach centered on ownership, careful problem solving, iterative improvement, and dependable execution. Relevant work includes coordinating with teammates, investigating issues, maintaining clear documentation, and translating requirements into practical deliverables. These details are included to preserve realistic resume density and natural variation in how responsibilities, tools, and outcomes may appear in source documents.",
+    "output": {
+      "name": "Arjun Singh",
+      "email": null,
+      "phone": [
+        "+91 98765 43210",
+        "+91 91234 56789",
+        "+91 99887 66554"
+      ],
+      "location": "Pune, Maharashtra",
+      "summary": "Cloud and platform engineer with 5 years of experience supporting containerized workloads, CI/CD systems, and Linux infrastructure. Strong focus on Kubernetes operations, observability, infrastructure automation, and incident response.",
+      "education": [
+        {
+          "degree": "B.E. Information Technology",
+          "institution": "Savitribai Phule Pune University",
+          "start_date": "2016",
+          "end_date": "2020"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Platform Engineer",
+          "company": "BlueOrbit Systems",
+          "start_date": "2022-02",
+          "end_date": "Present",
+          "description": "Manage Kubernetes clusters across development and production. Created Helm deployment standards, GitHub Actions workflows, and Terraform modules for AWS resources. Implemented Prometheus/Grafana monitoring and participated in on-call rotations."
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "NexaStack Pvt. Ltd.",
+          "start_date": "07/2020",
+          "end_date": "01/2022",
+          "description": "Maintained Linux servers, Docker workloads, Jenkins pipelines, and AWS EC2 infrastructure. Wrote Bash and Python utilities for operational checks and log collection."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Internal Developer Platform",
+          "description": "Designed a Kubernetes-based service template that provisions namespaces, ingress, secrets, and monitoring defaults.",
+          "technologies": [
+            "Kubernetes",
+            "Ingress",
+            "Secrets",
+            "Monitoring"
+          ],
+          "link": "https://github.com/arjunsingh/platform-template"
+        }
+      ],
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Helm",
+        "Linux",
+        "Bash",
+        "Python",
+        "GitHub Actions",
+        "Jenkins",
+        "Prometheus",
+        "Grafana",
+        "Git"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Associate",
+        "Certified Kubernetes Administrator (CKA)"
+      ],
+      "links": [
+        "https://www.linkedin.com/in/arjunsingh-cloud",
+        "https://github.com/arjunsingh/platform-template"
+      ]
+    }
+  }
+]

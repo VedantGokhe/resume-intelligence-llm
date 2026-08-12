@@ -1,0 +1,1394 @@
+[
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Aarav Menon\nSOC ANALYST | CYBERSECURITY\nEmail: aarav.menon@protonmail.com | Phone: +91 98470 21843 | Location: Kochi, Kerala, India\n\nOBJECTIVE / SUMMARY\nCybersecurity graduate focused on SOC operations, threat detection, incident triage, and cloud security monitoring. Interested in blue-team roles involving SIEM engineering, threat hunting, and structured incident response.\n\nEDUCATION\nB.Tech in Computer Science and Engineering, Government Engineering College Thrissur, 2022–2026.\n\nEXPERIENCE\nSOC Analyst Intern, SecureLayer Technologies, Jan 2026–Jun 2026. Monitored SIEM alerts from Microsoft Sentinel and Wazuh, investigated authentication anomalies, enriched indicators with threat-intelligence feeds, and documented incident timelines for escalation. Worked with analysts to distinguish false positives from suspicious activity and maintained clear incident notes.\n\nPROJECTS\nZero-Trust Security Scanner — Built a Python-based internal scanner that inventories endpoints, checks exposed services, validates least-privilege configurations, and produces risk-ranked findings for security review. Used Nmap for service discovery and integrated results with Wazuh and Microsoft Sentinel workflows. Technologies: Python, Nmap, Wazuh, Microsoft Sentinel, REST APIs. GitHub: https://github.com/aaravmenon/zero-trust-scanner\n\nSKILLS\nPython, Linux, SIEM, Wazuh, Microsoft Sentinel, Incident Response, Threat Intelligence, Nmap, Network Security, IAM, MITRE ATT&CK, SQL, Bash.\n\nCERTIFICATIONS\nCompTIA Security+; Microsoft Certified: Security, Compliance, and Identity Fundamentals.\n\nLINKS\nGitHub: https://github.com/aaravmenon\nLinkedIn: https://www.linkedin.com/in/aaravmenon\n\nADDITIONAL TECHNICAL PROFILE\nAdditional security focus: maintains clear investigation notes, validates evidence before escalation, and prefers repeatable procedures for alert handling. Comfortable reading authentication logs, network telemetry, endpoint events, and structured JSON records. Values least privilege, documented remediation, and continuous improvement of detection coverage.\n\nADDITIONAL DETAILS\nThe candidate emphasizes reproducible workflows, careful documentation, practical debugging, and collaboration across engineering and review teams. They value maintainability, measurable quality, and clear technical communication when delivering production-oriented work.",
+    "output": {
+      "name": "Aarav Menon",
+      "email": "aarav.menon@protonmail.com",
+      "phone": [
+        "+91 98470 21843"
+      ],
+      "location": "Kochi, Kerala, India",
+      "summary": "Cybersecurity graduate focused on SOC operations, threat detection, incident triage, and cloud security monitoring.",
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science and Engineering",
+          "institution": "Government Engineering College Thrissur",
+          "start_date": "2022",
+          "end_date": "2026"
+        }
+      ],
+      "experience": [
+        {
+          "title": "SOC Analyst Intern",
+          "company": "SecureLayer Technologies",
+          "start_date": "Jan 2026",
+          "end_date": "Jun 2026",
+          "description": "Monitored SIEM alerts from Microsoft Sentinel and Wazuh, investigated authentication anomalies, enriched indicators with threat-intelligence feeds, and documented incident timelines for escalation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Zero-Trust Security Scanner",
+          "description": "Built a Python-based internal scanner that inventories endpoints, checks exposed services, validates least-privilege configurations, and produces risk-ranked findings for security review.",
+          "technologies": [
+            "Python",
+            "Nmap",
+            "Wazuh",
+            "Microsoft Sentinel",
+            "REST APIs"
+          ],
+          "link": "https://github.com/aaravmenon/zero-trust-scanner"
+        }
+      ],
+      "skills": [
+        "Python",
+        "Linux",
+        "SIEM",
+        "Wazuh",
+        "Microsoft Sentinel",
+        "Incident Response",
+        "Threat Intelligence",
+        "Nmap",
+        "Network Security",
+        "IAM",
+        "MITRE ATT&CK",
+        "SQL",
+        "Bash"
+      ],
+      "certifications": [
+        "CompTIA Security+",
+        "Microsoft Certified: Security, Compliance, and Identity Fundamentals"
+      ],
+      "links": [
+        "https://github.com/aaravmenon",
+        "https://www.linkedin.com/in/aaravmenon"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Nisha Kulkarni\nCYBERSECURITY ANALYST\nEmail: nisha.kulkarni@outlook.com | Phone: +91 90218 44731 | Location: Pune, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nEntry-level security analyst with hands-on experience in vulnerability assessment, phishing analysis, endpoint monitoring, and home-lab SOC operations. Seeking a junior SOC or security monitoring role where practical investigation skills can be applied.\n\nEDUCATION\nM.Sc. Cybersecurity, Savitribai Phule Pune University, 2024–2026.\nB.Sc. Information Technology, Fergusson College, 2021–2024.\n\nEXPERIENCE\nNo professional work experience listed.\n\nPROJECTS\nPhishing Detection and SOC Triage Lab — Created a home SOC lab using Security Onion and simulated phishing, credential-stuffing, and suspicious PowerShell events. Wrote detection rules, reviewed Zeek and Suricata telemetry, and documented triage playbooks. Technologies: Security Onion, Zeek, Suricata, Elastic Stack, PowerShell.\n\nVulnerability Management Dashboard — Developed a dashboard that ingests Nmap and OpenVAS findings, normalizes CVE identifiers, and prioritizes remediation using severity and asset criticality. Technologies: Python, OpenVAS, Nmap, SQLite, Flask.\n\nSKILLS\nCybersecurity, SOC Analysis, Vulnerability Assessment, Python, Linux, Elastic Stack, Zeek, Suricata, PowerShell, CVE, CVSS, Incident Triage.\n\nCERTIFICATIONS\nGoogle Cybersecurity Professional Certificate; Cisco Certified Support Technician Cybersecurity; ISC2 Certified in Cybersecurity.\n\nLINKS\nGitHub: https://github.com/nishakulkarni\n\nADDITIONAL TECHNICAL PROFILE\nAdditional security focus: maintains clear investigation notes, validates evidence before escalation, and prefers repeatable procedures for alert handling. Comfortable reading authentication logs, network telemetry, endpoint events, and structured JSON records. Values least privilege, documented remediation, and continuous improvement of detection coverage.\n\nADDITIONAL DETAILS\nThe candidate emphasizes reproducible workflows, careful documentation, practical debugging, and collaboration across engineering and review teams. They value maintainability, measurable quality, and clear technical communication when delivering production-oriented work.",
+    "output": {
+      "name": "Nisha Kulkarni",
+      "email": "nisha.kulkarni@outlook.com",
+      "phone": [
+        "+91 90218 44731"
+      ],
+      "location": "Pune, Maharashtra, India",
+      "summary": "Entry-level security analyst with hands-on experience in vulnerability assessment, phishing analysis, and endpoint monitoring.",
+      "education": [
+        {
+          "degree": "M.Sc. Cybersecurity",
+          "institution": "Savitribai Phule Pune University",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "B.Sc. Information Technology",
+          "institution": "Fergusson College",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [],
+      "projects": [
+        {
+          "name": "Phishing Detection and SOC Triage Lab",
+          "description": "Created a home SOC lab using Security Onion and simulated phishing, credential-stuffing, and suspicious PowerShell events. Wrote detection rules and documented triage playbooks.",
+          "technologies": [
+            "Security Onion",
+            "Zeek",
+            "Suricata",
+            "Elastic Stack",
+            "PowerShell"
+          ],
+          "link": "https://github.com/nishakulkarni/phishing-soc-lab"
+        },
+        {
+          "name": "Vulnerability Management Dashboard",
+          "description": "Developed a small dashboard that ingests Nmap and OpenVAS findings, normalizes CVE identifiers, and prioritizes remediation using severity and asset criticality.",
+          "technologies": [
+            "Python",
+            "OpenVAS",
+            "Nmap",
+            "SQLite",
+            "Flask"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Cybersecurity",
+        "SOC Analysis",
+        "Vulnerability Assessment",
+        "Python",
+        "Linux",
+        "Elastic Stack",
+        "Zeek",
+        "Suricata",
+        "PowerShell",
+        "CVE",
+        "CVSS",
+        "Incident Triage"
+      ],
+      "certifications": [
+        "Google Cybersecurity Professional Certificate",
+        "Cisco Certified Support Technician Cybersecurity",
+        "ISC2 Certified in Cybersecurity"
+      ],
+      "links": [
+        "https://github.com/nishakulkarni"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Daniel Brooks\nSECURITY OPERATIONS ENGINEER\nEmail: daniel.brooks@fastmail.com | Phone: +1 512 555 0187 | Location: Austin, Texas, USA\n\nSUMMARY\nSecurity engineer with experience building detections and automations for cloud workloads and identity events. Strong interest in cloud threat hunting, SOAR, and identity-focused detection engineering.\n\nEDUCATION\nB.S. Information Technology, Texas State University, 2018–2022.\n\nEXPERIENCE\nSecurity Operations Engineer, CloudFort Systems, Aug 2023–Present. Built Microsoft Sentinel analytics rules and SOAR playbooks for Azure identity incidents, reduced repetitive alert enrichment through Python automation, and partnered with infrastructure teams on remediation.\n\nJunior SOC Analyst, RedMesa Security, Jun 2022–Jul 2023. Triaged endpoint, firewall, and identity alerts across rotating shifts, performed basic malware investigation, and maintained incident tickets and escalation notes.\n\nPROJECTS\nCloud Identity Attack Simulator — Developed a controlled lab for simulating password spraying, impossible-travel events, and suspicious OAuth consent to validate detection coverage. Used Azure resources, KQL queries, Python scripts, and Terraform for repeatable lab deployment. Technologies: Azure, Microsoft Sentinel, KQL, Python, Terraform. GitHub: https://github.com/danielbrooks/cloud-identity-lab\n\nSKILLS\nAzure, Microsoft Sentinel, KQL, Python, SOAR, EDR, Incident Response, IAM, Terraform, Threat Hunting, Linux, Git.\n\nCERTIFICATIONS\nGIAC Security Essentials (GSEC); Microsoft Certified: Azure Security Engineer Associate; AWS Certified Security – Specialty.\n\nLINKS\nGitHub: https://github.com/danielbrooks\nLinkedIn: https://www.linkedin.com/in/danielbrooks\n\nADDITIONAL TECHNICAL PROFILE\nAdditional security focus: maintains clear investigation notes, validates evidence before escalation, and prefers repeatable procedures for alert handling. Comfortable reading authentication logs, network telemetry, endpoint events, and structured JSON records. Values least privilege, documented remediation, and continuous improvement of detection coverage.",
+    "output": {
+      "name": "Daniel Brooks",
+      "email": "daniel.brooks@fastmail.com",
+      "phone": [
+        "+1 512 555 0187"
+      ],
+      "location": "Austin, Texas, USA",
+      "summary": "Security engineer with experience building detections and automations for cloud workloads and identity events.",
+      "education": [
+        {
+          "degree": "B.S. Information Technology",
+          "institution": "Texas State University",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Security Operations Engineer",
+          "company": "CloudFort Systems",
+          "start_date": "Aug 2023",
+          "end_date": "Present",
+          "description": "Built Microsoft Sentinel analytics rules and SOAR playbooks for Azure identity incidents, reduced repetitive alert enrichment through Python automation, and partnered with infrastructure teams on remediation."
+        },
+        {
+          "title": "Junior SOC Analyst",
+          "company": "RedMesa Security",
+          "start_date": "Jun 2022",
+          "end_date": "Jul 2023",
+          "description": "Triaged endpoint, firewall, and identity alerts across rotating shifts, performed basic malware investigation, and maintained incident tickets and escalation notes."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Cloud Identity Attack Simulator",
+          "description": "Developed a controlled lab for simulating password spraying, impossible-travel events, and suspicious OAuth consent to validate detection coverage.",
+          "technologies": [
+            "Azure",
+            "Microsoft Sentinel",
+            "KQL",
+            "Python",
+            "Terraform"
+          ],
+          "link": "https://github.com/danielbrooks/cloud-identity-lab"
+        }
+      ],
+      "skills": [
+        "Azure",
+        "Microsoft Sentinel",
+        "KQL",
+        "Python",
+        "SOAR",
+        "EDR",
+        "Incident Response",
+        "IAM",
+        "Terraform",
+        "Threat Hunting",
+        "Linux",
+        "Git"
+      ],
+      "certifications": [
+        "GIAC Security Essentials (GSEC)",
+        "Microsoft Certified: Azure Security Engineer Associate",
+        "AWS Certified Security – Specialty"
+      ],
+      "links": [
+        "https://github.com/danielbrooks",
+        "https://www.linkedin.com/in/danielbrooks"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Priya Shah\nSELF-TAUGHT CYBERSECURITY PRACTITIONER\nEmail: priya.shah.dev@gmail.com | Phone: +91 98765 12044 | Location: Ahmedabad, Gujarat, India\n\nOBJECTIVE / SUMMARY\nSelf-taught cybersecurity practitioner transitioning from systems administration into blue-team operations. No formal computer science degree. Strong practical interest in endpoint telemetry, threat intelligence, and SOC investigation.\n\nEDUCATION\nNo formal degree listed.\n\nEXPERIENCE\nIT Support Specialist, NorthStar Retail, Jul 2022–Dec 2025. Administered Windows endpoints and Microsoft 365 accounts, investigated suspicious login reports, maintained endpoint policies, and assisted with patching and access reviews. Worked closely with users to collect incident details and escalate security concerns.\n\nPROJECTS\nHome SOC Detection Stack — Built a personal SOC environment using Wazuh, Sysmon, Docker, and Windows virtual machines. Generated realistic attack telemetry and wrote custom rules for PowerShell, persistence, and credential-access behaviors. Technologies: Wazuh, Sysmon, Docker, Windows Server, PowerShell, YARA. GitHub: https://github.com/priyashah/home-soc\n\nIOC Enrichment CLI — Created a command-line utility that accepts hashes, domains, and IP addresses and queries public threat-intelligence APIs before generating a triage report. Technologies: Python, VirusTotal API, AbuseIPDB, JSON, Bash.\n\nSKILLS\nSOC Operations, Wazuh, Windows, Microsoft 365, Python, PowerShell, Sysmon, Docker, YARA, Threat Intelligence, Incident Triage.\n\nCERTIFICATIONS\nCompTIA Security+; Blue Team Level 1.\n\nLINKS\nGitHub: https://github.com/priyashah\n\nADDITIONAL TECHNICAL PROFILE\nAdditional security focus: maintains clear investigation notes, validates evidence before escalation, and prefers repeatable procedures for alert handling. Comfortable reading authentication logs, network telemetry, endpoint events, and structured JSON records. Values least privilege, documented remediation, and continuous improvement of detection coverage.\n\nADDITIONAL DETAILS\nThe candidate emphasizes reproducible workflows, careful documentation, practical debugging, and collaboration across engineering and review teams. They value maintainability, measurable quality, and clear technical communication when delivering production-oriented work.",
+    "output": {
+      "name": "Priya Shah",
+      "email": "priya.shah.dev@gmail.com",
+      "phone": [
+        "+91 98765 12044"
+      ],
+      "location": "Ahmedabad, Gujarat, India",
+      "summary": "Self-taught cybersecurity practitioner transitioning from systems administration into blue-team operations, with no formal computer science degree.",
+      "education": [],
+      "experience": [
+        {
+          "title": "IT Support Specialist",
+          "company": "NorthStar Retail",
+          "start_date": "Jul 2022",
+          "end_date": "Dec 2025",
+          "description": "Administered Windows endpoints and Microsoft 365 accounts, investigated suspicious login reports, maintained endpoint policies, and assisted with patching and access reviews."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Home SOC Detection Stack",
+          "description": "Built a personal SOC environment using Wazuh, Sysmon, Docker, and Windows virtual machines. Generated realistic attack telemetry and wrote custom rules for PowerShell, persistence, and credential-access behaviors.",
+          "technologies": [
+            "Wazuh",
+            "Sysmon",
+            "Docker",
+            "Windows Server",
+            "PowerShell",
+            "YARA"
+          ],
+          "link": "https://github.com/priyashah/home-soc"
+        },
+        {
+          "name": "IOC Enrichment CLI",
+          "description": "Created a command-line utility that accepts hashes, domains, and IP addresses and queries public threat-intelligence APIs before generating a triage report.",
+          "technologies": [
+            "Python",
+            "VirusTotal API",
+            "AbuseIPDB",
+            "JSON",
+            "Bash"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "SOC Operations",
+        "Wazuh",
+        "Windows",
+        "Microsoft 365",
+        "Python",
+        "PowerShell",
+        "Sysmon",
+        "Docker",
+        "YARA",
+        "Threat Intelligence",
+        "Incident Triage"
+      ],
+      "certifications": [
+        "CompTIA Security+",
+        "Blue Team Level 1"
+      ],
+      "links": [
+        "https://github.com/priyashah"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Meera Iyer\niOS DEVELOPER\nEmail: meera.iyer@icloud.com | Phone: +91 99876 34210 | Location: Bengaluru, Karnataka, India\n\nSUMMARY\niOS developer experienced in Swift, SwiftUI, networking, local persistence, accessibility, and production-quality mobile architecture. Interested in building reliable consumer applications with clean UI and maintainable code.\n\nEDUCATION\nB.E. Computer Science and Engineering, BMS College of Engineering, 2019–2023.\n\nEXPERIENCE\niOS Developer, Finora Mobility, Jul 2023–Present. Develops Swift and SwiftUI features for a consumer finance application, integrates REST APIs, improves accessibility, and writes unit and UI tests using XCTest. Collaborates with product and design teams on release-ready mobile experiences.\n\nPROJECTS\nPocketLedger — Built a personal finance iOS application supporting transaction categorization, recurring budgets, offline persistence, biometric unlock, and interactive spending charts. Implemented local storage and cloud synchronization and added automated tests for critical flows. Technologies: Swift, SwiftUI, Core Data, CloudKit, XCTest, Charts. GitHub: https://github.com/meera-iyer/pocketledger\n\nSKILLS\nSwift, SwiftUI, UIKit, Xcode, iOS SDK, Core Data, CloudKit, REST APIs, URLSession, XCTest, Git, Accessibility.\n\nCERTIFICATIONS\nApple Certified iOS App Development with Swift.\n\nLINKS\nGitHub: https://github.com/meera-iyer\nLinkedIn: https://www.linkedin.com/in/meera-iyer\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: emphasizes responsive interfaces, robust error handling, lifecycle awareness, and maintainable architecture. Familiar with debugging through device logs, validating API failures, and separating presentation, domain, and persistence concerns. Values accessibility, automated tests, code review, and predictable release processes.\n\nADDITIONAL DETAILS\nThe candidate emphasizes reproducible workflows, careful documentation, practical debugging, and collaboration across engineering and review teams. They value maintainability, measurable quality, and clear technical communication when delivering production-oriented work.",
+    "output": {
+      "name": "Meera Iyer",
+      "email": "meera.iyer@icloud.com",
+      "phone": [
+        "+91 99876 34210"
+      ],
+      "location": "Bengaluru, Karnataka, India",
+      "summary": "iOS developer experienced in Swift, SwiftUI, networking, local persistence, and production-quality mobile architecture.",
+      "education": [
+        {
+          "degree": "B.E. Computer Science and Engineering",
+          "institution": "BMS College of Engineering",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "iOS Developer",
+          "company": "Finora Mobility",
+          "start_date": "Jul 2023",
+          "end_date": "Present",
+          "description": "Develops Swift and SwiftUI features for a consumer finance application, integrates REST APIs, improves accessibility, and writes unit and UI tests using XCTest."
+        }
+      ],
+      "projects": [
+        {
+          "name": "PocketLedger",
+          "description": "Built a personal finance iOS application supporting transaction categorization, recurring budgets, offline persistence, biometric unlock, and interactive spending charts.",
+          "technologies": [
+            "Swift",
+            "SwiftUI",
+            "Core Data",
+            "CloudKit",
+            "XCTest",
+            "Charts"
+          ],
+          "link": "https://github.com/meera-iyer/pocketledger"
+        }
+      ],
+      "skills": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Xcode",
+        "iOS SDK",
+        "Core Data",
+        "CloudKit",
+        "REST APIs",
+        "URLSession",
+        "XCTest",
+        "Git",
+        "Accessibility"
+      ],
+      "certifications": [
+        "Apple Certified iOS App Development with Swift"
+      ],
+      "links": [
+        "https://github.com/meera-iyer",
+        "https://www.linkedin.com/in/meera-iyer"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Rohan Desai\nANDROID ENGINEER\nEmail: rohan.desai@proton.me | Phone: +91 90123 76544 | Location: Mumbai, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nAndroid engineer specializing in Kotlin, Jetpack Compose, offline-first applications, scalable MVVM architecture, and production troubleshooting. Interested in consumer applications with strong reliability and clean mobile UX.\n\nEDUCATION\nB.Tech in Information Technology, VJTI Mumbai, 2020–2024.\n\nEXPERIENCE\nAndroid Engineer, TransitLoop, Aug 2024–Present. Builds commuter-facing Android features with Kotlin and Compose, maintains Room persistence, integrates GraphQL services, and investigates crash and ANR reports from production releases. Works with backend and product teams to define mobile API behavior.\n\nPROJECTS\nMetroMate — Created a public-transit companion app with route search, saved stations, offline schedules, push notifications, and background synchronization. Used MVVM and coroutine-based asynchronous workflows. Technologies: Kotlin, Jetpack Compose, Room, WorkManager, GraphQL, Firebase. GitHub: https://github.com/rohandesai/metromate\n\nSKILLS\nKotlin, Java, Android SDK, Jetpack Compose, Room, WorkManager, Coroutines, Flow, GraphQL, Firebase, MVVM, GitHub Actions.\n\nCERTIFICATIONS\nAssociate Android Developer.\n\nLINKS\nGitHub: https://github.com/rohandesai\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: emphasizes responsive interfaces, robust error handling, lifecycle awareness, and maintainable architecture. Familiar with debugging through device logs, validating API failures, and separating presentation, domain, and persistence concerns. Values accessibility, automated tests, code review, and predictable release processes.\n\nADDITIONAL DETAILS\nThe candidate emphasizes reproducible workflows, careful documentation, practical debugging, and collaboration across engineering and review teams. They value maintainability, measurable quality, and clear technical communication when delivering production-oriented work. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Rohan Desai",
+      "email": "rohan.desai@proton.me",
+      "phone": [
+        "+91 90123 76544"
+      ],
+      "location": "Mumbai, Maharashtra, India",
+      "summary": "Android engineer specializing in Kotlin, Jetpack Compose, offline-first applications, and scalable MVVM architecture.",
+      "education": [
+        {
+          "degree": "B.Tech in Information Technology",
+          "institution": "VJTI Mumbai",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Android Engineer",
+          "company": "TransitLoop",
+          "start_date": "Aug 2024",
+          "end_date": "Present",
+          "description": "Builds commuter-facing Android features with Kotlin and Compose, maintains Room persistence, integrates GraphQL services, and investigates crash and ANR reports from production releases."
+        }
+      ],
+      "projects": [
+        {
+          "name": "MetroMate",
+          "description": "Created a public-transit companion app with route search, saved stations, offline schedules, push notifications, and background synchronization.",
+          "technologies": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Room",
+            "WorkManager",
+            "GraphQL",
+            "Firebase"
+          ],
+          "link": "https://github.com/rohandesai/metromate"
+        }
+      ],
+      "skills": [
+        "Kotlin",
+        "Java",
+        "Android SDK",
+        "Jetpack Compose",
+        "Room",
+        "WorkManager",
+        "Coroutines",
+        "Flow",
+        "GraphQL",
+        "Firebase",
+        "MVVM",
+        "GitHub Actions"
+      ],
+      "certifications": [
+        "Associate Android Developer"
+      ],
+      "links": [
+        "https://github.com/rohandesai"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sofia Alvarez\nFLUTTER DEVELOPER\nEmail: sofia.alvarez.dev@gmail.com | Phone: +34 612 483 920 | Location: Madrid, Spain\n\nSUMMARY\nFlutter developer focused on cross-platform mobile products, clean architecture, state management, API integration, and polished user experiences across Android and iOS.\n\nEDUCATION\nB.Sc. Software Engineering, Universidad Politécnica de Madrid, 2019–2023.\n\nEXPERIENCE\nFlutter Developer, MediRoute, Sep 2023–May 2026. Delivered Flutter applications for appointment scheduling and medication reminders, created reusable widgets, integrated secure APIs, and collaborated with QA on release validation. Participated in debugging sessions and improved consistency across mobile platforms.\n\nPROJECTS\nCareConnect — Developed a cross-platform healthcare appointment prototype with role-based screens, calendar booking, secure token storage, multilingual UI, and offline caching. Designed reusable UI components and centralized application state with Riverpod. Technologies: Flutter, Dart, Riverpod, Dio, SQLite, Firebase. GitHub: https://github.com/sofia-alvarez/careconnect\n\nSKILLS\nFlutter, Dart, Android, iOS, Riverpod, REST APIs, Dio, SQLite, Firebase, Git, CI/CD, Material Design.\n\nCERTIFICATIONS\nGoogle Associate Android Developer; Flutter & Dart - The Complete Guide Certificate.\n\nLINKS\nGitHub: https://github.com/sofia-alvarez\nLinkedIn: https://www.linkedin.com/in/sofia-alvarez\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: emphasizes responsive interfaces, robust error handling, lifecycle awareness, and maintainable architecture. Familiar with debugging through device logs, validating API failures, and separating presentation, domain, and persistence concerns. Values accessibility, automated tests, code review, and predictable release processes. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez.dev@gmail.com",
+      "phone": [
+        "+34 612 483 920"
+      ],
+      "location": "Madrid, Spain",
+      "summary": "Flutter developer focused on cross-platform mobile products, clean architecture, state management, and API integration.",
+      "education": [
+        {
+          "degree": "B.Sc. Software Engineering",
+          "institution": "Universidad Politécnica de Madrid",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Flutter Developer",
+          "company": "MediRoute",
+          "start_date": "Sep 2023",
+          "end_date": "May 2026",
+          "description": "Delivered Flutter applications for appointment scheduling and medication reminders, created reusable widgets, integrated secure APIs, and collaborated with QA on release validation."
+        }
+      ],
+      "projects": [
+        {
+          "name": "CareConnect",
+          "description": "Developed a cross-platform healthcare appointment prototype with role-based screens, calendar booking, secure token storage, multilingual UI, and offline caching.",
+          "technologies": [
+            "Flutter",
+            "Dart",
+            "Riverpod",
+            "Dio",
+            "SQLite",
+            "Firebase"
+          ],
+          "link": "https://github.com/sofia-alvarez/careconnect"
+        }
+      ],
+      "skills": [
+        "Flutter",
+        "Dart",
+        "Android",
+        "iOS",
+        "Riverpod",
+        "REST APIs",
+        "Dio",
+        "SQLite",
+        "Firebase",
+        "Git",
+        "CI/CD",
+        "Material Design"
+      ],
+      "certifications": [
+        "Google Associate Android Developer",
+        "Flutter & Dart - The Complete Guide Certificate"
+      ],
+      "links": [
+        "https://github.com/sofia-alvarez",
+        "https://www.linkedin.com/in/sofia-alvarez"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Kabir Rao\nANDROID DEVELOPER\nEmail: kabir.rao@outlook.com | Phone: +91 88661 20318 | Location: Jaipur, Rajasthan, India\n\nOBJECTIVE / SUMMARY\nFresh graduate and mobile developer who builds Android applications in Kotlin with an emphasis on accessibility, offline-first behavior, and reliable local storage. Seeking an entry-level Android engineering opportunity.\n\nEDUCATION\nBCA, Manipal University Jaipur, 2023–2026.\n\nEXPERIENCE\nNo professional work experience listed.\n\nPROJECTS\nCampusAssist — Built an Android campus utility application featuring timetable reminders, assignment tracking, emergency contacts, and offline-first persistence. Added TalkBack-friendly labels and dynamic text sizing to improve accessibility. Technologies: Kotlin, Jetpack Compose, Room, DataStore, Coroutines, Android Studio. GitHub: https://github.com/kabirrao/campusassist\n\nExpenseSnap — Created a receipt-entry application that stores expenses locally and exports monthly summaries as CSV files. Used CameraX for image capture and Room for persistence. Technologies: Kotlin, CameraX, Room, CSV, Jetpack Compose.\n\nSKILLS\nKotlin, Android SDK, Jetpack Compose, Room, CameraX, Coroutines, DataStore, Git, Android Studio, Accessibility.\n\nCERTIFICATIONS\nMeta Android Developer Professional Certificate.\n\nLINKS\nGitHub: https://github.com/kabirrao\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: emphasizes responsive interfaces, robust error handling, lifecycle awareness, and maintainable architecture. Familiar with debugging through device logs, validating API failures, and separating presentation, domain, and persistence concerns. Values accessibility, automated tests, code review, and predictable release processes. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Kabir Rao",
+      "email": "kabir.rao@outlook.com",
+      "phone": [
+        "+91 88661 20318"
+      ],
+      "location": "Jaipur, Rajasthan, India",
+      "summary": "Fresh graduate and mobile developer who builds Android applications in Kotlin with an emphasis on accessibility and reliable local storage.",
+      "education": [
+        {
+          "degree": "BCA",
+          "institution": "Manipal University Jaipur",
+          "start_date": "2023",
+          "end_date": "2026"
+        }
+      ],
+      "experience": [],
+      "projects": [
+        {
+          "name": "CampusAssist",
+          "description": "Built an Android campus utility application featuring timetable reminders, assignment tracking, emergency contacts, and offline-first persistence. Added TalkBack-friendly labels and dynamic text sizing.",
+          "technologies": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Room",
+            "DataStore",
+            "Coroutines",
+            "Android Studio"
+          ],
+          "link": "https://github.com/kabirrao/campusassist"
+        },
+        {
+          "name": "ExpenseSnap",
+          "description": "Created a receipt-entry application that stores expenses locally and exports monthly summaries as CSV files.",
+          "technologies": [
+            "Kotlin",
+            "CameraX",
+            "Room",
+            "CSV",
+            "Jetpack Compose"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Kotlin",
+        "Android SDK",
+        "Jetpack Compose",
+        "Room",
+        "CameraX",
+        "Coroutines",
+        "DataStore",
+        "Git",
+        "Android Studio",
+        "Accessibility"
+      ],
+      "certifications": [
+        "Meta Android Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/kabirrao"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Arjun Nair\nCOMPUTER VISION / ROBOTICS ENGINEER\nEmail: arjun.nair@fastmail.com | Phone: +91 97452 88031 | Location: Thiruvananthapuram, Kerala, India\n\nSUMMARY\nComputer vision engineer working on object detection, visual tracking, camera calibration, and robotic perception. Interested in autonomous systems that combine machine learning with real-time sensor processing.\n\nEDUCATION\nM.Tech Robotics and Automation, Indian Institute of Science Education and Research Thiruvananthapuram, 2024–2026.\nB.Tech Mechanical Engineering, NIT Calicut, 2020–2024.\n\nEXPERIENCE\nRobotics Vision Intern, Autonex Labs, Jan 2026–Jun 2026. Developed perception experiments for mobile robots, evaluated object-detection models under changing illumination, and integrated camera streams with ROS 2 nodes.\n\nPROJECTS\nAutonomous Drone Vision System — Built a vision pipeline for detecting landing markers and obstacles from drone camera footage, combining object detection, optical flow, and pose estimation in simulation. Evaluated model performance under varied camera motion and lighting. Technologies: Python, OpenCV, PyTorch, YOLO, ROS 2, Gazebo. GitHub: https://github.com/arjunnair/drone-vision\n\nSKILLS\nComputer Vision, OpenCV, PyTorch, YOLO, ROS 2, Python, C++, Camera Calibration, Object Detection, Optical Flow, SLAM, Gazebo.\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute: Fundamentals of Deep Learning.\n\nLINKS\nGitHub: https://github.com/arjunnair\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: pays attention to dataset quality, reproducibility, inference performance, and failure analysis. Comfortable comparing models using task-specific metrics and inspecting difficult examples visually. Interested in reliable perception pipelines where calibration, synchronization, preprocessing, and deployment constraints are considered alongside model accuracy. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Arjun Nair",
+      "email": "arjun.nair@fastmail.com",
+      "phone": [
+        "+91 97452 88031"
+      ],
+      "location": "Thiruvananthapuram, Kerala, India",
+      "summary": "Computer vision engineer working on object detection, visual tracking, camera calibration, and robotic perception.",
+      "education": [
+        {
+          "degree": "M.Tech Robotics and Automation",
+          "institution": "Indian Institute of Science Education and Research Thiruvananthapuram",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "B.Tech Mechanical Engineering",
+          "institution": "NIT Calicut",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Robotics Vision Intern",
+          "company": "Autonex Labs",
+          "start_date": "Jan 2026",
+          "end_date": "Jun 2026",
+          "description": "Developed perception experiments for mobile robots, evaluated object-detection models under changing illumination, and integrated camera streams with ROS 2 nodes."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Autonomous Drone Vision System",
+          "description": "Built a vision pipeline for detecting landing markers and obstacles from drone camera footage, combining object detection, optical flow, and pose estimation in simulation.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "PyTorch",
+            "YOLO",
+            "ROS 2",
+            "Gazebo"
+          ],
+          "link": "https://github.com/arjunnair/drone-vision"
+        }
+      ],
+      "skills": [
+        "Computer Vision",
+        "OpenCV",
+        "PyTorch",
+        "YOLO",
+        "ROS 2",
+        "Python",
+        "C++",
+        "Camera Calibration",
+        "Object Detection",
+        "Optical Flow",
+        "SLAM",
+        "Gazebo"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute: Fundamentals of Deep Learning"
+      ],
+      "links": [
+        "https://github.com/arjunnair"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Emily Chen\nCOMPUTER VISION RESEARCHER\nEmail: emily.chen.cv@protonmail.com | Phone: +1 206 555 0142 | Location: Seattle, Washington, USA\n\nOBJECTIVE / SUMMARY\nComputer vision researcher with practical experience in image segmentation, 3D reconstruction, model evaluation, and experimental analysis for robotics datasets.\n\nEDUCATION\nM.S. Computer Science, University of Washington, 2024–2026.\nB.S. Electrical Engineering, University of California, Davis, 2020–2024.\n\nEXPERIENCE\nComputer Vision Research Assistant, University of Washington Robotics Lab, Sep 2024–Jun 2026. Implemented segmentation and depth-estimation experiments for indoor robotics datasets, built evaluation scripts, and analyzed failure modes across camera viewpoints. Maintained reproducible experiment configurations and compared model metrics.\n\nPROJECTS\nWarehouse Shelf Segmentation — Trained and evaluated a semantic-segmentation pipeline for shelf and package regions, including augmentation experiments and per-class IoU analysis. Investigated false positives around reflective surfaces. Technologies: Python, PyTorch, OpenCV, U-Net, CUDA, NumPy. GitHub: https://github.com/emilychen/warehouse-segmentation\n\nSKILLS\nComputer Vision, Python, PyTorch, OpenCV, CUDA, Image Segmentation, 3D Vision, NumPy, Pandas, Git, Linux.\n\nCERTIFICATIONS\nNVIDIA Certified Associate: Generative AI LLMs.\n\nLINKS\nGitHub: https://github.com/emilychen\nLinkedIn: https://www.linkedin.com/in/emilychen\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: pays attention to dataset quality, reproducibility, inference performance, and failure analysis. Comfortable comparing models using task-specific metrics and inspecting difficult examples visually. Interested in reliable perception pipelines where calibration, synchronization, preprocessing, and deployment constraints are considered alongside model accuracy. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Emily Chen",
+      "email": "emily.chen.cv@protonmail.com",
+      "phone": [
+        "+1 206 555 0142"
+      ],
+      "location": "Seattle, Washington, USA",
+      "summary": "Computer vision researcher with practical experience in image segmentation, 3D reconstruction, and model evaluation.",
+      "education": [
+        {
+          "degree": "M.S. Computer Science",
+          "institution": "University of Washington",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "B.S. Electrical Engineering",
+          "institution": "University of California, Davis",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Computer Vision Research Assistant",
+          "company": "University of Washington Robotics Lab",
+          "start_date": "Sep 2024",
+          "end_date": "Jun 2026",
+          "description": "Implemented segmentation and depth-estimation experiments for indoor robotics datasets, built evaluation scripts, and analyzed failure modes across camera viewpoints."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Warehouse Shelf Segmentation",
+          "description": "Trained and evaluated a semantic-segmentation pipeline for shelf and package regions, including augmentation experiments and per-class IoU analysis.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "U-Net",
+            "CUDA",
+            "NumPy"
+          ],
+          "link": "https://github.com/emilychen/warehouse-segmentation"
+        }
+      ],
+      "skills": [
+        "Computer Vision",
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "CUDA",
+        "Image Segmentation",
+        "3D Vision",
+        "NumPy",
+        "Pandas",
+        "Git",
+        "Linux"
+      ],
+      "certifications": [
+        "NVIDIA Certified Associate: Generative AI LLMs"
+      ],
+      "links": [
+        "https://github.com/emilychen",
+        "https://www.linkedin.com/in/emilychen"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Vikram Joshi\nROBOTICS SOFTWARE ENGINEER\nEmail: vikram.joshi@gmail.com | Phone: +91 93210 77462 | Location: Pune, Maharashtra, India\n\nSUMMARY\nRobotics software engineer experienced with ROS, sensor fusion, autonomous navigation, embedded perception, and simulation-based testing for warehouse robots.\n\nEDUCATION\nB.E. Electronics and Telecommunication Engineering, Pune Institute of Computer Technology, 2018–2022.\n\nEXPERIENCE\nRobotics Software Engineer, MechSense Robotics, Jul 2022–Present. Develops ROS-based navigation and perception modules for autonomous warehouse vehicles, tunes LiDAR-camera fusion, and maintains simulation tests before field deployment. Works on debugging localization failures and validating changes in Gazebo.\n\nPROJECTS\nIndoor Autonomous Rover — Implemented waypoint navigation for a differential-drive rover using LiDAR obstacle detection, wheel odometry, and localization in a simulated warehouse. Technologies: ROS, C++, Python, LiDAR, Gazebo, AMCL, RViz. GitHub: https://github.com/vikramjoshi/indoor-rover\n\nCamera-LiDAR Fusion Toolkit — Created utilities for timestamp synchronization and projecting LiDAR points into camera images for qualitative sensor-fusion debugging. Technologies: Python, OpenCV, PCL, ROS, NumPy.\n\nSKILLS\nROS, ROS 2, C++, Python, LiDAR, Computer Vision, Sensor Fusion, SLAM, Gazebo, OpenCV, PCL, Linux.\n\nCERTIFICATIONS\nROS Industrial Training Certificate; NVIDIA Jetson AI Specialist.\n\nLINKS\nGitHub: https://github.com/vikramjoshi\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: pays attention to dataset quality, reproducibility, inference performance, and failure analysis. Comfortable comparing models using task-specific metrics and inspecting difficult examples visually. Interested in reliable perception pipelines where calibration, synchronization, preprocessing, and deployment constraints are considered alongside model accuracy. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Vikram Joshi",
+      "email": "vikram.joshi@gmail.com",
+      "phone": [
+        "+91 93210 77462"
+      ],
+      "location": "Pune, Maharashtra, India",
+      "summary": "Robotics software engineer experienced with ROS, sensor fusion, autonomous navigation, and embedded perception.",
+      "education": [
+        {
+          "degree": "B.E. Electronics and Telecommunication Engineering",
+          "institution": "Pune Institute of Computer Technology",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Robotics Software Engineer",
+          "company": "MechSense Robotics",
+          "start_date": "Jul 2022",
+          "end_date": "Present",
+          "description": "Develops ROS-based navigation and perception modules for autonomous warehouse vehicles, tunes LiDAR-camera fusion, and maintains simulation tests before field deployment."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Indoor Autonomous Rover",
+          "description": "Implemented waypoint navigation for a differential-drive rover using LiDAR obstacle detection, wheel odometry, and localization in a simulated warehouse.",
+          "technologies": [
+            "ROS",
+            "C++",
+            "Python",
+            "LiDAR",
+            "Gazebo",
+            "AMCL",
+            "RViz"
+          ],
+          "link": "https://github.com/vikramjoshi/indoor-rover"
+        },
+        {
+          "name": "Camera-LiDAR Fusion Toolkit",
+          "description": "Created utilities for timestamp synchronization and projecting LiDAR points into camera images for qualitative sensor-fusion debugging.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "PCL",
+            "ROS",
+            "NumPy"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "ROS",
+        "ROS 2",
+        "C++",
+        "Python",
+        "LiDAR",
+        "Computer Vision",
+        "Sensor Fusion",
+        "SLAM",
+        "Gazebo",
+        "OpenCV",
+        "PCL",
+        "Linux"
+      ],
+      "certifications": [
+        "ROS Industrial Training Certificate",
+        "NVIDIA Jetson AI Specialist"
+      ],
+      "links": [
+        "https://github.com/vikramjoshi"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sara Martins\nJUNIOR COMPUTER VISION ENGINEER\nEmail: sara.martins@outlook.com | Phone: +351 912 334 805 | Location: Porto, Portugal\n\nOBJECTIVE / SUMMARY\nJunior computer vision engineer with a mathematics background and interest in industrial inspection and image-based quality control. Comfortable with classical image processing, model evaluation, and Python data analysis.\n\nEDUCATION\nM.Sc. Applied Mathematics, University of Porto, 2024–2026.\nB.Sc. Mathematics, University of Coimbra, 2021–2024.\n\nEXPERIENCE\nNo professional work experience listed.\n\nPROJECTS\nDefectVision — Developed an image-inspection prototype for identifying surface defects in manufactured parts using classical image processing and a lightweight CNN. Compared precision, recall, and inference latency across preprocessing configurations and documented failure cases. Technologies: Python, OpenCV, TensorFlow, Keras, NumPy, Pandas, Matplotlib. GitHub: https://github.com/saramartins/defectvision\n\nSKILLS\nPython, OpenCV, TensorFlow, Keras, Computer Vision, Image Processing, NumPy, Pandas, Matplotlib, Mathematics, Git.\n\nCERTIFICATIONS\nDeepLearning.AI TensorFlow Developer Professional Certificate.\n\nLINKS\nGitHub: https://github.com/saramartins\n\nADDITIONAL TECHNICAL PROFILE\nAdditional engineering focus: pays attention to dataset quality, reproducibility, inference performance, and failure analysis. Comfortable comparing models using task-specific metrics and inspecting difficult examples visually. Interested in reliable perception pipelines where calibration, synchronization, preprocessing, and deployment constraints are considered alongside model accuracy. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Sara Martins",
+      "email": "sara.martins@outlook.com",
+      "phone": [
+        "+351 912 334 805"
+      ],
+      "location": "Porto, Portugal",
+      "summary": "Junior computer vision engineer with a mathematics background and interest in industrial inspection and image-based quality control.",
+      "education": [
+        {
+          "degree": "M.Sc. Applied Mathematics",
+          "institution": "University of Porto",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "B.Sc. Mathematics",
+          "institution": "University of Coimbra",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [],
+      "projects": [
+        {
+          "name": "DefectVision",
+          "description": "Developed an image-inspection prototype for identifying surface defects in manufactured parts using classical image processing and a lightweight CNN. Compared precision, recall, and inference latency.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "TensorFlow",
+            "Keras",
+            "NumPy",
+            "Pandas"
+          ],
+          "link": "https://github.com/saramartins/defectvision"
+        }
+      ],
+      "skills": [
+        "Python",
+        "OpenCV",
+        "TensorFlow",
+        "Keras",
+        "Computer Vision",
+        "Image Processing",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Mathematics",
+        "Git"
+      ],
+      "certifications": [
+        "DeepLearning.AI TensorFlow Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/saramartins"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Aditya Kapoor\nQUANTITATIVE DEVELOPER\nEmail: aditya.kapoor.quant@gmail.com | Phone: +91 98100 66219 | Location: Gurugram, Haryana, India\n\nSUMMARY\nQuantitative developer focused on systematic trading, statistical modeling, market microstructure, and low-latency research pipelines. Interested in electronic trading infrastructure and robust strategy evaluation.\n\nEDUCATION\nM.S. Financial Engineering, National University of Singapore, 2023–2025.\nB.Tech Mathematics and Computing, IIT Delhi, 2019–2023.\n\nEXPERIENCE\nQuantitative Developer, Arbor Capital, Jul 2025–Present. Develops research tooling for systematic strategies, implements factor calculations, performs transaction-cost analysis, and maintains Python/C++ components used in backtesting workflows. Works with researchers to turn strategy specifications into reproducible experiments.\n\nPROJECTS\nHigh-Frequency Trading Engine — Built a simulated event-driven trading engine with limit-order-book updates, strategy callbacks, risk limits, and latency measurements. Added deterministic replay for historical market events and logging for execution decisions. Technologies: C++, Python, NumPy, Pandas, Redis, Linux. GitHub: https://github.com/adityakapoor/hft-engine\n\nSKILLS\nQuantitative Finance, Python, C++, Statistics, Probability, Time Series, Market Microstructure, NumPy, Pandas, Backtesting, Risk Management, SQL, Linux.\n\nCERTIFICATIONS\nCQF Certificate in Quantitative Finance.\n\nLINKS\nGitHub: https://github.com/adityakapoor\nLinkedIn: https://www.linkedin.com/in/adityakapoor\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quantitative focus: emphasizes reproducible experiments, careful assumptions, leakage prevention, out-of-sample validation, and transparent reporting of risk. Comfortable working with numerical data, statistical diagnostics, and performance metrics. Interested in models and systems that remain interpretable under changing market conditions and realistic transaction constraints. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Aditya Kapoor",
+      "email": "aditya.kapoor.quant@gmail.com",
+      "phone": [
+        "+91 98100 66219"
+      ],
+      "location": "Gurugram, Haryana, India",
+      "summary": "Quantitative developer focused on systematic trading, statistical modeling, market microstructure, and low-latency research pipelines.",
+      "education": [
+        {
+          "degree": "M.S. Financial Engineering",
+          "institution": "National University of Singapore",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "B.Tech Mathematics and Computing",
+          "institution": "IIT Delhi",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Quantitative Developer",
+          "company": "Arbor Capital",
+          "start_date": "Jul 2025",
+          "end_date": "Present",
+          "description": "Develops research tooling for systematic strategies, implements factor calculations, performs transaction-cost analysis, and maintains Python/C++ components used in backtesting workflows."
+        }
+      ],
+      "projects": [
+        {
+          "name": "High-Frequency Trading Engine",
+          "description": "Built a simulated event-driven trading engine with limit-order-book updates, strategy callbacks, risk limits, and latency measurements. Added deterministic replay for historical market events.",
+          "technologies": [
+            "C++",
+            "Python",
+            "NumPy",
+            "Pandas",
+            "Redis",
+            "Linux"
+          ],
+          "link": "https://github.com/adityakapoor/hft-engine"
+        }
+      ],
+      "skills": [
+        "Quantitative Finance",
+        "Python",
+        "C++",
+        "Statistics",
+        "Probability",
+        "Time Series",
+        "Market Microstructure",
+        "NumPy",
+        "Pandas",
+        "Backtesting",
+        "Risk Management",
+        "SQL",
+        "Linux"
+      ],
+      "certifications": [
+        "CQF Certificate in Quantitative Finance"
+      ],
+      "links": [
+        "https://github.com/adityakapoor",
+        "https://www.linkedin.com/in/adityakapoor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Laura Bennett\nQUANTITATIVE ANALYST\nEmail: laura.bennett@fastmail.com | Phone: +44 7700 900182 | Location: London, United Kingdom\n\nOBJECTIVE / SUMMARY\nQuantitative analyst specializing in portfolio analytics, factor modeling, and risk measurement for multi-asset strategies. Interested in systematic research, performance attribution, and reproducible investment analytics.\n\nEDUCATION\nM.Sc. Statistics and Data Science, University College London, 2022–2023.\nB.Sc. Economics, University of Bristol, 2019–2022.\n\nEXPERIENCE\nQuantitative Analyst, NorthBridge Asset Management, Oct 2023–Present. Builds factor-model research notebooks, validates portfolio risk metrics, automates daily performance reports, and supports portfolio managers with attribution analysis. Performs data checks before research outputs are distributed.\n\nPROJECTS\nFactorAlpha Research Platform — Created a reproducible research framework for testing momentum, value, and volatility factors with walk-forward validation, turnover estimates, and transaction-cost assumptions. Technologies: Python, Pandas, NumPy, scikit-learn, Jupyter, SQL. GitHub: https://github.com/laurabennett/factor-alpha\n\nSKILLS\nQuantitative Research, Python, Statistics, Econometrics, Factor Modeling, Portfolio Analytics, Risk Modeling, Pandas, NumPy, scikit-learn, SQL, Jupyter.\n\nCERTIFICATIONS\nCFA Institute Investment Foundations Certificate; Financial Risk Manager Part I.\n\nLINKS\nGitHub: https://github.com/laurabennett\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quantitative focus: emphasizes reproducible experiments, careful assumptions, leakage prevention, out-of-sample validation, and transparent reporting of risk. Comfortable working with numerical data, statistical diagnostics, and performance metrics. Interested in models and systems that remain interpretable under changing market conditions and realistic transaction constraints. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Laura Bennett",
+      "email": "laura.bennett@fastmail.com",
+      "phone": [
+        "+44 7700 900182"
+      ],
+      "location": "London, United Kingdom",
+      "summary": "Quantitative analyst specializing in portfolio analytics, factor modeling, and risk measurement for multi-asset strategies.",
+      "education": [
+        {
+          "degree": "M.Sc. Statistics and Data Science",
+          "institution": "University College London",
+          "start_date": "2022",
+          "end_date": "2023"
+        },
+        {
+          "degree": "B.Sc. Economics",
+          "institution": "University of Bristol",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Quantitative Analyst",
+          "company": "NorthBridge Asset Management",
+          "start_date": "Oct 2023",
+          "end_date": "Present",
+          "description": "Builds factor-model research notebooks, validates portfolio risk metrics, automates daily performance reports, and supports portfolio managers with attribution analysis."
+        }
+      ],
+      "projects": [
+        {
+          "name": "FactorAlpha Research Platform",
+          "description": "Created a reproducible research framework for testing momentum, value, and volatility factors with walk-forward validation, turnover estimates, and transaction-cost assumptions.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "scikit-learn",
+            "Jupyter",
+            "SQL"
+          ],
+          "link": "https://github.com/laurabennett/factor-alpha"
+        }
+      ],
+      "skills": [
+        "Quantitative Research",
+        "Python",
+        "Statistics",
+        "Econometrics",
+        "Factor Modeling",
+        "Portfolio Analytics",
+        "Risk Modeling",
+        "Pandas",
+        "NumPy",
+        "scikit-learn",
+        "SQL",
+        "Jupyter"
+      ],
+      "certifications": [
+        "CFA Institute Investment Foundations Certificate",
+        "Financial Risk Manager Part I"
+      ],
+      "links": [
+        "https://github.com/laurabennett"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sameer Khan\nQUANTITATIVE ML / FINTECH ENGINEER\nEmail: sameer.khan@protonmail.com | Phone: +91 70061 44892 | Location: Hyderabad, Telangana, India\n\nSUMMARY\nML engineer applying probabilistic modeling and machine learning to credit risk, fraud detection, and financial decision systems. Interested in interpretable models, monitoring, and production-ready risk pipelines.\n\nEDUCATION\nM.Tech Artificial Intelligence, IIIT Hyderabad, 2024–2026.\nB.Tech Computer Science, NIT Warangal, 2020–2024.\n\nEXPERIENCE\nMachine Learning Intern - Risk, Credence FinTech, May 2025–Aug 2025. Developed baseline credit-risk models, investigated feature drift, prepared model monitoring reports, and compared calibration across logistic regression and gradient-boosting approaches. Documented assumptions and model limitations for review.\n\nPROJECTS\nExplainable Credit Risk Model — Built a credit-risk modeling pipeline with feature engineering, probability calibration, SHAP-based explanations, and threshold analysis for imbalanced outcomes. Technologies: Python, scikit-learn, XGBoost, SHAP, Pandas, MLflow. GitHub: https://github.com/sameerkhan/credit-risk\n\nSKILLS\nMachine Learning, Quantitative ML, Credit Risk, Python, scikit-learn, XGBoost, SHAP, Statistics, Feature Engineering, Model Calibration, MLflow, SQL.\n\nCERTIFICATIONS\nGoogle Advanced Data Analytics Professional Certificate; Microsoft Certified: Azure Data Scientist Associate.\n\nLINKS\nGitHub: https://github.com/sameerkhan\nLinkedIn: https://www.linkedin.com/in/sameerkhan\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quantitative focus: emphasizes reproducible experiments, careful assumptions, leakage prevention, out-of-sample validation, and transparent reporting of risk. Comfortable working with numerical data, statistical diagnostics, and performance metrics. Interested in models and systems that remain interpretable under changing market conditions and realistic transaction constraints. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Sameer Khan",
+      "email": "sameer.khan@protonmail.com",
+      "phone": [
+        "+91 70061 44892"
+      ],
+      "location": "Hyderabad, Telangana, India",
+      "summary": "ML engineer applying probabilistic modeling and machine learning to credit risk, fraud detection, and financial decision systems.",
+      "education": [
+        {
+          "degree": "M.Tech Artificial Intelligence",
+          "institution": "IIIT Hyderabad",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "B.Tech Computer Science",
+          "institution": "NIT Warangal",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Intern - Risk",
+          "company": "Credence FinTech",
+          "start_date": "May 2025",
+          "end_date": "Aug 2025",
+          "description": "Developed baseline credit-risk models, investigated feature drift, prepared model monitoring reports, and compared calibration across logistic regression and gradient-boosting approaches."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Explainable Credit Risk Model",
+          "description": "Built a credit-risk modeling pipeline with feature engineering, probability calibration, SHAP-based explanations, and threshold analysis for imbalanced outcomes.",
+          "technologies": [
+            "Python",
+            "scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "Pandas",
+            "MLflow"
+          ],
+          "link": "https://github.com/sameerkhan/credit-risk"
+        }
+      ],
+      "skills": [
+        "Machine Learning",
+        "Quantitative ML",
+        "Credit Risk",
+        "Python",
+        "scikit-learn",
+        "XGBoost",
+        "SHAP",
+        "Statistics",
+        "Feature Engineering",
+        "Model Calibration",
+        "MLflow",
+        "SQL"
+      ],
+      "certifications": [
+        "Google Advanced Data Analytics Professional Certificate",
+        "Microsoft Certified: Azure Data Scientist Associate"
+      ],
+      "links": [
+        "https://github.com/sameerkhan",
+        "https://www.linkedin.com/in/sameerkhan"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Elena Petrova\nQUANTITATIVE RESEARCH ASSOCIATE\nEmail: elena.petrova@icloud.com | Phone: +49 151 23456781 | Location: Frankfurt, Germany\n\nSUMMARY\nQuantitative researcher with experience in derivatives analytics, Monte Carlo simulation, numerical optimization, and risk analysis. Interested in efficient pricing and scenario-based financial modeling.\n\nEDUCATION\nM.Sc. Quantitative Finance, Goethe University Frankfurt, 2021–2023.\n\nEXPERIENCE\nQuantitative Research Associate, EuroSigma Markets, Sep 2023–Present. Implements pricing and risk analytics for options, maintains Monte Carlo simulation code, and researches numerical methods for reducing computational cost in scenario analysis. Collaborates with developers to validate numerical outputs against reference calculations.\n\nPROJECTS\nMonte Carlo Options Pricer — Implemented a modular pricing library for European and American-style option experiments, including variance-reduction techniques and convergence diagnostics. Technologies: Python, NumPy, SciPy, C++, Monte Carlo, Black-Scholes. GitHub: https://github.com/elenapetrova/options-pricer\n\nSKILLS\nQuantitative Finance, Derivatives, Monte Carlo, Python, C++, NumPy, SciPy, Numerical Methods, Optimization, Risk Analytics, Statistics.\n\nCERTIFICATIONS\nFinancial Modeling & Valuation Analyst (FMVA); CFA Level I.\n\nLINKS\nGitHub: https://github.com/elenapetrova\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quantitative focus: emphasizes reproducible experiments, careful assumptions, leakage prevention, out-of-sample validation, and transparent reporting of risk. Comfortable working with numerical data, statistical diagnostics, and performance metrics. Interested in models and systems that remain interpretable under changing market conditions and realistic transaction constraints. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Elena Petrova",
+      "email": "elena.petrova@icloud.com",
+      "phone": [
+        "+49 151 23456781"
+      ],
+      "location": "Frankfurt, Germany",
+      "summary": "Quantitative researcher with experience in derivatives analytics, Monte Carlo simulation, and numerical optimization.",
+      "education": [
+        {
+          "degree": "M.Sc. Quantitative Finance",
+          "institution": "Goethe University Frankfurt",
+          "start_date": "2021",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Quantitative Research Associate",
+          "company": "EuroSigma Markets",
+          "start_date": "Sep 2023",
+          "end_date": "Present",
+          "description": "Implements pricing and risk analytics for options, maintains Monte Carlo simulation code, and researches numerical methods for reducing computational cost in scenario analysis."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Monte Carlo Options Pricer",
+          "description": "Implemented a modular pricing library for European and American-style option experiments, including variance-reduction techniques and convergence diagnostics.",
+          "technologies": [
+            "Python",
+            "NumPy",
+            "SciPy",
+            "C++",
+            "Monte Carlo",
+            "Black-Scholes"
+          ],
+          "link": "https://github.com/elenapetrova/options-pricer"
+        }
+      ],
+      "skills": [
+        "Quantitative Finance",
+        "Derivatives",
+        "Monte Carlo",
+        "Python",
+        "C++",
+        "NumPy",
+        "SciPy",
+        "Numerical Methods",
+        "Optimization",
+        "Risk Analytics",
+        "Statistics"
+      ],
+      "certifications": [
+        "Financial Modeling & Valuation Analyst (FMVA)",
+        "CFA Level I"
+      ],
+      "links": [
+        "https://github.com/elenapetrova"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Neha Verma\nQA AUTOMATION ENGINEER\nEmail: neha.verma.qa@gmail.com | Phone: +91 98991 23018 | Location: Noida, Uttar Pradesh, India\n\nOBJECTIVE / SUMMARY\nQA automation engineer experienced in web UI automation, API testing, regression strategy, test reporting, and CI pipelines. Interested in quality engineering roles that combine automation design with strong defect analysis.\n\nEDUCATION\nB.Tech Information Technology, Jaypee Institute of Information Technology, 2019–2023.\n\nEXPERIENCE\nQA Automation Engineer, RetailCloud, Aug 2023–Present. Develops Selenium and Playwright automation for customer workflows, maintains API regression suites, analyzes flaky tests, and integrates automated execution into GitHub Actions. Participates in release planning and root-cause analysis for recurring failures.\n\nPROJECTS\nE-Commerce Regression Framework — Built a reusable test framework covering login, search, cart, checkout, and order-history workflows with page objects, fixtures, parallel execution, screenshots, and HTML reporting. Technologies: Playwright, TypeScript, Pytest, Selenium, GitHub Actions, Allure. GitHub: https://github.com/nehaverma/ecommerce-qa\n\nSKILLS\nQA Automation, Playwright, Selenium, TypeScript, Python, Pytest, REST API Testing, Postman, GitHub Actions, CI/CD, SQL, Test Design, Allure.\n\nCERTIFICATIONS\nISTQB Certified Tester Foundation Level.\n\nLINKS\nGitHub: https://github.com/nehaverma\nLinkedIn: https://www.linkedin.com/in/nehaverma\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quality focus: emphasizes deterministic tests, useful failure diagnostics, maintainable fixtures, and clear defect reproduction steps. Comfortable validating UI, APIs, databases, and asynchronous workflows. Interested in shifting quality left through CI automation, reliable test data, regression prioritization, and collaboration with developers during root-cause analysis. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Neha Verma",
+      "email": "neha.verma.qa@gmail.com",
+      "phone": [
+        "+91 98991 23018"
+      ],
+      "location": "Noida, Uttar Pradesh, India",
+      "summary": "QA automation engineer experienced in web UI automation, API testing, regression strategy, and CI pipelines.",
+      "education": [
+        {
+          "degree": "B.Tech Information Technology",
+          "institution": "Jaypee Institute of Information Technology",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "QA Automation Engineer",
+          "company": "RetailCloud",
+          "start_date": "Aug 2023",
+          "end_date": "Present",
+          "description": "Develops Selenium and Playwright automation for customer workflows, maintains API regression suites, analyzes flaky tests, and integrates automated execution into GitHub Actions."
+        }
+      ],
+      "projects": [
+        {
+          "name": "E-Commerce Regression Framework",
+          "description": "Built a reusable test framework covering login, search, cart, checkout, and order-history workflows with page objects, fixtures, parallel execution, screenshots, and HTML reporting.",
+          "technologies": [
+            "Playwright",
+            "TypeScript",
+            "Pytest",
+            "Selenium",
+            "GitHub Actions",
+            "Allure"
+          ],
+          "link": "https://github.com/nehaverma/ecommerce-qa"
+        }
+      ],
+      "skills": [
+        "QA Automation",
+        "Playwright",
+        "Selenium",
+        "TypeScript",
+        "Python",
+        "Pytest",
+        "REST API Testing",
+        "Postman",
+        "GitHub Actions",
+        "CI/CD",
+        "SQL",
+        "Test Design",
+        "Allure"
+      ],
+      "certifications": [
+        "ISTQB Certified Tester Foundation Level"
+      ],
+      "links": [
+        "https://github.com/nehaverma",
+        "https://www.linkedin.com/in/nehaverma"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Marcus Reed\nSENIOR SDET\nEmail: marcus.reed@outlook.com | Phone: +1 415 555 0164 | Location: San Francisco, California, USA\n\nSUMMARY\nSDET specializing in distributed systems testing, API automation, contract testing, and observability-driven quality engineering. Experienced in designing reusable test infrastructure and identifying gaps from production incidents.\n\nEDUCATION\nB.S. Computer Science, San Jose State University, 2017–2021.\n\nEXPERIENCE\nSenior SDET, DataMesh Inc., Jan 2024–Present. Leads automated quality strategy for distributed data services, builds API and contract-test suites, reviews production incidents for test gaps, and mentors engineers on reliable test design.\n\nQA Automation Engineer, CloudRoute, Jul 2021–Dec 2023. Automated REST and event-driven workflows, created integration tests for microservices, and maintained nightly regression pipelines.\n\nPROJECTS\nMicroservice Contract Test Harness — Created a contract-testing harness that validates producer-consumer API expectations across independently deployed services and publishes compatibility reports. Technologies: Java, JUnit, Pact, REST Assured, Kafka, Docker. GitHub: https://github.com/marcusreed/contract-harness\n\nSKILLS\nSDET, Java, JUnit, REST Assured, Pact, Kafka, Docker, Kubernetes, API Testing, Integration Testing, CI/CD, Observability.\n\nCERTIFICATIONS\nISTQB Advanced Test Automation Engineer; Certified Kubernetes Application Developer.\n\nLINKS\nGitHub: https://github.com/marcusreed\nLinkedIn: https://www.linkedin.com/in/marcusreed\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quality focus: emphasizes deterministic tests, useful failure diagnostics, maintainable fixtures, and clear defect reproduction steps. Comfortable validating UI, APIs, databases, and asynchronous workflows. Interested in shifting quality left through CI automation, reliable test data, regression prioritization, and collaboration with developers during root-cause analysis. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Marcus Reed",
+      "email": "marcus.reed@outlook.com",
+      "phone": [
+        "+1 415 555 0164"
+      ],
+      "location": "San Francisco, California, USA",
+      "summary": "SDET specializing in distributed systems testing, API automation, contract testing, and observability-driven quality engineering.",
+      "education": [
+        {
+          "degree": "B.S. Computer Science",
+          "institution": "San Jose State University",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior SDET",
+          "company": "DataMesh Inc.",
+          "start_date": "Jan 2024",
+          "end_date": "Present",
+          "description": "Leads automated quality strategy for distributed data services, builds API and contract-test suites, reviews production incidents for test gaps, and mentors engineers on reliable test design."
+        },
+        {
+          "title": "QA Automation Engineer",
+          "company": "CloudRoute",
+          "start_date": "Jul 2021",
+          "end_date": "Dec 2023",
+          "description": "Automated REST and event-driven workflows, created integration tests for microservices, and maintained nightly regression pipelines."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Microservice Contract Test Harness",
+          "description": "Created a contract-testing harness that validates producer-consumer API expectations across independently deployed services and publishes compatibility reports.",
+          "technologies": [
+            "Java",
+            "JUnit",
+            "Pact",
+            "REST Assured",
+            "Kafka",
+            "Docker"
+          ],
+          "link": "https://github.com/marcusreed/contract-harness"
+        }
+      ],
+      "skills": [
+        "SDET",
+        "Java",
+        "JUnit",
+        "REST Assured",
+        "Pact",
+        "Kafka",
+        "Docker",
+        "Kubernetes",
+        "API Testing",
+        "Integration Testing",
+        "CI/CD",
+        "Observability"
+      ],
+      "certifications": [
+        "ISTQB Advanced Test Automation Engineer",
+        "Certified Kubernetes Application Developer"
+      ],
+      "links": [
+        "https://github.com/marcusreed",
+        "https://www.linkedin.com/in/marcusreed"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Ishita Roy\nMOBILE QA ENGINEER\nEmail: ishita.roy@protonmail.com | Phone: +91 98310 55129 | Location: Kolkata, West Bengal, India\n\nOBJECTIVE / SUMMARY\nQA engineer focused on mobile automation, Appium, Android testing, API validation, and release-quality reporting. Interested in mobile quality engineering and scalable regression automation.\n\nEDUCATION\nB.Sc. Computer Science, St. Xavier's College, Kolkata, 2020–2023.\n\nEXPERIENCE\nMobile QA Engineer, QuickPay Apps, Sep 2023–Present. Automates Android regression flows with Appium, validates backend APIs, investigates device-specific failures, and maintains release checklists for multiple application versions. Works with developers to reproduce and isolate mobile defects.\n\nPROJECTS\nMobile Banking Automation Suite — Built a device-matrix automation suite covering login, OTP handling with test hooks, transfers, transaction history, and logout. Added retry logic and failure screenshots for debugging. Technologies: Appium, Java, TestNG, Android, Postman, Jenkins. GitHub: https://github.com/ishitaroy/mobile-banking-tests\n\nSKILLS\nMobile Testing, Appium, Java, TestNG, Android, REST API Testing, Postman, Jenkins, SQL, Regression Testing, Defect Management, Jira.\n\nCERTIFICATIONS\nISTQB Certified Tester Foundation Level; Appium Mobile Testing Certification.\n\nLINKS\nGitHub: https://github.com/ishitaroy\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quality focus: emphasizes deterministic tests, useful failure diagnostics, maintainable fixtures, and clear defect reproduction steps. Comfortable validating UI, APIs, databases, and asynchronous workflows. Interested in shifting quality left through CI automation, reliable test data, regression prioritization, and collaboration with developers during root-cause analysis. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Ishita Roy",
+      "email": "ishita.roy@protonmail.com",
+      "phone": [
+        "+91 98310 55129"
+      ],
+      "location": "Kolkata, West Bengal, India",
+      "summary": "QA engineer focused on mobile automation, Appium, Android testing, API validation, and release-quality reporting.",
+      "education": [
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "St. Xavier's College, Kolkata",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Mobile QA Engineer",
+          "company": "QuickPay Apps",
+          "start_date": "Sep 2023",
+          "end_date": "Present",
+          "description": "Automates Android regression flows with Appium, validates backend APIs, investigates device-specific failures, and maintains release checklists for multiple application versions."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Mobile Banking Automation Suite",
+          "description": "Built a device-matrix automation suite covering login, OTP handling with test hooks, transfers, transaction history, and logout. Added retry logic and failure screenshots.",
+          "technologies": [
+            "Appium",
+            "Java",
+            "TestNG",
+            "Android",
+            "Postman",
+            "Jenkins"
+          ],
+          "link": "https://github.com/ishitaroy/mobile-banking-tests"
+        }
+      ],
+      "skills": [
+        "Mobile Testing",
+        "Appium",
+        "Java",
+        "TestNG",
+        "Android",
+        "REST API Testing",
+        "Postman",
+        "Jenkins",
+        "SQL",
+        "Regression Testing",
+        "Defect Management",
+        "Jira"
+      ],
+      "certifications": [
+        "ISTQB Certified Tester Foundation Level",
+        "Appium Mobile Testing Certification"
+      ],
+      "links": [
+        "https://github.com/ishitaroy"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Owen Williams\nTEST AUTOMATION ENGINEER\nEmail: owen.williams@fastmail.com | Phone: +61 412 883 190 | Location: Melbourne, Australia\n\nSUMMARY\nAutomation test engineer with experience in Python-based frameworks, browser automation, data validation, and performance testing. Interested in building maintainable quality gates for web applications and data-intensive systems.\n\nEDUCATION\nB.Eng. Software Engineering, RMIT University, 2018–2022.\n\nEXPERIENCE\nTest Automation Engineer, BlueOrbit Software, Mar 2023–Present. Designs Python automation for web applications and data pipelines, writes API checks, creates performance scenarios, and integrates test results into Azure DevOps pipelines. Works with developers to improve testability and reduce regression time.\n\nPROJECTS\nData Pipeline Quality Gate — Developed automated checks for schema changes, null-rate thresholds, duplicate records, and referential integrity before datasets are promoted between environments. Technologies: Python, Pytest, Pandas, Great Expectations, SQL, Azure DevOps. GitHub: https://github.com/owenwilliams/data-quality-gate\n\nSKILLS\nPython, Pytest, Selenium, Playwright, API Testing, SQL, Pandas, Great Expectations, Performance Testing, Azure DevOps, CI/CD, Test Automation.\n\nCERTIFICATIONS\nISTQB Foundation Level; Microsoft Certified: Azure Fundamentals.\n\nLINKS\nGitHub: https://github.com/owenwilliams\nLinkedIn: https://www.linkedin.com/in/owenwilliams\n\nADDITIONAL TECHNICAL PROFILE\nAdditional quality focus: emphasizes deterministic tests, useful failure diagnostics, maintainable fixtures, and clear defect reproduction steps. Comfortable validating UI, APIs, databases, and asynchronous workflows. Interested in shifting quality left through CI automation, reliable test data, regression prioritization, and collaboration with developers during root-cause analysis. The candidate also documents implementation decisions, validates edge cases, uses version control consistently, and communicates assumptions clearly. Their work emphasizes reliability, maintainability, measurable outcomes, and practical debugging in collaborative engineering environments.",
+    "output": {
+      "name": "Owen Williams",
+      "email": "owen.williams@fastmail.com",
+      "phone": [
+        "+61 412 883 190"
+      ],
+      "location": "Melbourne, Australia",
+      "summary": "Automation test engineer with experience in Python-based frameworks, browser automation, data validation, and performance testing.",
+      "education": [
+        {
+          "degree": "B.Eng. Software Engineering",
+          "institution": "RMIT University",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Test Automation Engineer",
+          "company": "BlueOrbit Software",
+          "start_date": "Mar 2023",
+          "end_date": "Present",
+          "description": "Designs Python automation for web applications and data pipelines, writes API checks, creates performance scenarios, and integrates test results into Azure DevOps pipelines."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Data Pipeline Quality Gate",
+          "description": "Developed automated checks for schema changes, null-rate thresholds, duplicate records, and referential integrity before datasets are promoted between environments.",
+          "technologies": [
+            "Python",
+            "Pytest",
+            "Pandas",
+            "Great Expectations",
+            "SQL",
+            "Azure DevOps"
+          ],
+          "link": "https://github.com/owenwilliams/data-quality-gate"
+        }
+      ],
+      "skills": [
+        "Python",
+        "Pytest",
+        "Selenium",
+        "Playwright",
+        "API Testing",
+        "SQL",
+        "Pandas",
+        "Great Expectations",
+        "Performance Testing",
+        "Azure DevOps",
+        "CI/CD",
+        "Test Automation"
+      ],
+      "certifications": [
+        "ISTQB Foundation Level",
+        "Microsoft Certified: Azure Fundamentals"
+      ],
+      "links": [
+        "https://github.com/owenwilliams",
+        "https://www.linkedin.com/in/owenwilliams"
+      ]
+    }
+  }
+]

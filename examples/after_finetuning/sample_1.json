@@ -1,0 +1,41 @@
+{
+  "name": "Priya Sharma",
+  "email": "priya.sharma@email.com",
+  "phone": [
+    "+91-9876543210"
+  ],
+  "location": "Pune, India",
+  "summary": null,
+  "education": [
+    {
+      "degree": "B.E. Computer Engineering",
+      "institution": "Savitribai Phule Pune University",
+      "start_date": "2018",
+      "end_date": "2022"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Infosys",
+      "start_date": "Jul 2022",
+      "end_date": "Present",
+      "description": "Developed REST APIs using Spring Boot and Java. Reduced database query latency by 30% through DB indexing and caching."
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Boot",
+    "MySQL",
+    "Git",
+    "Docker",
+    "REST APIs"
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner (2023)"
+  ],
+  "links": [
+    "github.com/priyasharma",
+    "linkedin.com/in/priyasharma"
+  ]
+}

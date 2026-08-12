@@ -1,0 +1,1694 @@
+[
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Aarav Mehta\nEmail: aarav.mehta.dev@example.com\nPhone: +91 98765 43210\nLocation: Bengaluru, Karnataka, India\n\nOBJECTIVE / SUMMARY\nMSc Artificial Intelligence student focused on production machine learning, retrieval-augmented generation, and model evaluation. Experienced in building NLP systems, deploying APIs, and optimizing inference workflows.\n\nEDUCATION\n- MSc Artificial Intelligence and Machine Learning, University of Birmingham (2024 - 2026)\n- BTech Computer Science and Engineering, Vellore Institute of Technology (2020 - 2024)\n\nEXPERIENCE\n- Machine Learning Intern, Nexora AI Labs (Jun 2025 - Aug 2025)\n  Built a document question-answering service using sentence-transformer embeddings and FAISS; developed evaluation scripts for retrieval precision and answer faithfulness; containerized inference services with Docker and exposed FastAPI endpoints.\n\nPROJECTS\n- Enterprise RAG Assistant: Implemented a retrieval-augmented chatbot for internal policy documents. Added PDF parsing, chunk overlap, metadata filtering, hybrid retrieval, prompt templates, citation generation, and an evaluation harness covering retrieval recall and groundedness. Technologies: Python, LangChain, FAISS, Sentence Transformers, FastAPI, OpenAI API, Docker. Link: https://github.com/aaravmehta/enterprise-rag\n- Customer Churn Predictor: Trained and compared logistic regression, random forest, and XGBoost models for telecom churn. Performed feature engineering, class balancing, cross-validation, SHAP analysis, and threshold optimization for business-oriented recall. Technologies: Python, Pandas, Scikit-learn, XGBoost, SHAP, Jupyter. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, PyTorch, Scikit-learn, XGBoost, NLP, Transformers, LangChain, FAISS, FastAPI, Docker, Git, PostgreSQL, AWS, MLflow\n\nCERTIFICATIONS\nAWS Certified Machine Learning – Specialty; DeepLearning.AI Natural Language Processing Specialization\n\nLINKS\nhttps://github.com/aaravmehta; https://www.linkedin.com/in/aaravmehta\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Enterprise RAG Assistant and Customer Churn Predictor, where they applied Python, LangChain, FAISS, Sentence Transformers alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, PyTorch, Scikit-learn, XGBoost, NLP, Transformers. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta.dev@example.com",
+      "phone": [
+        "+91 98765 43210"
+      ],
+      "location": "Bengaluru, Karnataka, India",
+      "summary": "MSc Artificial Intelligence student focused on production machine learning, retrieval-augmented generation, and model evaluation. Experienced in building NLP systems, deploying APIs, and optimizing inference workflows.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence and Machine Learning",
+          "institution": "University of Birmingham",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Vellore Institute of Technology",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Machine Learning Intern",
+          "company": "Nexora AI Labs",
+          "start_date": "Jun 2025",
+          "end_date": "Aug 2025",
+          "description": "Built a document question-answering service using sentence-transformer embeddings and FAISS; developed evaluation scripts for retrieval precision and answer faithfulness; containerized inference services with Docker and exposed FastAPI endpoints."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Enterprise RAG Assistant",
+          "description": "Implemented a retrieval-augmented chatbot for internal policy documents. Added PDF parsing, chunk overlap, metadata filtering, hybrid retrieval, prompt templates, citation generation, and an evaluation harness covering retrieval recall and groundedness.",
+          "technologies": [
+            "Python",
+            "LangChain",
+            "FAISS",
+            "Sentence Transformers",
+            "FastAPI",
+            "OpenAI API",
+            "Docker"
+          ],
+          "link": "https://github.com/aaravmehta/enterprise-rag"
+        },
+        {
+          "name": "Customer Churn Predictor",
+          "description": "Trained and compared logistic regression, random forest, and XGBoost models for telecom churn. Performed feature engineering, class balancing, cross-validation, SHAP analysis, and threshold optimization for business-oriented recall.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "Jupyter"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "Scikit-learn",
+        "XGBoost",
+        "NLP",
+        "Transformers",
+        "LangChain",
+        "FAISS",
+        "FastAPI",
+        "Docker",
+        "Git",
+        "PostgreSQL",
+        "AWS",
+        "MLflow"
+      ],
+      "certifications": [
+        "AWS Certified Machine Learning – Specialty",
+        "DeepLearning.AI Natural Language Processing Specialization"
+      ],
+      "links": [
+        "https://github.com/aaravmehta",
+        "https://www.linkedin.com/in/aaravmehta"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sofia Alvarez\nEmail: sofia.alvarez.ds@example.com\nPhone: +34 612 345 678\nLocation: Madrid, Spain\n\nOBJECTIVE / SUMMARY\nData scientist with experience in experimentation, forecasting, recommendation systems, and customer analytics. Strong statistical foundation with practical experience translating models into measurable product improvements.\n\nEDUCATION\n- MSc Data Science, Universidad Carlos III de Madrid (2023 - 2025)\n- BSc Mathematics, Universidad Autónoma de Madrid (2020 - 2023)\n\nEXPERIENCE\n- Data Science Intern, MarketLoop (Feb 2025 - Jul 2025)\n  Analyzed subscription behavior across more than one million events, developed churn propensity features, and partnered with product analysts on A/B-test readouts. Automated recurring dashboards and statistical reports using Python and SQL.\n\nPROJECTS\n- Personalized Recommendation Engine: Built a two-stage recommendation prototype combining collaborative filtering with content embeddings. Evaluated offline ranking quality using MAP@K and NDCG@K and designed cold-start fallbacks for new catalog items. Technologies: Python, Pandas, NumPy, LightFM, Scikit-learn, PostgreSQL. Link: https://github.com/sofia-alvarez/recommender\n- Demand Forecasting Platform: Created weekly SKU-level forecasts using gradient boosting and Prophet baselines. Added holiday, promotion, lag, rolling-window, and price features and compared forecasts using weighted MAPE. Technologies: Python, Prophet, XGBoost, Pandas, SQL, Plotly. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, R, Statistics, A/B Testing, Scikit-learn, XGBoost, Pandas, NumPy, PostgreSQL, Tableau, Power BI, Git\n\nCERTIFICATIONS\nGoogle Advanced Data Analytics Professional Certificate\n\nLINKS\nhttps://github.com/sofia-alvarez\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Personalized Recommendation Engine and Demand Forecasting Platform, where they applied Python, Pandas, NumPy, LightFM alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, R, Statistics, A/B Testing, Scikit-learn, XGBoost. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Sofia Alvarez",
+      "email": "sofia.alvarez.ds@example.com",
+      "phone": [
+        "+34 612 345 678"
+      ],
+      "location": "Madrid, Spain",
+      "summary": "Data scientist with experience in experimentation, forecasting, recommendation systems, and customer analytics. Strong statistical foundation with practical experience translating models into measurable product improvements.",
+      "education": [
+        {
+          "degree": "MSc Data Science",
+          "institution": "Universidad Carlos III de Madrid",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BSc Mathematics",
+          "institution": "Universidad Autónoma de Madrid",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Science Intern",
+          "company": "MarketLoop",
+          "start_date": "Feb 2025",
+          "end_date": "Jul 2025",
+          "description": "Analyzed subscription behavior across more than one million events, developed churn propensity features, and partnered with product analysts on A/B-test readouts. Automated recurring dashboards and statistical reports using Python and SQL."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Personalized Recommendation Engine",
+          "description": "Built a two-stage recommendation prototype combining collaborative filtering with content embeddings. Evaluated offline ranking quality using MAP@K and NDCG@K and designed cold-start fallbacks for new catalog items.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "LightFM",
+            "Scikit-learn",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/sofia-alvarez/recommender"
+        },
+        {
+          "name": "Demand Forecasting Platform",
+          "description": "Created weekly SKU-level forecasts using gradient boosting and Prophet baselines. Added holiday, promotion, lag, rolling-window, and price features and compared forecasts using weighted MAPE.",
+          "technologies": [
+            "Python",
+            "Prophet",
+            "XGBoost",
+            "Pandas",
+            "SQL",
+            "Plotly"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "R",
+        "Statistics",
+        "A/B Testing",
+        "Scikit-learn",
+        "XGBoost",
+        "Pandas",
+        "NumPy",
+        "PostgreSQL",
+        "Tableau",
+        "Power BI",
+        "Git"
+      ],
+      "certifications": [
+        "Google Advanced Data Analytics Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/sofia-alvarez"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Karthik Reddy\nEmail: Not provided\nPhone: +91 99887 11223\nLocation: Hyderabad, Telangana, India\n\nOBJECTIVE / SUMMARY\nFull-stack developer specializing in TypeScript, React, Node.js, and cloud-native web applications. Experienced in designing REST APIs, relational data models, authentication flows, and responsive dashboards.\n\nEDUCATION\n- BTech Information Technology, Jawaharlal Nehru Technological University Hyderabad (2020 - 2024)\n\nEXPERIENCE\n- Software Engineering Intern, CloudMint Technologies (Jan 2024 - Jun 2024)\n  Implemented React dashboard modules, Node.js REST endpoints, PostgreSQL queries, and role-based access control. Added Jest integration tests and GitHub Actions checks while collaborating with two backend engineers and a product designer.\n\nPROJECTS\n- TeamFlow Collaboration Suite: Developed a multi-tenant project management application with workspace invitations, task boards, comments, file metadata, activity feeds, and JWT-based authentication. Added optimistic UI updates and server-side pagination for large task lists. Technologies: TypeScript, React, Next.js, Node.js, Express, PostgreSQL, Prisma, Redis, Docker. Link: https://github.com/karthikreddy/teamflow\n- Real-Time Support Chat: Built a customer support chat application with agent queues, typing indicators, presence tracking, message persistence, and browser notifications. Implemented WebSocket rooms and Redis-backed pub/sub for horizontal scaling. Technologies: React, Node.js, Socket.IO, Redis, MongoDB, AWS. Link: Not provided\n\nSKILLS\nLanguages and core technologies: TypeScript, JavaScript, Python, React, Next.js, Node.js, Express, REST APIs, GraphQL, PostgreSQL, MongoDB, Redis, Prisma, Docker, AWS, GitHub Actions, Jest, Cypress, HTML, CSS\n\nCERTIFICATIONS\nMeta Front-End Developer Professional Certificate\n\nLINKS\nhttps://github.com/karthikreddy; https://www.linkedin.com/in/karthikreddy\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes TeamFlow Collaboration Suite and Real-Time Support Chat, where they applied TypeScript, React, Next.js, Node.js alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include TypeScript, JavaScript, Python, React, Next.js, Node.js, Express. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Karthik Reddy",
+      "email": null,
+      "phone": [
+        "+91 99887 11223"
+      ],
+      "location": "Hyderabad, Telangana, India",
+      "summary": "Full-stack developer specializing in TypeScript, React, Node.js, and cloud-native web applications. Experienced in designing REST APIs, relational data models, authentication flows, and responsive dashboards.",
+      "education": [
+        {
+          "degree": "BTech Information Technology",
+          "institution": "Jawaharlal Nehru Technological University Hyderabad",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Engineering Intern",
+          "company": "CloudMint Technologies",
+          "start_date": "Jan 2024",
+          "end_date": "Jun 2024",
+          "description": "Implemented React dashboard modules, Node.js REST endpoints, PostgreSQL queries, and role-based access control. Added Jest integration tests and GitHub Actions checks while collaborating with two backend engineers and a product designer."
+        }
+      ],
+      "projects": [
+        {
+          "name": "TeamFlow Collaboration Suite",
+          "description": "Developed a multi-tenant project management application with workspace invitations, task boards, comments, file metadata, activity feeds, and JWT-based authentication. Added optimistic UI updates and server-side pagination for large task lists.",
+          "technologies": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Prisma",
+            "Redis",
+            "Docker"
+          ],
+          "link": "https://github.com/karthikreddy/teamflow"
+        },
+        {
+          "name": "Real-Time Support Chat",
+          "description": "Built a customer support chat application with agent queues, typing indicators, presence tracking, message persistence, and browser notifications. Implemented WebSocket rooms and Redis-backed pub/sub for horizontal scaling.",
+          "technologies": [
+            "React",
+            "Node.js",
+            "Socket.IO",
+            "Redis",
+            "MongoDB",
+            "AWS"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "REST APIs",
+        "GraphQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Prisma",
+        "Docker",
+        "AWS",
+        "GitHub Actions",
+        "Jest",
+        "Cypress",
+        "HTML",
+        "CSS"
+      ],
+      "certifications": [
+        "Meta Front-End Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/karthikreddy",
+        "https://www.linkedin.com/in/karthikreddy"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Mei-Ling Chen\nEmail: meiling.chen@example.com\nPhone: Not provided\nLocation: Taipei, Taiwan\n\nOBJECTIVE / SUMMARY\nNLP engineer with a background in computational linguistics and applied machine learning. Focused on multilingual text classification, information extraction, evaluation datasets, and efficient transformer fine-tuning.\n\nEDUCATION\n- MSc Computational Linguistics, National Taiwan University (2022 - 2024)\n- BA Linguistics, National Chengchi University (2018 - 2022)\n\nEXPERIENCE\n- NLP Research Assistant, Language Intelligence Lab (Sep 2022 - Jun 2024)\n  Prepared multilingual annotation guidelines, trained transformer classifiers, audited label consistency, and implemented evaluation pipelines for Chinese-English information extraction. Investigated error patterns across entity types and document genres.\n\nPROJECTS\n- Multilingual Entity Extraction: Fine-tuned multilingual BERT for named-entity recognition across Chinese and English news articles. Built BIO-tagged datasets, performed stratified evaluation, analyzed span-level F1, and introduced rule-based post-processing for organization aliases. Technologies: Python, PyTorch, Hugging Face Transformers, spaCy, Pandas, Weights & Biases. Link: https://github.com/meilingchen/multilingual-ner\n- Semantic Search for Legal Text: Created a semantic retrieval service for legal clauses using dense embeddings and approximate nearest-neighbor indexing. Added query normalization, metadata filters, benchmark sets, and human relevance judgments. Technologies: Python, Sentence Transformers, FAISS, FastAPI, Elasticsearch. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, PyTorch, Transformers, Hugging Face, spaCy, NLTK, NLP, Information Extraction, Text Classification, FAISS, Elasticsearch, SQL, Git\n\nCERTIFICATIONS\nHugging Face NLP Course\n\nLINKS\nhttps://github.com/meilingchen\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Multilingual Entity Extraction and Semantic Search for Legal Text, where they applied Python, PyTorch, Hugging Face Transformers, spaCy alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, PyTorch, Transformers, Hugging Face, spaCy, NLTK, NLP. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Mei-Ling Chen",
+      "email": "meiling.chen@example.com",
+      "phone": [],
+      "location": "Taipei, Taiwan",
+      "summary": "NLP engineer with a background in computational linguistics and applied machine learning. Focused on multilingual text classification, information extraction, evaluation datasets, and efficient transformer fine-tuning.",
+      "education": [
+        {
+          "degree": "MSc Computational Linguistics",
+          "institution": "National Taiwan University",
+          "start_date": "2022",
+          "end_date": "2024"
+        },
+        {
+          "degree": "BA Linguistics",
+          "institution": "National Chengchi University",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "NLP Research Assistant",
+          "company": "Language Intelligence Lab",
+          "start_date": "Sep 2022",
+          "end_date": "Jun 2024",
+          "description": "Prepared multilingual annotation guidelines, trained transformer classifiers, audited label consistency, and implemented evaluation pipelines for Chinese-English information extraction. Investigated error patterns across entity types and document genres."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Multilingual Entity Extraction",
+          "description": "Fine-tuned multilingual BERT for named-entity recognition across Chinese and English news articles. Built BIO-tagged datasets, performed stratified evaluation, analyzed span-level F1, and introduced rule-based post-processing for organization aliases.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Hugging Face Transformers",
+            "spaCy",
+            "Pandas",
+            "Weights & Biases"
+          ],
+          "link": "https://github.com/meilingchen/multilingual-ner"
+        },
+        {
+          "name": "Semantic Search for Legal Text",
+          "description": "Created a semantic retrieval service for legal clauses using dense embeddings and approximate nearest-neighbor indexing. Added query normalization, metadata filters, benchmark sets, and human relevance judgments.",
+          "technologies": [
+            "Python",
+            "Sentence Transformers",
+            "FAISS",
+            "FastAPI",
+            "Elasticsearch"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "Hugging Face",
+        "spaCy",
+        "NLTK",
+        "NLP",
+        "Information Extraction",
+        "Text Classification",
+        "FAISS",
+        "Elasticsearch",
+        "SQL",
+        "Git"
+      ],
+      "certifications": [
+        "Hugging Face NLP Course"
+      ],
+      "links": [
+        "https://github.com/meilingchen"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Rohan Iyer\nEmail: rohan.iyer@example.com\nPhone: +91 91234 56789\nLocation: Pune, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nData engineer experienced in batch and streaming pipelines, warehouse modeling, and cloud data platforms. Strong Python and SQL skills with hands-on Kafka, Spark, Airflow, and AWS experience.\n\nEDUCATION\n- MTech Data Engineering, Indian Institute of Technology Hyderabad (2024 - 2026)\n- BE Computer Engineering, Savitribai Phule Pune University (2020 - 2024)\n\nEXPERIENCE\n- Data Engineering Intern, FinScale Analytics (May 2025 - Aug 2025)\n  Developed PySpark transformations for transaction data, created Airflow DAGs for hourly ingestion, and optimized Snowflake queries through partition-aware models and incremental loads. Added data-quality checks for null rates, duplicate keys, and schema drift.\n\nPROJECTS\n- StreamLake Market Pipeline: Built an end-to-end stock market streaming pipeline that publishes events to Kafka, lands raw data in Amazon S3, transforms records with AWS Glue, stores Parquet datasets, and exposes analytical queries through Athena. Technologies: Python, Kafka, AWS EC2, Amazon S3, AWS Glue, Amazon Athena, PySpark, Parquet. Link: https://github.com/rohaniyer/streamlake\n- Airflow Retail ETL: Designed a scheduled ETL workflow that ingests CSV files, validates schemas, standardizes dimensions, computes daily sales aggregates, and loads curated tables into PostgreSQL with retry and failure-alert handling. Technologies: Apache Airflow, Python, PostgreSQL, Pandas, Docker. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, PySpark, Apache Spark, Kafka, Airflow, AWS, S3, Glue, Athena, Snowflake, PostgreSQL, Docker, Git, Parquet, Avro\n\nCERTIFICATIONS\nAstronomer Certification for Apache Airflow Fundamentals; AWS Certified Cloud Practitioner\n\nLINKS\nhttps://github.com/rohaniyer; https://www.linkedin.com/in/rohaniyer\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes StreamLake Market Pipeline and Airflow Retail ETL, where they applied Python, Kafka, AWS EC2, Amazon S3 alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, PySpark, Apache Spark, Kafka, Airflow, AWS. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Rohan Iyer",
+      "email": "rohan.iyer@example.com",
+      "phone": [
+        "+91 91234 56789"
+      ],
+      "location": "Pune, Maharashtra, India",
+      "summary": "Data engineer experienced in batch and streaming pipelines, warehouse modeling, and cloud data platforms. Strong Python and SQL skills with hands-on Kafka, Spark, Airflow, and AWS experience.",
+      "education": [
+        {
+          "degree": "MTech Data Engineering",
+          "institution": "Indian Institute of Technology Hyderabad",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BE Computer Engineering",
+          "institution": "Savitribai Phule Pune University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Engineering Intern",
+          "company": "FinScale Analytics",
+          "start_date": "May 2025",
+          "end_date": "Aug 2025",
+          "description": "Developed PySpark transformations for transaction data, created Airflow DAGs for hourly ingestion, and optimized Snowflake queries through partition-aware models and incremental loads. Added data-quality checks for null rates, duplicate keys, and schema drift."
+        }
+      ],
+      "projects": [
+        {
+          "name": "StreamLake Market Pipeline",
+          "description": "Built an end-to-end stock market streaming pipeline that publishes events to Kafka, lands raw data in Amazon S3, transforms records with AWS Glue, stores Parquet datasets, and exposes analytical queries through Athena.",
+          "technologies": [
+            "Python",
+            "Kafka",
+            "AWS EC2",
+            "Amazon S3",
+            "AWS Glue",
+            "Amazon Athena",
+            "PySpark",
+            "Parquet"
+          ],
+          "link": "https://github.com/rohaniyer/streamlake"
+        },
+        {
+          "name": "Airflow Retail ETL",
+          "description": "Designed a scheduled ETL workflow that ingests CSV files, validates schemas, standardizes dimensions, computes daily sales aggregates, and loads curated tables into PostgreSQL with retry and failure-alert handling.",
+          "technologies": [
+            "Apache Airflow",
+            "Python",
+            "PostgreSQL",
+            "Pandas",
+            "Docker"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Apache Spark",
+        "Kafka",
+        "Airflow",
+        "AWS",
+        "S3",
+        "Glue",
+        "Athena",
+        "Snowflake",
+        "PostgreSQL",
+        "Docker",
+        "Git",
+        "Parquet",
+        "Avro"
+      ],
+      "certifications": [
+        "Astronomer Certification for Apache Airflow Fundamentals",
+        "AWS Certified Cloud Practitioner"
+      ],
+      "links": [
+        "https://github.com/rohaniyer",
+        "https://www.linkedin.com/in/rohaniyer"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Fatima Noor\nEmail: fatima.noor.ml@example.com\nPhone: +92 300 1234567\nLocation: Lahore, Pakistan\n\nOBJECTIVE / SUMMARY\nApplied ML engineer focused on computer vision, model deployment, and edge inference. Experienced in image classification, object detection, augmentation pipelines, and performance profiling on constrained hardware.\n\nEDUCATION\n- MS Artificial Intelligence, Lahore University of Management Sciences (2023 - 2025)\n\nEXPERIENCE\n- Computer Vision Engineer Intern, VisionForge (Jun 2024 - Sep 2024)\n  Trained object-detection models for industrial inspection images, built augmentation pipelines, and benchmarked TensorRT inference latency. Investigated false positives caused by lighting variation and implemented confidence calibration.\n\nPROJECTS\n- Factory Defect Detector: Developed a YOLO-based inspection model for detecting scratches, dents, and missing components. Created image tiling and augmentation workflows, evaluated mAP across defect categories, and exported the final model for accelerated inference. Technologies: Python, PyTorch, Ultralytics YOLO, OpenCV, Albumentations, TensorRT. Link: https://github.com/fatimanoor/defect-detector\n- Edge Vision Counter: Built a people-counting prototype using object tracking and line-crossing logic. Added frame skipping, region-of-interest filtering, and configurable confidence thresholds to reduce CPU usage on edge devices. Technologies: Python, OpenCV, YOLO, ByteTrack, Jetson Nano. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, C++, PyTorch, TensorFlow, OpenCV, YOLO, Computer Vision, TensorRT, CUDA, Docker, Linux, Git\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute – Fundamentals of Deep Learning\n\nLINKS\nhttps://github.com/fatimanoor\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Factory Defect Detector and Edge Vision Counter, where they applied Python, PyTorch, Ultralytics YOLO, OpenCV alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, C++, PyTorch, TensorFlow, OpenCV, YOLO, Computer Vision. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Fatima Noor",
+      "email": "fatima.noor.ml@example.com",
+      "phone": [
+        "+92 300 1234567"
+      ],
+      "location": "Lahore, Pakistan",
+      "summary": "Applied ML engineer focused on computer vision, model deployment, and edge inference. Experienced in image classification, object detection, augmentation pipelines, and performance profiling on constrained hardware.",
+      "education": [
+        {
+          "degree": "MS Artificial Intelligence",
+          "institution": "Lahore University of Management Sciences",
+          "start_date": "2023",
+          "end_date": "2025"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Computer Vision Engineer Intern",
+          "company": "VisionForge",
+          "start_date": "Jun 2024",
+          "end_date": "Sep 2024",
+          "description": "Trained object-detection models for industrial inspection images, built augmentation pipelines, and benchmarked TensorRT inference latency. Investigated false positives caused by lighting variation and implemented confidence calibration."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Factory Defect Detector",
+          "description": "Developed a YOLO-based inspection model for detecting scratches, dents, and missing components. Created image tiling and augmentation workflows, evaluated mAP across defect categories, and exported the final model for accelerated inference.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Ultralytics YOLO",
+            "OpenCV",
+            "Albumentations",
+            "TensorRT"
+          ],
+          "link": "https://github.com/fatimanoor/defect-detector"
+        },
+        {
+          "name": "Edge Vision Counter",
+          "description": "Built a people-counting prototype using object tracking and line-crossing logic. Added frame skipping, region-of-interest filtering, and configurable confidence thresholds to reduce CPU usage on edge devices.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "YOLO",
+            "ByteTrack",
+            "Jetson Nano"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "C++",
+        "PyTorch",
+        "TensorFlow",
+        "OpenCV",
+        "YOLO",
+        "Computer Vision",
+        "TensorRT",
+        "CUDA",
+        "Docker",
+        "Linux",
+        "Git"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute – Fundamentals of Deep Learning"
+      ],
+      "links": [
+        "https://github.com/fatimanoor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Lucas Martin\nEmail: lucas.martin.fullstack@example.com\nPhone: +33 6 12 34 56 78\nLocation: Lyon, France\n\nOBJECTIVE / SUMMARY\nFull-stack engineer building scalable SaaS products with React, Python, and PostgreSQL. Interested in developer tooling, observability, and reliable API design.\n\nEDUCATION\n- MSc Software Engineering, INSA Lyon (2021 - 2023)\n- BSc Computer Science, Université Claude Bernard Lyon 1 (2018 - 2021)\n\nEXPERIENCE\n- Full-Stack Engineer, DevMetric (Oct 2023 - May 2026)\n  Built customer-facing analytics modules and internal administration tools. Designed Django REST endpoints, React components, background jobs, and PostgreSQL schemas; introduced API contract tests and centralized application logging.\n\nPROJECTS\n- Observability Console: Created a web console for exploring service health, latency percentiles, deployment events, and structured logs. Added filtering, saved views, RBAC, and server-side aggregation for high-volume telemetry. Technologies: React, TypeScript, Python, Django, PostgreSQL, Redis, Docker. Link: https://github.com/lucasmartin/observability-console\n- InvoiceFlow: Implemented a subscription invoicing application with customer records, invoice generation, PDF export, webhook processing, and idempotent payment event handling. Technologies: Next.js, TypeScript, FastAPI, PostgreSQL, Stripe API, Celery. Link: Not provided\n\nSKILLS\nLanguages and core technologies: TypeScript, JavaScript, Python, React, Next.js, Django, FastAPI, PostgreSQL, Redis, Celery, REST, Docker, AWS, Terraform, Git, CI/CD\n\nCERTIFICATIONS\nAWS Certified Developer – Associate\n\nLINKS\nhttps://github.com/lucasmartin; https://www.linkedin.com/in/lucasmartin\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Observability Console and InvoiceFlow, where they applied React, TypeScript, Python, Django alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include TypeScript, JavaScript, Python, React, Next.js, Django, FastAPI. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Lucas Martin",
+      "email": "lucas.martin.fullstack@example.com",
+      "phone": [
+        "+33 6 12 34 56 78"
+      ],
+      "location": "Lyon, France",
+      "summary": "Full-stack engineer building scalable SaaS products with React, Python, and PostgreSQL. Interested in developer tooling, observability, and reliable API design.",
+      "education": [
+        {
+          "degree": "MSc Software Engineering",
+          "institution": "INSA Lyon",
+          "start_date": "2021",
+          "end_date": "2023"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "Université Claude Bernard Lyon 1",
+          "start_date": "2018",
+          "end_date": "2021"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Full-Stack Engineer",
+          "company": "DevMetric",
+          "start_date": "Oct 2023",
+          "end_date": "May 2026",
+          "description": "Built customer-facing analytics modules and internal administration tools. Designed Django REST endpoints, React components, background jobs, and PostgreSQL schemas; introduced API contract tests and centralized application logging."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Observability Console",
+          "description": "Created a web console for exploring service health, latency percentiles, deployment events, and structured logs. Added filtering, saved views, RBAC, and server-side aggregation for high-volume telemetry.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+          ],
+          "link": "https://github.com/lucasmartin/observability-console"
+        },
+        {
+          "name": "InvoiceFlow",
+          "description": "Implemented a subscription invoicing application with customer records, invoice generation, PDF export, webhook processing, and idempotent payment event handling.",
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "FastAPI",
+            "PostgreSQL",
+            "Stripe API",
+            "Celery"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Next.js",
+        "Django",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Celery",
+        "REST",
+        "Docker",
+        "AWS",
+        "Terraform",
+        "Git",
+        "CI/CD"
+      ],
+      "certifications": [
+        "AWS Certified Developer – Associate"
+      ],
+      "links": [
+        "https://github.com/lucasmartin",
+        "https://www.linkedin.com/in/lucasmartin"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Ananya Krishnan\nEmail: ananya.krishnan@example.com\nPhone: +91 90000 11223\nLocation: Chennai, Tamil Nadu, India\n\nOBJECTIVE / SUMMARY\nData scientist with experience in credit risk, feature engineering, explainable machine learning, and business analytics. Comfortable taking projects from raw data profiling through model evaluation and stakeholder reporting.\n\nEDUCATION\n- MSc Data Science, Indian Institute of Technology Madras (2024 - 2026)\n- BSc Statistics, University of Madras (2021 - 2024)\n\nEXPERIENCE\n- Data Science Intern, CrediSure (May 2025 - Jul 2025)\n  Prepared borrower-level datasets, investigated leakage, engineered behavioral features, and compared logistic regression with gradient-boosted trees. Produced SHAP-based model explanations and monitoring metrics for model review meetings.\n\nPROJECTS\n- Credit Risk Modelling Framework: Built a reproducible credit-risk pipeline covering missing-value treatment, outlier handling, WoE-style transformations, feature selection, probability calibration, and interpretability. Compared models using ROC-AUC, PR-AUC, KS statistic, and calibration curves. Technologies: Python, Pandas, Scikit-learn, XGBoost, SHAP, SQL, MLflow. Link: https://github.com/ananyakrishnan/credit-risk\n- Retail Customer Segmentation: Segmented customers using RFM features and clustering, profiled segment behavior, and produced an interactive dashboard with segment size, revenue contribution, and retention metrics. Technologies: Python, Pandas, Scikit-learn, K-Means, Power BI, SQL. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, Statistics, Pandas, NumPy, Scikit-learn, XGBoost, SHAP, MLflow, Power BI, PostgreSQL, Git\n\nCERTIFICATIONS\nIBM Data Science Professional Certificate\n\nLINKS\nhttps://github.com/ananyakrishnan\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Credit Risk Modelling Framework and Retail Customer Segmentation, where they applied Python, Pandas, Scikit-learn, XGBoost alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, Statistics, Pandas, NumPy, Scikit-learn, XGBoost. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Ananya Krishnan",
+      "email": "ananya.krishnan@example.com",
+      "phone": [
+        "+91 90000 11223"
+      ],
+      "location": "Chennai, Tamil Nadu, India",
+      "summary": "Data scientist with experience in credit risk, feature engineering, explainable machine learning, and business analytics. Comfortable taking projects from raw data profiling through model evaluation and stakeholder reporting.",
+      "education": [
+        {
+          "degree": "MSc Data Science",
+          "institution": "Indian Institute of Technology Madras",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BSc Statistics",
+          "institution": "University of Madras",
+          "start_date": "2021",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Science Intern",
+          "company": "CrediSure",
+          "start_date": "May 2025",
+          "end_date": "Jul 2025",
+          "description": "Prepared borrower-level datasets, investigated leakage, engineered behavioral features, and compared logistic regression with gradient-boosted trees. Produced SHAP-based model explanations and monitoring metrics for model review meetings."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Credit Risk Modelling Framework",
+          "description": "Built a reproducible credit-risk pipeline covering missing-value treatment, outlier handling, WoE-style transformations, feature selection, probability calibration, and interpretability. Compared models using ROC-AUC, PR-AUC, KS statistic, and calibration curves.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "SHAP",
+            "SQL",
+            "MLflow"
+          ],
+          "link": "https://github.com/ananyakrishnan/credit-risk"
+        },
+        {
+          "name": "Retail Customer Segmentation",
+          "description": "Segmented customers using RFM features and clustering, profiled segment behavior, and produced an interactive dashboard with segment size, revenue contribution, and retention metrics.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "K-Means",
+            "Power BI",
+            "SQL"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Statistics",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "SHAP",
+        "MLflow",
+        "Power BI",
+        "PostgreSQL",
+        "Git"
+      ],
+      "certifications": [
+        "IBM Data Science Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/ananyakrishnan"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Diego Hernández\nEmail: diego.hernandez@example.com\nPhone: +52 55 1234 5678\nLocation: Mexico City, Mexico\n\nOBJECTIVE / SUMMARY\nMachine learning engineer specializing in recommender systems, deep learning, and model serving. Experienced with PyTorch, feature pipelines, experiment tracking, and REST-based inference.\n\nEDUCATION\n- MEng Computer Engineering, Tecnológico de Monterrey (2022 - 2024)\n\nEXPERIENCE\n- ML Engineer, ShopSphere (Jul 2024 - May 2026)\n  Developed candidate-generation and ranking components for product recommendations. Built offline evaluation jobs, feature extraction services, and model-serving endpoints; collaborated with backend engineers to reduce recommendation API latency.\n\nPROJECTS\n- Hybrid Recommendation Engine: Implemented collaborative filtering, item-content embeddings, and a learning-to-rank stage. Added cold-start rules, candidate deduplication, offline replay evaluation, and experiment tracking for model variants. Technologies: Python, PyTorch, LightFM, Scikit-learn, FastAPI, Redis, MLflow. Link: https://github.com/diegohernandez/hybrid-recommender\n- Review Sentiment Service: Fine-tuned a transformer classifier for multilingual product-review sentiment and deployed a batched inference API with configurable confidence thresholds and structured prediction logs. Technologies: Python, PyTorch, Hugging Face, FastAPI, Docker, PostgreSQL. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, PyTorch, Transformers, Scikit-learn, Recommender Systems, FastAPI, Docker, Redis, PostgreSQL, MLflow, Git, AWS\n\nCERTIFICATIONS\nDeepLearning.AI Machine Learning Specialization\n\nLINKS\nhttps://github.com/diegohernandez\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Hybrid Recommendation Engine and Review Sentiment Service, where they applied Python, PyTorch, LightFM, Scikit-learn alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, PyTorch, Transformers, Scikit-learn, Recommender Systems, FastAPI, Docker. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Diego Hernández",
+      "email": "diego.hernandez@example.com",
+      "phone": [
+        "+52 55 1234 5678"
+      ],
+      "location": "Mexico City, Mexico",
+      "summary": "Machine learning engineer specializing in recommender systems, deep learning, and model serving. Experienced with PyTorch, feature pipelines, experiment tracking, and REST-based inference.",
+      "education": [
+        {
+          "degree": "MEng Computer Engineering",
+          "institution": "Tecnológico de Monterrey",
+          "start_date": "2022",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "ML Engineer",
+          "company": "ShopSphere",
+          "start_date": "Jul 2024",
+          "end_date": "May 2026",
+          "description": "Developed candidate-generation and ranking components for product recommendations. Built offline evaluation jobs, feature extraction services, and model-serving endpoints; collaborated with backend engineers to reduce recommendation API latency."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Hybrid Recommendation Engine",
+          "description": "Implemented collaborative filtering, item-content embeddings, and a learning-to-rank stage. Added cold-start rules, candidate deduplication, offline replay evaluation, and experiment tracking for model variants.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "LightFM",
+            "Scikit-learn",
+            "FastAPI",
+            "Redis",
+            "MLflow"
+          ],
+          "link": "https://github.com/diegohernandez/hybrid-recommender"
+        },
+        {
+          "name": "Review Sentiment Service",
+          "description": "Fine-tuned a transformer classifier for multilingual product-review sentiment and deployed a batched inference API with configurable confidence thresholds and structured prediction logs.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Hugging Face",
+            "FastAPI",
+            "Docker",
+            "PostgreSQL"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "Scikit-learn",
+        "Recommender Systems",
+        "FastAPI",
+        "Docker",
+        "Redis",
+        "PostgreSQL",
+        "MLflow",
+        "Git",
+        "AWS"
+      ],
+      "certifications": [
+        "DeepLearning.AI Machine Learning Specialization"
+      ],
+      "links": [
+        "https://github.com/diegohernandez"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Priya Nair\nEmail: priya.nair@example.com\nPhone: Not provided\nLocation: Kochi, Kerala, India\n\nOBJECTIVE / SUMMARY\nData engineer with a strong SQL foundation and practical experience building reliable batch pipelines. Interested in lakehouse architecture, data quality, orchestration, and analytics engineering.\n\nEDUCATION\n- BTech Computer Science and Engineering, Cochin University of Science and Technology (2020 - 2024)\n\nEXPERIENCE\n- Junior Data Engineer, DataHarbor Solutions (Aug 2024 - Apr 2026)\n  Maintained ingestion pipelines for sales and inventory datasets, implemented incremental loading patterns, and developed SQL transformations for curated analytics tables. Added reconciliation checks and documented source-to-target mappings.\n\nPROJECTS\n- Lakehouse Sales Pipeline: Built a medallion-style pipeline with raw, cleaned, and curated zones. Ingested CSV and JSON data into object storage, transformed records with Spark, stored partitioned Parquet outputs, and queried curated data using a serverless SQL engine. Technologies: Python, PySpark, Apache Spark, Amazon S3, Athena, Parquet, SQL. Link: https://github.com/priyanair/lakehouse-sales\n- Data Quality Framework: Created reusable checks for freshness, null percentages, duplicate primary keys, accepted-value constraints, and row-count reconciliation. Integrated failures into scheduled pipeline notifications. Technologies: Python, Great Expectations, Airflow, PostgreSQL, Docker. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, PySpark, Spark, Airflow, AWS S3, Athena, PostgreSQL, Parquet, JSON, Docker, Git, Great Expectations\n\nCERTIFICATIONS\nDatabricks Lakehouse Fundamentals\n\nLINKS\nhttps://github.com/priyanair\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Lakehouse Sales Pipeline and Data Quality Framework, where they applied Python, PySpark, Apache Spark, Amazon S3 alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, PySpark, Spark, Airflow, AWS S3, Athena. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com",
+      "phone": [],
+      "location": "Kochi, Kerala, India",
+      "summary": "Data engineer with a strong SQL foundation and practical experience building reliable batch pipelines. Interested in lakehouse architecture, data quality, orchestration, and analytics engineering.",
+      "education": [
+        {
+          "degree": "BTech Computer Science and Engineering",
+          "institution": "Cochin University of Science and Technology",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Junior Data Engineer",
+          "company": "DataHarbor Solutions",
+          "start_date": "Aug 2024",
+          "end_date": "Apr 2026",
+          "description": "Maintained ingestion pipelines for sales and inventory datasets, implemented incremental loading patterns, and developed SQL transformations for curated analytics tables. Added reconciliation checks and documented source-to-target mappings."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Lakehouse Sales Pipeline",
+          "description": "Built a medallion-style pipeline with raw, cleaned, and curated zones. Ingested CSV and JSON data into object storage, transformed records with Spark, stored partitioned Parquet outputs, and queried curated data using a serverless SQL engine.",
+          "technologies": [
+            "Python",
+            "PySpark",
+            "Apache Spark",
+            "Amazon S3",
+            "Athena",
+            "Parquet",
+            "SQL"
+          ],
+          "link": "https://github.com/priyanair/lakehouse-sales"
+        },
+        {
+          "name": "Data Quality Framework",
+          "description": "Created reusable checks for freshness, null percentages, duplicate primary keys, accepted-value constraints, and row-count reconciliation. Integrated failures into scheduled pipeline notifications.",
+          "technologies": [
+            "Python",
+            "Great Expectations",
+            "Airflow",
+            "PostgreSQL",
+            "Docker"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Spark",
+        "Airflow",
+        "AWS S3",
+        "Athena",
+        "PostgreSQL",
+        "Parquet",
+        "JSON",
+        "Docker",
+        "Git",
+        "Great Expectations"
+      ],
+      "certifications": [
+        "Databricks Lakehouse Fundamentals"
+      ],
+      "links": [
+        "https://github.com/priyanair"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Omar El-Sayed\nEmail: omar.elsayed@example.com\nPhone: +20 100 123 4567\nLocation: Cairo, Egypt\n\nOBJECTIVE / SUMMARY\nAI engineer working across computer vision and natural-language interfaces. Experienced in multimodal prototypes, image preprocessing, semantic retrieval, and deployment of Python inference services.\n\nEDUCATION\n- MSc Artificial Intelligence, Cairo University (2023 - 2025)\n- BSc Computer Engineering, Ain Shams University (2018 - 2023)\n\nEXPERIENCE\n- AI Engineer Intern, Mena Robotics (Jun 2024 - Sep 2024)\n  Developed image preprocessing and object-detection components for warehouse robots. Built evaluation scripts, labeled edge cases, and optimized inference through batch sizing and model quantization experiments.\n\nPROJECTS\n- Visual Product Search: Built an image-search prototype using pretrained vision embeddings and approximate nearest-neighbor retrieval. Added image normalization, category filters, similarity thresholds, and a FastAPI service for query images. Technologies: Python, PyTorch, OpenCV, CLIP, FAISS, FastAPI. Link: https://github.com/omarelsayed/visual-search\n- Arabic Document Assistant: Created a retrieval-based assistant for Arabic administrative documents with OCR preprocessing, document chunking, embedding retrieval, source citations, and evaluation examples covering noisy scans. Technologies: Python, Tesseract, Sentence Transformers, FAISS, FastAPI, Docker. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, C++, PyTorch, OpenCV, Computer Vision, OCR, Transformers, FAISS, FastAPI, Docker, Linux, Git\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute – Getting Started with AI on Jetson Nano\n\nLINKS\nhttps://github.com/omarelsayed; https://www.linkedin.com/in/omarelsayed\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Visual Product Search and Arabic Document Assistant, where they applied Python, PyTorch, OpenCV, CLIP alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, C++, PyTorch, OpenCV, Computer Vision, OCR, Transformers. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Omar El-Sayed",
+      "email": "omar.elsayed@example.com",
+      "phone": [
+        "+20 100 123 4567"
+      ],
+      "location": "Cairo, Egypt",
+      "summary": "AI engineer working across computer vision and natural-language interfaces. Experienced in multimodal prototypes, image preprocessing, semantic retrieval, and deployment of Python inference services.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence",
+          "institution": "Cairo University",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BSc Computer Engineering",
+          "institution": "Ain Shams University",
+          "start_date": "2018",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "AI Engineer Intern",
+          "company": "Mena Robotics",
+          "start_date": "Jun 2024",
+          "end_date": "Sep 2024",
+          "description": "Developed image preprocessing and object-detection components for warehouse robots. Built evaluation scripts, labeled edge cases, and optimized inference through batch sizing and model quantization experiments."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Visual Product Search",
+          "description": "Built an image-search prototype using pretrained vision embeddings and approximate nearest-neighbor retrieval. Added image normalization, category filters, similarity thresholds, and a FastAPI service for query images.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "CLIP",
+            "FAISS",
+            "FastAPI"
+          ],
+          "link": "https://github.com/omarelsayed/visual-search"
+        },
+        {
+          "name": "Arabic Document Assistant",
+          "description": "Created a retrieval-based assistant for Arabic administrative documents with OCR preprocessing, document chunking, embedding retrieval, source citations, and evaluation examples covering noisy scans.",
+          "technologies": [
+            "Python",
+            "Tesseract",
+            "Sentence Transformers",
+            "FAISS",
+            "FastAPI",
+            "Docker"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "C++",
+        "PyTorch",
+        "OpenCV",
+        "Computer Vision",
+        "OCR",
+        "Transformers",
+        "FAISS",
+        "FastAPI",
+        "Docker",
+        "Linux",
+        "Git"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute – Getting Started with AI on Jetson Nano"
+      ],
+      "links": [
+        "https://github.com/omarelsayed",
+        "https://www.linkedin.com/in/omarelsayed"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Emily Johnson\nEmail: emily.johnson@example.com\nPhone: +1 415 555 0182\nLocation: San Francisco, California, USA\n\nOBJECTIVE / SUMMARY\nSoftware engineer and applied data scientist building data-rich web products. Combines Python analytics with modern TypeScript front ends and production API development.\n\nEDUCATION\n- MS Computer Science, University of California, Davis (2022 - 2024)\n- BS Computer Science, University of California, Santa Cruz (2018 - 2022)\n\nEXPERIENCE\n- Software Engineer, MetricCloud (Jul 2024 - Jun 2026)\n  Developed analytics APIs and React interfaces for customer usage reporting. Designed PostgreSQL schemas, optimized aggregation queries, implemented background jobs, and added automated tests for critical workflows.\n\nPROJECTS\n- Experiment Analytics Portal: Built a web application for analyzing product experiments, including experiment metadata, cohort selection, metric calculations, confidence intervals, and downloadable result tables. Added role-based access and audit events. Technologies: TypeScript, React, Next.js, Python, FastAPI, PostgreSQL, Redis. Link: https://github.com/emilyjohnson/experiment-portal\n- Demand Forecast API: Created an API that accepts historical sales data and returns forecast intervals and evaluation metrics. Implemented validation, model versioning, asynchronous jobs, and structured request logging. Technologies: Python, FastAPI, Pandas, Scikit-learn, Celery, Docker. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, TypeScript, JavaScript, React, Next.js, FastAPI, PostgreSQL, Redis, Pandas, Scikit-learn, Docker, AWS, GitHub Actions, REST APIs\n\nCERTIFICATIONS\nAWS Certified Solutions Architect – Associate\n\nLINKS\nhttps://github.com/emilyjohnson; https://www.linkedin.com/in/emilyjohnson\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Experiment Analytics Portal and Demand Forecast API, where they applied TypeScript, React, Next.js, Python alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, TypeScript, JavaScript, React, Next.js, FastAPI, PostgreSQL. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Emily Johnson",
+      "email": "emily.johnson@example.com",
+      "phone": [
+        "+1 415 555 0182"
+      ],
+      "location": "San Francisco, California, USA",
+      "summary": "Software engineer and applied data scientist building data-rich web products. Combines Python analytics with modern TypeScript front ends and production API development.",
+      "education": [
+        {
+          "degree": "MS Computer Science",
+          "institution": "University of California, Davis",
+          "start_date": "2022",
+          "end_date": "2024"
+        },
+        {
+          "degree": "BS Computer Science",
+          "institution": "University of California, Santa Cruz",
+          "start_date": "2018",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Engineer",
+          "company": "MetricCloud",
+          "start_date": "Jul 2024",
+          "end_date": "Jun 2026",
+          "description": "Developed analytics APIs and React interfaces for customer usage reporting. Designed PostgreSQL schemas, optimized aggregation queries, implemented background jobs, and added automated tests for critical workflows."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Experiment Analytics Portal",
+          "description": "Built a web application for analyzing product experiments, including experiment metadata, cohort selection, metric calculations, confidence intervals, and downloadable result tables. Added role-based access and audit events.",
+          "technologies": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis"
+          ],
+          "link": "https://github.com/emilyjohnson/experiment-portal"
+        },
+        {
+          "name": "Demand Forecast API",
+          "description": "Created an API that accepts historical sales data and returns forecast intervals and evaluation metrics. Implemented validation, model versioning, asynchronous jobs, and structured request logging.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "Pandas",
+            "Scikit-learn",
+            "Celery",
+            "Docker"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Pandas",
+        "Scikit-learn",
+        "Docker",
+        "AWS",
+        "GitHub Actions",
+        "REST APIs"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect – Associate"
+      ],
+      "links": [
+        "https://github.com/emilyjohnson",
+        "https://www.linkedin.com/in/emilyjohnson"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Arjun Banerjee\nEmail: arjun.banerjee@example.com\nPhone: +91 98300 44556\nLocation: Kolkata, West Bengal, India\n\nOBJECTIVE / SUMMARY\nNLP-focused ML engineer interested in conversational AI, evaluation, and efficient fine-tuning. Experienced in building retrieval systems and benchmarking language-model behavior.\n\nEDUCATION\n- MTech Artificial Intelligence, Indian Statistical Institute (2024 - 2026)\n- BTech Electronics and Communication Engineering, Jadavpur University (2020 - 2024)\n\nEXPERIENCE\n- Research Intern, ConversAI Research (Dec 2025 - May 2026)\n  Built evaluation datasets for question answering and intent classification, implemented retrieval baselines, and analyzed model errors by intent, domain, and question length. Automated benchmark reports for weekly experiments.\n\nPROJECTS\n- Support RAG Benchmark: Developed a benchmark for customer-support retrieval-augmented generation systems. Compared BM25, dense retrieval, and hybrid retrieval across recall, answer faithfulness, citation correctness, and latency. Technologies: Python, Elasticsearch, FAISS, Sentence Transformers, LangChain, Pandas. Link: https://github.com/arjunbanerjee/rag-benchmark\n- Intent Router: Fine-tuned a transformer classifier to route support queries among billing, account, technical, and cancellation intents. Added confidence-based fallback routing and confusion-matrix analysis. Technologies: Python, PyTorch, Transformers, Scikit-learn, FastAPI. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, NLP, PyTorch, Transformers, Hugging Face, LangChain, FAISS, Elasticsearch, FastAPI, Pandas, Scikit-learn, Git\n\nCERTIFICATIONS\nHugging Face NLP Course; Google Cloud Generative AI Learning Path\n\nLINKS\nhttps://github.com/arjunbanerjee\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Support RAG Benchmark and Intent Router, where they applied Python, Elasticsearch, FAISS, Sentence Transformers alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, NLP, PyTorch, Transformers, Hugging Face, LangChain. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Arjun Banerjee",
+      "email": "arjun.banerjee@example.com",
+      "phone": [
+        "+91 98300 44556"
+      ],
+      "location": "Kolkata, West Bengal, India",
+      "summary": "NLP-focused ML engineer interested in conversational AI, evaluation, and efficient fine-tuning. Experienced in building retrieval systems and benchmarking language-model behavior.",
+      "education": [
+        {
+          "degree": "MTech Artificial Intelligence",
+          "institution": "Indian Statistical Institute",
+          "start_date": "2024",
+          "end_date": "2026"
+        },
+        {
+          "degree": "BTech Electronics and Communication Engineering",
+          "institution": "Jadavpur University",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Research Intern",
+          "company": "ConversAI Research",
+          "start_date": "Dec 2025",
+          "end_date": "May 2026",
+          "description": "Built evaluation datasets for question answering and intent classification, implemented retrieval baselines, and analyzed model errors by intent, domain, and question length. Automated benchmark reports for weekly experiments."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Support RAG Benchmark",
+          "description": "Developed a benchmark for customer-support retrieval-augmented generation systems. Compared BM25, dense retrieval, and hybrid retrieval across recall, answer faithfulness, citation correctness, and latency.",
+          "technologies": [
+            "Python",
+            "Elasticsearch",
+            "FAISS",
+            "Sentence Transformers",
+            "LangChain",
+            "Pandas"
+          ],
+          "link": "https://github.com/arjunbanerjee/rag-benchmark"
+        },
+        {
+          "name": "Intent Router",
+          "description": "Fine-tuned a transformer classifier to route support queries among billing, account, technical, and cancellation intents. Added confidence-based fallback routing and confusion-matrix analysis.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Transformers",
+            "Scikit-learn",
+            "FastAPI"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "NLP",
+        "PyTorch",
+        "Transformers",
+        "Hugging Face",
+        "LangChain",
+        "FAISS",
+        "Elasticsearch",
+        "FastAPI",
+        "Pandas",
+        "Scikit-learn",
+        "Git"
+      ],
+      "certifications": [
+        "Hugging Face NLP Course",
+        "Google Cloud Generative AI Learning Path"
+      ],
+      "links": [
+        "https://github.com/arjunbanerjee"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Niamh O'Connor\nEmail: niamh.oconnor@example.ie\nPhone: +353 85 123 4567\nLocation: Dublin, Ireland\n\nOBJECTIVE / SUMMARY\nData platform engineer with experience in streaming analytics and cloud warehouses. Enjoys building observable pipelines, optimizing SQL workloads, and improving data reliability.\n\nEDUCATION\n- MSc Data Analytics, Trinity College Dublin (2022 - 2023)\n- BSc Computer Science, University College Dublin (2019 - 2022)\n\nEXPERIENCE\n- Data Platform Engineer, StreamWorks (Jan 2024 - Jun 2026)\n  Designed Kafka-based ingestion services and Spark Structured Streaming jobs for event data. Implemented schema validation, dead-letter handling, monitoring dashboards, and warehouse loading patterns for downstream analysts.\n\nPROJECTS\n- Real-Time Fraud Event Pipeline: Built a streaming pipeline that consumes transaction events, enriches records with reference data, applies rule-based risk flags, and writes both raw and curated outputs for near-real-time analysis. Technologies: Kafka, Spark Structured Streaming, Python, PostgreSQL, AWS S3, Grafana. Link: https://github.com/niamhoconnor/fraud-stream\n- Warehouse Cost Optimizer: Analyzed slow analytical queries and redesigned fact-table partitioning, clustering, and incremental transformation models. Documented before-and-after runtime and scan-volume measurements. Technologies: SQL, Snowflake, dbt, Python, Git. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, Kafka, Spark, Spark Structured Streaming, AWS, S3, Snowflake, dbt, Airflow, PostgreSQL, Grafana, Docker, Git\n\nCERTIFICATIONS\nConfluent Fundamentals Accreditation; dbt Fundamentals\n\nLINKS\nhttps://github.com/niamhoconnor\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Real-Time Fraud Event Pipeline and Warehouse Cost Optimizer, where they applied Kafka, Spark Structured Streaming, Python, PostgreSQL alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, Kafka, Spark, Spark Structured Streaming, AWS, S3. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Niamh O'Connor",
+      "email": "niamh.oconnor@example.ie",
+      "phone": [
+        "+353 85 123 4567"
+      ],
+      "location": "Dublin, Ireland",
+      "summary": "Data platform engineer with experience in streaming analytics and cloud warehouses. Enjoys building observable pipelines, optimizing SQL workloads, and improving data reliability.",
+      "education": [
+        {
+          "degree": "MSc Data Analytics",
+          "institution": "Trinity College Dublin",
+          "start_date": "2022",
+          "end_date": "2023"
+        },
+        {
+          "degree": "BSc Computer Science",
+          "institution": "University College Dublin",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Platform Engineer",
+          "company": "StreamWorks",
+          "start_date": "Jan 2024",
+          "end_date": "Jun 2026",
+          "description": "Designed Kafka-based ingestion services and Spark Structured Streaming jobs for event data. Implemented schema validation, dead-letter handling, monitoring dashboards, and warehouse loading patterns for downstream analysts."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Real-Time Fraud Event Pipeline",
+          "description": "Built a streaming pipeline that consumes transaction events, enriches records with reference data, applies rule-based risk flags, and writes both raw and curated outputs for near-real-time analysis.",
+          "technologies": [
+            "Kafka",
+            "Spark Structured Streaming",
+            "Python",
+            "PostgreSQL",
+            "AWS S3",
+            "Grafana"
+          ],
+          "link": "https://github.com/niamhoconnor/fraud-stream"
+        },
+        {
+          "name": "Warehouse Cost Optimizer",
+          "description": "Analyzed slow analytical queries and redesigned fact-table partitioning, clustering, and incremental transformation models. Documented before-and-after runtime and scan-volume measurements.",
+          "technologies": [
+            "SQL",
+            "Snowflake",
+            "dbt",
+            "Python",
+            "Git"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Kafka",
+        "Spark",
+        "Spark Structured Streaming",
+        "AWS",
+        "S3",
+        "Snowflake",
+        "dbt",
+        "Airflow",
+        "PostgreSQL",
+        "Grafana",
+        "Docker",
+        "Git"
+      ],
+      "certifications": [
+        "Confluent Fundamentals Accreditation",
+        "dbt Fundamentals"
+      ],
+      "links": [
+        "https://github.com/niamhoconnor"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Yuki Tanaka\nEmail: yuki.tanaka@example.jp\nPhone: +81 90-1234-5678\nLocation: Tokyo, Japan\n\nOBJECTIVE / SUMMARY\nComputer vision and robotics engineer focused on perception, sensor processing, and autonomous navigation. Experienced with ROS2, OpenCV, deep learning, and simulation-based testing.\n\nEDUCATION\n- MEng Robotics, University of Tokyo (2023 - 2025)\n- BEng Mechanical Engineering, Keio University (2019 - 2023)\n\nEXPERIENCE\n- Robotics Software Intern, Aster Robotics (Jun 2024 - Sep 2024)\n  Implemented ROS2 perception nodes, camera calibration utilities, and object-detection evaluation tools. Tested navigation behavior in simulation and on a mobile robot platform, documenting failure modes across lighting and obstacle conditions.\n\nPROJECTS\n- Indoor Robot Perception Stack: Integrated RGB-D camera streams with object detection and point-cloud processing. Published detections as ROS2 messages, filtered noisy depth measurements, and generated obstacle regions for downstream navigation. Technologies: C++, Python, ROS2, OpenCV, PyTorch, Open3D, Docker. Link: https://github.com/yukitanaka/robot-perception\n- Visual SLAM Evaluation: Built a benchmark harness for comparing visual odometry trajectories across simulated environments. Added trajectory alignment, error metrics, frame-drop simulation, and automated report generation. Technologies: Python, OpenCV, ROS2, NumPy, Matplotlib, Gazebo. Link: Not provided\n\nSKILLS\nLanguages and core technologies: C++, Python, ROS2, OpenCV, PyTorch, Open3D, Computer Vision, SLAM, Linux, Docker, Git, Gazebo, NumPy\n\nCERTIFICATIONS\nNVIDIA Deep Learning Institute – Fundamentals of Accelerated Computing\n\nLINKS\nhttps://github.com/yukitanaka\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Indoor Robot Perception Stack and Visual SLAM Evaluation, where they applied C++, Python, ROS2, OpenCV alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include C++, Python, ROS2, OpenCV, PyTorch, Open3D, Computer Vision. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Yuki Tanaka",
+      "email": "yuki.tanaka@example.jp",
+      "phone": [
+        "+81 90-1234-5678"
+      ],
+      "location": "Tokyo, Japan",
+      "summary": "Computer vision and robotics engineer focused on perception, sensor processing, and autonomous navigation. Experienced with ROS2, OpenCV, deep learning, and simulation-based testing.",
+      "education": [
+        {
+          "degree": "MEng Robotics",
+          "institution": "University of Tokyo",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BEng Mechanical Engineering",
+          "institution": "Keio University",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Robotics Software Intern",
+          "company": "Aster Robotics",
+          "start_date": "Jun 2024",
+          "end_date": "Sep 2024",
+          "description": "Implemented ROS2 perception nodes, camera calibration utilities, and object-detection evaluation tools. Tested navigation behavior in simulation and on a mobile robot platform, documenting failure modes across lighting and obstacle conditions."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Indoor Robot Perception Stack",
+          "description": "Integrated RGB-D camera streams with object detection and point-cloud processing. Published detections as ROS2 messages, filtered noisy depth measurements, and generated obstacle regions for downstream navigation.",
+          "technologies": [
+            "C++",
+            "Python",
+            "ROS2",
+            "OpenCV",
+            "PyTorch",
+            "Open3D",
+            "Docker"
+          ],
+          "link": "https://github.com/yukitanaka/robot-perception"
+        },
+        {
+          "name": "Visual SLAM Evaluation",
+          "description": "Built a benchmark harness for comparing visual odometry trajectories across simulated environments. Added trajectory alignment, error metrics, frame-drop simulation, and automated report generation.",
+          "technologies": [
+            "Python",
+            "OpenCV",
+            "ROS2",
+            "NumPy",
+            "Matplotlib",
+            "Gazebo"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "C++",
+        "Python",
+        "ROS2",
+        "OpenCV",
+        "PyTorch",
+        "Open3D",
+        "Computer Vision",
+        "SLAM",
+        "Linux",
+        "Docker",
+        "Git",
+        "Gazebo",
+        "NumPy"
+      ],
+      "certifications": [
+        "NVIDIA Deep Learning Institute – Fundamentals of Accelerated Computing"
+      ],
+      "links": [
+        "https://github.com/yukitanaka"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Grace Mensah\nEmail: grace.mensah@example.com\nPhone: +233 24 123 4567\nLocation: Accra, Ghana\n\nOBJECTIVE / SUMMARY\nAnalytics engineer and data scientist with experience in customer behavior modeling, dashboard development, and SQL transformation pipelines. Strong communicator with an emphasis on reproducible analysis.\n\nEDUCATION\n- MSc Data Science, University of Ghana (2023 - 2025)\n\nEXPERIENCE\n- Data Analyst, RetailPulse Africa (Aug 2024 - May 2026)\n  Built recurring sales and retention analyses, standardized SQL reporting datasets, and partnered with commercial teams to investigate customer drop-off. Automated weekly reporting and documented metric definitions.\n\nPROJECTS\n- Subscription Churn Analytics: Developed a churn analysis workflow from transaction and customer-support data. Created cohort features, analyzed retention curves, trained interpretable classification models, and surfaced high-risk customer segments in an interactive dashboard. Technologies: Python, Pandas, Scikit-learn, SQL, Power BI, PostgreSQL. Link: https://github.com/gracemensa/churn-analytics\n- Analytics Engineering Mart: Designed modular SQL transformations for orders, customers, products, and monthly revenue. Added tests for uniqueness and accepted values and created documentation for business-facing metrics. Technologies: SQL, dbt, PostgreSQL, Python, Git. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, Pandas, Scikit-learn, dbt, PostgreSQL, Power BI, Statistics, Data Visualization, Git, Excel\n\nCERTIFICATIONS\nGoogle Data Analytics Professional Certificate\n\nLINKS\nhttps://github.com/gracemensa\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Subscription Churn Analytics and Analytics Engineering Mart, where they applied Python, Pandas, Scikit-learn, SQL alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, Pandas, Scikit-learn, dbt, PostgreSQL, Power BI. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Grace Mensah",
+      "email": "grace.mensah@example.com",
+      "phone": [
+        "+233 24 123 4567"
+      ],
+      "location": "Accra, Ghana",
+      "summary": "Analytics engineer and data scientist with experience in customer behavior modeling, dashboard development, and SQL transformation pipelines. Strong communicator with an emphasis on reproducible analysis.",
+      "education": [
+        {
+          "degree": "MSc Data Science",
+          "institution": "University of Ghana",
+          "start_date": "2023",
+          "end_date": "2025"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Data Analyst",
+          "company": "RetailPulse Africa",
+          "start_date": "Aug 2024",
+          "end_date": "May 2026",
+          "description": "Built recurring sales and retention analyses, standardized SQL reporting datasets, and partnered with commercial teams to investigate customer drop-off. Automated weekly reporting and documented metric definitions."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Subscription Churn Analytics",
+          "description": "Developed a churn analysis workflow from transaction and customer-support data. Created cohort features, analyzed retention curves, trained interpretable classification models, and surfaced high-risk customer segments in an interactive dashboard.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "SQL",
+            "Power BI",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/gracemensa/churn-analytics"
+        },
+        {
+          "name": "Analytics Engineering Mart",
+          "description": "Designed modular SQL transformations for orders, customers, products, and monthly revenue. Added tests for uniqueness and accepted values and created documentation for business-facing metrics.",
+          "technologies": [
+            "SQL",
+            "dbt",
+            "PostgreSQL",
+            "Python",
+            "Git"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "Scikit-learn",
+        "dbt",
+        "PostgreSQL",
+        "Power BI",
+        "Statistics",
+        "Data Visualization",
+        "Git",
+        "Excel"
+      ],
+      "certifications": [
+        "Google Data Analytics Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/gracemensa"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Vikram Desai\nEmail: vikram.desai@example.com\nPhone: +91 97654 32109\nLocation: Mumbai, Maharashtra, India\n\nOBJECTIVE / SUMMARY\nAI/ML engineer with experience in time-series forecasting, anomaly detection, and MLOps. Focused on robust pipelines, experiment reproducibility, and production monitoring.\n\nEDUCATION\n- MSc Machine Learning, University of Edinburgh (2024 - 2025)\n- BTech Computer Science, Manipal Institute of Technology (2020 - 2024)\n\nEXPERIENCE\n- ML Engineering Intern, OpsSignal (Jun 2025 - Sep 2025)\n  Developed anomaly-detection experiments for infrastructure metrics, built feature-generation jobs, tracked model versions, and added batch scoring reports. Worked with engineers to define alert precision and false-positive metrics.\n\nPROJECTS\n- Cloud Metrics Anomaly Detector: Built an unsupervised anomaly-detection pipeline using rolling statistical features, Isolation Forest, and autoencoder baselines. Added synthetic incident scenarios and evaluated alert precision, detection delay, and false-positive rate. Technologies: Python, Pandas, Scikit-learn, PyTorch, MLflow, Docker. Link: https://github.com/vikramdesai/anomaly-detector\n- Forecasting API: Created a FastAPI service for daily demand forecasts with validation, model-version metadata, health checks, and structured prediction logs. Compared seasonal naive, gradient boosting, and recurrent baselines. Technologies: Python, FastAPI, Pandas, XGBoost, PyTorch, PostgreSQL. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, PyTorch, Scikit-learn, XGBoost, Time Series, Anomaly Detection, MLflow, FastAPI, Docker, PostgreSQL, AWS, Git\n\nCERTIFICATIONS\nAWS Certified Machine Learning Engineer – Associate\n\nLINKS\nhttps://github.com/vikramdesai; https://www.linkedin.com/in/vikramdesai\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Cloud Metrics Anomaly Detector and Forecasting API, where they applied Python, Pandas, Scikit-learn, PyTorch alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, PyTorch, Scikit-learn, XGBoost, Time Series, Anomaly Detection. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Vikram Desai",
+      "email": "vikram.desai@example.com",
+      "phone": [
+        "+91 97654 32109"
+      ],
+      "location": "Mumbai, Maharashtra, India",
+      "summary": "AI/ML engineer with experience in time-series forecasting, anomaly detection, and MLOps. Focused on robust pipelines, experiment reproducibility, and production monitoring.",
+      "education": [
+        {
+          "degree": "MSc Machine Learning",
+          "institution": "University of Edinburgh",
+          "start_date": "2024",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BTech Computer Science",
+          "institution": "Manipal Institute of Technology",
+          "start_date": "2020",
+          "end_date": "2024"
+        }
+      ],
+      "experience": [
+        {
+          "title": "ML Engineering Intern",
+          "company": "OpsSignal",
+          "start_date": "Jun 2025",
+          "end_date": "Sep 2025",
+          "description": "Developed anomaly-detection experiments for infrastructure metrics, built feature-generation jobs, tracked model versions, and added batch scoring reports. Worked with engineers to define alert precision and false-positive metrics."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Cloud Metrics Anomaly Detector",
+          "description": "Built an unsupervised anomaly-detection pipeline using rolling statistical features, Isolation Forest, and autoencoder baselines. Added synthetic incident scenarios and evaluated alert precision, detection delay, and false-positive rate.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "PyTorch",
+            "MLflow",
+            "Docker"
+          ],
+          "link": "https://github.com/vikramdesai/anomaly-detector"
+        },
+        {
+          "name": "Forecasting API",
+          "description": "Created a FastAPI service for daily demand forecasts with validation, model-version metadata, health checks, and structured prediction logs. Compared seasonal naive, gradient boosting, and recurrent baselines.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "Pandas",
+            "XGBoost",
+            "PyTorch",
+            "PostgreSQL"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "Scikit-learn",
+        "XGBoost",
+        "Time Series",
+        "Anomaly Detection",
+        "MLflow",
+        "FastAPI",
+        "Docker",
+        "PostgreSQL",
+        "AWS",
+        "Git"
+      ],
+      "certifications": [
+        "AWS Certified Machine Learning Engineer – Associate"
+      ],
+      "links": [
+        "https://github.com/vikramdesai",
+        "https://www.linkedin.com/in/vikramdesai"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Sana Rahman\nEmail: sana.rahman@example.com\nPhone: +880 1712 345678\nLocation: Dhaka, Bangladesh\n\nOBJECTIVE / SUMMARY\nFull-stack developer with a focus on performant React applications and Python backend services. Experienced in authentication, payments, relational modeling, testing, and deployment automation.\n\nEDUCATION\n- BSc Computer Science and Engineering, Bangladesh University of Engineering and Technology (2019 - 2023)\n\nEXPERIENCE\n- Software Developer, PayWave Systems (Jul 2023 - Jun 2026)\n  Built merchant dashboards, payment reconciliation APIs, and administrative workflows. Implemented PostgreSQL transactions, webhook idempotency, background processing, and automated integration tests. Participated in code reviews and production incident analysis.\n\nPROJECTS\n- Merchant Operations Portal: Developed a responsive portal for merchant onboarding, transaction search, refund workflows, settlement summaries, and role-based permissions. Added server-side filtering and audit logging for operational traceability. Technologies: React, TypeScript, Python, FastAPI, PostgreSQL, Redis, Docker. Link: https://github.com/sanarahman/merchant-portal\n- Course Marketplace: Built a marketplace supporting course discovery, instructor profiles, enrollment, checkout, reviews, and transactional email notifications. Implemented REST APIs and protected routes with access tokens. Technologies: Next.js, TypeScript, Node.js, Express, PostgreSQL, Prisma, Stripe. Link: Not provided\n\nSKILLS\nLanguages and core technologies: TypeScript, JavaScript, Python, React, Next.js, Node.js, Express, FastAPI, PostgreSQL, Redis, Prisma, Docker, REST, Git, Jest, Cypress, AWS\n\nCERTIFICATIONS\nMeta Back-End Developer Professional Certificate\n\nLINKS\nhttps://github.com/sanarahman\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Merchant Operations Portal and Course Marketplace, where they applied React, TypeScript, Python, FastAPI alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include TypeScript, JavaScript, Python, React, Next.js, Node.js, Express. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Sana Rahman",
+      "email": "sana.rahman@example.com",
+      "phone": [
+        "+880 1712 345678"
+      ],
+      "location": "Dhaka, Bangladesh",
+      "summary": "Full-stack developer with a focus on performant React applications and Python backend services. Experienced in authentication, payments, relational modeling, testing, and deployment automation.",
+      "education": [
+        {
+          "degree": "BSc Computer Science and Engineering",
+          "institution": "Bangladesh University of Engineering and Technology",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Software Developer",
+          "company": "PayWave Systems",
+          "start_date": "Jul 2023",
+          "end_date": "Jun 2026",
+          "description": "Built merchant dashboards, payment reconciliation APIs, and administrative workflows. Implemented PostgreSQL transactions, webhook idempotency, background processing, and automated integration tests. Participated in code reviews and production incident analysis."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Merchant Operations Portal",
+          "description": "Developed a responsive portal for merchant onboarding, transaction search, refund workflows, settlement summaries, and role-based permissions. Added server-side filtering and audit logging for operational traceability.",
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+          ],
+          "link": "https://github.com/sanarahman/merchant-portal"
+        },
+        {
+          "name": "Course Marketplace",
+          "description": "Built a marketplace supporting course discovery, instructor profiles, enrollment, checkout, reviews, and transactional email notifications. Implemented REST APIs and protected routes with access tokens.",
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Prisma",
+            "Stripe"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Prisma",
+        "Docker",
+        "REST",
+        "Git",
+        "Jest",
+        "Cypress",
+        "AWS"
+      ],
+      "certifications": [
+        "Meta Back-End Developer Professional Certificate"
+      ],
+      "links": [
+        "https://github.com/sanarahman"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Chen Wei\nEmail: chen.wei@example.cn\nPhone: +86 138 0013 8000\nLocation: Shanghai, China\n\nOBJECTIVE / SUMMARY\nQuantitative data scientist applying machine learning and statistical modeling to financial datasets. Experienced in feature engineering, backtesting, risk metrics, and scalable research notebooks.\n\nEDUCATION\n- MSc Financial Engineering, Shanghai Jiao Tong University (2023 - 2025)\n- BSc Applied Mathematics, Fudan University (2019 - 2023)\n\nEXPERIENCE\n- Quantitative Research Intern, Oriental Capital Analytics (Jun 2024 - Sep 2024)\n  Prepared equity and market-factor datasets, implemented rolling-window features, and evaluated predictive signals under walk-forward validation. Automated experiment summaries covering Sharpe ratio, drawdown, turnover, and hit rate.\n\nPROJECTS\n- Factor Signal Research Platform: Built a research framework for testing cross-sectional and time-series factors. Included lag-safe feature construction, transaction-cost assumptions, walk-forward validation, portfolio construction, and standardized performance reports. Technologies: Python, Pandas, NumPy, Scikit-learn, SQL, Jupyter. Link: https://github.com/chenwei/factor-research\n- Credit Default Classifier: Trained calibrated classifiers for corporate default prediction and analyzed feature stability across time-based validation folds. Used SHAP explanations to investigate economically meaningful and potentially spurious predictors. Technologies: Python, XGBoost, Scikit-learn, SHAP, Pandas, MLflow. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, SQL, Statistics, Pandas, NumPy, Scikit-learn, XGBoost, Time Series, Financial Modeling, MLflow, PostgreSQL, Git\n\nCERTIFICATIONS\nCQF Institute – Quantitative Finance Foundations\n\nLINKS\nhttps://github.com/chenwei\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Factor Signal Research Platform and Credit Default Classifier, where they applied Python, Pandas, NumPy, Scikit-learn alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, SQL, Statistics, Pandas, NumPy, Scikit-learn, XGBoost. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Chen Wei",
+      "email": "chen.wei@example.cn",
+      "phone": [
+        "+86 138 0013 8000"
+      ],
+      "location": "Shanghai, China",
+      "summary": "Quantitative data scientist applying machine learning and statistical modeling to financial datasets. Experienced in feature engineering, backtesting, risk metrics, and scalable research notebooks.",
+      "education": [
+        {
+          "degree": "MSc Financial Engineering",
+          "institution": "Shanghai Jiao Tong University",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BSc Applied Mathematics",
+          "institution": "Fudan University",
+          "start_date": "2019",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Quantitative Research Intern",
+          "company": "Oriental Capital Analytics",
+          "start_date": "Jun 2024",
+          "end_date": "Sep 2024",
+          "description": "Prepared equity and market-factor datasets, implemented rolling-window features, and evaluated predictive signals under walk-forward validation. Automated experiment summaries covering Sharpe ratio, drawdown, turnover, and hit rate."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Factor Signal Research Platform",
+          "description": "Built a research framework for testing cross-sectional and time-series factors. Included lag-safe feature construction, transaction-cost assumptions, walk-forward validation, portfolio construction, and standardized performance reports.",
+          "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "SQL",
+            "Jupyter"
+          ],
+          "link": "https://github.com/chenwei/factor-research"
+        },
+        {
+          "name": "Credit Default Classifier",
+          "description": "Trained calibrated classifiers for corporate default prediction and analyzed feature stability across time-based validation folds. Used SHAP explanations to investigate economically meaningful and potentially spurious predictors.",
+          "technologies": [
+            "Python",
+            "XGBoost",
+            "Scikit-learn",
+            "SHAP",
+            "Pandas",
+            "MLflow"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Statistics",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "Time Series",
+        "Financial Modeling",
+        "MLflow",
+        "PostgreSQL",
+        "Git"
+      ],
+      "certifications": [
+        "CQF Institute – Quantitative Finance Foundations"
+      ],
+      "links": [
+        "https://github.com/chenwei"
+      ]
+    }
+  },
+  {
+    "instruction": "Extract candidate information from the resume text and return it as a single valid JSON object matching the required schema. Missing fields must be null (for scalar fields) or empty lists (for list fields), not invented.",
+    "input": "Isabella Rossi\nEmail: isabella.rossi@example.it\nPhone: +39 333 123 4567\nLocation: Milan, Italy\n\nOBJECTIVE / SUMMARY\nMachine learning engineer focused on NLP, document intelligence, and production model evaluation. Experienced in OCR pipelines, document classification, semantic retrieval, and API deployment.\n\nEDUCATION\n- MSc Artificial Intelligence, Politecnico di Milano (2023 - 2025)\n- BSc Computer Engineering, Università degli Studi di Padova (2020 - 2023)\n\nEXPERIENCE\n- AI Engineer Intern, DocuSense (Feb 2025 - Jul 2025)\n  Built document-processing workflows for invoices and contracts. Integrated OCR, layout-aware preprocessing, classification, and entity extraction; created evaluation datasets and error-analysis reports for low-quality scans.\n\nPROJECTS\n- Invoice Information Extractor: Created a document AI pipeline that identifies invoice numbers, dates, vendors, totals, and tax fields from scanned documents. Combined OCR, layout heuristics, transformer-based token classification, and confidence-aware post-processing. Technologies: Python, PyTorch, Transformers, Tesseract, OpenCV, FastAPI. Link: https://github.com/isabellarossi/invoice-extractor\n- Contract Semantic Search: Implemented clause-level semantic search with document metadata, section-aware chunking, dense embeddings, and relevance evaluation. Added a simple web interface for comparing retrieved passages. Technologies: Python, Sentence Transformers, FAISS, Streamlit, PostgreSQL. Link: Not provided\n\nSKILLS\nLanguages and core technologies: Python, PyTorch, Transformers, NLP, OCR, OpenCV, Hugging Face, FAISS, FastAPI, Streamlit, PostgreSQL, Docker, Git\n\nCERTIFICATIONS\nMicrosoft Azure AI Engineer Associate\n\nLINKS\nhttps://github.com/isabellarossi; https://www.linkedin.com/in/isabellarossi\n\nADDITIONAL DETAILS\nAdditional technical details: The candidate emphasizes practical engineering quality, including version-controlled development, reproducible experiments, validation of edge cases, and clear technical documentation. Their recent work includes Invoice Information Extractor and Contract Semantic Search, where they applied Python, PyTorch, Transformers, Tesseract alongside structured testing, debugging, and performance analysis. They are comfortable collaborating across engineering and product teams, reviewing implementation trade-offs, and turning ambiguous requirements into measurable deliverables. Relevant technical areas include Python, PyTorch, Transformers, NLP, OCR, OpenCV, Hugging Face. The candidate's project work also demonstrates attention to maintainability, deployment considerations, data validation, monitoring or evaluation, and communicating results to technical stakeholders.",
+    "output": {
+      "name": "Isabella Rossi",
+      "email": "isabella.rossi@example.it",
+      "phone": [
+        "+39 333 123 4567"
+      ],
+      "location": "Milan, Italy",
+      "summary": "Machine learning engineer focused on NLP, document intelligence, and production model evaluation. Experienced in OCR pipelines, document classification, semantic retrieval, and API deployment.",
+      "education": [
+        {
+          "degree": "MSc Artificial Intelligence",
+          "institution": "Politecnico di Milano",
+          "start_date": "2023",
+          "end_date": "2025"
+        },
+        {
+          "degree": "BSc Computer Engineering",
+          "institution": "Università degli Studi di Padova",
+          "start_date": "2020",
+          "end_date": "2023"
+        }
+      ],
+      "experience": [
+        {
+          "title": "AI Engineer Intern",
+          "company": "DocuSense",
+          "start_date": "Feb 2025",
+          "end_date": "Jul 2025",
+          "description": "Built document-processing workflows for invoices and contracts. Integrated OCR, layout-aware preprocessing, classification, and entity extraction; created evaluation datasets and error-analysis reports for low-quality scans."
+        }
+      ],
+      "projects": [
+        {
+          "name": "Invoice Information Extractor",
+          "description": "Created a document AI pipeline that identifies invoice numbers, dates, vendors, totals, and tax fields from scanned documents. Combined OCR, layout heuristics, transformer-based token classification, and confidence-aware post-processing.",
+          "technologies": [
+            "Python",
+            "PyTorch",
+            "Transformers",
+            "Tesseract",
+            "OpenCV",
+            "FastAPI"
+          ],
+          "link": "https://github.com/isabellarossi/invoice-extractor"
+        },
+        {
+          "name": "Contract Semantic Search",
+          "description": "Implemented clause-level semantic search with document metadata, section-aware chunking, dense embeddings, and relevance evaluation. Added a simple web interface for comparing retrieved passages.",
+          "technologies": [
+            "Python",
+            "Sentence Transformers",
+            "FAISS",
+            "Streamlit",
+            "PostgreSQL"
+          ],
+          "link": null
+        }
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "NLP",
+        "OCR",
+        "OpenCV",
+        "Hugging Face",
+        "FAISS",
+        "FastAPI",
+        "Streamlit",
+        "PostgreSQL",
+        "Docker",
+        "Git"
+      ],
+      "certifications": [
+        "Microsoft Azure AI Engineer Associate"
+      ],
+      "links": [
+        "https://github.com/isabellarossi",
+        "https://www.linkedin.com/in/isabellarossi"
+      ]
+    }
+  }
+]

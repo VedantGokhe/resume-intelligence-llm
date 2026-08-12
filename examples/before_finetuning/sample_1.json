@@ -1,0 +1,9 @@
+{
+  "name": "Priya Sharma",
+  "email": "priya.sharma@email.com",
+  "phone": "+91-9876543210",
+  "location": "Pune, India",
+  "education": "B.E. Computer Engineering from Savitribai Phule Pune University",
+  "skills": "Java, Spring Boot, MySQL, Git, Docker, REST APIs",
+  "note": "Base model output before fine-tuning: Returned skills as a plain comma string instead of array, education as flat text rather than structured object list, and omitted link fields."
+}

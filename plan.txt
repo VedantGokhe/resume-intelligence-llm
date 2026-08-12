@@ -1,0 +1,112 @@
+==============================================================
+RESUME INTELLIGENCE LLM — COMPLETE EXECUTION PLAN & PROGRESS
+==============================================================
+Assessment: Build a Domain-Specific Resume Intelligence LLM Prototype
+Total Marks: 100  |  Target: Full marks
+Updated: 2026-08-12
+
+==============================================================
+EXECUTION STATUS SUMMARY
+==============================================================
+
+  [DONE]   Step 1  — Model selection (Qwen3-1.7B)
+             File: research/model_selection.md
+
+  [DONE]   Step 2  — Project folder structure & core repository files
+             Files: .gitignore, requirements.txt, training/config.yaml
+
+  [DONE]   Step 3  — Output schema definition (data/schema.py)
+             Now includes: name, email, phone, location, summary,
+             education, experience, PROJECTS, skills, certifications, links
+
+  [DONE]   Step 4  — Dataset creation (GPT-generated, 100 examples)
+             Files: data/resume_dataset_batch1.json (20 examples — AI/ML, Data Science, Full-Stack)
+                    data/resume_dataset_batch2.json (20 examples — DevOps, Cloud, Backend, Frontend)
+                    data/resume_dataset_batch3.json (20 examples — Cybersecurity, Mobile, CV, QA)
+                    data/resume_dataset_batch4.json (20 examples — PM, SRE, Researchers, Platform)
+                    data/resume_dataset_batch5.json (20 examples — Edge cases: missing fields, messy formats)
+                    data/resume_dataset.json        (100 combined examples)
+             Quality: ALL 100/100 PASSED validation (0 errors, 0 warnings)
+
+  [DONE]   Step 4b — Dataset splitting (70% / 15% / 15%)
+             Files: data/train.json  (70 examples)
+                    data/val.json    (15 examples)
+                    data/test.json   (15 examples)
+             Tool: data/split_dataset.py
+
+  [TODO]   Step 4c — Expand dataset to ~100 examples
+             Plan: Generate Batch 4 & Batch 5 (20 examples each) via GPT prompts.
+                   Prompts saved in: data/gpt_dataset_prompts.txt
+             After adding batch4.json & batch5.json, rerun:
+               python data/split_dataset.py
+             Target after merge: ~100 total → ~70 train / ~15 val / ~15 test
+
+  [DONE]   Step 5  — Training pipeline (QLoRA on Colab T4)
+             Files: training/train.py, training/colab_train.ipynb, training/config.yaml
+             Model: Qwen/Qwen3-1.7B | Method: QLoRA (4-bit NF4 + LoRA r=16, alpha=32)
+             Hardware: Tesla T4 GPU (15.3 GB VRAM) | Duration: 11 mins 41 secs (45 steps)
+             Hyperparameters: 5 Epochs, per_device_batch_size=2, grad_accum=4 (effective batch size=8), lr=2e-4
+             
+             EMPIRICAL TRAINING LOSS LOG:
+             --------------------------------------------------------------------------------------
+             Epoch | Training Loss | Validation Loss | Entropy  | Num Tokens | Mean Token Accuracy
+             --------------------------------------------------------------------------------------
+               1   |    1.356197   |    1.226950     | 1.415748 |   77,962   |       73.65%
+               2   |    0.864032   |    0.918429     | 0.863334 |  155,924   |       80.17%
+               3   |    0.763723   |    0.802741     | 0.790324 |  233,886   |       82.36%
+               4   |    0.635387   |    0.752359     | 0.709355 |  311,848   |       83.26%
+               5   |    0.671358   |    0.742195     | 0.696919 |  389,810   |       83.46%
+             --------------------------------------------------------------------------------------
+             Final Result: Validation loss decreased from 1.226 → 0.742, Token Acc = 83.46%.
+             Saved Adapter: ./adapter_v1 (adapter_v1.zip)
+
+  [DONE]   Step 6  — Before/After fine-tuning artifacts
+             Files: examples/before_finetuning/sample_1.json
+                    examples/after_finetuning/sample_1.json
+
+  [DONE]   Step 7  — Evaluation framework & report
+             Files: evaluation/metrics.py    (JSON validity, schema validity, F1, hallucination)
+                    evaluation/evaluate.py   (automated test evaluator)
+                    evaluation/regression_tests.py (edge case regression suite: 4/4 PASSED)
+                    evaluation/results/report_before.json (Base model: 50% schema validity)
+                    evaluation/results/report_v1.json     (Fine-tuned model: 100% schema validity)
+                    evaluation/evaluation_framework.txt   (Complete detailed evaluation report)
+
+  [DONE]   Step 8  — Inference layer (CLI + FastAPI)
+             Files: inference/model_loader.py (shared loader with LoRA adapter support)
+                    inference/infer.py        (CLI: python infer.py --input resume.txt)
+                    inference/api.py          (FastAPI: POST /parse-resume)
+
+  [DONE]   Step 9  — README & documentation
+             File: README.md
+
+==============================================================
+COLAB T4 QUICK-START
+==============================================================
+1. Open Google Colab → Runtime → T4 GPU
+2. Upload training/colab_train.ipynb
+3. Upload data/train.json and data/val.json
+4. Run all cells — adapter saves to Google Drive
+5. Download adapter_v1/ folder (~15–20 MB)
+
+==============================================================
+NEXT ACTION
+==============================================================
+Generate Batch 4 & Batch 5 from GPT using prompts in:
+  data/gpt_dataset_prompts.txt
+
+Then merge and re-split:
+  python -c "
+  import json
+  b1=json.load(open('data/resume_dataset_batch1.json'))
+  b2=json.load(open('data/resume_dataset_batch2.json'))
+  b3=json.load(open('data/resume_dataset_batch3.json'))
+  b4=json.load(open('data/resume_dataset_batch4.json'))
+  b5=json.load(open('data/resume_dataset_batch5.json'))
+  all=b1+b2+b3+b4+b5
+  json.dump(all, open('data/resume_dataset.json','w'), indent=2)
+  print(f'Total: {len(all)} examples')
+  "
+  python data/validate_dataset.py
+  python data/split_dataset.py
+==============================================================

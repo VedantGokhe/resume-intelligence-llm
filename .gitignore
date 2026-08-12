@@ -1,0 +1,48 @@
+# ─── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# ─── Virtual environments & Secrets ───────────────────────────────────────────
+.env
+.env.*
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+secrets.yaml
+hf_token.txt
+
+# ─── Model weights & Large Archives ───────────────────────────────────────────
+adapter_v1/
+adapter_v2/
+checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+*.ggml
+*.zip
+*.tar
+*.gz
+
+# ─── Training & Logs ───────────────────────────────────────────────────────────
+runs/
+wandb/
+lightning_logs/
+checkpoints/
+output/
+
+# ─── IDE & OS ─────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
