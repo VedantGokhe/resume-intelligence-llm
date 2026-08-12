@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Base Model](https://img.shields.io/badge/Base%20Model-Qwen3--1.7B-orange.svg)](https://huggingface.co/Qwen/Qwen3-1.7B)
 [![Fine-Tuning](https://img.shields.io/badge/Fine--Tuning-QLoRA%20(4--bit)-green.svg)](https://github.com/huggingface/peft)
-[![Adapter Hub](https://img.shields.io/badge/Hugging%20Face-VedantGokhe%2Fqwen3--resume--parser--adapter-yellow.svg)](https://huggingface.co/VedantGokhe/qwen3-resume-parser-adapter)
+[![Adapter Hub](https://img.shields.io/badge/Hugging%20Face-VedantGokhe%2Fqwen3--resume--parser--adapter-yellow.svg)](https://huggingface.co/Vedant0824/qwen3-resume-parser-adapter)
 [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](LICENSE)
 
 An open-source, domain-specific Language Model system designed to replace third-party hosted APIs (such as GPT-4 Mini) for high-volume resume parsing and structured data extraction. 
@@ -19,7 +19,7 @@ Built on top of **Qwen3-1.7B** fine-tuned using **QLoRA** (4-bit NF4 quantizatio
 - **74.44% Skills F1-Score**: High precision and recall extraction of technical skills even when embedded deep inside project bullets without explicit skills headers (**+44.44% gain over base model**).
 - **Zero-Hallucination Grounding**: **3.75% hallucination rate** (well below the 5.0% safety threshold), ensuring missing scalar fields return `null` and missing list fields return `[]`.
 - **100% Regression Suite Pass**: Passed all 4 real-world edge-case tests (missing email, missing phone, zero work experience, multiple phone numbers).
-- **Hosted Model Adapter**: Model adapter weights available on Hugging Face Hub at [`VedantGokhe/qwen3-resume-parser-adapter`](https://huggingface.co/VedantGokhe/qwen3-resume-parser-adapter).
+- **Hosted Model Adapter**: Model adapter weights available on Hugging Face Hub at [`Vedant0824/qwen3-resume-parser-adapter`](https://huggingface.co/Vedant0824/qwen3-resume-parser-adapter).
 
 ---
 
@@ -191,7 +191,7 @@ python evaluation/regression_tests.py
 
 The fine-tuned LoRA adapter is publicly hosted on Hugging Face:
 
-- **Repository**: [`VedantGokhe/qwen3-resume-parser-adapter`](https://huggingface.co/VedantGokhe/qwen3-resume-parser-adapter)
+- **Repository**: [`Vedant0824/qwen3-resume-parser-adapter`](https://huggingface.co/Vedant0824/qwen3-resume-parser-adapter)
 
 ### Using direct from Hugging Face:
 
